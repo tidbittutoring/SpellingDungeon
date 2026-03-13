@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Dungeon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu_refactor.css">
+    <link rel="stylesheet" href="inventory.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+</head>
+
+<body>
+    <div id="toast-container"></div>
+    <!-- Game Viewport UI -->
+    <div id="game-ui" style="display: none;">
+        <div id="dungeon-metrics">
+            <span id="level-metric" style="display:none;">Level 1</span>
+            <span id="room-metric">Room 1</span>
+        </div>
+        <div id="action-area">
+            <div id="boss-timer-container">
+                <div id="boss-timer-fill"></div>
+                <div id="boss-timer-text">30s</div>
+                <div id="boss-progress-text">Words: 0/0</div>
+            </div>
+            <div id="spelling-area">
+                <input type="text" id="word-input" placeholder="ENTER" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="ampule" id="hp-ampule">
+            <div id="hp-fill" class="ampule-fill hp-color"></div>
+            <div class="ampule-text">HP<br><span id="hp-val">100/100</span></div>
+        </div>
+
+        <div class="ampule" id="ink-ampule">
+            <div id="ink-fill" class="ampule-fill ink-color"></div>
+            <div class="ampule-text">INK<br><span id="ink-val">50/50</span></div>
+        </div>
+        <button id="hear-btn" style="display:none;">🔊 Hear Word</button>
+
+        <div id="tool-bar">
+            <button id="reveal-btn" class="tool-btn">Reveal (10 Ink)</button>
+            <div id="ability-bar"></div>
+            <button id="inv-toggle-btn" title="Inventory (ESC)">🎒</button>
+        </div>
+    </div>
+
+    <!-- Pause Menu (Consolidated with Inventory) -->
+    <div id="pause-menu" class="menu-screen" style="display: none;">
+        <div class="pause-content">
+            <div class="inv-container">
+                <div class="inv-main-content">
+                    <div class="equipment-view">
+                        <h3 data-tooltip="Currently equipped gear. Drag items here to equip them.">EQUIPMENT</h3>
+                        <div class="equip-slot" data-slot="head"><span>Head</span></div>
+                        <div class="equip-mid">
+                            <div class="equip-slot" data-slot="main_hand"><span>Main Hand</span></div>
+                            <div class="equip-slot" data-slot="torso"><span>Torso</span></div>
+                            <div class="equip-slot" data-slot="off_hand"><span>Off Hand</span></div>
+                        </div>
+                        <div class="equip-bot">
+                            <div class="equip-slot" data-slot="accessory1"><span>Accessory 1</span></div>
+                            <div class="equip-slot" data-slot="accessory2"><span>Accessory 2</span></div>
+                        </div>
+                    </div>
+                    <div class="inventory-view">
+                        <h3 data-tooltip="Click to equip. Shift+click to add to forge.">BACKPACK</h3>
+                        <div id="inventory-grid">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <div class="forge-container">
+                        <h3 data-tooltip="Combine items to create powerful artifacts.">FORGE</h3>
+                        <div id="forge-grid">
+                            <!-- 9 cells built by JS -->
+                        </div>
+                        <button id="forge-btn" class="menu-btn" disabled>FORGE</button>
+                        <div id="forge-result"></div>
+                    </div>
+                </div>
+
+                <!-- Horizontal Stats View -->
+                <div id="char-stats-view">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <div class="pause-options">
+                <h2 class="sub-title">PAUSED</h2>
+                <div class="menu-options">
+                    <button id="resume-btn" class="menu-btn primary">RESUME (ESC)</button>
+                    <button id="report-bug-pause-btn" class="menu-btn">REPORT BUG</button>
+                    <button id="pause-settings-btn" class="menu-btn">SETTINGS</button>
+                    <button id="quit-btn" class="menu-btn danger">QUIT TO MENU</button>
+                </div>
+            </div>
+        </div>
+        <div id="item-tooltip" class="tooltip-box" style="display: none;"></div>
+        <div id="comp-tooltip-1" class="tooltip-box" style="display: none;"></div>
+        <div id="comp-tooltip-2" class="tooltip-box" style="display: none;"></div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="menu-screen">
+        <h1 class="menu-title">SPELLING<br>DUNGEON</h1>
+
+        <div
+            style="text-align: center; color: #a0927e; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.15rem; margin-bottom: 0.2rem; margin-top: 0.2rem;">
+            Game Mode</div>
+        <div id="mode-selector" class="menu-modes">
+            <button class="mode-btn active" data-mode="random"
+                data-tooltip="Endless play! Randomly selected words from your chosen list.">Random</button>
+            <button class="mode-btn" data-mode="adventure"
+                data-tooltip="Progressive difficulty across 10 levels with boss encounters.">Adventure</button>
+        </div>
+
+        <div
+            style="text-align: center; color: #a0927e; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.15rem; margin-bottom: 0.2rem; margin-top: 0.4rem;">
+            Word List</div>
+        <div id="list-selector" class="menu-modes list-modes">
+            <button class="list-btn" data-list="inkling"
+                data-tooltip="A good place to start. General vocabulary progression.">Inkling</button>
+            <button class="list-btn active" data-list="sat"
+                data-tooltip="For special test preparation. College-level vocabulary.">SAT Words</button>
+            <button class="list-btn" data-list="doozies"
+                data-tooltip="Challenging words, even for adults. Spelling bee words, commonly misspelled words, and archaic words.">Doozies</button>
+        </div>
+
+        <div class="menu-options">
+            <button id="start-btn" class="menu-btn primary">NEW RUN</button>
+            <div id="continue-row" class="menu-row" style="display: none;">
+                <button id="continue-run-btn" class="menu-btn primary">CONTINUE</button>
+                <button id="abandon-run-btn" class="menu-btn danger">ABANDON</button>
+            </div>
+            <button id="profiles-btn" class="menu-btn">PROFILES</button>
+            <button id="settings-btn" class="menu-btn">SETTINGS</button>
+            <button id="customize-btn" class="menu-btn">CUSTOMIZE MAGE</button>
+            <button id="scores-btn" class="menu-btn">HIGH SCORES</button>
+        </div>
+    </div>
+
+    <!-- Profiles Menu -->
+    <div id="profiles-menu" class="menu-screen" style="display: none;">
+        <h2 class="sub-title">SELECT CHARACTER</h2>
+        <div id="profiles-list" class="profiles-container">
+            <!-- Populated by JS -->
+        </div>
+        <button id="new-char-btn" class="menu-btn primary" style="margin-top: 20px;">CREATE NEW CHARACTER</button>
+        <button class="menu-btn back-btn" style="margin-top: 10px;">BACK TO MENU</button>
+    </div>
+
+    <!-- Character Creation Menu -->
+    <div id="create-char-menu" class="menu-screen" style="display: none;">
+        <h2 id="create-char-title" class="sub-title">NEW MAGE</h2>
+        <div class="input-group">
+            <label>Mage Name</label>
+            <input type="text" id="player-name-input" placeholder="Enter name...">
+        </div>
+        <div class="color-picker">
+            <label>Spell Color</label>
+            <div class="color-options">
+                <div class="color-swatch active" data-color="#00d4ff" style="background: #00d4ff;"></div>
+                <div class="color-swatch" data-color="#ff4444" style="background: #ff4444;"></div>
+                <div class="color-swatch" data-color="#44ff44" style="background: #44ff44;"></div>
+                <div class="color-swatch" data-color="#a044ff" style="background: #a044ff;"></div>
+                <div class="color-swatch" data-color="#ffaa00" style="background: #ffaa00;"></div>
+                <div class="color-swatch" data-color="#ff66cc" style="background: #ff66cc;"></div> <!-- Pink -->
+                <div class="color-swatch" data-color="#00ffff" style="background: #00ffff;"></div> <!-- Cyan -->
+                <div class="color-swatch" data-color="#ccff00" style="background: #ccff00;"></div> <!-- Lime -->
+                <div class="color-swatch" data-color="#ffd700" style="background: #ffd700;"></div> <!-- Gold -->
+                <div class="color-swatch" data-color="#ffffff" style="background: #ffffff;"></div>
+                <div class="color-swatch swatch-rainbow" data-color="effect-rainbow" title="Rainbow"></div>
+                <div class="color-swatch swatch-sparkle" data-color="effect-sparkle" title="Sparkle"></div>
+            </div>
+        </div>
+        <button id="confirm-create-btn" class="menu-btn primary">CREATE</button>
+        <button class="menu-btn back-btn" data-target="profiles">CANCEL</button>
+    </div>
+
+    <!-- High Scores Menu -->
+    <div id="scores-menu" class="menu-screen" style="display: none;">
+        <h2 class="sub-title">HALL OF HEROES</h2>
+        <div id="scores-list">
+            <!-- Populated by JS -->
+        </div>
+        <button class="menu-btn back-btn">BACK</button>
+    </div>
+
+    <!-- Settings Menu -->
+    <div id="settings-menu" class="menu-screen" style="display: none;">
+        <h2 class="sub-title">SETTINGS</h2>
+        <div class="settings-group">
+            <label>Master Volume</label>
+            <input type="range" min="0" max="100" value="80" id="volume-slider">
+        </div>
+        <div class="settings-group voice-settings">
+            <label>TTS Voice</label>
+            <div class="voice-controls">
+                <select id="voice-selector">
+                    <option value="">Loading voices...</option>
+                </select>
+                <button id="test-voice-btn" class="small-btn">TEST</button>
+            </div>
+        </div>
+        <div class="menu-options" style="margin-top: 1.5rem;">
+            <button id="graphics-btn" class="menu-btn">GRAPHICS</button>
+            <button id="report-bug-settings-btn" class="menu-btn">REPORT BUG</button>
+            <button id="drastic-measures-btn" class="menu-btn danger">DRASTIC MEASURES</button>
+            <button class="menu-btn back-btn">BACK</button>
+        </div>
+    </div>
+
+    <!-- Graphics Menu -->
+    <div id="graphics-menu" class="menu-screen" style="display: none;">
+        <h2 class="sub-title">GRAPHICS</h2>
+        <div class="settings-group">
+            <label>Show Candles</label>
+            <input type="checkbox" id="candles-toggle" checked>
+        </div>
+        <div class="settings-group">
+            <label>Show Error Display</label>
+            <input type="checkbox" id="errors-toggle" checked>
+        </div>
+        <div class="menu-options" style="margin-top: 1.5rem;">
+            <button class="menu-btn back-btn" data-target="settings">BACK</button>
+        </div>
+    </div>
+
+    <!-- Drastic Measures Menu -->
+    <div id="drastic-measures-menu" class="menu-screen" style="display: none;">
+        <h2 class="sub-title danger-text">DRASTIC MEASURES</h2>
+        <p style="color: #a0927e; margin-bottom: 2rem; max-width: 400px; text-align: center;">
+            This will permanently erase all characters, high scores, and persistent settings. There is no undo.
+        </p>
+        <div class="menu-options" style="margin-top: 1.5rem;">
+            <button id="clear-data-btn" class="menu-btn danger">RESET ALL DATA</button>
+            <button class="menu-btn back-btn" data-target="settings">CANCEL</button>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="menu-screen" style="display: none;">
+        <h2 class="danger-text">MAGE DEFEATED</h2>
+        <div class="run-stats">
+            <p>Rooms Cleared: <span id="final-rooms">0</span></p>
+            <p>Words Spelled: <span id="final-words">0</span></p>
+        </div>
+        <button id="restart-btn" class="menu-btn primary">TRY AGAIN</button>
+        <button class="menu-btn back-btn">MAIN MENU</button>
+    </div>
+
+    <!-- Bug Report Modal -->
+    <div id="bug-report-modal" class="menu-screen" style="display: none;">
+        <div class="bug-content">
+            <h2 class="sub-title">REPORT A PROBLEM</h2>
+            <p style="color: #a0927e; margin-bottom: 20px;">Your technical game data will be attached automatically.</p>
+
+            <div class="input-group">
+                <label>What happened?</label>
+                <textarea id="bug-description" placeholder="Describe the bug or problem..." rows="5"></textarea>
+            </div>
+
+            <div id="debug-data-preview"
+                style="display:none; font-family: monospace; font-size: 0.7rem; background: rgba(0,0,0,0.4); padding: 10px; margin-bottom: 20px; color: #888; border: 1px solid #333; max-height: 100px; overflow-y: auto;">
+                <!-- Debug data preview populated by JS -->
+            </div>
+
+            <div class="menu-options">
+                <button id="submit-bug-btn" class="menu-btn primary">SEND REPORT</button>
+                <button id="close-bug-btn" class="menu-btn">CANCEL</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="game-canvas"></canvas>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registered', reg))
+                    .catch(err => console.error('Service Worker registration failed', err));
+            });
+        }
+    </script>
+    <script src="WordLibrary.js"></script>
+    <script src="ChallengeManager.js"></script>
+    <script src="ItemData.js"></script>
+    <script src="ItemManager.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* ── Pause & Inventory Layout ─────────────────────────────────────────────── */
+#pause-menu {
+    justify-content: flex-end !important;
+    /* Align to bottom for maximum headroom */
+}
+
+.pause-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 2rem 2vh 2rem;
+    /* Minimize bottom gap for maximum overhead space */
+    max-width: 90vw;
+    transform: scale(0.9);
+    transform-origin: bottom center;
+}
+
+.pause-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid #333;
+    padding-left: 4rem;
+}
+
+#pause-menu .sub-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* ── Inventory & Equipment ────────────────────────────────────────────────── */
+.inv-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #444;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.inv-main-content {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.equipment-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.equip-mid {
+    display: flex;
+    gap: 1rem;
+}
+
+.equip-bot {
+    display: flex;
+    gap: 1rem;
+}
+
+.equip-slot {
+    width: 80px;
+    height: 80px;
+    background: #000;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #555;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.equip-slot:hover {
+    border-color: #ff8800;
+    background: rgba(40, 40, 40, 0.8);
+}
+
+.equip-slot.filled {
+    border-color: #666;
+    background: #1a1a1a;
+    color: #eee;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.inventory-view {
+    width: 440px;
+}
+
+.inventory-view h3,
+.equipment-view h3,
+.forge-container h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #ff8800;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+#inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(4, 40px);
+    gap: 4px;
+    margin-top: 1rem;
+}
+
+.inv-cell {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.inv-cell:hover {
+    border-color: #666;
+    background: rgba(30, 30, 30, 0.8);
+}
+
+.item-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#item-tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid #ffcc00;
+    padding: 1rem;
+    color: #fff;
+    z-index: 1000;
+    pointer-events: none;
+    max-width: 250px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+#item-tooltip h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#item-tooltip .rarity {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#item-tooltip .stats {
+    color: #44ff44;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#item-tooltip .desc {
+    font-style: italic;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* ── Character Stats View ────────────────────────────────────────────────── */
+#char-stats-view {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#char-stats-view h3 {
+    grid-column: 1 / -1;
+    margin: 0 0 0.5rem 0 !important;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    padding: 0.5rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: help;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+
+.stat-row:hover {
+    background: rgba(255, 136, 0, 0.1);
+    border-color: rgba(255, 136, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+.stat-label {
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+.stat-value {
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    text-align: center;
+    min-width: 2.2rem;
+}

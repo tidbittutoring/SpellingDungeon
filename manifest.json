@@ -1,0 +1,16 @@
+{
+  "name": "Spelling Dungeon",
+  "short_name": "SpellDun",
+  "description": "A 3D spelling adventure through an ancient dungeon.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#020202",
+  "theme_color": "#00d4ff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
