@@ -44,9 +44,23 @@
 
         <div id="tool-bar">
             <button id="reveal-btn" class="tool-btn">Reveal (10 Ink)</button>
+            <div id="spell-label">📜 Spells</div>
             <div id="ability-bar"></div>
-            <button id="inv-toggle-btn" title="Inventory (ESC)">🎒</button>
+            <button id="inv-toggle-btn" title="Inventory (ESC)">🎒 Inventory</button>
         </div>
+
+        <!-- New Item Drop Overlay -->
+        <div id="item-drop-display" style="display: none;">
+            <div class="drop-card-content">
+                <div id="drop-sprite"></div>
+                <div class="drop-info">
+                    <div id="drop-name">NEW ITEM!</div>
+                    <div id="drop-rarity"></div>
+                    <div id="drop-stats"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- Pause Menu (Consolidated with Inventory) -->
@@ -218,12 +232,20 @@
     <div id="graphics-menu" class="menu-screen" style="display: none;">
         <h2 class="sub-title">GRAPHICS</h2>
         <div class="settings-group">
-            <label>Show Candles</label>
+            <label>Show Candles/Torches</label>
             <input type="checkbox" id="candles-toggle" checked>
+        </div>
+        <div class="settings-group">
+            <label>Head Bobbing</label>
+            <input type="checkbox" id="headbob-toggle" checked>
         </div>
         <div class="settings-group">
             <label>Show Error Display</label>
             <input type="checkbox" id="errors-toggle" checked>
+        </div>
+        <div class="settings-group">
+            <label>Performance Mode</label>
+            <input type="checkbox" id="performance-toggle">
         </div>
         <div class="menu-options" style="margin-top: 1.5rem;">
             <button class="menu-btn back-btn" data-target="settings">BACK</button>

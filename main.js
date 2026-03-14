@@ -131,7 +131,9 @@ class Persistence {
             volume: saved.volume ?? 80,
             wordList: saved.wordList ?? MageConfig.wordList,
             mode: saved.mode ?? MageConfig.mode,
-            preferredVoice: saved.preferredVoice ?? null
+            preferredVoice: saved.preferredVoice ?? null,
+            performanceMode: saved.performanceMode ?? true,
+            headBobEnabled: saved.headBobEnabled ?? true
         };
     }
 
@@ -197,8 +199,25 @@ const WALL_CARVINGS = [
     "Big_Speller_75 wuz hear",
     "Greatingz frum SpellMystro",
     "VoCab4QT, 1st to this room 2026",
-    "DorkKnob55 here 1864, on expeddishion"
+    "DorkKnob55 here 1864, on expeddishion",
+    "my teacher sent me down here",
+    "please... help",
+    "one more silent letter and I'm done for",
+    "We lost three people down here during the expedition of 1792",
+    "leave no trace",
+    "I can't remember which of these doors leads out",
+    "$P3LL3R_XTREME iz duh besst!"
 ];
+
+const TUTORIAL_TIPS = {
+    1: "Press ESC to open your inventory.",
+    2: "Use your ink to cast spells.",
+    3: "Spells are located at the bottom of the screen.",
+    4: "Compare and equip items on the inventory screen.",
+    5: "Every 5th room is a timed challenge!",
+    6: "9 items of the same tier can be combined together in the forge.",
+    7: "Missed letters do 1 damage each, and damage increases every 2 levels."
+};
 
 // ── UI Elements ────────────────────────────────────────────────────────────
 const SCREENS = {
@@ -236,20 +255,20 @@ camera.position.set(0, 2, 8);
 
 const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#game-canvas'),
-    antialias: true
+    antialias: !GlobalSettings.performanceMode
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setPixelRatio(GlobalSettings.performanceMode ? 1 : Math.min(window.devicePixelRatio, 2));
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6); // Increased ambient
 scene.add(ambientLight);
 
-const mainLight = new THREE.PointLight(0xff7733, 18, 40); // Slightly cooler/softer torchlight
+const mainLight = new THREE.PointLight(0xff7733, 18, 44); // Slightly cooler/softer torchlight, 10% radius increase
 mainLight.position.set(0, 5, 5);
 mainLight.castShadow = true; // Enable shadow potential
 scene.add(mainLight);
 
-const fillLight = new THREE.PointLight(0x556688, 6, 30); // Cool grey-blue fill light
+const fillLight = new THREE.PointLight(0x556688, 6, 33); // Cool grey-blue fill light, 10% radius increase
 fillLight.position.set(0, 5.5, -5); // Moved down to be below the new roof
 scene.add(fillLight);
 
@@ -268,7 +287,7 @@ function generateBrickTextures() {
     ctx.fillRect(0, 0, 512, 512);
 
     // Stone Grit & Noise
-    for (let i = 0; i < 30000; i++) {
+    for (let i = 0; i < 5000; i++) {
         const x = Math.random() * 512;
         const y = Math.random() * 512;
         const shade = Math.random() * 40;
@@ -302,7 +321,7 @@ function generateBrickTextures() {
     bctx.fillRect(0, 0, 512, 512);
 
     // Deep pits for bump map
-    for (let i = 0; i < 30000; i++) {
+    for (let i = 0; i < 5000; i++) {
         const x = Math.random() * 512;
         const y = Math.random() * 512;
         const shade = Math.random() * 100;
@@ -341,7 +360,7 @@ function generateWordBrickTextures() {
     ctx.fillRect(0, 0, 512, 512);
 
     // Stone Grit & Noise (increased count for rougher look)
-    for (let i = 0; i < 40000; i++) {
+    for (let i = 0; i < 5000; i++) {
         const x = Math.random() * 512;
         const y = Math.random() * 512;
         const shade = Math.random() * 50;
@@ -375,7 +394,7 @@ function generateWordBrickTextures() {
     bctx.fillRect(0, 0, 512, 512);
 
     // Deep pits for bump map
-    for (let i = 0; i < 40000; i++) {
+    for (let i = 0; i < 5000; i++) {
         const x = Math.random() * 512;
         const y = Math.random() * 512;
         const shade = Math.random() * 120;
@@ -414,7 +433,7 @@ function generateDoorTexture() {
     ctx.fillRect(0, 0, 512, 1024);
 
     // Stone Grit
-    for (let i = 0; i < 30000; i++) {
+    for (let i = 0; i < 5000; i++) {
         const x = Math.random() * 512;
         const y = Math.random() * 1024;
         const gray = 20 + Math.random() * 30;
@@ -447,7 +466,7 @@ function generateDoorTexture() {
     bctx.fillStyle = '#888888';
     bctx.fillRect(0, 0, 512, 1024);
 
-    for (let i = 0; i < 40000; i++) {
+    for (let i = 0; i < 5000; i++) {
         const x = Math.random() * 512;
         const y = Math.random() * 1024;
         const shade = Math.random() * 80;
@@ -619,7 +638,7 @@ function generateFloorTexture(cfg) {
 
             // Grit & Texture within slab
             ctx.globalAlpha = cfg.gritAlpha || 0.3;
-            for (let i = 0; i < 15000; i++) {
+            for (let i = 0; i < 4000; i++) {
                 const px = x + gutter + Math.random() * (slabW - gutter * 2);
                 const py = y + gutter + Math.random() * (slabH - gutter * 2);
                 const s = Math.random() * (cfg.gritRange || 40);
@@ -663,7 +682,7 @@ function generateFloorTexture(cfg) {
     bctx.fillRect(0, h / 2 - gutter / 2, w, gutter);
 
     // Surface noise for bump
-    for (let i = 0; i < 20000; i++) {
+    for (let i = 0; i < 4000; i++) {
         const bx = Math.random() * w, by = Math.random() * h;
         const bs = Math.random() * 60;
         bctx.fillStyle = `rgb(${bs},${bs},${bs})`;
@@ -683,7 +702,7 @@ const ROOM_SKINS = [
         wordBrick: { base: '#353638', grit: [60, 62, 65], gritAlpha: 0.4, gritCount: 40000, crackColor: '#222224', crackWidth: 2, crackCount: 80, crackSegs: 6, crackSpread: 60, bumpCrack: '#111111', bumpCrackW: 4 },
         door: { base: '#2a2a2c', grit: [18, 18, 18], gritRange: 25, crackColor: '#101012', crackWidth: 3, crackCount: 8, crackSegs: 2, crackSpread: 200, bumpCrack: '#282828', bumpCrackW: 6 },
         mat: { brickColor: 0x6b7a88, wordColor: 0x8a9098, doorColor: 0x6a6a6e, brickRough: 0.95, brickMetal: 0.05, bumpScale: 0.1 },
-        atmos: { fog: 0x030405, mainLight: 0xcc8844, mainInt: 14, fillLight: 0x3a4455, fillInt: 4, flame: 0xdd9944, candleLight: 0xcc8833 },
+        atmos: { fog: 0x040507, mainLight: 0xcc8844, mainInt: 21, fillLight: 0x3a4455, fillInt: 7.5, flame: 0xdd9944, candleLight: 0xcc8833 },
     },
     { // Catacombs — deep ochre bone, many small pits, dusty
         name: 'Catacombs',
@@ -691,7 +710,7 @@ const ROOM_SKINS = [
         wordBrick: { base: '#3a3428', grit: [70, 62, 50], gritAlpha: 0.45, gritCount: 45000, gritSize: 3, crackColor: '#28221a', crackWidth: 1.5, crackCount: 90, crackSegs: 5, crackSpread: 40, bumpCrack: '#140c04', bumpCrackW: 3 },
         door: { base: '#302818', grit: [25, 20, 14], gritRange: 22, crackColor: '#161008', crackWidth: 4, crackCount: 6, crackSegs: 2, crackSpread: 180, bumpCrack: '#1c1408', bumpCrackW: 5 },
         mat: { brickColor: 0x8a7558, wordColor: 0x9a8868, doorColor: 0x786548, brickRough: 0.98, brickMetal: 0.02, bumpScale: 0.15 },
-        atmos: { fog: 0x060503, mainLight: 0xcc8833, mainInt: 13, fillLight: 0x4a3d2e, fillInt: 4, flame: 0xddaa55, candleLight: 0xbb8822 },
+        atmos: { fog: 0x060503, mainLight: 0xcc8833, mainInt: 14.3, fillLight: 0x4a3d2e, fillInt: 2, flame: 0xddaa55, candleLight: 0xbb8822 },
     },
     { // Frozen Cavern — muted steel-blue, smooth with ice fractures
         name: 'Frozen Cavern',
@@ -707,7 +726,7 @@ const ROOM_SKINS = [
         wordBrick: { base: '#382018', grit: [72, 40, 28], gritAlpha: 0.45, gritCount: 40000, gritSize: 3, crackColor: '#24120c', crackWidth: 2.5, crackCount: 100, crackSegs: 7, crackSpread: 50, bumpCrack: '#140606', bumpCrackW: 5, veins: { color: '#cc6622', width: 1.5, alpha: 0.2, count: 8, segs: 10, spread: 40 } },
         door: { base: '#2c140c', grit: [32, 16, 12], gritRange: 25, crackColor: '#120606', crackWidth: 4, crackCount: 10, crackSegs: 3, crackSpread: 150, bumpCrack: '#180606', bumpCrackW: 6, veins: { color: '#993300', width: 3, alpha: 0.18, count: 5, segs: 6, spread: 120 } },
         mat: { brickColor: 0x7a4a38, wordColor: 0x8a5a48, doorColor: 0x6a4030, brickRough: 0.92, brickMetal: 0.08, bumpScale: 0.12 },
-        atmos: { fog: 0x060303, mainLight: 0xbb5522, mainInt: 15, fillLight: 0x551a0a, fillInt: 3, flame: 0xcc5500, candleLight: 0xaa4400 },
+        atmos: { fog: 0x020202, mainLight: 0xc4a484, mainInt: 16.5, fillLight: 0x222222, fillInt: 1, flame: 0xdd9944, candleLight: 0xcc8833 },
     },
     { // Overgrown Ruins — dark olive, moss patches, earthy green
         name: 'Overgrown Ruins',
@@ -756,11 +775,16 @@ let floorMat = currentSkin.floorMat;
 
 function applyRoomSkin(roomNum = currentRoom) {
     if (challenger && challenger.currentMode === ChallengeMode.ADVENTURE) {
-        const currentLevel = Math.max(1, Math.min(10, Math.ceil(roomNum / 5)));
-        const diffLevel = Math.max(1, Math.min(5, Math.ceil(currentLevel / 2)));
-        // 1=Classic, 2=Catacombs, 3=Overgrown, 4=Frozen, 5=Infernal
-        const skinOrder = [0, 1, 4, 2, 3];
-        currentSkin = skinMaterialSets[skinOrder[diffLevel - 1]];
+        const currentLevel = Math.max(1, Math.ceil(roomNum / 5));
+        let skinIndex = 0;
+        if (currentLevel >= 5) {
+            skinIndex = 3; // Infernal (Neutral darkness)
+        } else if (currentLevel >= 3) {
+            skinIndex = 1; // Catacombs
+        } else {
+            skinIndex = 0; // Classic
+        }
+        currentSkin = skinMaterialSets[skinIndex];
     } else {
         currentSkin = skinMaterialSets[Math.floor(Math.random() * skinMaterialSets.length)];
     }
@@ -1130,11 +1154,13 @@ function enterRoomSequence(skipWalk = false) {
         document.getElementById('boss-timer-container').style.display = 'none';
 
         if (challenger.currentMode === ChallengeMode.ADVENTURE) {
+            const isBossRoom = (currentRoom % 5 === 0);
             // Boss Sequence Evaluation (every 5 rooms)
-            if (currentRoom % 5 === 0) {
+            if (isBossRoom) {
                 bossActive = true;
                 bossWordsCompleted = 0;
-                bossTargetWords = Math.min(10, Math.ceil(currentRoom / 5)) + 2; // Level 1 (Rm 5) = 3 words
+                const currentLvl = Math.max(1, Math.ceil(currentRoom / 5));
+                bossTargetWords = currentLvl + 1;
 
                 animateCamera(null, Math.PI / 2, 800, () => {
                     startNewChallenge();
@@ -1159,16 +1185,18 @@ function enterRoomSequence(skipWalk = false) {
 
             // Probability Rolls for non-boss rooms
             const roll = Math.random();
-            if (roll < 0.05) {
+            const canHaveRandomEvent = currentRoom > 4; // Force regular spelling for rooms 1-4
+
+            if (canHaveRandomEvent && roll < 0.05) {
                 // 5% Chest
                 showChestRoom();
-            } else if (roll < 0.10) {
+            } else if (canHaveRandomEvent && roll < 0.10) {
                 // 5% MCQ
                 animateCamera(null, -Math.PI / 2, 800, () => {
                     showMCQ();
                 });
             } else {
-                // 90% Normal Spelling
+                // 90% Spelling (or forced for early rooms)
                 animateCamera(null, Math.PI / 2, 800, () => {
                     startNewChallenge();
                 });
@@ -1176,12 +1204,14 @@ function enterRoomSequence(skipWalk = false) {
         } else {
             // Classic mode code
             const roll = Math.random();
-            if (roll < 0.05) {
+            const canHaveRandomEvent = currentRoom > 4;
+
+            if (canHaveRandomEvent && roll < 0.05) {
                 // 5% MCQ
                 animateCamera(null, -Math.PI / 2, 800, () => {
                     showMCQ();
                 });
-            } else if (roll < 0.10) {
+            } else if (canHaveRandomEvent && roll < 0.10) {
                 // 5% Chance for Treasure Chest
                 showChestRoom();
             } else {
@@ -1302,9 +1332,9 @@ function startNewChallenge(forcedWord = null) {
     // Roll for item spells at the start of every challenge
     activeSpells = items.getTriggeredSpells();
     const stats = items.getTotalStats();
-    console.log(`--- CHALLENGE START | Chances: First:${stats.first_letter_chance}% Last:${stats.last_letter_chance}% Rand:${stats.random_letter_chance}% ---`);
+    console.log(`--- CHALLENGE START | Chances: Foresight:${stats.first_letter_chance}% Conclusion:${stats.last_letter_chance}% Chaos:${stats.random_letter_chance}% Echoes:${stats.double_letter_chance}% ---`);
     if (activeSpells.length > 0) {
-        console.log("!!! Spells triggered:", activeSpells);
+        console.log("!!! Spells triggered for this word:", activeSpells);
     }
 
     // RESTORE HUD
@@ -1402,16 +1432,16 @@ function updateUI() {
 
                 // Dynamic depth darkness (Starts lighter, gets darker)
                 const depthRatio = Math.min(Math.max(currentLevel - 1, 0) / 9, 1);
-                ambientLight.intensity = 0.8 - (depthRatio * 0.4);
-                mainLight.intensity = 25 - (depthRatio * 15);
-                fillLight.intensity = 8 - (depthRatio * 4);
+                ambientLight.intensity = 1.0 - (depthRatio * 0.4); // Start 25% brighter (0.8 -> 1.0)
+                mainLight.intensity = 31.25 - (depthRatio * 15);   // Start 25% brighter (25 -> 31.25)
+                fillLight.intensity = 10 - (depthRatio * 4);       // Start 25% brighter (8 -> 10)
             }
         } else {
             dungeonMetrics.style.display = 'none';
             // Reset lighting
-            ambientLight.intensity = 0.8;
-            mainLight.intensity = 25;
-            fillLight.intensity = 8;
+            ambientLight.intensity = 1.0;
+            mainLight.intensity = 31.25;
+            fillLight.intensity = 10;
         }
     }
 
@@ -1520,6 +1550,7 @@ function onSuccess(fastTrack = false) {
     if (bossTimerId) { clearInterval(bossTimerId); bossTimerId = null; }
 
     score++;
+    applyRegen();
 
     if (bossActive) {
         bossWordsCompleted++;
@@ -1598,6 +1629,9 @@ function onSuccess(fastTrack = false) {
         const nextEntranceZ = startZ - 8;
         spawnRoom(nextEntranceZ - 10, currentRoom + 1);
 
+        // Force compile/render to GPU synchronously
+        renderer.render(scene, camera);
+
         // Turn forward
         animateCamera(null, 0, 800, () => {
             console.log("onSuccess: Camera animation done, opening door and GLIDING...");
@@ -1623,6 +1657,22 @@ function onSuccess(fastTrack = false) {
         // Reduced from 2000ms to 800ms for better flow
         setTimeout(startTransition, 800);
     }
+}
+
+function applyRegen() {
+    const stats = items.getTotalStats();
+    const maxHP = baseMaxHealth + stats.hp;
+    const maxInk = baseMaxInk + stats.ink;
+
+    // Inherent +1 regen
+    const totalHPRegen = (stats.hp_regen || 0) + 1;
+    const totalInkRegen = (stats.ink_regen || 0) + 1;
+
+    health = Math.min(maxHP, health + totalHPRegen);
+    createRisingText(`+${totalHPRegen}`, "#ff4444", "hp-ampule");
+
+    ink = Math.min(maxInk, ink + totalInkRegen);
+    createRisingText(`+${totalInkRegen}`, "#00d4ff", "ink-ampule");
 }
 
 function slideDoorOpen(door = dungeonDoor) {
@@ -1675,19 +1725,6 @@ function completeRoom() {
     currentRoom++;
     roomProgress = 0;
     library.currentTier = Math.min(3, library.currentTier + 1);
-
-    const stats = items.getTotalStats();
-    const maxHP = baseMaxHealth + stats.hp;
-    const maxInk = baseMaxInk + stats.ink;
-
-    if (stats.hp_regen > 0) {
-        health = Math.min(maxHP, health + stats.hp_regen);
-        createRisingText(`+${stats.hp_regen}`, "#ff4444", "hp-ampule");
-    }
-    if (stats.ink_regen > 0) {
-        ink = Math.min(maxInk, ink + stats.ink_regen);
-        createRisingText(`+${stats.ink_regen}`, "#00d4ff", "ink-ampule");
-    }
 
     // Skin atmosphere is applied by applyRoomSkin() in spawnRoom()
 }
@@ -1963,11 +2000,25 @@ function disposeHierarchy(obj) {
         if (node.isMesh || node.isLine || node.isSprite) {
             if (node.geometry) node.geometry.dispose();
             if (node.material) {
-                if (Array.isArray(node.material)) {
-                    node.material.forEach(m => m.dispose());
-                } else {
-                    node.material.dispose();
-                }
+                const materials = Array.isArray(node.material) ? node.material : [node.material];
+                materials.forEach(m => {
+                    // Dispose of potential textures
+                    if (m.map) m.map.dispose();
+                    if (m.lightMap) m.lightMap.dispose();
+                    if (m.bumpMap) m.bumpMap.dispose();
+                    if (m.normalMap) m.normalMap.dispose();
+                    if (m.specularMap) m.specularMap.dispose();
+                    if (m.envMap) m.envMap.dispose();
+                    if (m.alphaMap) m.alphaMap.dispose();
+                    if (m.aoMap) m.aoMap.dispose();
+                    if (m.displacementMap) m.displacementMap.dispose();
+                    if (m.emissiveMap) m.emissiveMap.dispose();
+                    if (m.gradientMap) m.gradientMap.dispose();
+                    if (m.metalnessMap) m.metalnessMap.dispose();
+                    if (m.roughnessMap) m.roughnessMap.dispose();
+
+                    m.dispose();
+                });
             }
         }
     });
@@ -2014,7 +2065,7 @@ function createCandle(x, y, z, roomNum = currentRoom) {
     flame.position.y = 0.55;
     candleGroup.add(flame);
 
-    const light = new THREE.PointLight(currentSkin.atmos.candleLight, 0.8, 5.5); // Increased radius by 10% (5 -> 5.5)
+    const light = new THREE.PointLight(currentSkin.atmos.candleLight, 0.8, 6.05); // Increased radius by 10% (5.5 -> 6.05)
     light.position.set(0, 0.55, 0);
     candleGroup.add(light);
 
@@ -2103,7 +2154,7 @@ function createTorch(x, y, z, roomNum, type = 'wall') {
     torchGroup.add(flame);
 
     // Light
-    const light = new THREE.PointLight(currentSkin.atmos.flame, 1.2, 14.4); // Increased radius by 20% (12 -> 14.4)
+    const light = new THREE.PointLight(currentSkin.atmos.flame, 1.2, 15.84); // Increased radius by 10% (14.4 -> 15.84)
     light.position.set(0, flameY, flameZ);
     torchGroup.add(light);
 
@@ -2368,12 +2419,11 @@ function createHay(x, z, roomNum, densityScale = 1.0, radiusOverride = null) {
     const instancedMesh = new THREE.InstancedMesh(strandGeo, hayMat, count);
     instancedMesh.position.set(x, 0.01, z);
     instancedMesh.userData.roomNumber = roomNum;
-
     // Randomly rotate the entire clump group
     instancedMesh.rotation.y = Math.random() * Math.PI * 2;
 
     const dummy = new THREE.Object3D();
-    const baseColor = new THREE.Color(0x514a2c); // Even dirtier straw (Hay V7)
+    const baseColor = new THREE.Color(0x443d26); // Base color - middle ground between gold and dark brown
     const tempColor = new THREE.Color();
     const radius = radiusOverride || (1.2 * densityScale);
 
@@ -2408,6 +2458,50 @@ function createHay(x, z, roomNum, densityScale = 1.0, radiusOverride = null) {
     }
 
     dungeonGroup.add(instancedMesh);
+}
+
+function createHayBundle(x, y, z, roomNum) {
+    const bundleGroup = new THREE.Group();
+    bundleGroup.position.set(x, y + 0.4, z); // Raised to 0.4 half-height
+    bundleGroup.userData.roomNumber = roomNum;
+
+    const hayColor = 0x9c8459; // Lightened from 0x443d26 for better visibility
+    const hayMat = new THREE.MeshStandardMaterial({ color: hayColor, roughness: 1.0 });
+    const twineMat = new THREE.MeshStandardMaterial({ color: 0x1a0d00, roughness: 0.9, metalness: 0.1 });
+
+    // Main bundle body - chunkier (0.35 radius, 0.8 height)
+    const bundleGeo = new THREE.CylinderGeometry(0.35, 0.35, 0.8, 8);
+    const bundle = new THREE.Mesh(bundleGeo, hayMat);
+    bundleGroup.add(bundle);
+
+    // Twine ring - darker and more visible
+    const twineGeo = new THREE.TorusGeometry(0.36, 0.03, 6, 12);
+    const twine = new THREE.Mesh(twineGeo, twineMat);
+    twine.rotation.x = Math.PI / 2;
+    bundleGroup.add(twine);
+
+    // Random strands for detail - more count for bulkier look
+    for (let i = 0; i < 12; i++) {
+        const strandGeo = new THREE.BoxGeometry(0.02, 0.008, 0.5);
+        const strand = new THREE.Mesh(strandGeo, hayMat);
+        strand.position.set(
+            (Math.random() - 0.5) * 0.6,
+            (Math.random() - 0.5) * 0.7,
+            (Math.random() - 0.5) * 0.6
+        );
+        strand.rotation.set(Math.random() * 3, Math.random() * 3, Math.random() * 3);
+        bundleGroup.add(strand);
+    }
+
+    // Spawning variation
+    const isFallen = Math.random() > 0.5;
+    if (isFallen) {
+        bundleGroup.rotation.z = Math.PI / 2;
+        bundleGroup.position.y = y + 0.25;
+    }
+    bundleGroup.rotation.y = Math.random() * Math.PI * 2;
+
+    dungeonGroup.add(bundleGroup);
 }
 
 function createHangingChain(x, y, z, roomNum, side) {
@@ -2813,11 +2907,12 @@ function createRoom(zOffset, roomNum = currentRoom) {
     floorMesh.position.set(0, 0, zOffset - 7.5);
     roomGroup.add(floorMesh);
 
-    // Ceiling
-    const ceilGeo = new THREE.PlaneGeometry(10, 15);
+    // Ceiling (Use Box instead of Plane to seal gaps caused by brick jitter)
+    const ceilGeo = new THREE.BoxGeometry(14, 0.5, 15);
     const ceilMesh = new THREE.Mesh(ceilGeo, brickMat);
-    ceilMesh.rotation.x = Math.PI / 2; // Face down
-    ceilMesh.position.set(0, 6, zOffset - 7.5);
+    // Center at y=6.2 so the bottom face is at 6.2 - 0.25 = 5.95
+    // This ensures it overlaps the top row of wall bricks (max height ~6.025)
+    ceilMesh.position.set(0, 6.2, zOffset - 7.5);
     roomGroup.add(ceilMesh);
 
     for (let row = 0; row < 6; row++) {
@@ -2872,6 +2967,80 @@ function createRoom(zOffset, roomNum = currentRoom) {
         roomGroup.add(carving);
     }
 
+    // Tutorial Tips: Guaranteed for specific early rooms
+    if (TUTORIAL_TIPS[roomNum]) {
+        const msg = TUTORIAL_TIPS[roomNum];
+        // Now on the left wall to be in player's direct focus
+        const side = -1;
+        const zPos = zOffset - 3.2; // Moved deeper into room (was -2.2)
+        const xPos = side * 4.40;
+        const yPos = 1.02; // Moved to floor (was 5.2)
+
+        const blackboardGroup = new THREE.Group();
+        blackboardGroup.position.set(xPos, yPos, zPos);
+        blackboardGroup.rotation.y = Math.PI / 2;
+        blackboardGroup.userData.roomNumber = roomNum;
+
+        // Wooden Frame (Classic wood)
+        const frameMat = new THREE.MeshLambertMaterial({ color: 0x4d3319 });
+        const thickness = 0.12;
+        const width = 3.2; // Shrunk further
+        const height = 1.8; // Shrunk further
+
+        // Top Frame
+        const topFrame = new THREE.Mesh(new THREE.BoxGeometry(width + thickness, thickness, thickness), frameMat);
+        topFrame.position.y = height / 2 + thickness / 2;
+        blackboardGroup.add(topFrame);
+
+        // Bottom Ledge (Thicker)
+        const bottomLedge = new THREE.Mesh(new THREE.BoxGeometry(width + thickness, thickness, thickness * 2.5), frameMat);
+        bottomLedge.position.y = -(height / 2 + thickness / 2);
+        bottomLedge.position.z = thickness * 0.75;
+        blackboardGroup.add(bottomLedge);
+
+        // Left Frame
+        const leftFrame = new THREE.Mesh(new THREE.BoxGeometry(thickness, height, thickness), frameMat);
+        leftFrame.position.x = -(width / 2 + thickness / 2);
+        blackboardGroup.add(leftFrame);
+
+        // Right Frame
+        const rightFrame = new THREE.Mesh(new THREE.BoxGeometry(thickness, height, thickness), frameMat);
+        rightFrame.position.x = (width / 2 + thickness / 2);
+        blackboardGroup.add(rightFrame);
+
+        // Accessories on Ledge
+        // Piece of Chalk
+        const chalkGeo = new THREE.CylinderGeometry(0.015, 0.015, 0.1, 8);
+        const chalkMat = new THREE.MeshLambertMaterial({ color: 0xffffff });
+        const chalk = new THREE.Mesh(chalkGeo, chalkMat);
+        chalk.rotation.z = Math.PI / 2;
+        chalk.rotation.x = Math.PI / 4;
+        chalk.position.set(0.4, -(height / 2), thickness * 1.5);
+        blackboardGroup.add(chalk);
+
+        // Eraser
+        const eraserGeo = new THREE.BoxGeometry(0.2, 0.08, 0.1);
+        const eraserMat = new THREE.MeshLambertMaterial({ color: 0x666666 });
+        const eraser = new THREE.Mesh(eraserGeo, eraserMat);
+        eraser.position.set(-0.4, -(height / 2), thickness * 1.5);
+        blackboardGroup.add(eraser);
+
+        // Blackboard Surface
+        const boardGeo = new THREE.PlaneGeometry(width, height);
+        const boardMat = new THREE.MeshBasicMaterial({
+            map: getChalkTextTexture(msg),
+            transparent: true,
+            side: THREE.DoubleSide
+        });
+        const boardMesh = new THREE.Mesh(boardGeo, boardMat);
+        blackboardGroup.add(boardMesh);
+
+        // Dedicated subtle glow light
+
+
+        roomGroup.add(blackboardGroup);
+    }
+
     // Torches: Randomized placement (Wall, Floor, Ceiling)
     // 1 max per room (Reduced spawn rate significantly)
     const spawnTorch = Math.random() < 0.6; // 60% chance to have ANY torch
@@ -2887,9 +3056,9 @@ function createRoom(zOffset, roomNum = currentRoom) {
             const sideX = (Math.random() < 0.5) ? 4.2 : -4.2;
             createTorch(sideX, 0, z, roomNum, 'floor');
         } else {
-            // Ceiling Torch
+            // Ceiling Torch - Adjusted down to 5.95 to match new ceiling bottom
             const x = (Math.random() - 0.5) * 6;
-            createTorch(x, 6, z, roomNum, 'ceiling');
+            createTorch(x, 5.95, z, roomNum, 'ceiling');
         }
     }
 
@@ -2916,40 +3085,50 @@ function createRoom(zOffset, roomNum = currentRoom) {
         }
 
         for (let i = 0; i < clumpCount; i++) {
-            const x = (Math.random() - 0.5) * 8;
+            const x = (Math.random() > 0.5 ? 1 : -1) * (1.5 + Math.random() * 2.5); // Clear central path
             const z = zOffset - 2 - Math.random() * 11;
             const density = baseDensity * (0.8 + Math.random() * 0.4);
             const radius = spreadRadius * (0.7 + Math.random() * 0.6);
             // Removed forbidden zone check - Hay is fine to overlap everything!
             createHay(x, z, roomNum, density, radius);
         }
+
+        // 10% chance of spawning 1-2 hay bundles in rooms with ground hay
+        if (Math.random() < 0.1) {
+            const count = 1 + Math.floor(Math.random() * 2);
+            for (let i = 0; i < count; i++) {
+                const bx = (Math.random() > 0.5 ? 1 : -1) * (1.5 + Math.random() * 2.5); // Clear central path
+                const bz = zOffset - 2 - Math.random() * 11;
+                createHayBundle(bx, 0, bz, roomNum);
+            }
+        }
     }
 
-    // Books & Scrolls: 10% chance
-    if (Math.random() < 0.1) {
+    // Books & Scrolls: 15% chance
+    if (Math.random() < 0.15) {
         const x = (Math.random() > 0.5 ? 4.2 : -4.2);
         const z = zOffset - 2 - Math.random() * 11;
         if (Math.random() > 0.5) createBookPile(x, 0, z, roomNum);
         else createScrollPile(x, 0, z, roomNum);
     }
 
-    // Brooms & Mops: 10% chance
-    if (Math.random() < 0.1) {
+    // Brooms & Mops: 15% chance
+    if (Math.random() < 0.15) {
         const sideX = (Math.random() > 0.5 ? 4.50 : -4.50);
         const z = zOffset - 2 - Math.random() * 11;
         if (Math.random() > 0.5) createBroom(sideX, 0, z, roomNum);
         else createMop(sideX, 0, z, roomNum);
     }
 
-    // Wooden Bucket: 10% chance
-    if (Math.random() < 0.1) {
+    // Wooden Bucket: 15% chance
+    if (Math.random() < 0.15) {
         const x = (Math.random() > 0.5 ? 4.2 : -4.2);
         const z = zOffset - 2 - Math.random() * 11;
         createWoodenBucket(x, 0, z, roomNum);
     }
 
-    // Hanging Chains: 10% chance
-    if (Math.random() < 0.1) {
+    // Hanging Chains: 15% chance
+    if (Math.random() < 0.15) {
         const sideX = (Math.random() > 0.5 ? 5.4 : -5.4);
         const side = sideX > 0 ? 1 : -1;
         const z = zOffset - 2 - Math.random() * 11;
@@ -2957,8 +3136,8 @@ function createRoom(zOffset, roomNum = currentRoom) {
         createHangingChain(sideX, y, z, roomNum, side);
     }
 
-    // Spider Webs: 10% chance
-    if (Math.random() < 0.1) {
+    // Spider Webs: 15% chance
+    if (Math.random() < 0.15) {
         const side = Math.random() > 0.5 ? -4.5 : 4.5;
         const z = zOffset - 2 - Math.random() * 11;
         const y = Math.random() > 0.5 ? 5.5 : 0.5;
@@ -2966,7 +3145,7 @@ function createRoom(zOffset, roomNum = currentRoom) {
     }
 
     [-5.4, 5.4].forEach(sideX => {
-        if (Math.random() < 0.1) {
+        if (Math.random() < 0.15) {
             const side = sideX > 0 ? 1 : -1;
             const z = zOffset - 2 - Math.random() * 11;
             createShackles(sideX, 4.5, z, roomNum, side);
@@ -3087,6 +3266,69 @@ function getErrorListTexture(letters) {
     // Let's just string them and wrap if needed.
     const text = letters.join(' ');
     ctx.fillText(text, 64, 64);
+
+    return new THREE.CanvasTexture(canvas);
+}
+
+function getChalkTextTexture(text) {
+    if (!text) text = "";
+    const canvas = document.createElement('canvas');
+    canvas.width = 1024;
+    canvas.height = 512;
+    const ctx = canvas.getContext('2d');
+
+    // Drawer chalkboard background: Pure Black
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+    let fontSize = 70;
+    const maxWidth = canvas.width - 100;
+    const maxHeight = canvas.height - 100;
+    let lines = [];
+    let totalHeight = 0;
+
+    // Use a more "handwritten" looking font if available, fallback to Courier
+    while (fontSize > 20) {
+        ctx.font = `italic ${fontSize}px 'Courier New', monospace`;
+        const words = text.split(' ');
+        lines = [];
+        let currentLine = '';
+
+        for (let n = 0; n < words.length; n++) {
+            let testLine = currentLine + words[n] + ' ';
+            let metrics = ctx.measureText(testLine);
+            if (metrics.width > maxWidth && n > 0) {
+                lines.push(currentLine);
+                currentLine = words[n] + ' ';
+            } else {
+                currentLine = testLine;
+            }
+        }
+        lines.push(currentLine);
+        const lineHeight = fontSize * 1.3;
+        totalHeight = lines.length * lineHeight;
+        if (totalHeight <= maxHeight) break;
+        fontSize -= 5;
+    }
+
+    ctx.font = `italic ${fontSize}px 'Courier New', monospace`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    const lineHeight = fontSize * 1.3;
+    lines.forEach((l, i) => {
+        const x = canvas.width / 2;
+        const y = (canvas.height / 2) - (totalHeight / 2) + (i + 0.5) * lineHeight;
+
+        // Render with "chalk" jitter for hand-drawn feel
+        ctx.fillStyle = "rgba(255, 255, 250, 0.9)";
+        ctx.fillText(l.trim(), x, y);
+
+        // Secondary pass for "depth/dust"
+        ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
+        ctx.fillText(l.trim(), x + 1.5, y + 1);
+    });
 
     return new THREE.CanvasTexture(canvas);
 }
@@ -3259,7 +3501,9 @@ function setupWordBricks(word, customX = null, silent = false, customZ = null) {
     });
     definitionMesh = new THREE.Mesh(defGeo, defMat);
     // Position slightly forward (xPos +/- 0.55) to avoid overlap issues
-    definitionMesh.position.set(xPos + (customX !== null ? -0.55 : 0.55), 0, camera.position.z);
+    // Offset further into the room (-2.0 units) if a tutorial tip is present to avoid overlap
+    const zOffsetForTip = TUTORIAL_TIPS[currentRoom] ? -2.0 : 0;
+    definitionMesh.position.set(xPos + (customX !== null ? -0.55 : 0.55), 0, camera.position.z + zOffsetForTip);
     definitionMesh.rotation.y = rotY;
     definitionMesh.visible = showDefinition;
     dungeonGroup.add(definitionMesh);
@@ -3314,12 +3558,15 @@ function evaluateGuess() {
     if (mistakes > 0) {
         createSpellBurst("#ff0000"); // Red burst for errors
 
-        let damage = mistakes;
+        const currentLvl = Math.max(1, Math.ceil(currentRoom / 5));
+        const damageMultiplier = Math.floor((currentLvl - 1) / 2) + 1;
+        let damage = mistakes * damageMultiplier;
+
         const totalArmor = Object.values(items.equipped).reduce((sum, item) => sum + (item?.stats?.armor || 0), 0);
         if (totalArmor > 0) {
             damage = Math.max(1, damage - totalArmor);
-            if (totalArmor > 0 && damage < mistakes) {
-                showToast(`Armor blocked ${mistakes - damage} DMG!`);
+            if (totalArmor > 0 && damage < mistakes * (currentLvl >= 4 ? 2 : 1)) {
+                showToast(`Armor blocked ${(mistakes * (currentLvl >= 4 ? 2 : 1)) - damage} DMG!`);
             }
         }
 
@@ -3395,6 +3642,60 @@ function showToast(text) {
     setTimeout(() => toast.remove(), 1850);
 }
 
+function showItemDrop(item, equipped = false) {
+    const display = document.getElementById('item-drop-display');
+    if (!display) return;
+
+    const rarityColor = (item.rarity && item.rarity.color) ? item.rarity.color : '#ffffff';
+    const rarityName = (item.rarity && item.rarity.name) ? item.rarity.name : 'NORMAL';
+    const statusText = equipped ? "EQUIPPED" : "FOUND";
+
+    let statsHtml = '';
+    const standardStats = ['hp', 'ink', 'hp_regen', 'ink_regen', 'armor', 'lockpick', 'item_find'];
+    const itemStats = item.stats || {};
+    standardStats.forEach(stat => {
+        const val = itemStats[stat] || 0;
+        if (val !== 0) {
+            statsHtml += `<div>+${val} ${stat.toUpperCase().replace('_', ' ')}</div>`;
+        }
+    });
+
+    display.innerHTML = `
+        <div class="drop-card-content" style="border-color: ${rarityColor}">
+            <div id="drop-sprite">${getItemIconHtml(item, 80)}</div>
+            <div id="drop-name" style="color: ${rarityColor}">${item.name}</div>
+            <div id="drop-rarity" style="color: ${rarityColor}">${rarityName} • ${statusText}</div>
+            <div id="drop-stats">
+                ${statsHtml}
+                ${item.ability ? `<div class="magic-stat">SPELL: ${item.ability.name}</div>` : ''}
+                ${Object.keys({
+        'first_letter_chance': 'Foresight',
+        'last_letter_chance': 'Conclusion',
+        'double_letter_chance': 'Echoes',
+        'random_letter_chance': 'Chaos'
+    }).map(stat => {
+        const chance = itemStats[stat] || 0;
+        return chance > 0 ? `<div class="magic-stat">PASSIVE: ${{
+            'first_letter_chance': 'Foresight',
+            'last_letter_chance': 'Conclusion',
+            'double_letter_chance': 'Echoes',
+            'random_letter_chance': 'Chaos'
+        }[stat]} (${chance}%)</div>` : '';
+    }).join('')}
+            </div>
+        </div>
+    `;
+
+    display.style.display = 'block';
+
+    // Clear after 5 seconds
+    if (display.dropTimer) clearTimeout(display.dropTimer);
+    display.dropTimer = setTimeout(() => {
+        display.style.display = 'none';
+        display.innerHTML = '';
+    }, 5000);
+}
+
 function createRisingText(text, color, elementId) {
     const el = document.getElementById(elementId);
     if (!el) return;
@@ -3431,7 +3732,7 @@ function initParticlePool() {
 initParticlePool();
 
 function createSpellBurst(style) {
-    const burstSize = 25;
+    const burstSize = GlobalSettings.performanceMode ? 12 : 25;
     const forward = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
     let count = 0;
 
@@ -3640,6 +3941,10 @@ function initSettingsUI() {
     if (errorToggle) errorToggle.checked = GlobalSettings.errorsEnabled;
     const volSlider = document.querySelector('#volume-slider');
     if (volSlider) volSlider.value = GlobalSettings.volume;
+    const perfToggle = document.querySelector('#performance-toggle');
+    if (perfToggle) perfToggle.checked = GlobalSettings.performanceMode;
+    const hbToggle = document.querySelector('#headbob-toggle');
+    if (hbToggle) hbToggle.checked = GlobalSettings.headBobEnabled;
     populateVoiceList();
 }
 
@@ -3662,6 +3967,25 @@ if (volSlider) {
         GlobalSettings.volume = val;
         challenger.volume = val / 100;
         saveGameData();
+    };
+}
+
+const perfToggle = document.getElementById('performance-toggle');
+if (perfToggle) {
+    perfToggle.onchange = (e) => {
+        GlobalSettings.performanceMode = e.target.checked;
+        saveGameData();
+
+        // Apply immediate changes
+        if (GlobalSettings.performanceMode) {
+            renderer.setPixelRatio(1);
+            if (renderer.capabilities.isWebGL2) {
+                // Cant easily disable antialias after creation in Three.js without recreating renderer
+                // But we can reduce pixel ratio which is a HUGE gain
+            }
+        } else {
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        }
     };
 }
 
@@ -3730,7 +4054,7 @@ if (forgeBtn) {
         // Collect real items to confirm they still exist
         const result = items.forgeItems(forgeSlots);
         if (result) {
-            showToast(`FORGED: ${result.name}!`);
+            showItemDrop(result, false);
             createSpellBurst(MageConfig.spellColor); // Visual flair
             clearForgeSlots();
 
@@ -4021,7 +4345,6 @@ function getItemIconSrc(typeOrBase) {
         'gambeson': 'icons/icon_gambeson.png',
         'notebook': 'icons/icon_notebook.png',
         'bracelet': 'icons/icon_bracelet.png',
-        'breastplate': 'icons/icon_breastplate.png',
         'monocle': 'icons/icon_monocle.png',
         'sweater': 'icons/icon_sweater.png',
         'crayons': 'icons/icon_crayons.png',
@@ -4033,12 +4356,13 @@ function getItemIconSrc(typeOrBase) {
         'earring': 'icons/icon_earring.png',
         'tophat': 'icons/icon_tophat.png',
         'cloak': 'icons/icon_cloak.png',
-        'quill': 'icons/icon_quill.png',
+        'quill': 'icons/icon_quill_fixed.png',
         'robe': 'icons/icon_robe.png',
-        'hood': 'icons/icon_cloak.png',
-        'veil': 'icons/icon_cloak.png',
+        'hood': 'icons/icon_hood.png',
+        'veil': 'icons/icon_veil.png',
         'bag': 'icons/icon_bag.png',
-        'pen': 'icons/icon_quill.png',
+        'pen': 'icons/icon_pen.png',
+        'calligraphy pen': 'icons/icon_quill_fixed.png',
         'brush': 'icons/icon_brush.png',
         'crown': 'icons/icon_crown.png',
         'compass': 'icons/icon_compass.png',
@@ -4053,7 +4377,15 @@ function getItemIconSrc(typeOrBase) {
         'circlet': 'icons/icon_circlet.png',
         'turban': 'icons/icon_turban.png',
         'satchel': 'icons/icon_bag.png',
-        'briefcase': 'icons/icon_bag.png'
+        'briefcase': 'icons/icon_bag.png',
+        'cufflinks': 'icons/icon_cufflinks.png',
+        'cufflink': 'icons/icon_cufflinks.png',
+        'chalkstick': 'icons/icon_chalkstick.png',
+        'charcoal stick': 'icons/icon_chalkstick.png',
+        'chalk': 'icons/icon_chalkstick.png',
+        'charcoal': 'icons/icon_chalkstick.png',
+        'handkerchief': 'icons/icon_handkerchief.png',
+        'apron': 'icons/icon_apron.png'
     };
     const key = typeOrBase.toLowerCase();
     return map[key] || map[typeOrBase] || null;
@@ -4070,12 +4402,14 @@ function getItemIconHtml(item, size = 36) {
     // Simple mapping: if name contains "bag", use "bag" icon, etc.
     // Order by specificity (length descending) to avoid partial matches overriding (e.g. pencil vs pen)
     const specialTypes = [
-        'breastplate', 'fanny pack', 'waistcoat', 'gambeson', 'notebook',
-        'bracelet', 'necklace', 'briefcase', 'lantern', 'monocle', 'glasses',
-        'wizard hat', 'sweater', 'compass', 'helmet', 'pencil', 'shield',
-        'scroll', 'earring', 'satchel', 'tophat', 'circlet', 'crayon', 'turban',
-        'cloak', 'brush', 'crown', 'ruler', 'quill', 'tunic', 'robe', 'hood',
-        'veil', 'belt', 'ring', 'bag', 'pen'
+        'calligraphy pen', 'charcoal stick', 'handkerchief', 'breastplate',
+        'fanny pack', 'waistcoat', 'chalkstick', 'cufflinks', 'gambeson',
+        'notebook', 'bracelet', 'necklace', 'briefcase', 'cufflink',
+        'lantern', 'monocle', 'glasses', 'wizard hat', 'charcoal',
+        'sweater', 'compass', 'helmet', 'pencil', 'shield', 'scroll',
+        'earring', 'satchel', 'tophat', 'circlet', 'crayon', 'turban',
+        'apron', 'chalk', 'cloak', 'brush', 'crown', 'ruler', 'quill',
+        'tunic', 'robe', 'hood', 'veil', 'belt', 'ring', 'bag', 'pen'
     ];
     for (const t of specialTypes) {
         if (lowerName.includes(t)) {
@@ -4519,7 +4853,7 @@ function dropLoot(isGuaranteedChestLoot = false) {
         }
     } else {
         // Configurable Drop Chances + Item Find Modifier
-        const t1Chance = 20 + (stats.item_find || 0);
+        const t1Chance = 15 + (stats.item_find || 0);
         const t2Chance = 4.5 + ((stats.item_find || 0) / 2);
         const t3Chance = 1.25 + ((stats.item_find || 0) / 4);
         const t4Chance = 0.125 + ((stats.item_find || 0) / 8);
@@ -4561,13 +4895,10 @@ function dropLoot(isGuaranteedChestLoot = false) {
                 }
             }
 
-            if (equipped) {
-                showToast(`FOUND & EQUIPPED: ${newItem.name}`);
-            } else {
-                showToast(`FOUND: ${newItem.name}`);
-            }
+            showItemDrop(newItem, equipped);
         } else {
             showToast(`BACKPACK FULL - DROPPED: ${newItem.name}`);
+            showItemDrop(newItem, false); // Still show what was lost
         }
     });
 
@@ -4616,6 +4947,14 @@ if (mainErrorToggle) {
                 b.userData.errorMesh.material.opacity = (GlobalSettings.errorsEnabled && b.userData.mistakes.length > 0) ? 1 : 0;
             }
         });
+    };
+}
+
+const headBobToggle = document.querySelector('#headbob-toggle');
+if (headBobToggle) {
+    headBobToggle.onchange = () => {
+        GlobalSettings.headBobEnabled = headBobToggle.checked;
+        saveGameData();
     };
 }
 
@@ -4745,21 +5084,39 @@ function animate(currentTime) {
     if (!currentTime) currentTime = performance.now();
 
     const deltaTime = currentTime - lastFrameTime;
-    if (deltaTime < FRAME_DURATION) return;
 
-    // Adjust lastFrameTime to handle potential jitter and catch up without over-speeding
-    lastFrameTime = currentTime - (deltaTime % FRAME_DURATION);
+    // THROW DOWN FPS IN MENUS TO SAVE HEAT
+    let targetFPS = TARGET_FPS;
+    if (GlobalSettings.performanceMode) {
+        targetFPS = 30; // 30 FPS cap in performance mode
+    }
+    if (currentState !== GameState.PLAYING && currentState !== GameState.MCQ) {
+        targetFPS = 25; // 25 FPS is enough for menu UI
+    }
+    const frameDuration = 1000 / targetFPS;
+
+    if (deltaTime < frameDuration) return;
+
+    // Adjust lastFrameTime
+    lastFrameTime = currentTime - (deltaTime % frameDuration);
 
     // Torch Flicker Effect - using constant speed
     const time = performance.now();
-    mainLight.intensity = 21 + Math.sin(time * 0.01) * 3 + Math.random() * 2; // Bumped intensity 5% (20 -> 21)
+    // Throttle flicker logic in performance mode (calculate every ~30ms)
+    const flickerThrottle = GlobalSettings.performanceMode ? 30 : 0;
+    const sinceLastFlicker = time - (camera.userData.lastFlickerTime || 0);
 
-    // Candle Flicker: More subtle
-    candleLights.forEach(c => {
-        const flicker = Math.sin(time * 0.008 + c.seed) * 0.2 + Math.random() * 0.1;
-        c.light.intensity = c.baseIntensity + flicker;
-        c.flame.scale.setScalar(1 + flicker * 0.1);
-    });
+    if (sinceLastFlicker >= flickerThrottle) {
+        camera.userData.lastFlickerTime = time;
+        mainLight.intensity = 21 + Math.sin(time * 0.01) * 3 + Math.random() * 2;
+
+        // Candle Flicker: More subtle
+        candleLights.forEach(c => {
+            const flicker = Math.sin(time * 0.008 + c.seed) * 0.2 + Math.random() * 0.1;
+            c.light.intensity = c.baseIntensity + flicker;
+            c.flame.scale.setScalar(1 + flicker * 0.1);
+        });
+    }
 
     for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
@@ -4795,7 +5152,11 @@ function animate(currentTime) {
         }
     });
 
-    camera.position.y = 2 + Math.sin(time * 0.0015) * 0.08;
+    if (GlobalSettings.headBobEnabled) {
+        camera.position.y = 2 + Math.sin(time * 0.00135) * 0.072; // Reduced bob: speed 0.0015->0.00135, travel 0.08->0.072
+    } else {
+        camera.position.y = 2; // Flat height
+    }
     renderer.render(scene, camera);
 }
 

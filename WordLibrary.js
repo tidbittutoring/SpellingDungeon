@@ -10032,7 +10032,7 @@ const INKLING_WORDS = [
         "hint": "Illness."
     },
     {
-        "word": "DISKette",
+        "word": "DISKETTE",
         "difficulty": 5,
         "definition": "(n.) A flexible removable magnetic disk.",
         "sentence": "Save it on a diskette.",
@@ -18565,17 +18565,16 @@ class WordLibrary {
 
         const finalPool = filtered.length > 0 ? filtered : pool;
 
-        // Filter out words in history (session) AND excludeList (persistent)
-        // Ensure comparison is case-insensitive (excludeList contains uppercase words)
-        let nonRepeatPool = finalPool.filter(w => !this.history.includes(w.word) && !excludeList.includes(w.word.toUpperCase()));
+        // Priority 1: Words NOT in session history AND NOT in profile history (excludeList)
+        const excludeListUpper = excludeList.map(v => v.toUpperCase());
+        let nonRepeatPool = finalPool.filter(w => !this.history.includes(w.word) && !excludeListUpper.includes(w.word.toUpperCase()));
 
         if (nonRepeatPool.length === 0) {
-            // Category exhausted for this profile? 
-            // Fall back to just session history if we can't find anything new for the profile
+            // Priority 2: Words NOT in current session history (allows repeating older runs if pool is small)
             nonRepeatPool = finalPool.filter(w => !this.history.includes(w.word));
 
             if (nonRepeatPool.length === 0) {
-                // Session history also exhausted? Just reset session history
+                // Priority 3: Truly exhausted, reset session history
                 this.history = [];
                 nonRepeatPool = finalPool;
             }
@@ -18627,11 +18626,14 @@ class WordLibrary {
         const finalPool = filtered.length > 0 ? filtered : pool;
 
         // Respect history and excludeList
-        let nonRepeatPool = finalPool.filter(w => !this.history.includes(w.word) && !excludeList.includes(w.word.toUpperCase()));
+        const excludeListUpper = excludeList.map(v => v.toUpperCase());
+        let nonRepeatPool = finalPool.filter(w => !this.history.includes(w.word) && !excludeListUpper.includes(w.word.toUpperCase()));
+
         if (nonRepeatPool.length === 0) {
-            this.history = [];
-            nonRepeatPool = finalPool.filter(w => !excludeList.includes(w.word.toUpperCase()));
+            // Fallback: exclude session history only
+            nonRepeatPool = finalPool.filter(w => !this.history.includes(w.word));
             if (nonRepeatPool.length === 0) {
+                this.history = [];
                 nonRepeatPool = finalPool; // List truly exhausted
             }
         }

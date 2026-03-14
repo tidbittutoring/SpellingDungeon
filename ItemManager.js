@@ -14,7 +14,7 @@ const Rarity = {
     NORMAL: { name: 'Normal', color: '#ffffff', tier: 1 },
     MAGIC: { name: 'Magic', color: '#4444ff', tier: 2 },
     RARE: { name: 'Rare', color: '#ffff44', tier: 3 },
-    UNIQUE: { name: 'Unique', color: '#ffcc00', tier: 4 },
+    UNIQUE: { name: 'Unique', color: '#ff4d00', tier: 4 },
     MYTHIC: { name: 'Mythic', color: '#a335ee', tier: 5 }
 };
 
