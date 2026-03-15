@@ -10,7 +10,7 @@ const ItemData = {
         },
         HEADGEAR: {
             name: "Headwear",
-            types: ["helmet", "circlet", "hood", "wizard hat", "glasses", "monocle", "turban", "cap", "crown", "veil"]
+            types: ["helmet", "hood", "wizard hat", "glasses", "monocle", "turban", "cap", "crown", "veil"]
         },
         OFF_HAND: {
             name: "Off-hand",
@@ -27,11 +27,11 @@ const ItemData = {
     },
 
     SlotStats: {
-        HEAD: ["hp", "ink", "ability", "hp_regen", "ink_regen", "armor", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "item_find"],
-        TORSO: ["hp", "ink", "ability", "hp_regen", "ink_regen", "armor", "item_find"],
-        MAIN_HAND: ["ink", "ability", "ink_regen", "lockpick", "item_find"],
-        OFF_HAND: ["armor", "ink", "ability", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "item_find"],
-        ACCESSORY: ["ability", "hp_regen", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "item_find"]
+        HEAD: ["hp", "ink", "hp_regen", "ink_regen", "armor", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find"],
+        TORSO: ["hp", "ink", "hp_regen", "ink_regen", "armor", "item_find"],
+        MAIN_HAND: ["ink", "ink_regen", "lockpick", "item_find"],
+        OFF_HAND: ["armor", "ink", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find"],
+        ACCESSORY: ["hp_regen", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find"]
     },
 
     Styles: {

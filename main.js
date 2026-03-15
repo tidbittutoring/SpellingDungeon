@@ -251,6 +251,7 @@ scene.background = new THREE.Color(0x040608); // Cooler darkness
 scene.fog = new THREE.FogExp2(0x040608, 0.08); // Use FogExp2 for better atmosphere
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.rotation.order = 'YXZ';
 camera.position.set(0, 2, 8);
 
 const renderer = new THREE.WebGLRenderer({
@@ -777,10 +778,10 @@ function applyRoomSkin(roomNum = currentRoom) {
     if (challenger && challenger.currentMode === ChallengeMode.ADVENTURE) {
         const currentLevel = Math.max(1, Math.ceil(roomNum / 5));
         let skinIndex = 0;
-        if (currentLevel >= 5) {
-            skinIndex = 3; // Infernal (Neutral darkness)
-        } else if (currentLevel >= 3) {
-            skinIndex = 1; // Catacombs
+        if (currentLevel >= 9) {
+            skinIndex = 3; // Infernal (Lava)
+        } else if (currentLevel >= 6) {
+            skinIndex = 1; // Catacombs (Sandstone)
         } else {
             skinIndex = 0; // Classic
         }
@@ -961,7 +962,8 @@ function showShopRoom() {
     const geo = new THREE.BoxGeometry(1.5, 1.5, 1);
     const mat = new THREE.MeshLambertMaterial({ color: 0xaa55aa });
     const shopMesh = new THREE.Mesh(geo, mat);
-    shopMesh.position.set(0, 1.5, camera.position.z - 5);
+    const absZCenter = 2.5 - (currentRoom - 1) * 15;
+    shopMesh.position.set(0, 1.5, absZCenter - 5);
     dungeonGroup.add(shopMesh);
 
     showToast("SHOP: Coming Soon! Press Enter to leave.");
@@ -1023,7 +1025,7 @@ function bossTimerTick() {
         wordBricks.forEach(b => revealBrick(b));
 
         // Wait 1.5s then advance to next boss word/room
-        setTimeout(() => onSuccess(true), 1500);
+        setTimeout(() => onSuccess(true, true), 1500);
     }
     updateBossTimerUI();
 }
@@ -1125,6 +1127,8 @@ function animateCamera(targetPos, targetRotY, duration, callback) {
         if (p < 1) requestAnimationFrame(update);
         else {
             camera.userData.isAnimating = false;
+            // Sync targetRotation after external animation
+            if (targetRotY !== null) targetRotation.y = targetRotY;
             if (callback) callback();
         }
     }
@@ -1176,9 +1180,10 @@ function enterRoomSequence(skipWalk = false) {
                     transparent: true,
                     side: THREE.DoubleSide
                 });
+                const absZCenter = 2.5 - (currentRoom - 1) * 15;
                 bossWarningSignMesh = new THREE.Mesh(signGeo, signMat);
                 // Directly in front of the player at the end of the hallway
-                bossWarningSignMesh.position.set(0, 5, camera.position.z - 6.5);
+                bossWarningSignMesh.position.set(0, 5, absZCenter - 6.5);
                 bossWarningSignMesh.rotation.y = 0; // Face the camera
                 dungeonGroup.add(bossWarningSignMesh);
             }
@@ -1226,8 +1231,8 @@ function enterRoomSequence(skipWalk = false) {
     if (skipWalk) {
         finishSequence();
     } else {
-        // Walk to center
-        const centerZ = camera.position.z - 7;
+        // Walk to absolute center of the current room
+        const centerZ = 2.5 - (currentRoom - 1) * 15;
         animateCamera(new THREE.Vector3(0, 2, centerZ), null, 1500, finishSequence);
     }
 }
@@ -1252,11 +1257,15 @@ function resetGame() {
     candleLights = [];
     activeRats = [];
 
-    camera.position.set(0, 2, 10);
+    // Room 1 absolute entrance is 10
+    // Room 1 absolute center is 2.5
+    camera.position.set(0, 2, 7.5);
     camera.rotation.set(0, 0, 0);
-    mainLight.position.set(0, 5, 10);
+    targetRotation.set(0, 0, 0);
+    mainLight.position.set(0, 5, 7.5);
 
-    spawnRoom(0, currentRoom);
+    spawnRoom(10, currentRoom, true); // Room 1 starts at Z=10
+    createDecorativeDoor(10, currentRoom);
 
     // Hide UI during initial transition
     const TOOL_BAR = document.getElementById('tool-bar');
@@ -1269,10 +1278,10 @@ function resetGame() {
     enterRoomSequence();
 }
 
-function spawnRoom(zOffset, roomNum = currentRoom) {
+function spawnRoom(absZ, roomNum = currentRoom, addBackWall = false) {
     applyRoomSkin(roomNum);
-    createRoom(zOffset + 10, roomNum);
-    createDoor(zOffset - 5, roomNum);
+    createRoom(absZ, roomNum, addBackWall); // createRoom(zOffset) uses zOffset as entrance
+    createDoor(absZ - 15, roomNum); // Door is always at the far wall (entrance - 15)
 }
 
 let lobbyDoor = null;
@@ -1284,15 +1293,19 @@ function spawnLobby() {
     candleLights = [];
     activeRats = [];
     // Create one room: the lobby
-    applyRoomSkin();
-    applySkinAtmosphereImmediate();
-    createRoom(10, 0);
-    // Create the door at the far wall
-    createDoor(-5, 0);
+    // Lobby is Room 0
+    // Room 0 absolute entrance is 25
+    // Room 0 absolute center is 17.5
+    // Room 0 absolute exit is 10
+    createRoom(25, 0, true); // Add back wall to lobby
+    createDoor(10, 0); // Exit door at Z=10
+    createDecorativeDoor(25, 0); // Entrance door at Z=25
     lobbyDoor = dungeonDoor; // Store reference
-    // Position camera facing the door
-    camera.position.set(0, 2, 8);
+
+    // Position camera facing the door (exit)
+    camera.position.set(0, 2, 23);
     camera.rotation.set(0, 0, 0);
+    targetRotation.set(0, 0, 0);
     mainLight.position.set(0, 5, 8);
     fillLight.position.set(0, 5.5, 3);
 }
@@ -1317,7 +1330,11 @@ function startNewChallenge(forcedWord = null) {
     // Boss check
     if (bossActive) {
         document.getElementById('boss-timer-container').style.display = 'block';
-        bossTimeLeft = 30.0;
+        const statsForTime = items.getTotalStats();
+        const baseTime = 30.0;
+        const timeBonusPercent = (statsForTime.time_warp || 0);
+        const timeBonusSeconds = baseTime * (timeBonusPercent / 100);
+        bossTimeLeft = baseTime + timeBonusSeconds;
         updateBossTimerUI();
         if (bossTimerId) clearInterval(bossTimerId);
         bossTimerId = setInterval(bossTimerTick, 100);
@@ -1332,7 +1349,7 @@ function startNewChallenge(forcedWord = null) {
     // Roll for item spells at the start of every challenge
     activeSpells = items.getTriggeredSpells();
     const stats = items.getTotalStats();
-    console.log(`--- CHALLENGE START | Chances: Foresight:${stats.first_letter_chance}% Conclusion:${stats.last_letter_chance}% Chaos:${stats.random_letter_chance}% Echoes:${stats.double_letter_chance}% ---`);
+    console.log(`--- CHALLENGE START | Chances: Foresight:${stats.first_letter_chance}% Conclusion:${stats.last_letter_chance}% Chaos:${stats.random_letter_chance}% Echoes:${stats.double_letter_chance}% TimeWarp:+${stats.time_warp || 0}% ---`);
     if (activeSpells.length > 0) {
         console.log("!!! Spells triggered for this word:", activeSpells);
     }
@@ -1400,9 +1417,7 @@ function startNewChallenge(forcedWord = null) {
             spellTimeoutId = null;
 
             // Check if word solved by spells
-            if (wordBricks.every(b => b.userData.revealed)) {
-                setTimeout(onSuccess, 500);
-            }
+            checkWordSolved();
         }, 600);
     }
 
@@ -1427,7 +1442,7 @@ function updateUI() {
             if (rMetric) rMetric.textContent = `Room ${currentRoom}`;
             if (lMetric) {
                 const currentLevel = Math.floor((currentRoom - 1) / 5) + 1;
-                lMetric.textContent = `Level ${currentLevel}`;
+                lMetric.textContent = `Dungeon Level ${currentLevel}`;
                 lMetric.style.display = 'block';
 
                 // Dynamic depth darkness (Starts lighter, gets darker)
@@ -1472,6 +1487,7 @@ function updateAbilityBar() {
     abilityBar.innerHTML = '';
 
     const seenAbilities = new Set();
+    let hotkeyIndex = 2; // [1] is Reveal, so abilities start at [2]
     Object.values(items.equipped).forEach(item => {
         if (item && item.ability && !seenAbilities.has(item.ability.name)) {
             seenAbilities.add(item.ability.name);
@@ -1480,10 +1496,14 @@ function updateAbilityBar() {
 
             let cost = 5;
             if (item.ability.name === "Reveal Random") cost = 6;
-            else if (item.ability.name === "Healing Magic") cost = 10;
+            else if (item.ability.name === "Heal") cost = 10;
+            else if (item.ability.name === "Chisel") cost = 8;
+            else if (item.ability.name === "Scrape") cost = 7;
+            else if (item.ability.name === "Telepathy") cost = 5;
 
             const isReady = ink >= cost;
-            btn.innerHTML = `${item.ability.name} (${cost} Ink)`;
+            const badge = hotkeyIndex <= 9 ? `<span class="hotkey-badge">${hotkeyIndex}</span>` : '';
+            btn.innerHTML = `${badge}${item.ability.name.toUpperCase()} (${cost})`;
             btn.disabled = !isReady;
             btn.onclick = () => {
                 if (castAbility(item)) {
@@ -1492,6 +1512,7 @@ function updateAbilityBar() {
                 }
             };
             abilityBar.appendChild(btn);
+            hotkeyIndex++;
         }
     });
 }
@@ -1514,14 +1535,12 @@ function castAbility(item) {
         createSpellBurst("#ffffff");
         showToast("REVEALED RANDOM LETTER!");
 
-        if (wordBricks.every(b => b.userData.revealed)) {
-            setTimeout(onSuccess, 500);
-        }
+        checkWordSolved();
 
         WORD_INPUT.focus();
         return true;
 
-    } else if (item.ability.name === "Healing Magic") {
+    } else if (item.ability.name === "Heal") {
         if (ink < 10) return false;
 
         const stats = items.getTotalStats();
@@ -1538,12 +1557,96 @@ function castAbility(item) {
 
         WORD_INPUT.focus();
         return true;
+    } else if (item.ability.name === "Chisel") {
+        if (ink < 8) return false;
+
+        const brick = wordBricks.find(b => !b.userData.revealed);
+        if (!brick) {
+            showToast("All letters revealed!");
+            return false;
+        }
+
+        ink -= 8;
+        revealBrick(brick);
+        createSpellBurst("#ffffff");
+        showToast("CHISELED NEXT LETTER!");
+
+        checkWordSolved();
+
+        WORD_INPUT.focus();
+        return true;
+
+    } else if (item.ability.name === "Scrape") {
+        if (ink < 7) return false;
+
+        const brick = [...wordBricks].reverse().find(b => !b.userData.revealed);
+        if (!brick) {
+            showToast("All letters revealed!");
+            return false;
+        }
+
+        ink -= 7;
+        revealBrick(brick);
+        createSpellBurst("#ffffff");
+        showToast("SCRAPED LAST LETTER!");
+
+        checkWordSolved();
+
+        WORD_INPUT.focus();
+        return true;
+    } else if (item.ability.name === "Telepathy") {
+        if (ink < 5) return false;
+
+        const synonyms = challenger.currentWordData.synonyms;
+        if (!synonyms || synonyms.length === 0) {
+            showToast("No synonyms found for this word!");
+            return false;
+        }
+
+        ink -= 5;
+        const synonym = synonyms[Math.floor(Math.random() * synonyms.length)];
+        showToast(`SYNONYM: ${synonym.toUpperCase()}`);
+        createSpellBurst("#ffff00");
+
+        WORD_INPUT.focus();
+        return true;
     }
 
     return false;
 }
 
-function onSuccess(fastTrack = false) {
+function checkWordSolved() {
+    if (wordBricks.every(b => b.userData.revealed)) {
+        if (isChestRoom) {
+            showToast("LOCK OPENS!");
+            createSpellBurst("#00ff00");
+
+            // Disable input immediately to prevent double-submit lag
+            WORD_INPUT.value = '';
+            WORD_INPUT.disabled = true;
+
+            // Turn to look at chest before opening
+            animateCamera(null, -Math.PI * 0.75, 450, () => {
+                if (chestMesh && chestMesh.userData.open) {
+                    chestMesh.userData.open();
+                    dropLoot(true); // Reward with guaranteed chest loot
+
+                    // Final success transition after lid has time to actually animate
+                    setTimeout(() => {
+                        onSuccess();
+                    }, 1200);
+                } else {
+                    onSuccess();
+                }
+            });
+        } else {
+            // Normal room completion
+            setTimeout(onSuccess, 500);
+        }
+    }
+}
+
+function onSuccess(fastTrack = false, isFail = false) {
     if (isTransitioning && !fastTrack) return;
     isTransitioning = true;
 
@@ -1571,7 +1674,12 @@ function onSuccess(fastTrack = false) {
             // Extra reward
             const stats = items.getTotalStats();
             ink = Math.min(baseMaxInk + stats.ink, ink + 10);
-            health = Math.min(baseMaxHealth + stats.hp, health + 10);
+            health = Math.min(baseMaxHealth + stats.hp, health + 5);
+        }
+
+        //intermediate boss word loot drop
+        if (!isFail && !isChestRoom) {
+            dropLoot();
         }
     }
 
@@ -1595,7 +1703,7 @@ function onSuccess(fastTrack = false) {
 
     // Reward sequence: roll for multiple drops based on 11%, 5%, 1% rates.
     // Boss words count as normal words for loot rolling!
-    if (!isChestRoom) {
+    if (!isChestRoom && !bossActive && !isFail) {
         dropLoot();
     }
 
@@ -1625,9 +1733,10 @@ function onSuccess(fastTrack = false) {
         const currentDoor = dungeonDoor;
         const startZ = camera.position.z;
 
-        // PRE-LOAD NEXT ROOM: immersion boost
-        const nextEntranceZ = startZ - 8;
-        spawnRoom(nextEntranceZ - 10, currentRoom + 1);
+        // PRE-LOAD NEXT ROOM: absolute coordinate alignment
+        const nextRoomNum = currentRoom + 1;
+        const nextAbsZ = 10 - (nextRoomNum - 1) * 15;
+        spawnRoom(nextAbsZ, nextRoomNum);
 
         // Force compile/render to GPU synchronously
         renderer.render(scene, camera);
@@ -1638,9 +1747,8 @@ function onSuccess(fastTrack = false) {
             slideDoorOpen(currentDoor);
             transitionSkinAtmosphere(2000); // Blend atmosphere over the glide
 
-            // PERFECT GLIDE: Merge "walk through door" and "walk to center" into one continuous 15-unit move
-            // This prevents the camera from decelerating at the door threshold
-            const finalGoalZ = startZ - 15;
+            // PERFECT GLIDE: Move to the absolute center of the next room
+            const finalGoalZ = 2.5 - (nextRoomNum - 1) * 15;
             animateCamera(new THREE.Vector3(0, 2, finalGoalZ), null, 2500, () => {
                 console.log("onSuccess: Continuous glide done, completing room...");
                 clearMCQWall();
@@ -1673,6 +1781,9 @@ function applyRegen() {
 
     ink = Math.min(maxInk, ink + totalInkRegen);
     createRisingText(`+${totalInkRegen}`, "#00d4ff", "ink-ampule");
+
+    // Update UI immediately when regeneration occurs
+    updateUI();
 }
 
 function slideDoorOpen(door = dungeonDoor) {
@@ -1753,10 +1864,12 @@ function showChestRoom() {
         // Re-centered letters (no customZ)
         setupWordBricks(word, 4.5, true, null);
 
-        // Position chest on the wall, shifted right (+3.25 units) to unblock definition and prevent clipping
+        // Position chest on the wall at the absolute center
         if (chestMesh) dungeonGroup.remove(chestMesh);
-        // Shift forward (+1.0 Z total from original) AND away from wall (X=3.25)
-        chestMesh = createChest(3.25, 0, camera.position.z + 5.5);
+        const absZCenter = 2.5 - (currentRoom - 1) * 15;
+        // Shifted right (+2.5 Z) relative to center? Actually, user said 3.25.
+        // Let's keep the user's previous preference of +2.5 offset from center
+        chestMesh = createChest(3.5, 0, absZCenter + 2.5);
 
         showToast("TREASURE CHEST! 3 ATTEMPTS");
     });
@@ -1781,29 +1894,8 @@ function handleChestGuess(typed, target) {
     }
 
     // Feedback logic
-    if (wordBricks.every(b => b.userData.revealed)) {
-        showToast("LOCK OPENS!");
-        createSpellBurst("#00ff00");
-
-        // Disable input immediately to prevent double-submit lag
-        WORD_INPUT.value = '';
-        WORD_INPUT.disabled = true;
-
-        // Turn to look at chest before opening
-        animateCamera(null, -Math.PI * 0.75, 450, () => {
-            if (chestMesh && chestMesh.userData.open) {
-                chestMesh.userData.open();
-                dropLoot(true); // Reward with guaranteed chest loot
-
-                // Final success transition after lid has time to actually animate
-                setTimeout(() => {
-                    onSuccess();
-                }, 1200);
-            } else {
-                onSuccess();
-            }
-        });
-    } else {
+    checkWordSolved();
+    if (!wordBricks.every(b => b.userData.revealed)) {
         if (anyNewReveal) {
             showToast(`LOCK TURNS DEEPER... (${chestAttempts} left)`);
             createSpellBurst(MageConfig.spellColor);
@@ -1852,6 +1944,7 @@ function gameOver() {
 
 let currentMCQData = null;
 let mcqChoices = [];
+let mcqHitboxes = []; // Specific list of shrunken, non-recursive interaction targets
 let mcqIdCounter = 0;
 let mcqHasAnswered = false; // Room-scoped flag to prevent duplicate transition calls
 let mcqAttempts = 3;
@@ -1880,11 +1973,12 @@ function showMCQ() {
     // Setup 3D objects on the RIGHT wall
     mcqChoices.forEach(m => dungeonGroup.remove(m));
     mcqChoices = [];
+    mcqHitboxes = [];
 
     // Move faceX for interaction layering
     const faceX = 4.4; // Choices brought closer to player
     const questionFaceX = 4.8; // Question pushed back against wall
-    const centerZ = camera.position.z;
+    const absZCenter = 2.5 - (currentRoom - 1) * 15;
 
     // Question Plane
     // Question Plane - Aspect ratio adjusted for more vertical clearance (8x2.2)
@@ -1896,7 +1990,7 @@ function showMCQ() {
     });
     const qMesh = new THREE.Mesh(qGeo, qMat);
     // Lowered Y from 5.5 to 4.8 to clear ceiling (6.0)
-    qMesh.position.set(questionFaceX, 4.8, centerZ + 0.3);
+    qMesh.position.set(questionFaceX, 4.8, absZCenter + 0.3);
     qMesh.rotation.y = -Math.PI / 2;
     qMesh.userData = { id: mcqIdCounter++, isQuestion: true };
     // DO NOT BLOCK INTERACTION
@@ -1909,7 +2003,7 @@ function showMCQ() {
     data.options.forEach((opt, i) => {
         const row = Math.floor(i / 2);
         const col = i % 2;
-        const z = centerZ + (col === 0 ? 2.15 : -2.15); // Buffer: Total gap 0.5 units horizontally
+        const z = absZCenter + (col === 0 ? 2.15 : -2.15); // Buffer: Total gap 0.5 units horizontally
         const y = 2.8 - row * 1.6; // Shifted DOWN to clear the question text plane
 
         // Choice text plane – use #ff8800 to match spelling letter style
@@ -1931,13 +2025,23 @@ function showMCQ() {
         console.log(`showMCQ: Created choice text mesh ID ${choiceMesh.userData.id} for "${opt.text}"`);
 
         // Background backing brick – use wall brickMat to match dungeon textures
-        const backBrick = createBrick(faceX + 0.5, y, z, 3.8); // Adjusted x to sit behind text
+        const backBrick = createBrick(faceX + 0.5, y, z, 3.6);
         // CLONE wall material so each brick can be colored independently
         backBrick.material = brickMat.clone();
-        backBrick.scale.y = 1.0;
+
+        // Precise Hitbox Tuning:
+        // 1. Remove jitter/rotation for perfectly rectangular alignment
+        backBrick.position.set(faceX + 0.5, y, z);
+        backBrick.rotation.set(0, 0, 0);
+        // 2. SHRINK the hitbox slightly to create a "dead zone" gap between choices
+        // This prevents the raycaster from accidentally hitting an adjacent block's edge.
+        backBrick.scale.set(0.95, 0.95, 0.95);
+
+        // Add unique IDs and option reference for robust matching
         backBrick.userData = { option: opt, isChoiceBacking: true, id: mcqIdCounter++ };
 
         mcqChoices.push(backBrick);
+        mcqHitboxes.push(backBrick); // Add to specific hitbox list
     });
 }
 
@@ -1949,10 +2053,10 @@ function handleMCQChoice(option, clickedMesh) {
     mcqHasAnswered = true;
     setGameState(GameState.PLAYING);
 
-    // Find all meshes related to this choice (text + backing)
-    const relatedMeshes = mcqChoices.filter(m => m.userData && m.userData.option && m.userData.option.text === option.text);
+    // Find all meshes related to this choice using direct object-reference matching
+    const relatedMeshes = mcqChoices.filter(m => m.userData && m.userData.option === option);
 
-    // Determine meshes for the CORRECT answer (to show if failed)
+    // Determine meshes for the CORRECT answer using direct object-reference matching
     const correctMeshes = mcqChoices.filter(m => m.userData && m.userData.option && m.userData.option.isCorrect);
 
     if (option.isCorrect) {
@@ -2175,22 +2279,45 @@ function createSpiderWeb(x, y, z, roomNum) {
     webGroup.position.set(x, y, z);
     webGroup.userData.roomNumber = roomNum;
 
-    const webGeo = new THREE.PlaneGeometry(3, 3);
+    const typeRoll = Math.random();
+    const type = typeRoll < 0.6 ? 'standard' : 'dangler'; // Removed 'thick' to prevent heavy stacking
+
+    const baseOpacity = 0.08 + Math.random() * 0.12; // Wispier: 0.08 to 0.2
     const webMat = new THREE.MeshBasicMaterial({
-        color: 0xcccccc,
+        color: 0xeeeeee, // Slightly brighter for better wispy visibility
         transparent: true,
-        opacity: 0.3,
+        opacity: baseOpacity,
         side: THREE.DoubleSide,
-        // Using a basic radial gradient look since we don't have a texture asset
+        depthWrite: false,
         map: getWebTexture()
     });
 
-    const web = new THREE.Mesh(webGeo, webMat);
-    // Angle it into the corner
-    web.rotation.x = (y > 3) ? Math.PI / 4 : -Math.PI / 4;
-    web.rotation.y = (x > 0) ? -Math.PI / 4 : Math.PI / 4;
+    if (type === 'standard') {
+        const size = 2.5 + Math.random() * 1.5;
+        const webGeo = new THREE.PlaneGeometry(size, size);
+        const web = new THREE.Mesh(webGeo, webMat);
 
-    webGroup.add(web);
+        // Snap to corners based on spawn position
+        web.rotation.x = Math.PI / 4 * (y > 5.5 ? 1 : -1);
+        web.rotation.y = Math.PI / 4 * (x > 0 ? -1 : 1);
+
+        // Subtle jitter only
+        web.rotation.z = (Math.random() - 0.5) * 0.3;
+
+        webGroup.add(web);
+    } else { // DANGLER - Fixed aspect ratios
+        const width = 1.5 + Math.random() * 1.0;
+        const height = 2.0 + Math.random() * 1.5; // Less "stretched" than before
+        const webGeo = new THREE.PlaneGeometry(width, height);
+        const web = new THREE.Mesh(webGeo, webMat);
+
+        web.position.y = -height / 2;
+        web.rotation.y = Math.random() * Math.PI;
+        web.rotation.x = (Math.random() - 0.5) * 0.1;
+
+        webGroup.add(web);
+    }
+
     dungeonGroup.add(webGroup);
 }
 
@@ -2652,8 +2779,11 @@ function createChest(x, y, z) {
     shackle.position.y = 0.2;
     padlockGroup.add(shackle);
 
-    padlockGroup.position.set(0, -0.3, 0.9);
+    padlockGroup.position.set(-0.9, -0.3, 0.9); // Moved to left edge
     lidPivot.add(padlockGroup);
+
+    // Shrink chest by 10%
+    chestGroup.scale.set(0.9, 0.9, 0.9);
 
     // Straps (attached to lid)
     const strapGeo = new THREE.BoxGeometry(0.2, 0.8, 1.65);
@@ -2897,7 +3027,7 @@ function createRatHole(x, y, z, rotY) {
     return holeGroup;
 }
 
-function createRoom(zOffset, roomNum = currentRoom) {
+function createRoom(zOffset, roomNum = currentRoom, addBackWall = false) {
     const roomGroup = new THREE.Group();
     roomGroup.userData.roomNumber = roomNum;
     const floorGeo = new THREE.PlaneGeometry(10, 15);
@@ -2932,6 +3062,20 @@ function createRoom(zOffset, roomNum = currentRoom) {
             // Door hole: 3 blocks wide, 4 blocks high
             if (x > -2.0 && x < 2.0 && row < 4) continue;
             roomGroup.add(createBrick(x, y, zOffset - 15));
+        }
+    }
+
+    // Optional Back Wall (for session entrance immersion)
+    if (addBackWall) {
+        for (let row = 0; row < 6; row++) {
+            for (let col = 0; col < 12; col++) {
+                const xOffset = (row % 2 === 0) ? 0 : 0.5;
+                const x = -5.5 + col * 1.0 + xOffset;
+                const y = row * 1.0 + 0.5;
+                // Door hole: 3 blocks wide, 4 blocks high
+                if (x > -2.0 && x < 2.0 && row < 4) continue;
+                roomGroup.add(createBrick(x, y, zOffset));
+            }
         }
     }
 
@@ -3116,7 +3260,8 @@ function createRoom(zOffset, roomNum = currentRoom) {
     if (Math.random() < 0.15) {
         const sideX = (Math.random() > 0.5 ? 4.50 : -4.50);
         const z = zOffset - 2 - Math.random() * 11;
-        if (Math.random() > 0.5) createBroom(sideX, 0, z, roomNum);
+        const broomX = sideX > 0 ? sideX - 0.5 : sideX + 0.5; // Move 0.5 away from wall
+        if (Math.random() > 0.5) createBroom(broomX, 0, z, roomNum);
         else createMop(sideX, 0, z, roomNum);
     }
 
@@ -3136,12 +3281,15 @@ function createRoom(zOffset, roomNum = currentRoom) {
         createHangingChain(sideX, y, z, roomNum, side);
     }
 
-    // Spider Webs: 15% chance
+    // Spider Webs: 15% chance, snap to upper corners
     if (Math.random() < 0.15) {
-        const side = Math.random() > 0.5 ? -4.5 : 4.5;
-        const z = zOffset - 2 - Math.random() * 11;
-        const y = Math.random() > 0.5 ? 5.5 : 0.5;
-        createSpiderWeb(side, y, z, roomNum);
+        const count = 1 + Math.floor(Math.random() * 2);
+        for (let i = 0; i < count; i++) {
+            const side = Math.random() > 0.5 ? -5.2 : 5.2; // Snap to walls
+            const z = zOffset - 2 - Math.random() * 11;
+            const y = 5.6 + Math.random() * 0.3; // Force to upper corners/ceiling
+            createSpiderWeb(side, y, z, roomNum);
+        }
     }
 
     [-5.4, 5.4].forEach(sideX => {
@@ -3189,6 +3337,18 @@ function createDoor(z, roomNum = currentRoom) {
     const lines = new THREE.LineSegments(edges, lineMat);
     dungeonDoor.add(lines);
     dungeonGroup.add(dungeonDoor);
+}
+
+function createDecorativeDoor(z, roomNum = currentRoom) {
+    const doorGeo = new THREE.BoxGeometry(3.8, 4.2, 0.4);
+    const mesh = new THREE.Mesh(doorGeo, doorMat);
+    mesh.userData.roomNumber = roomNum;
+    mesh.position.set(0, 2.1, z - 0.2); // Offset slightly inward to avoid Z-fighting
+    const edges = new THREE.EdgesGeometry(doorGeo);
+    const lines = new THREE.LineSegments(edges, lineMat);
+    mesh.add(lines);
+    dungeonGroup.add(mesh);
+    return mesh;
 }
 
 function clearPendingSpells() {
@@ -3435,7 +3595,9 @@ function setupWordBricks(word, customX = null, silent = false, customZ = null) {
     }
 
     const zDir = customX !== null ? 1 : -1;
-    const centerZ = customZ !== null ? customZ : camera.position.z;
+    // Room N absolute center is 2.5 - (N-1) * 15
+    const absRoomCenterZ = 2.5 - (currentRoom - 1) * 15;
+    const centerZ = customZ !== null ? customZ : absRoomCenterZ;
     const startZ = centerZ - zDir * (word.length - 1) * spacing / 2;
     const xPos = customX !== null ? customX : -4.5;
     const rotY = customX !== null ? -Math.PI / 2 : Math.PI / 2;
@@ -3502,8 +3664,9 @@ function setupWordBricks(word, customX = null, silent = false, customZ = null) {
     definitionMesh = new THREE.Mesh(defGeo, defMat);
     // Position slightly forward (xPos +/- 0.55) to avoid overlap issues
     // Offset further into the room (-2.0 units) if a tutorial tip is present to avoid overlap
+    // Offset further into the room (-2.0 units) if a tutorial tip is present to avoid overlap
     const zOffsetForTip = TUTORIAL_TIPS[currentRoom] ? -2.0 : 0;
-    definitionMesh.position.set(xPos + (customX !== null ? -0.55 : 0.55), 0, camera.position.z + zOffsetForTip);
+    definitionMesh.position.set(xPos + (customX !== null ? -0.55 : 0.55), 0, absRoomCenterZ + zOffsetForTip);
     definitionMesh.rotation.y = rotY;
     definitionMesh.visible = showDefinition;
     dungeonGroup.add(definitionMesh);
@@ -3584,10 +3747,8 @@ function evaluateGuess() {
     WORD_INPUT.value = '';
 
     // Check if the whole word is now revealed
-    const allRevealed = wordBricks.every(b => b.userData.revealed);
-    if (allRevealed) {
-        setTimeout(onSuccess, 500);
-    }
+    checkWordSolved();
+    updateUI();
 }
 
 function revealBrick(brick) {
@@ -3865,7 +4026,8 @@ function startTransitionToDungeon(isContinuing = false, snapshotOverride = null)
     setTimeout(() => {
         slideDoorOpen(lobbyDoor || dungeonDoor);
         setTimeout(() => {
-            animateCamera(new THREE.Vector3(0, 2, -2), null, 1200, () => {
+            // Walk from Lobby (Z=23) to Room 1 Entrance (Z=7.5) at a steady pace (~6 units/sec)
+            animateCamera(new THREE.Vector3(0, 2, 7.5), null, 2500, () => {
                 mainMenu.style.display = 'none';
                 mainMenu.classList.remove('menu-fade-out');
 
@@ -3879,15 +4041,20 @@ function startTransitionToDungeon(isContinuing = false, snapshotOverride = null)
                     candleLights = [];
                     activeRats = [];
 
+                    const absZEntrance = 10 - (currentRoom - 1) * 15;
+                    const absZCenter = 2.5 - (currentRoom - 1) * 15;
+
                     // Restore exact positioning for spelling challenge
-                    camera.position.set(0, 2, 3); // Center of the room
+                    camera.position.set(0, 2, absZCenter); // Center of the room
                     camera.rotation.set(0, Math.PI / 2, 0); // Facing the wall
-                    mainLight.position.set(0, 5, 3);
+                    targetRotation.set(0, Math.PI / 2, 0);
+                    mainLight.position.set(0, 5, absZCenter);
 
                     const snapshot = snapshotOverride || Persistence.loadRun();
                     bossActive = snapshot ? snapshot.bossActive : false;
 
-                    spawnRoom(0, currentRoom);
+                    spawnRoom(absZEntrance, currentRoom, true);
+                    createDecorativeDoor(absZEntrance, currentRoom);
                     const TOOL_BAR = document.getElementById('tool-bar');
                     if (TOOL_BAR) TOOL_BAR.style.display = 'flex';
                     WORD_INPUT.style.display = 'block';
@@ -4073,8 +4240,19 @@ if (forgeBtn) {
     };
 }
 
+const autofillBtn = document.querySelector('#autofill-forge-btn');
+if (autofillBtn) {
+    autofillBtn.onclick = () => {
+        autofillForge();
+    };
+}
+
 window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+        if (lookModeActive) {
+            toggleLookMode(true);
+            return;
+        }
         if (currentState === GameState.PLAYING) {
             setGameState(GameState.PAUSE);
         } else if (currentState === GameState.PAUSE) {
@@ -4086,14 +4264,49 @@ window.addEventListener('keydown', (e) => {
         }
     }
 
+    if (e.key === 'Enter') {
+        if (lookModeActive) {
+            toggleLookMode(true);
+            return;
+        }
+    }
+
     // Ability Hotkeys (1-9)
     if (currentState === GameState.PLAYING && e.key >= '1' && e.key <= '9') {
-        const index = parseInt(e.key) - 1;
-        const equippedAbilities = Object.values(items.equipped).filter(item => item && item.ability);
-        if (equippedAbilities[index]) {
-            if (castAbility(equippedAbilities[index])) {
+        const index = parseInt(e.key);
+        e.preventDefault(); // Prevent number from being typed into WORD_INPUT
+        if (index === 1) {
+            // Key 1 is REVEAL
+            const revealBtn = document.getElementById('reveal-btn');
+            if (revealBtn && !revealBtn.disabled) {
+                if (ink >= 10 && !revealModeActive) {
+                    revealModeActive = true;
+                    revealBtn.style.color = '#ffcc00';
+                    revealBtn.textContent = 'SELECT BRICK!';
+                } else if (revealModeActive) {
+                    revealModeActive = false;
+                    revealBtn.style.color = '';
+                    revealBtn.innerHTML = '<span class="hotkey-badge">1</span>REVEAL (10)';
+                }
                 updateUI();
-                updateInventoryUI();
+            }
+        } else {
+            // Keys 2-9 are equipped abilities
+            const abilityIndex = index - 2; // Abilities start at hotkey [2]
+            const equippedAbilities = [];
+            const seenNames = new Set();
+            Object.values(items.equipped).forEach(item => {
+                if (item && item.ability && !seenNames.has(item.ability.name)) {
+                    seenNames.add(item.ability.name);
+                    equippedAbilities.push(item);
+                }
+            });
+
+            if (equippedAbilities[abilityIndex]) {
+                if (castAbility(equippedAbilities[abilityIndex])) {
+                    updateUI();
+                    updateInventoryUI();
+                }
             }
         }
     }
@@ -4292,6 +4505,10 @@ WORD_INPUT.addEventListener('keydown', (e) => {
         e.preventDefault();
         evaluateGuess();
     }
+    // Block numeric input (0-9) to ensure hotkeys don't pollute spelling
+    if (e.key >= '0' && e.key <= '9') {
+        e.preventDefault();
+    }
 });
 
 WORD_INPUT.addEventListener('input', () => {
@@ -4318,6 +4535,9 @@ WORD_INPUT.addEventListener('input', () => {
 });
 
 let revealModeActive = false;
+let lookModeActive = false;
+const targetRotation = new THREE.Euler(0, 0, 0, 'YXZ');
+const originalRotation = new THREE.Euler(0, 0, 0);
 
 HEAR_BTN.onclick = () => { challenger.speakWord(); WORD_INPUT.focus(); };
 
@@ -4374,7 +4594,7 @@ function getItemIconSrc(typeOrBase) {
         'wizard hat': 'icons/icon_wizardhat.png',
         'belt': 'icons/icon_belt.png',
         'tunic': 'icons/icon_tunic.png',
-        'circlet': 'icons/icon_circlet.png',
+        'crown': 'icons/icon_circlet.png',
         'turban': 'icons/icon_turban.png',
         'satchel': 'icons/icon_bag.png',
         'briefcase': 'icons/icon_bag.png',
@@ -4407,7 +4627,7 @@ function getItemIconHtml(item, size = 36) {
         'notebook', 'bracelet', 'necklace', 'briefcase', 'cufflink',
         'lantern', 'monocle', 'glasses', 'wizard hat', 'charcoal',
         'sweater', 'compass', 'helmet', 'pencil', 'shield', 'scroll',
-        'earring', 'satchel', 'tophat', 'circlet', 'crayon', 'turban',
+        'earring', 'satchel', 'tophat', 'crown', 'crayon', 'turban',
         'apron', 'chalk', 'cloak', 'brush', 'crown', 'ruler', 'quill',
         'tunic', 'robe', 'hood', 'veil', 'belt', 'ring', 'bag', 'pen'
     ];
@@ -4580,9 +4800,10 @@ function updateInventoryUI() {
 
         const CHANCE_METADATA = {
             first_letter_chance: { label: 'First Reveal %', desc: 'Chance to trigger First Letter reveal spell on word start.' },
-            last_letter_chance: { label: 'Last Reveal %', desc: 'Chance to trigger Last Reveal %', desc: 'Chance to trigger Last Letter reveal spell on word start.' },
+            last_letter_chance: { label: 'Last Reveal %', desc: 'Chance to trigger Last Letter reveal spell on word start.' },
             double_letter_chance: { label: 'Double Reveal %', desc: 'Chance to trigger Double Letter reveal spell on word start.' },
-            random_letter_chance: { label: 'Random Reveal %', desc: 'Chance to trigger Random Letter reveal spell on word start.' }
+            random_letter_chance: { label: 'Random Reveal %', desc: 'Chance to trigger Random Letter reveal spell on word start.' },
+            time_warp: { label: 'Time Warp %', desc: 'Increases the time limit during boss encounters.' }
         };
 
         Object.entries(CHANCE_METADATA).forEach(([key, meta]) => {
@@ -4729,6 +4950,37 @@ function addItemToForge(bpIndex, fIndex = -1) {
     }
 }
 
+function autofillForge() {
+    clearForgeSlots();
+
+    // Priorities: Tier 1 (Normal), Tier 2 (Magic), Tier 3 (Rare)
+    for (let tier = 1; tier <= 3; tier++) {
+        const eligibleIndices = [];
+        for (let i = 0; i < items.inventory.length; i++) {
+            const item = items.inventory[i];
+            if (item && item.tier === tier) {
+                eligibleIndices.push(i);
+            }
+        }
+
+        if (eligibleIndices.length >= 9) {
+            // Fill forge with the first 9 items of this tier
+            for (let f = 0; f < 9; f++) {
+                forgeSlots[f] = eligibleIndices[f];
+            }
+            showToast(`AUTOFILL: TIER ${tier}`);
+            updateInventoryUI();
+            updateUI();
+            saveGameData();
+            return true;
+        }
+    }
+
+    showToast("NOT ENOUGH ITEMS OF THE SAME TIER");
+    updateInventoryUI();
+    return false;
+}
+
 function showTooltip(item, e, isBackpackItem = false) {
     const mainTooltip = document.querySelector('#item-tooltip');
     const comp1 = document.querySelector('#comp-tooltip-1');
@@ -4807,7 +5059,8 @@ function renderItemTooltipContent(item) {
         'first_letter_chance': 'Foresight',
         'last_letter_chance': 'Conclusion',
         'double_letter_chance': 'Echoes',
-        'random_letter_chance': 'Chaos'
+        'random_letter_chance': 'Chaos',
+        'time_warp': 'Time Warp'
     };
 
     Object.keys(spellStats).forEach(stat => {
@@ -4908,21 +5161,75 @@ function dropLoot(isGuaranteedChestLoot = false) {
     }
 }
 
-
 const revealBtn = document.querySelector('#reveal-btn');
-revealBtn.onclick = () => {
-    if (ink >= 10 && !revealModeActive) {
-        revealModeActive = true;
-        revealBtn.style.color = '#ffcc00'; // Visual indicator
-        revealBtn.textContent = 'Select Brick!';
-    } else if (revealModeActive) {
-        // Cancel reveal mode if clicked again
-        revealModeActive = false;
-        revealBtn.style.color = '';
-        revealBtn.textContent = 'Reveal (10 Ink)';
+if (revealBtn) {
+    revealBtn.onclick = () => {
+        if (ink >= 10 && !revealModeActive) {
+            revealModeActive = true;
+            revealBtn.style.color = '#ffcc00';
+            revealBtn.textContent = 'SELECT BRICK!';
+        } else if (revealModeActive) {
+            revealModeActive = false;
+            revealBtn.style.color = '';
+            revealBtn.innerHTML = '<span class="hotkey-badge">1</span>REVEAL (10)';
+        }
+        WORD_INPUT.focus();
+    };
+}
+
+const lookBtn = document.querySelector('#look-btn');
+function toggleLookMode(forceOff = false) {
+    if (forceOff) lookModeActive = false;
+    else lookModeActive = !lookModeActive;
+
+    if (lookModeActive) {
+        lookBtn?.classList.add('look-active');
+        if (lookBtn) lookBtn.textContent = '👁️ STOP LOOKING';
+        WORD_INPUT.disabled = true;
+        WORD_INPUT.blur();
+        renderer.domElement.requestPointerLock();
+    } else {
+        lookBtn?.classList.remove('look-active');
+        if (lookBtn) lookBtn.textContent = '👁️ Look Around';
+        document.exitPointerLock();
+
+        // Reset to standard view
+        let standardY = Math.PI / 2; // Default for Spelling wall
+        if (currentRoom === 0) standardY = 0; // Lobby exit
+        else if (isChestRoom || currentState === GameState.MCQ) standardY = -Math.PI / 2; // Interaction wall
+
+        targetRotation.set(0, standardY, 0); // Reset X (tilt) to 0 and set Y to standard
+
+        WORD_INPUT.disabled = false;
+        setTimeout(() => {
+            if (currentState === GameState.PLAYING) WORD_INPUT.focus();
+        }, 10);
     }
-    WORD_INPUT.focus();
-};
+}
+
+if (lookBtn) {
+    lookBtn.onclick = () => toggleLookMode();
+}
+
+window.addEventListener('pointermove', (e) => {
+    if (!lookModeActive) return;
+
+    // Pointer Lock gives movementX / movementY directly
+    const sensitivity = 0.002;
+    targetRotation.y -= e.movementX * sensitivity;
+    targetRotation.x -= e.movementY * sensitivity;
+
+    // Clamp vertical rotation to within 10 degrees of vertical axis (approx +/- 80 degrees)
+    // 80 degrees is ~1.4 radians
+    targetRotation.x = Math.max(-1.4, Math.min(1.4, targetRotation.x));
+});
+
+// Also add a listener for when pointer lock is lost (e.g. user Alt-Tabs)
+document.addEventListener('pointerlockchange', () => {
+    if (document.pointerLockElement !== renderer.domElement && lookModeActive) {
+        toggleLookMode(true);
+    }
+});
 
 const mainCandleToggle = document.querySelector('#candles-toggle');
 if (mainCandleToggle) {
@@ -5023,20 +5330,14 @@ window.addEventListener('pointerdown', (e) => {
     raycaster.setFromCamera(mouse, camera);
 
     if (currentState === GameState.MCQ) {
-        const intersects = raycaster.intersectObjects(mcqChoices, true);
+        // NON-RECURSIVE raycast only against the dedicated shrunken hitboxes
+        const intersects = raycaster.intersectObjects(mcqHitboxes, false);
         if (intersects.length > 0) {
             const hit = intersects[0].object;
-            console.log("MCQ Target hit:", hit.userData);
+            console.log("MCQ Hitbox Triggered:", hit.userData);
 
-            // Check self or parent (for backing bricks)
-            let current = hit;
-            while (current) {
-                // Ensure we only trigger on explicitly designated choice backings to prevent greedy raycasts
-                if (current.userData && current.userData.option && current.userData.isChoiceBacking) {
-                    handleMCQChoice(current.userData.option, current);
-                    break;
-                }
-                current = current.parent;
+            if (hit.userData && hit.userData.option && hit.userData.isChoiceBacking) {
+                handleMCQChoice(hit.userData.option, hit);
             }
         }
         return;
@@ -5050,6 +5351,10 @@ window.addEventListener('pointerdown', (e) => {
         const hitBrick = intersects[0].object;
 
         if (hitBrick.userData && hitBrick.userData.letter && !hitBrick.userData.revealed) {
+            if (ink < 10) {
+                showToast("Not enough ink!");
+                return;
+            }
             ink -= 10;
             // Point-and-click reveal functionality
             revealBrick(hitBrick);
@@ -5059,15 +5364,12 @@ window.addEventListener('pointerdown', (e) => {
             const btn = document.querySelector('#reveal-btn');
             if (btn) {
                 btn.style.color = '';
-                btn.textContent = 'Reveal (10 Ink)';
+                btn.innerHTML = '<span class="hotkey-badge">1</span>REVEAL (10)';
             }
 
             updateUI();
 
-            const allRevealed = wordBricks.every(b => b.userData.revealed);
-            if (allRevealed) {
-                onSuccess();
-            }
+            checkWordSolved();
         }
     }
 });
@@ -5092,6 +5394,14 @@ function animate(currentTime) {
     }
     if (currentState !== GameState.PLAYING && currentState !== GameState.MCQ) {
         targetFPS = 25; // 25 FPS is enough for menu UI
+    }
+
+    // Camera Look Around Interpolation
+    const deltaY = Math.abs(camera.rotation.y - targetRotation.y);
+    const deltaX = Math.abs(camera.rotation.x - targetRotation.x);
+    if (!camera.userData.isAnimating && (lookModeActive || deltaY > 0.001 || deltaX > 0.001)) {
+        camera.rotation.y = THREE.MathUtils.lerp(camera.rotation.y, targetRotation.y, 0.1);
+        camera.rotation.x = THREE.MathUtils.lerp(camera.rotation.x, targetRotation.x, 0.1);
     }
     const frameDuration = 1000 / targetFPS;
 

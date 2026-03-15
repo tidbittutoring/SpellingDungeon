@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu_refactor.css">
     <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="spells_ui.css">
     <link rel="manifest" href="manifest.json">
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
 </head>
@@ -17,7 +18,7 @@
     <!-- Game Viewport UI -->
     <div id="game-ui" style="display: none;">
         <div id="dungeon-metrics">
-            <span id="level-metric" style="display:none;">Level 1</span>
+            <span id="level-metric" style="display:none;">Dungeon Level 1</span>
             <span id="room-metric">Room 1</span>
         </div>
         <div id="action-area">
@@ -43,10 +44,11 @@
         <button id="hear-btn" style="display:none;">🔊 Hear Word</button>
 
         <div id="tool-bar">
-            <button id="reveal-btn" class="tool-btn">Reveal (10 Ink)</button>
             <div id="spell-label">📜 Spells</div>
+            <button id="reveal-btn" class="tool-btn"><span class="hotkey-badge">1</span>REVEAL (10)</button>
             <div id="ability-bar"></div>
             <button id="inv-toggle-btn" title="Inventory (ESC)">🎒 Inventory</button>
+            <button id="look-btn" class="tool-btn">👁️ Look Around</button>
         </div>
 
         <!-- New Item Drop Overlay -->
@@ -93,6 +95,8 @@
                             <!-- 9 cells built by JS -->
                         </div>
                         <button id="forge-btn" class="menu-btn" disabled>FORGE</button>
+                        <button id="autofill-forge-btn" class="menu-btn secondary-btn"
+                            style="margin-top: 10px; font-size: 0.8rem;">AUTOFILL</button>
                         <div id="forge-result"></div>
                     </div>
                 </div>

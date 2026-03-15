@@ -70,59 +70,67 @@ class ItemManager {
         let stats = {};
         let ability = null;
         let suffix = "";
+        let remainingRolls = tier;
 
-        // Roll stats 'tier' times
-        for (let i = 0; i < tier; i++) {
+        // Determine Spell Chance: 10% for Main Hand and Shield, 5% for others
+        const isShield = (type === ItemType.OFF_HAND && baseName.toLowerCase() === "shield");
+        const spellChance = (type === ItemType.MAIN_HAND || isShield) ? 0.10 : 0.05;
+
+        // Single Spell Roll
+        if (Math.random() < spellChance) {
+            const abilities = [
+                { name: "Reveal Random", suffix: " of Revelation" },
+                { name: "Heal", suffix: " of Healing" },
+                { name: "Chisel", suffix: " of Precision" },
+                { name: "Scrape", suffix: " of Reversal" },
+                { name: "Telepathy", suffix: " of Telepathy" }
+            ];
+            const selected = abilities[Math.floor(Math.random() * abilities.length)];
+            ability = { name: selected.name, charge: 0 };
+            suffix = selected.suffix;
+            remainingRolls = Math.max(0, tier - 1); // Spell takes 1 slot
+        }
+
+        // Roll stats for remaining slots
+        for (let i = 0; i < remainingRolls; i++) {
             const chosenStat = possibleStats[Math.floor(Math.random() * possibleStats.length)];
 
-            if (chosenStat === "ability") {
-                if (!ability) {
-                    const abilities = [
-                        { name: "Reveal Random", suffix: " of Revelation" },
-                        { name: "Healing Magic", suffix: " of Healing" }
-                    ];
-                    const selected = abilities[Math.floor(Math.random() * abilities.length)];
-                    ability = { name: selected.name, charge: 0 };
-                    suffix = selected.suffix;
-                } else {
-                    // Do not allow duplicate skills. Reroll this slot.
-                    i--;
-                }
-            } else {
-                if (!stats[chosenStat]) stats[chosenStat] = 0;
+            if (!stats[chosenStat]) stats[chosenStat] = 0;
 
-                if (chosenStat === "hp") {
-                    stats[chosenStat] += Math.floor(Math.random() * 6) + 5; // 5 to 10
-                    suffix = " of Vitality";
-                } else if (chosenStat === "ink") {
-                    stats[chosenStat] += Math.floor(Math.random() * 16) + 5; // 5 to 20
-                    suffix = " of Mind";
-                } else if (chosenStat === "armor") {
-                    stats[chosenStat] += 1;
-                    suffix = " of Guarding";
-                } else if (chosenStat.endsWith("_regen")) {
-                    stats[chosenStat] += Math.floor(Math.random() * 2) + 1; // 1 to 2
-                    suffix = ` of ${chosenStat.startsWith("hp") ? "Recovery" : "Focus"}`;
-                } else if (chosenStat === "lockpick") {
-                    stats[chosenStat] += Math.floor(Math.random() * 2) + 1; // 1 to 2
-                    suffix = " of Opening";
-                } else if (chosenStat === "item_find") {
-                    stats[chosenStat] += Math.floor(Math.random() * 5) + 1; // 1 to 5
-                    suffix = " of Discovery";
-                } else if (chosenStat.endsWith("_chance")) {
-                    stats[chosenStat] += Math.floor(Math.random() * 10) + 1; // 1-10% range
-                    const spellNames = {
-                        first_letter_chance: "Foresight",
-                        last_letter_chance: "Conclusion",
-                        double_letter_chance: "Echoes",
-                        random_letter_chance: "Chaos"
-                    };
-                    suffix = ` of ${spellNames[chosenStat] || "Magic"}`;
-                }
+            if (chosenStat === "hp") {
+                stats[chosenStat] += Math.floor(Math.random() * 6) + 5; // 5 to 10
+                if (!suffix) suffix = " of Vitality";
+            } else if (chosenStat === "ink") {
+                stats[chosenStat] += Math.floor(Math.random() * 16) + 5; // 5 to 20
+                if (!suffix) suffix = " of Mind";
+            } else if (chosenStat === "armor") {
+                stats[chosenStat] += 1;
+                if (!suffix) suffix = " of Guarding";
+            } else if (chosenStat === "time_warp") {
+                stats[chosenStat] += Math.floor(Math.random() * 6) + 5; // 5 to 10%
+                if (!suffix) suffix = " of Time Warp";
+            } else if (chosenStat.endsWith("_regen")) {
+                stats[chosenStat] += Math.floor(Math.random() * 2) + 1; // 1 to 2
+                if (!suffix) suffix = ` of ${chosenStat.startsWith("hp") ? "Recovery" : "Focus"}`;
+            } else if (chosenStat === "lockpick") {
+                stats[chosenStat] += Math.floor(Math.random() * 2) + 1; // 1 to 2
+                if (!suffix) suffix = " of Opening";
+            } else if (chosenStat === "item_find") {
+                stats[chosenStat] += Math.floor(Math.random() * 5) + 1; // 1 to 5
+                if (!suffix) suffix = " of Discovery";
+            } else if (chosenStat.endsWith("_chance")) {
+                stats[chosenStat] += Math.floor(Math.random() * 10) + 1; // 1-10% range
+                const spellNames = {
+                    first_letter_chance: "Foresight",
+                    last_letter_chance: "Conclusion",
+                    double_letter_chance: "Echoes",
+                    random_letter_chance: "Chaos"
+                };
+                if (!suffix) suffix = ` of ${spellNames[chosenStat] || "Magic"}`;
             }
         }
 
-        const name = capitalizedName + suffix;
+        const name = capitalizedName + (suffix || "");
         let rarity = Rarity.NORMAL;
         if (tier === 2) rarity = Rarity.MAGIC;
         if (tier === 3) rarity = Rarity.RARE;
@@ -196,7 +204,7 @@ class ItemManager {
     }
 
     getTotalStats() {
-        const total = { hp: 0, ink: 0, hp_regen: 0, ink_regen: 0, armor: 0, lockpick: 0, item_find: 0, first_letter_chance: 0, last_letter_chance: 0, double_letter_chance: 0, random_letter_chance: 0 };
+        const total = { hp: 0, ink: 0, hp_regen: 0, ink_regen: 0, armor: 0, lockpick: 0, item_find: 0, first_letter_chance: 0, last_letter_chance: 0, double_letter_chance: 0, random_letter_chance: 0, time_warp: 0 };
         Object.values(this.equipped).forEach(item => {
             if (item && item.stats) {
                 if (item.stats.hp) total.hp += item.stats.hp;
@@ -210,6 +218,7 @@ class ItemManager {
                 if (item.stats.last_letter_chance) total.last_letter_chance += item.stats.last_letter_chance;
                 if (item.stats.double_letter_chance) total.double_letter_chance += item.stats.double_letter_chance;
                 if (item.stats.random_letter_chance) total.random_letter_chance += item.stats.random_letter_chance;
+                if (item.stats.time_warp) total.time_warp += item.stats.time_warp;
             }
         });
         console.log("Total Item Stats Summed:", total);
@@ -344,7 +353,13 @@ class ItemManager {
     }
 }
 
-window.ItemManager = ItemManager;
-window.Item = Item;
-window.ItemType = ItemType;
-window.Rarity = Rarity;
+if (typeof window !== 'undefined') {
+    window.ItemManager = ItemManager;
+    window.Item = Item;
+    window.ItemType = ItemType;
+    window.Rarity = Rarity;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { ItemManager, Item, ItemType, Rarity };
+}
