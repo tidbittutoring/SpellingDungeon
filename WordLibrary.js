@@ -1,3 +1,12 @@
+/**
+ * Spelling Dungeon
+ * 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+ * 
+ * Copyright (c) 2026 The Spelling Dungeon Authors
+ */
+
 /*
  * ============================================================
  * DIFFICULTY RATING METHODOLOGY
@@ -413,175 +422,175 @@ const DOOZIE_WORDS = [
         "word": "A LOT",
         "difficulty": 1,
         "definition": "(adv./n.) A large number or amount."
-,
+        ,
         "synonyms": ["plenty", "much", "heaps"]
     },
     {
         "word": "ABSENCE",
         "difficulty": 2,
         "definition": "(n.) The state of being away from a place or person."
-,
+        ,
         "synonyms": ["lack", "want", "nonattendance"]
     },
     {
         "word": "ABSORB",
         "difficulty": 1,
         "definition": "(v.) Take in or soak up (energy, or a liquid or other substance) by chemical or physical action, typically gradually."
-,
+        ,
         "synonyms": ["soak up", "assimilate", "take in"]
     },
     {
         "word": "ABUNDANCE",
         "difficulty": 2,
         "definition": "(n.) A very large amount of something."
-,
+        ,
         "synonyms": ["plenty", "wealth", "profusion"]
     },
     {
         "word": "ACCEPTABLE",
         "difficulty": 2,
         "definition": "(adj.) Able to be agreed on; suitable."
-,
+        ,
         "synonyms": ["adequate", "satisfactory", "tolerable"]
     },
     {
         "word": "ACCESSIBLE",
         "difficulty": 2,
         "definition": "(adj.) (Of a place) able to be reached or entered."
-,
+        ,
         "synonyms": ["reachable", "available", "open"]
     },
     {
         "word": "ACCIDENTALLY",
         "difficulty": 4,
         "definition": "(adv.) By chance; unintentionally."
-,
+        ,
         "synonyms": ["unintentionally", "inadvertently", "by-chance"]
     },
     {
         "word": "ACCLAIM",
         "difficulty": 2,
         "definition": "(n./v.) Public praise or enthusiastic approval."
-,
+        ,
         "synonyms": ["praise", "applaud", "commend"]
     },
     {
         "word": "ACCOMMODATE",
         "difficulty": 4,
         "definition": "(v.) To provide lodging or sufficient space for."
-,
+        ,
         "synonyms": ["house", "adapt", "comply"]
     },
     {
         "word": "ACCOMPLISH",
         "difficulty": 2,
         "definition": "(v.) Achieve or complete successfully."
-,
+        ,
         "synonyms": ["achieve", "complete", "fulfill"]
     },
     {
         "word": "ACCORDION",
         "difficulty": 4,
         "definition": "(n.) A portable musical instrument with metal reeds, a keyboard, and bellows."
-,
+        ,
         "synonyms": ["concertina", "squeezebox", "bellows-instrument"]
     },
     {
         "word": "ACCUMULATE",
         "difficulty": 2,
         "definition": "(v.) Gather together or acquire an increasing number or quantity of."
-,
+        ,
         "synonyms": ["gather", "amass", "collect"]
     },
     {
         "word": "ACHIEVE",
         "difficulty": 1,
         "definition": "(v.) To successfully bring about or reach a desired objective."
-,
+        ,
         "synonyms": ["accomplish", "attain", "reach"]
     },
     {
         "word": "ACHIEVEMENT",
         "difficulty": 2,
         "definition": "(n.) A thing done successfully, typically by effort, courage, or skill."
-,
+        ,
         "synonyms": ["accomplishment", "feat", "success"]
     },
     {
         "word": "ACQUAINTANCE",
         "difficulty": 4,
         "definition": "(n.) A person one knows slightly, but who is not a close friend."
-,
+        ,
         "synonyms": ["contact", "associate", "familiar"]
     },
     {
         "word": "ACQUIESCE",
         "difficulty": 4,
         "definition": "(v.) Accept something reluctantly but without protest."
-,
+        ,
         "synonyms": ["comply", "yield", "concede"]
     },
     {
         "word": "ACQUIRE",
         "difficulty": 2,
         "definition": "(v.) To get or obtain something."
-,
+        ,
         "synonyms": ["obtain", "gain", "get"]
     },
     {
         "word": "ACQUITTED",
         "difficulty": 4,
         "definition": "(v.) Free (someone) from a criminal charge by a verdict of not guilty."
-,
+        ,
         "synonyms": ["cleared", "exonerated", "absolved"]
     },
     {
         "word": "ACROSS",
         "difficulty": 1,
         "definition": "(adv./prep.) From one side to the other of something."
-,
+        ,
         "synonyms": ["over", "spanning", "through"]
     },
     {
         "word": "ADDRESS",
         "difficulty": 1,
         "definition": "(n./v.) The particulars of a place where someone lives; to deal with or speak to."
-,
+        ,
         "synonyms": ["speak to", "handle", "location"]
     },
     {
         "word": "ADOLESCENT",
         "difficulty": 2,
         "definition": "(adj./n.) (Of a young person) in the process of developing from a child into an adult."
-,
+        ,
         "synonyms": ["teenager", "youth", "juvenile"]
     },
     {
         "word": "ADVERTISEMENT",
         "difficulty": 2,
         "definition": "(n.) A notice or announcement in a public medium promoting a product, service, or event."
-,
+        ,
         "synonyms": ["ad", "promotion", "announcement"]
     },
     {
         "word": "ADVICE",
         "difficulty": 1,
         "definition": "(n.) Guidance or recommendations offered with regard to prudent future action."
-,
+        ,
         "synonyms": ["guidance", "counsel", "recommendation"]
     },
     {
         "word": "ADVISABLE",
         "difficulty": 2,
         "definition": "(adj.) To be recommended; sensible."
-,
+        ,
         "synonyms": ["sensible", "prudent", "recommended"]
     },
     {
         "word": "ADVISE",
         "difficulty": 1,
         "definition": "(v.) Offer suggestions about the best course of action to someone."
-,
+        ,
         "synonyms": ["counsel", "recommend", "guide"]
     },
     {
@@ -593,84 +602,84 @@ const DOOZIE_WORDS = [
             "Rain can affect the outcome of a game.",
             "How does music affect your mood?"
         ]
-,
+        ,
         "synonyms": ["influence", "impact", "alter"]
     },
     {
         "word": "AGGRESSIVE",
         "difficulty": 2,
         "definition": "(adj.) Ready or likely to attack or confront."
-,
+        ,
         "synonyms": ["hostile", "forceful", "combative"]
     },
     {
         "word": "AGON",
         "difficulty": 4,
         "definition": "(n.) A conflict or contest, especially the conflict between main characters in a literary work."
-,
+        ,
         "synonyms": ["conflict", "contest", "struggle"]
     },
     {
         "word": "AGONIC",
         "difficulty": 4,
         "definition": "(adj.) Having no magnetic declination; relating to a line where the compass points true north."
-,
+        ,
         "synonyms": ["neutral", "zero-declination", "non-magnetic"]
     },
     {
         "word": "AGONIZE",
         "difficulty": 2,
         "definition": "(v.) To suffer great mental or physical pain; to make a great effort to decide something."
-,
+        ,
         "synonyms": ["suffer", "wrestle", "deliberate"]
     },
     {
         "word": "AGONY",
         "difficulty": 1,
         "definition": "(n.) Extreme physical or mental suffering."
-,
+        ,
         "synonyms": ["pain", "suffering", "torment"]
     },
     {
         "word": "AGORA",
         "difficulty": 4,
         "definition": "(n.) A public open space used for assemblies and markets in ancient Greek city-states."
-,
+        ,
         "synonyms": ["marketplace", "forum", "plaza"]
     },
     {
         "word": "AGORAPHOBIA",
         "difficulty": 4,
         "definition": "(n.) Extreme fear of open or crowded public spaces."
-,
+        ,
         "synonyms": ["claustrophobia-opposite", "crowd-fear", "open-space-fear"]
     },
     {
         "word": "AGRANULOCYTOSIS",
         "difficulty": 4,
         "definition": "(n.) A dangerous decrease in white blood cells, impairing immunity."
-,
+        ,
         "synonyms": ["leukopenia", "immune-deficiency", "white-cell-loss"]
     },
     {
         "word": "ALIMENTARY",
         "difficulty": 4,
         "definition": "(adj.) Relating to food or nutrition; relating to the digestive tract."
-,
+        ,
         "synonyms": ["digestive", "nutritional", "gastrointestinal"]
     },
     {
         "word": "AGRARIAN",
         "difficulty": 4,
         "definition": "(adj.) Relating to cultivated land or the interests of farmers."
-,
+        ,
         "synonyms": ["agricultural", "farming", "rural"]
     },
     {
         "word": "AGRAVIC",
         "difficulty": 4,
         "definition": "(adj.) Of or relating to a condition of zero gravity."
-,
+        ,
         "synonyms": ["weightless", "zero-gravity", "microgravity"]
     },
     {
@@ -682,2485 +691,2485 @@ const DOOZIE_WORDS = [
             "Do you agree that exercise is important?",
             "They agree on most things."
         ]
-,
+        ,
         "synonyms": ["consent", "concur", "accept"]
     },
     {
         "word": "AGREEABLE",
         "difficulty": 1,
         "definition": "(adj.) Pleasant and easy to get along with; willing to go along with others."
-,
+        ,
         "synonyms": ["pleasant", "congenial", "compliant"]
     },
     {
         "word": "AGRIBUSINESS",
         "difficulty": 2,
         "definition": "(n.) Agriculture conducted on commercial principles, treating farming as a large-scale business."
-,
+        ,
         "synonyms": ["farming-industry", "agriculture", "farm-enterprise"]
     },
     {
         "word": "AGRICULTURE",
         "difficulty": 2,
         "definition": "(n.) The science or practice of farming and cultivating the soil."
-,
+        ,
         "synonyms": ["farming", "cultivation", "husbandry"]
     },
     {
         "word": "AGRIOLOGY",
         "difficulty": 4,
         "definition": "(n.) The study of the customs of primitive peoples."
-,
+        ,
         "synonyms": ["primitive-culture-study", "ethnography", "anthropology"]
     },
     {
         "word": "AGRIOTYPE",
         "difficulty": 5,
         "definition": "(n.) The wild ancestral type of a domesticated species."
-,
+        ,
         "synonyms": ["wild-type", "ancestral-form", "original-species"]
     },
     {
         "word": "AGROGOROD",
         "difficulty": 5,
         "definition": "(n.) A large planned agricultural settlement in the Soviet Union."
-,
+        ,
         "synonyms": ["farm-town", "agricultural-settlement", "rural-community"]
     },
     {
         "word": "AGRONOME",
         "difficulty": 5,
         "definition": "(n.) A specialist in soil science and crop production who advises on farming practices."
-,
+        ,
         "synonyms": ["agronomist", "farm-manager", "soil-scientist"]
     },
     {
         "word": "AGRONOMIST",
         "difficulty": 4,
         "definition": "(n.) A scientist who studies crop production and soil management."
-,
+        ,
         "synonyms": ["farm-scientist", "soil-expert", "crop-specialist"]
     },
     {
         "word": "AGRONOMY",
         "difficulty": 4,
         "definition": "(n.) The science of soil management and crop production."
-,
+        ,
         "synonyms": ["crop-science", "soil-science", "farm-management"]
     },
     {
         "word": "AGUAJI",
         "difficulty": 5,
         "definition": "(n.) A large Caribbean reef fish valued as food."
-,
+        ,
         "synonyms": ["tropical-fish", "snapper", "reef-fish"]
     },
     {
         "word": "ANGORA",
         "difficulty": 4,
         "definition": "(n.) A type of soft fiber from certain goats, rabbits, or cats; a garment made from it."
-,
+        ,
         "synonyms": ["wool", "mohair", "fiber"]
     },
     {
         "word": "CARIBBEAN",
         "difficulty": 2,
         "definition": "(adj./n.) Relating to the regions or people around the sea located between North and South America."
-,
+        ,
         "synonyms": ["tropical", "island", "West-Indian"]
     },
     {
         "word": "AGUISH",
         "difficulty": 4,
         "definition": "(adj.) Resembling or causing ague; marked by chills and fever."
-,
+        ,
         "synonyms": ["feverish", "shivering", "malarial"]
     },
     {
         "word": "AHEAD",
         "difficulty": 1,
         "definition": "(adv.) Further forward in space, time, or order."
-,
+        ,
         "synonyms": ["forward", "in-front", "preceding"]
     },
     {
         "word": "AHEM",
         "difficulty": 1,
         "definition": "(interjection) Used to attract attention or express doubt or disapproval."
-,
+        ,
         "synonyms": ["throat-clear", "attention-signal", "hem"]
     },
     {
         "word": "AHIMSA",
         "difficulty": 5,
         "definition": "(n.) The Hindu and Buddhist doctrine of nonviolence toward all living beings."
-,
+        ,
         "synonyms": ["nonviolence", "compassion", "pacifism"]
     },
     {
         "word": "AHORSE",
         "difficulty": 4,
         "definition": "(adv.) On horseback."
-,
+        ,
         "synonyms": ["mounted", "on-horseback", "riding"]
     },
     {
         "word": "AIGUILLE",
         "difficulty": 5,
         "definition": "(n.) A sharp, pointed mountain peak; a slender needle-like pinnacle of rock."
-,
+        ,
         "synonyms": ["needle", "peak", "spire"]
     },
     {
         "word": "AIGUILLETTE",
         "difficulty": 5,
         "definition": "(n.) An ornamental tagged braid worn on a military uniform."
-,
+        ,
         "synonyms": ["cord", "braid", "lanyard"]
     },
     {
         "word": "AIKIDO",
         "difficulty": 4,
         "definition": "(n.) A Japanese martial art using throws and joint locks to redirect an attacker's force."
-,
+        ,
         "synonyms": ["martial-art", "judo-variant", "self-defense"]
     },
     {
         "word": "AILANTHUS",
         "difficulty": 5,
         "definition": "(n.) A fast-growing deciduous tree (tree of heaven) native to China, known as invasive."
-,
+        ,
         "synonyms": ["tree-of-heaven", "invasive-tree", "sumac"]
     },
     {
         "word": "AILERON",
         "difficulty": 5,
         "definition": "(n.) A hinged surface on an aircraft wing used to control rolling and banking."
-,
+        ,
         "synonyms": ["wing-flap", "control-surface", "flight-fin"]
     },
     {
         "word": "AILMENT",
         "difficulty": 1,
         "definition": "(n.) A minor illness or physical complaint."
-,
+        ,
         "synonyms": ["illness", "sickness", "malady"]
     },
     {
         "word": "AIOLI",
         "difficulty": 4,
         "definition": "(n.) A Mediterranean sauce made of garlic and olive oil, similar to mayonnaise."
-,
+        ,
         "synonyms": ["garlic-sauce", "mayonnaise", "condiment"]
     },
     {
         "word": "AIRBORNE",
         "difficulty": 1,
         "definition": "(adj.) Transported by air; (of troops) carried and deployed by aircraft."
-,
+        ,
         "synonyms": ["flying", "aerial", "aloft"]
     },
     {
         "word": "AIRBRUSH",
         "difficulty": 1,
         "definition": "(n.) A device that sprays paint using compressed air, used for fine artwork."
-,
+        ,
         "synonyms": ["spray-paint", "retouch", "retouching-tool"]
     },
     {
         "word": "AIRBUS",
         "difficulty": 1,
         "definition": "(n.) A large commercial passenger aircraft or the company that manufactures them."
-,
+        ,
         "synonyms": ["aircraft", "jetliner", "passenger-plane"]
     },
     {
         "word": "AIRCRAFT",
         "difficulty": 1,
         "definition": "(n.) A vehicle that can fly, such as an airplane or helicopter."
-,
+        ,
         "synonyms": ["plane", "aeroplane", "flying-machine"]
     },
     {
         "word": "AIREDALE",
         "difficulty": 4,
         "definition": "(n.) A large terrier breed with a tan and black coat, originating in Yorkshire."
-,
+        ,
         "synonyms": ["terrier", "dog", "hound"]
     },
     {
         "word": "AIRFOIL",
         "difficulty": 4,
         "definition": "(n.) A structure shaped to give lift or control when moving through air, such as a wing."
-,
+        ,
         "synonyms": ["wing", "blade", "lift-surface"]
     },
     {
         "word": "AIRFRAME",
         "difficulty": 2,
         "definition": "(n.) The body of an aircraft, excluding the engines."
-,
+        ,
         "synonyms": ["fuselage", "body", "aircraft-structure"]
     },
     {
         "word": "AIRPORT",
         "difficulty": 1,
         "definition": "(n.) A complex of runways and buildings where aircraft take off, land, and are serviced."
-,
+        ,
         "synonyms": ["airfield", "aerodrome", "terminal"]
     },
     {
         "word": "AIRSICKNESS",
         "difficulty": 2,
         "definition": "(n.) Nausea caused by the motion of an aircraft during flight."
-,
+        ,
         "synonyms": ["motion-sickness", "nausea", "queasiness"]
     },
     {
         "word": "AIRSTREAM",
         "difficulty": 1,
         "definition": "(n.) A current of air moving in a particular direction; a streamlined trailer brand."
-,
+        ,
         "synonyms": ["current", "flow", "draft"]
     },
     {
         "word": "AIRTIGHT",
         "difficulty": 1,
         "definition": "(adj.) Not allowing air to pass in or out; having no weaknesses or flaws."
-,
+        ,
         "synonyms": ["sealed", "hermetic", "watertight"]
     },
     {
         "word": "AISLE",
         "difficulty": 2,
         "definition": "(n.) A passage between rows of seats or shelves, or between sections of a building."
-,
+        ,
         "synonyms": ["passageway", "lane", "corridor"]
     },
     {
         "word": "AISLING",
         "difficulty": 5,
         "definition": "(n.) A type of Irish vision poem in which a woman represents Ireland."
-,
+        ,
         "synonyms": ["dream", "vision", "Irish-poem"]
     },
     {
         "word": "AITCH",
         "difficulty": 5,
         "definition": "(n.) The letter H; the name of the eighth letter of the English alphabet."
-,
+        ,
         "synonyms": ["h-sound", "letter-H", "aspirate"]
     },
     {
         "word": "AITION",
         "difficulty": 5,
         "definition": "(n.) A narrative explaining the origin of a ritual or custom; an etiological myth."
-,
+        ,
         "synonyms": ["cause", "origin", "etiology"]
     },
     {
         "word": "AKARYOTE",
         "difficulty": 5,
         "definition": "(n.) A cell or organism that lacks a distinct nucleus."
-,
+        ,
         "synonyms": ["non-nucleated", "anuclear-cell", "nucleus-free"]
     },
     {
         "word": "AKIMBO",
         "difficulty": 4,
         "definition": "(adj.) With hands on hips and elbows turned outward."
-,
+        ,
         "synonyms": ["hands-on-hips", "arms-out", "elbows-bent"]
     },
     {
         "word": "AKIN",
         "difficulty": 1,
         "definition": "(adj.) Of similar character; related by blood."
-,
+        ,
         "synonyms": ["similar", "related", "analogous"]
     },
     {
         "word": "AKINESIA",
         "difficulty": 5,
         "definition": "(n.) Loss or impairment of the ability to move voluntarily."
-,
+        ,
         "synonyms": ["paralysis", "immobility", "motor-loss"]
     },
     {
         "word": "AKROPODION",
         "difficulty": 5,
         "definition": "(n.) The tip of a digit; the terminal part of a hand or foot."
-,
+        ,
         "synonyms": ["heel", "foot-tip", "extremity"]
     },
     {
         "word": "AKTOGRAPH",
         "difficulty": 5,
         "definition": "(n.) An instrument for recording movements of sleeping subjects."
-,
+        ,
         "synonyms": ["movement-recorder", "activity-logger", "motion-tracker"]
     },
     {
         "word": "ALABASTER",
         "difficulty": 2,
         "definition": "(n.) A smooth, fine-grained white stone, often translucent, used in carvings and decorative objects."
-,
+        ,
         "synonyms": ["marble", "stone", "gypsum"]
     },
     {
         "word": "ALACRITY",
         "difficulty": 4,
         "definition": "(n.) Brisk and cheerful readiness."
-,
+        ,
         "synonyms": ["eagerness", "readiness", "enthusiasm"]
     },
     {
         "word": "ALAR",
         "difficulty": 4,
         "definition": "(adj.) Relating to wings; wing-shaped."
-,
+        ,
         "synonyms": ["wing-shaped", "winged", "flight"]
     },
     {
         "word": "ALARMABLE",
         "difficulty": 2,
         "definition": "(adj.) Easily startled or prone to fear."
-,
+        ,
         "synonyms": ["frightened-easily", "anxious", "jumpy"]
     },
     {
         "word": "ALARMIST",
         "difficulty": 2,
         "definition": "(n.) A person who tends to exaggerate potential dangers, causing unnecessary fear."
-,
+        ,
         "synonyms": ["scaremonger", "doomsayer", "pessimist"]
     },
     {
         "word": "ALARY",
         "difficulty": 5,
         "definition": "(adj.) Wing-shaped; relating to wings."
-,
+        ,
         "synonyms": ["wing-shaped", "alar", "lateral"]
     },
     {
         "word": "ALAS",
         "difficulty": 1,
         "definition": "(interjection) An exclamation expressing grief, pity, or concern."
-,
+        ,
         "synonyms": ["unfortunately", "regrettably", "sadly"]
     },
     {
         "word": "ALBA",
         "difficulty": 4,
         "definition": "(n.) A type of Provençal poem lamenting the parting of lovers at dawn."
-,
+        ,
         "synonyms": ["dawn-song", "white", "daybreak"]
     },
     {
         "word": "ALBACORE",
         "difficulty": 4,
         "definition": "(n.) A large tuna with long pectoral fins, valued as a food fish."
-,
+        ,
         "synonyms": ["tuna", "fish", "skipjack"]
     },
     {
         "word": "ALBARIUM",
         "difficulty": 5,
         "definition": "(n.) White plaster used in ancient Roman construction."
-,
+        ,
         "synonyms": ["plaster", "whitewash", "stucco"]
     },
     {
         "word": "ALBATROSS",
         "difficulty": 2,
         "definition": "(n.) A large seabird with a very long wingspan; a source of constant burden or anxiety."
-,
+        ,
         "synonyms": ["seabird", "burden", "petrel"]
     },
     {
         "word": "ALBEDO",
         "difficulty": 4,
         "definition": "(n.) The proportion of incident light reflected by a surface, especially a planet."
-,
+        ,
         "synonyms": ["reflectivity", "whiteness", "brightness"]
     },
     {
         "word": "ALBEDOMETER",
         "difficulty": 5,
         "definition": "(n.) An instrument for measuring the reflectivity of surfaces."
-,
+        ,
         "synonyms": ["reflectometer", "light-gauge", "brightness-meter"]
     },
     {
         "word": "ALBEIT",
         "difficulty": 2,
         "definition": "(conjunction) Though; even though."
-,
+        ,
         "synonyms": ["though", "although", "even-if"]
     },
     {
         "word": "ALBINO",
         "difficulty": 2,
         "definition": "(n.) A person or animal lacking normal pigmentation, resulting in white skin and hair."
-,
+        ,
         "synonyms": ["depigmented", "pale", "leucistic"]
     },
     {
         "word": "ALBUM",
         "difficulty": 1,
         "definition": "(n.) A blank book for photographs or stamps; a collection of recordings released together."
-,
+        ,
         "synonyms": ["collection", "record", "portfolio"]
     },
     {
         "word": "ALBURNUM",
         "difficulty": 5,
         "definition": "(n.) The soft, young outer wood of a tree; sapwood."
-,
+        ,
         "synonyms": ["sapwood", "outer-wood", "tree-core"]
     },
     {
         "word": "ALCARRAZA",
         "difficulty": 5,
         "definition": "(n.) A porous earthenware vessel used to cool water by evaporation."
-,
+        ,
         "synonyms": ["water-cooler", "porous-vessel", "clay-pot"]
     },
     {
         "word": "ALCAZAR",
         "difficulty": 4,
         "definition": "(n.) A Spanish palace or fortress of Moorish origin."
-,
+        ,
         "synonyms": ["fortress", "palace", "castle"]
     },
     {
         "word": "ALCHEMY",
         "difficulty": 2,
         "definition": "(n.) A medieval forerunner of chemistry; a seemingly magical process of transformation."
-,
+        ,
         "synonyms": ["transformation", "magic", "transmutation"]
     },
     {
         "word": "ALCOGEL",
         "difficulty": 5,
         "definition": "(n.) A gel in which the liquid component is an alcohol."
-,
+        ,
         "synonyms": ["sanitizer-gel", "sanitizer", "ethanol-gel"]
     },
     {
         "word": "ALCOHOL",
         "difficulty": 1,
         "definition": "(n.) A colorless, flammable liquid produced by fermentation of sugars; a class of organic compounds containing a hydroxyl group."
-,
+        ,
         "synonyms": ["ethanol", "spirits", "spirits"]
     },
     {
         "word": "ALCOHOLATURE",
         "difficulty": 5,
         "definition": "(n.) A medicinal preparation made by soaking plant material in a liquid solvent."
-,
+        ,
         "synonyms": ["tincture", "herbal-extract", "infusion"]
     },
     {
         "word": "ALCOVE",
         "difficulty": 2,
         "definition": "(n.) A recess in a wall or room, often used for a bed or seating."
-,
+        ,
         "synonyms": ["nook", "recess", "bay"]
     },
     {
         "word": "ALDEHYDE",
         "difficulty": 5,
         "definition": "(n.) An organic compound containing a terminal carbonyl group; used in perfumes and resins."
-,
+        ,
         "synonyms": ["organic-compound", "carbonyl", "formaldehyde"]
     },
     {
         "word": "ALDER",
         "difficulty": 2,
         "definition": "(n.) A tree of the birch family that grows in wet habitats."
-,
+        ,
         "synonyms": ["tree", "shrub", "birch-relative"]
     },
     {
         "word": "ALDERMAN",
         "difficulty": 2,
         "definition": "(n.) An elected member of a municipal council, typically ranking below the mayor."
-,
+        ,
         "synonyms": ["councilman", "official", "magistrate"]
     },
     {
         "word": "ALDOSTERONE",
         "difficulty": 5,
         "definition": "(n.) A hormone secreted by the adrenal gland that regulates sodium and potassium balance."
-,
+        ,
         "synonyms": ["hormone", "steroid", "mineralocorticoid"]
     },
     {
         "word": "ALEATORIC",
         "difficulty": 5,
         "definition": "(adj.) Relating to or involving chance; used of music with elements left to chance."
-,
+        ,
         "synonyms": ["chance-based", "random", "improvised"]
     },
     {
         "word": "ALEATORY",
         "difficulty": 5,
         "definition": "(adj.) Depending on the throw of a dice or chance; unpredictable."
-,
+        ,
         "synonyms": ["random", "chance-based", "unpredictable"]
     },
     {
         "word": "ALEE",
         "difficulty": 4,
         "definition": "(adv.) On the sheltered side of a ship, away from the wind."
-,
+        ,
         "synonyms": ["downwind", "sheltered", "leeward"]
     },
     {
         "word": "ALEGAR",
         "difficulty": 5,
         "definition": "(n.) Sour ale; vinegar made from ale."
-,
+        ,
         "synonyms": ["sour-ale", "malt-vinegar", "acidic-liquid"]
     },
     {
         "word": "ALEMBIC",
         "difficulty": 5,
         "definition": "(n.) A flask used in distillation; something that refines or transforms."
-,
+        ,
         "synonyms": ["still", "distiller", "purifier"]
     },
     {
         "word": "ALEPIDOTE",
         "difficulty": 5,
         "definition": "(adj.) Lacking scales, as certain fish."
-,
+        ,
         "synonyms": ["scaleless", "smooth-skinned", "bare"]
     },
     {
         "word": "ALEURONAT",
         "difficulty": 5,
         "definition": "(n.) A flour substitute made from the protein fraction of wheat, used in diabetic diets."
-,
+        ,
         "synonyms": ["protein-grain", "aleurone", "seed-layer"]
     },
     {
         "word": "ALEWIFE",
         "difficulty": 4,
         "definition": "(n.) A small North American fish related to the herring; a woman who runs an alehouse."
-,
+        ,
         "synonyms": ["fish", "shad", "herring"]
     },
     {
         "word": "ALEXANDRITE",
         "difficulty": 4,
         "definition": "(n.) A rare gemstone that appears green in daylight and red in incandescent light."
-,
+        ,
         "synonyms": ["gemstone", "chrysoberyl", "color-changing-gem"]
     },
     {
         "word": "ALEXIA",
         "difficulty": 5,
         "definition": "(n.) An inability to read due to brain damage, despite intact vision."
-,
+        ,
         "synonyms": ["reading-disorder", "dyslexia", "word-blindness"]
     },
     {
         "word": "ALFALFA",
         "difficulty": 2,
         "definition": "(n.) A leguminous plant widely grown for fodder."
-,
+        ,
         "synonyms": ["clover", "fodder", "lucerne"]
     },
     {
         "word": "ALFRESCO",
         "difficulty": 2,
         "definition": "(adv.) In the open air; outdoors."
-,
+        ,
         "synonyms": ["outdoors", "outside", "open-air"]
     },
     {
         "word": "ALGAE",
         "difficulty": 2,
         "definition": "(n.) Simple plants or plant-like organisms that grow in water and lack true roots or stems."
-,
+        ,
         "synonyms": ["seaweed", "pond-scum", "microorganism"]
     },
     {
         "word": "ALGEBRA",
         "difficulty": 1,
         "definition": "(n.) A branch of mathematics using symbols to represent numbers and express relationships."
-,
+        ,
         "synonyms": ["mathematics", "equations", "arithmetic"]
     },
     {
         "word": "ALGEBRAICALLY",
         "difficulty": 4,
         "definition": "(adv.) By means of symbolic equations and mathematical rules."
-,
+        ,
         "synonyms": ["mathematically", "symbolically", "numerically"]
     },
     {
         "word": "ALGERIAN",
         "difficulty": 2,
         "definition": "(adj.) Belonging to or characteristic of the North African nation on the Mediterranean coast."
-,
+        ,
         "synonyms": ["North-African", "Maghrebi", "Mediterranean"]
     },
     {
         "word": "ALGESIA",
         "difficulty": 5,
         "definition": "(n.) Sensitivity to pain; the ability to feel pain."
-,
+        ,
         "synonyms": ["pain-sensitivity", "hyperalgesia", "pain-perception"]
     },
     {
         "word": "ALGETIC",
         "difficulty": 5,
         "definition": "(adj.) Producing or relating to pain."
-,
+        ,
         "synonyms": ["painful", "tender", "sore"]
     },
     {
         "word": "ALGID",
         "difficulty": 5,
         "definition": "(adj.) Chilly; cold. Often used in medicine to describe a cold, clammy condition."
-,
+        ,
         "synonyms": ["cold", "chilly", "frigid"]
     },
     {
         "word": "ALGOMETER",
         "difficulty": 5,
         "definition": "(n.) An instrument for measuring sensitivity to pain."
-,
+        ,
         "synonyms": ["pain-gauge", "pressure-tester", "sensitivity-meter"]
     },
     {
         "word": "ALGORITHM",
         "difficulty": 2,
         "definition": "(n.) A process or set of rules followed in calculations or problem-solving."
-,
+        ,
         "synonyms": ["procedure", "method", "formula"]
     },
     {
         "word": "ALIAS",
         "difficulty": 1,
         "definition": "(n.) A false or assumed name; also known as."
-,
+        ,
         "synonyms": ["pseudonym", "nickname", "alter-ego"]
     },
     {
         "word": "ALIBI",
         "difficulty": 1,
         "definition": "(n.) A claim that one was elsewhere when a crime was committed."
-,
+        ,
         "synonyms": ["excuse", "defense", "proof-of-absence"]
     },
     {
         "word": "ALIEN",
         "difficulty": 1,
         "definition": "(n.) A foreigner; belonging to a different country or strange in nature."
-,
+        ,
         "synonyms": ["foreigner", "extraterrestrial", "outsider"]
     },
     {
         "word": "ALIENAGE",
         "difficulty": 4,
         "definition": "(n.) The legal standing of a person who is a citizen of another country."
-,
+        ,
         "synonyms": ["foreign-status", "non-citizenship", "otherness"]
     },
     {
         "word": "ALIENATION",
         "difficulty": 2,
         "definition": "(n.) The feeling of being isolated or estranged; the legal transfer of property."
-,
+        ,
         "synonyms": ["estrangement", "isolation", "detachment"]
     },
     {
         "word": "ALIFEROUS",
         "difficulty": 5,
         "definition": "(adj.) Having wings; winged."
-,
+        ,
         "synonyms": ["winged", "feathered", "bearing-wings"]
     },
     {
         "word": "ALIGN",
         "difficulty": 1,
         "definition": "(v.) To place things in a straight line or bring into proper position."
-,
+        ,
         "synonyms": ["arrange", "coordinate", "line-up"]
     },
     {
         "word": "ALIKE",
         "difficulty": 1,
         "definition": "(adj.) Similar; having a resemblance."
-,
+        ,
         "synonyms": ["similar", "same", "comparable"]
     },
     {
         "word": "ALIMONY",
         "difficulty": 2,
         "definition": "(n.) A court-ordered allowance paid to a spouse after separation or divorce."
-,
+        ,
         "synonyms": ["maintenance", "support", "payment"]
     },
     {
         "word": "ALIPHATIC",
         "difficulty": 5,
         "definition": "(adj.) Relating to organic compounds without aromatic rings in their structure."
-,
+        ,
         "synonyms": ["non-aromatic", "open-chain", "saturated"]
     },
     {
         "word": "ALIQUANT",
         "difficulty": 5,
         "definition": "(adj.) Describing a number that does not divide another evenly."
-,
+        ,
         "synonyms": ["non-divisible", "remainder-leaving", "fractional"]
     },
     {
         "word": "ALIQUOT",
         "difficulty": 5,
         "definition": "(n.) A portion of a whole sample taken for analysis."
-,
+        ,
         "synonyms": ["portion", "fraction", "sample"]
     },
     {
         "word": "ALISON",
         "difficulty": 2,
         "definition": "(n.) A small flowering plant in the mustard family."
-,
+        ,
         "synonyms": ["name", "personal-name", "given-name"]
     },
     {
         "word": "ALITERACY",
         "difficulty": 5,
         "definition": "(n.) The state of being able to read but choosing not to."
-,
+        ,
         "synonyms": ["reading-avoidance", "voluntary-illiteracy", "book-disinterest"]
     },
     {
         "word": "ALIUNDE",
         "difficulty": 5,
         "definition": "(adv.) From another source; from elsewhere (legal term)."
-,
+        ,
         "synonyms": ["from-outside", "external", "other-source"]
     },
     {
         "word": "ALIVENESS",
         "difficulty": 1,
         "definition": "(n.) The quality of being full of energy and vitality."
-,
+        ,
         "synonyms": ["vitality", "energy", "vibrancy"]
     },
     {
         "word": "ALKALESCENCE",
         "difficulty": 5,
         "definition": "(n.) A mild tendency toward a basic pH; the property of having low acidity."
-,
+        ,
         "synonyms": ["alkalinity", "basicity", "rising-pH"]
     },
     {
         "word": "ALKALI",
         "difficulty": 4,
         "definition": "(n.) A substance that neutralizes acid; a soluble mineral salt with a pH above 7."
-,
+        ,
         "synonyms": ["base", "caustic", "lye"]
     },
     {
         "word": "ALKALIFY",
         "difficulty": 5,
         "definition": "(v.) To raise the pH of a substance above neutral."
-,
+        ,
         "synonyms": ["neutralize", "basify", "raise-pH"]
     },
     {
         "word": "ALKALINE",
         "difficulty": 2,
         "definition": "(adj.) Having a pH above 7; basic rather than acidic."
-,
+        ,
         "synonyms": ["basic", "non-acidic", "caustic"]
     },
     {
         "word": "ALKANE",
         "difficulty": 4,
         "definition": "(n.) A saturated hydrocarbon containing only single bonds, such as methane or ethane."
-,
+        ,
         "synonyms": ["hydrocarbon", "paraffin", "saturated-compound"]
     },
     {
         "word": "ALKYD",
         "difficulty": 5,
         "definition": "(n.) A synthetic resin used in paints and coatings, derived from polyester."
-,
+        ,
         "synonyms": ["resin", "polyester", "paint-binder"]
     },
     {
         "word": "ALL RIGHT",
         "difficulty": 1,
         "definition": "(adj./adv.) Satisfactory or acceptable; safe."
-,
+        ,
         "synonyms": ["okay", "fine", "acceptable"]
     },
     {
         "word": "ALLARGANDO",
         "difficulty": 5,
         "definition": "(adv.) A musical direction meaning to slow down and broaden the tempo."
-,
+        ,
         "synonyms": ["slowing", "broadening", "expanding"]
     },
     {
         "word": "ALLAY",
         "difficulty": 2,
         "definition": "(v.) To diminish or put to rest fear, suspicion, or worry."
-,
+        ,
         "synonyms": ["ease", "calm", "soothe"]
     },
     {
         "word": "ALLAYMENT",
         "difficulty": 5,
         "definition": "(n.) The act of alleviating or calming; relief."
-,
+        ,
         "synonyms": ["relief", "comfort", "mitigation"]
     },
     {
         "word": "ALLEGATION",
         "difficulty": 2,
         "definition": "(n.) A claim or assertion, especially one made without proof."
-,
+        ,
         "synonyms": ["accusation", "claim", "charge"]
     },
     {
         "word": "ALLEGE",
         "difficulty": 1,
         "definition": "(v.) To claim or assert that someone has done something, typically without proof."
-,
+        ,
         "synonyms": ["claim", "assert", "charge"]
     },
     {
         "word": "ALLEGEABLE",
         "difficulty": 5,
         "definition": "(adj.) Able to be put forward as a claim or supporting reason."
-,
+        ,
         "synonyms": ["claimable", "assertable", "chargeable"]
     },
     {
         "word": "ALLEGED",
         "difficulty": 1,
         "definition": "(adj.) (Of a incident or a person) said to have taken place or to have a specified illegal or undesirable quality, but without proof."
-,
+        ,
         "synonyms": ["supposed", "claimed", "purported"]
     },
     {
         "word": "ALLEGEDLY",
         "difficulty": 1,
         "definition": "(adv.) Used to convey that something is claimed to be the case, but not proven."
-,
+        ,
         "synonyms": ["supposedly", "reportedly", "purportedly"]
     },
     {
         "word": "ALLEGIANCE",
         "difficulty": 2,
         "definition": "(n.) Loyalty or commitment to a person, group, or cause."
-,
+        ,
         "synonyms": ["loyalty", "devotion", "fidelity"]
     },
     {
         "word": "ALLEGIANT",
         "difficulty": 4,
         "definition": "(adj.) Faithful and devoted to a person, cause, or nation."
-,
+        ,
         "synonyms": ["loyal", "devoted", "faithful"]
     },
     {
         "word": "ALLEGORIST",
         "difficulty": 5,
         "definition": "(n.) A writer or speaker who uses extended metaphors to convey hidden meanings."
-,
+        ,
         "synonyms": ["symbolist", "fabulist", "moralist"]
     },
     {
         "word": "ALLEGORIZE",
         "difficulty": 5,
         "definition": "(v.) To use symbolic characters or events to represent deeper moral or political meanings."
-,
+        ,
         "synonyms": ["symbolize", "moralize", "represent"]
     },
     {
         "word": "ALLEGORY",
         "difficulty": 2,
         "definition": "(n.) A story or representation where abstract ideas are personified, conveying hidden meaning."
-,
+        ,
         "synonyms": ["parable", "symbol", "metaphor"]
     },
     {
         "word": "ALLEGRETTO",
         "difficulty": 5,
         "definition": "(adv.) At a moderately brisk musical pace, slightly slower than allegro."
-,
+        ,
         "synonyms": ["moderate-tempo", "fairly-fast", "light"]
     },
     {
         "word": "ALLEGRO",
         "difficulty": 4,
         "definition": "(adv.) A musical direction meaning to play in a fast, lively tempo."
-,
+        ,
         "synonyms": ["fast-tempo", "lively", "quick"]
     },
     {
         "word": "ALLEMANDE",
         "difficulty": 5,
         "definition": "(n.) A German court dance popular in the 16th–18th centuries; a wine from Alsace."
-,
+        ,
         "synonyms": ["dance", "German-dance", "suite-movement"]
     },
     {
         "word": "ALLERGENIC",
         "difficulty": 4,
         "definition": "(adj.) Capable of triggering an immune overreaction in sensitive individuals."
-,
+        ,
         "synonyms": ["irritant", "sensitizing", "reactive"]
     },
     {
         "word": "ALLERGY",
         "difficulty": 1,
         "definition": "(n.) An immune system reaction to a substance that is harmless to most people."
-,
+        ,
         "synonyms": ["sensitivity", "reaction", "hypersensitivity"]
     },
     {
         "word": "ALLEVIANT",
         "difficulty": 5,
         "definition": "(n.) Something that relieves or reduces pain or difficulty."
-,
+        ,
         "synonyms": ["reliever", "soother", "mitigator"]
     },
     {
         "word": "ALLEVIATE",
         "difficulty": 2,
         "definition": "(v.) To make suffering or a problem less severe."
-,
+        ,
         "synonyms": ["ease", "relieve", "mitigate"]
     },
     {
         "word": "ALLEYWAY",
         "difficulty": 1,
         "definition": "(n.) A narrow passageway between or behind buildings."
-,
+        ,
         "synonyms": ["lane", "passage", "path"]
     },
     {
         "word": "ALLIACEOUS",
         "difficulty": 5,
         "definition": "(adj.) Relating to or resembling garlic or onions; having their smell or taste."
-,
+        ,
         "synonyms": ["garlicky", "onion-like", "pungent"]
     },
     {
         "word": "ALLIANCE",
         "difficulty": 1,
         "definition": "(n.) A union or association formed for mutual benefit, especially between countries."
-,
+        ,
         "synonyms": ["union", "partnership", "coalition"]
     },
     {
         "word": "ALLIED",
         "difficulty": 1,
         "definition": "(adj.) Joined by or relating to a formal agreement or treaty."
-,
+        ,
         "synonyms": ["united", "associated", "joined"]
     },
     {
         "word": "ALLIGATOR",
         "difficulty": 1,
         "definition": "(n.) A large semiaquatic reptile of the crocodilian family, found in the Americas and China."
-,
+        ,
         "synonyms": ["crocodilian", "reptile", "gator"]
     },
     {
         "word": "ALLISION",
         "difficulty": 5,
         "definition": "(n.) The striking of a moving vessel against a stationary object."
-,
+        ,
         "synonyms": ["collision", "crash", "impact"]
     },
     {
         "word": "ALLITERATION",
         "difficulty": 4,
         "definition": "(n.) The occurrence of the same letter or sound at the beginning of adjacent words."
-,
+        ,
         "synonyms": ["repetition", "consonance", "sound-pattern"]
     },
     {
         "word": "ALLOCATE",
         "difficulty": 2,
         "definition": "(v.) To distribute resources or duties for a particular purpose."
-,
+        ,
         "synonyms": ["assign", "distribute", "apportion"]
     },
     {
         "word": "ALLOCUTION",
         "difficulty": 5,
         "definition": "(n.) A formal address or speech, especially from a judge to a convicted defendant."
-,
+        ,
         "synonyms": ["speech", "address", "proclamation"]
     },
     {
         "word": "ALLONYM",
         "difficulty": 5,
         "definition": "(n.) A name used by an author that is actually someone else's name."
-,
+        ,
         "synonyms": ["pseudonym", "pen-name", "alias"]
     },
     {
         "word": "ALLOPELAGIC",
         "difficulty": 5,
         "definition": "(adj.) Living at varying depths in the ocean rather than a fixed layer."
-,
+        ,
         "synonyms": ["deep-sea", "ocean-dwelling", "pelagic"]
     },
     {
         "word": "ALLOT",
         "difficulty": 1,
         "definition": "(v.) To give or distribute a share of something."
-,
+        ,
         "synonyms": ["assign", "distribute", "apportion"]
     },
     {
         "word": "ALLOTMENT",
         "difficulty": 2,
         "definition": "(n.) A share or portion of something allocated; a plot of land for gardening."
-,
+        ,
         "synonyms": ["plot", "allocation", "share"]
     },
     {
         "word": "ALLOTROPIC",
         "difficulty": 5,
         "definition": "(adj.) Describing an element that can exist in more than one structural form, such as carbon as diamond or graphite."
-,
+        ,
         "synonyms": ["varied-form", "polymorphic", "structural-variant"]
     },
     {
         "word": "ALLOTROPY",
         "difficulty": 5,
         "definition": "(n.) The property of some elements to exist in two or more distinct forms, e.g., carbon."
-,
+        ,
         "synonyms": ["polymorphism", "structural-variation", "form-change"]
     },
     {
         "word": "ALLOTTED",
         "difficulty": 2,
         "definition": "(v.) Distributed or assigned as a share."
-,
+        ,
         "synonyms": ["assigned", "distributed", "given"]
     },
     {
         "word": "ALLOWABLE",
         "difficulty": 1,
         "definition": "(adj.) Permitted within a set of rules or circumstances."
-,
+        ,
         "synonyms": ["permissible", "acceptable", "permitted"]
     },
     {
         "word": "ALLOY",
         "difficulty": 1,
         "definition": "(n.) A metal made by combining two or more metallic elements to improve properties."
-,
+        ,
         "synonyms": ["blend", "mixture", "composite"]
     },
     {
         "word": "ALLSPICE",
         "difficulty": 1,
         "definition": "(n.) A spice made from the dried berry of the pimento tree, tasting like mixed spices."
-,
+        ,
         "synonyms": ["spice", "pimento", "seasoning"]
     },
     {
         "word": "ALLUDED",
         "difficulty": 2,
         "definition": "(v.) Made an indirect reference to something without naming it explicitly."
-,
+        ,
         "synonyms": ["hinted", "referred", "suggested"]
     },
     {
         "word": "ALLURE",
         "difficulty": 1,
         "definition": "(v.) To attract or tempt; the quality of being powerfully attractive."
-,
+        ,
         "synonyms": ["attract", "charm", "entice"]
     },
     {
         "word": "ALLUSION",
         "difficulty": 2,
         "definition": "(n.) An indirect or passing reference to something."
-,
+        ,
         "synonyms": ["reference", "hint", "mention"]
     },
     {
         "word": "ALLUSIVELY",
         "difficulty": 4,
         "definition": "(adv.) In a way that hints at something without naming it directly."
-,
+        ,
         "synonyms": ["indirectly", "suggestively", "by-implication"]
     },
     {
         "word": "ALLUVIAL",
         "difficulty": 5,
         "definition": "(adj.) Consisting of sediment deposited by rivers or floods."
-,
+        ,
         "synonyms": ["sedimentary", "deposited", "flood-plain"]
     },
     {
         "word": "ALLUVIATION",
         "difficulty": 5,
         "definition": "(n.) The gradual buildup of sediment deposited by flowing water."
-,
+        ,
         "synonyms": ["sediment-deposit", "silt-buildup", "river-deposit"]
     },
     {
         "word": "ALLUVIUM",
         "difficulty": 5,
         "definition": "(n.) Sediment deposited by flowing water, typically found in riverbeds and floodplains."
-,
+        ,
         "synonyms": ["sediment", "silt", "deposit"]
     },
     {
         "word": "ALLY",
         "difficulty": 1,
         "definition": "(n.) A person, country, or organization that cooperates with another."
-,
+        ,
         "synonyms": ["partner", "associate", "collaborator"]
     },
     {
         "word": "ALMANAC",
         "difficulty": 2,
         "definition": "(n.) An annual publication containing a calendar and various data tables."
-,
+        ,
         "synonyms": ["calendar", "yearbook", "reference-book"]
     },
     {
         "word": "ALMANDITE",
         "difficulty": 5,
         "definition": "(n.) A deep red variety of garnet used as a gemstone."
-,
+        ,
         "synonyms": ["garnet", "gemstone", "red-mineral"]
     },
     {
         "word": "ALMIGHTY",
         "difficulty": 1,
         "definition": "(adj.) Having complete power; omnipotent."
-,
+        ,
         "synonyms": ["omnipotent", "all-powerful", "supreme"]
     },
     {
         "word": "ALMOND",
         "difficulty": 1,
         "definition": "(n.) An edible nut or the tree that produces it, native to the Middle East."
-,
+        ,
         "synonyms": ["nut", "drupe", "kernel"]
     },
     {
         "word": "ALMONER",
         "difficulty": 5,
         "definition": "(n.) An official who distributes charity; a hospital social worker (British usage)."
-,
+        ,
         "synonyms": ["charity-officer", "distributor", "social-worker"]
     },
     {
         "word": "ALMS",
         "difficulty": 2,
         "definition": "(n.) Money or food given charitably to the poor."
-,
+        ,
         "synonyms": ["charity", "donation", "aid"]
     },
     {
         "word": "ALMUERZO",
         "difficulty": 5,
         "definition": "(n.) Lunch or brunch in Spanish-speaking cultures."
-,
+        ,
         "synonyms": ["lunch", "meal", "midday-food"]
     },
     {
         "word": "ALNICO",
         "difficulty": 5,
         "definition": "(n.) A strong permanent magnetic alloy composed of aluminum, nickel, and cobalt."
-,
+        ,
         "synonyms": ["magnet", "alloy", "iron-alloy"]
     },
     {
         "word": "ALOE",
         "difficulty": 1,
         "definition": "(n.) A succulent plant with fleshy leaves used in herbal medicine and cosmetics."
-,
+        ,
         "synonyms": ["succulent", "plant", "gel-plant"]
     },
     {
         "word": "ALOFT",
         "difficulty": 1,
         "definition": "(adv.) Up in the air; high above the ground."
-,
+        ,
         "synonyms": ["up", "overhead", "above"]
     },
     {
         "word": "ALOGIA",
         "difficulty": 5,
         "definition": "(n.) A poverty of speech associated with schizophrenia or brain damage."
-,
+        ,
         "synonyms": ["speechlessness", "word-poverty", "mutism"]
     },
     {
         "word": "ALOGISM",
         "difficulty": 5,
         "definition": "(n.) A statement that defies logic; an illogical remark."
-,
+        ,
         "synonyms": ["illogic", "fallacy", "error"]
     },
     {
         "word": "ALOHA",
         "difficulty": 1,
         "definition": "(interjection) A Hawaiian greeting or farewell expressing love and affection."
-,
+        ,
         "synonyms": ["greeting", "farewell", "Hawaiian-welcome"]
     },
     {
         "word": "ALOISIITE",
         "difficulty": 5,
         "definition": "(n.) A rare silicate mineral named after a Jesuit missionary."
-,
+        ,
         "synonyms": ["mineral", "silicate", "clay-mineral"]
     },
     {
         "word": "ALONGSIDE",
         "difficulty": 1,
         "definition": "(preposition) Close to the side of; in comparison with."
-,
+        ,
         "synonyms": ["beside", "next-to", "adjacent"]
     },
     {
         "word": "ALOOF",
         "difficulty": 1,
         "definition": "(adj.) Cool and distant in manner; not friendly or forthcoming."
-,
+        ,
         "synonyms": ["distant", "detached", "reserved"]
     },
     {
         "word": "ALOPECIA",
         "difficulty": 5,
         "definition": "(n.) Hair loss from the scalp or body, due to illness or genetics."
-,
+        ,
         "synonyms": ["hair-loss", "baldness", "hair-disorder"]
     },
     {
         "word": "ALOPECOID",
         "difficulty": 5,
         "definition": "(adj.) Having fox-like characteristics in appearance or behavior."
-,
+        ,
         "synonyms": ["fox-like", "cunning", "vulpine"]
     },
     {
         "word": "ALPACA",
         "difficulty": 2,
         "definition": "(n.) A South American mammal related to the llama, raised for its fiber."
-,
+        ,
         "synonyms": ["llama-relative", "camelid", "wool-animal"]
     },
     {
         "word": "ALPENGLOW",
         "difficulty": 4,
         "definition": "(n.) A reddish glow seen on mountaintops just before sunrise or after sunset."
-,
+        ,
         "synonyms": ["sunset-glow", "mountain-light", "rosy-glow"]
     },
     {
         "word": "ALPESTRINE",
         "difficulty": 5,
         "definition": "(adj.) Growing at high mountain altitudes; subalpine."
-,
+        ,
         "synonyms": ["alpine", "high-altitude", "mountain-dwelling"]
     },
     {
         "word": "ALPHABETICAL",
         "difficulty": 2,
         "definition": "(adj.) Arranged in the conventional sequence of letters in a language's writing system."
-,
+        ,
         "synonyms": ["ordered", "sorted", "A-to-Z"]
     },
     {
         "word": "ALPHABETIZE",
         "difficulty": 2,
         "definition": "(v.) To sort or arrange items in the conventional sequence of letters from A to Z."
-,
+        ,
         "synonyms": ["sort", "arrange", "order"]
     },
     {
         "word": "ALPHAGRAM",
         "difficulty": 5,
         "definition": "(n.) A word formed by sorting the letters of another word into alphabetical order."
-,
+        ,
         "synonyms": ["anagram", "letter-puzzle", "word-rearrangement"]
     },
     {
         "word": "ALPHANUMERICAL",
         "difficulty": 4,
         "definition": "(adj.) Consisting of both letters and numbers."
-,
+        ,
         "synonyms": ["letters-and-numbers", "mixed", "coded"]
     },
     {
         "word": "ALPINE",
         "difficulty": 2,
         "definition": "(adj.) Relating to high mountains; found at or above the timberline."
-,
+        ,
         "synonyms": ["mountain", "high-altitude", "subalpine"]
     },
     {
         "word": "ALTARPIECE",
         "difficulty": 2,
         "definition": "(n.) A decorative panel or painting positioned at the back of a church's central table."
-,
+        ,
         "synonyms": ["religious-art", "reredos", "church-painting"]
     },
     {
         "word": "ALTAZIMUTH",
         "difficulty": 5,
         "definition": "(n.) An instrument for measuring altitude and azimuth of celestial objects."
-,
+        ,
         "synonyms": ["telescope-mount", "altitude-azimuth", "rotating-support"]
     },
     {
         "word": "ALTERCATION",
         "difficulty": 4,
         "definition": "(n.) A noisy argument or disagreement."
-,
+        ,
         "synonyms": ["argument", "quarrel", "dispute"]
     },
     {
         "word": "ALTERNATE",
         "difficulty": 1,
         "definition": "(v.) To change repeatedly between two states; every other one in a series."
-,
+        ,
         "synonyms": ["switch", "take-turns", "vary"]
     },
     {
         "word": "ALTERNATIVE",
         "difficulty": 1,
         "definition": "(n.) A choice between two or more options; available as a substitute."
-,
+        ,
         "synonyms": ["option", "choice", "substitute"]
     },
     {
         "word": "ALTERNATIVITY",
         "difficulty": 5,
         "definition": "(n.) The quality of offering or being a substitute option."
-,
+        ,
         "synonyms": ["optionality", "choice", "variability"]
     },
     {
         "word": "ALTHORN",
         "difficulty": 5,
         "definition": "(n.) A valved brass instrument of the saxhorn family, used in military bands."
-,
+        ,
         "synonyms": ["brass-instrument", "alto-horn", "saxhorn"]
     },
     {
         "word": "ALTHOUGH",
         "difficulty": 1,
         "definition": "(conjunction) In spite of the fact that; even though."
-,
+        ,
         "synonyms": ["though", "even-though", "while"]
     },
     {
         "word": "ALTIGRAPH",
         "difficulty": 5,
         "definition": "(n.) A recording altimeter that traces changes in altitude over time."
-,
+        ,
         "synonyms": ["altitude-recorder", "height-chart", "elevation-graph"]
     },
     {
         "word": "ALTIMETER",
         "difficulty": 4,
         "definition": "(n.) An instrument for measuring altitude above sea level."
-,
+        ,
         "synonyms": ["height-gauge", "elevation-meter", "altitude-reader"]
     },
     {
         "word": "ALTIMETRY",
         "difficulty": 5,
         "definition": "(n.) The science of measuring altitude, especially using radar or barometry."
-,
+        ,
         "synonyms": ["height-measurement", "elevation-survey", "altitude-science"]
     },
     {
         "word": "ALTIPLANATION",
         "difficulty": 5,
         "definition": "(n.) The formation of a flat or gently sloping surface on a high plateau by erosion."
-,
+        ,
         "synonyms": ["plateau-formation", "leveling", "erosion-surface"]
     },
     {
         "word": "ALTIPLANO",
         "difficulty": 4,
         "definition": "(n.) A high-altitude plateau, especially in the Andes of South America."
-,
+        ,
         "synonyms": ["plateau", "high-plain", "upland"]
     },
     {
         "word": "ALTITUDE",
         "difficulty": 1,
         "definition": "(n.) The height of an object or point above sea level or above the Earth's surface."
-,
+        ,
         "synonyms": ["height", "elevation", "level"]
     },
     {
         "word": "ALTO",
         "difficulty": 1,
         "definition": "(n.) The lowest female singing voice; an instrument of the middle range."
-,
+        ,
         "synonyms": ["singer", "lower-voice", "contralto"]
     },
     {
         "word": "ALTOCUMULUS",
         "difficulty": 5,
         "definition": "(n.) A type of cloud forming a white or grey layer at mid-level altitude."
-,
+        ,
         "synonyms": ["cloud", "mid-level-cloud", "fleecy-cloud"]
     },
     {
         "word": "ALTOGETHER",
         "difficulty": 1,
         "definition": "(adv.) Completely; on the whole; with everything considered."
-,
+        ,
         "synonyms": ["entirely", "completely", "wholly"]
     },
     {
         "word": "ALTOSTRATUS",
         "difficulty": 5,
         "definition": "(n.) A grey or blue-grey cloud layer at mid-altitude covering the sky."
-,
+        ,
         "synonyms": ["cloud", "grey-cloud", "overcast"]
     },
     {
         "word": "ALTRICIAL",
         "difficulty": 5,
         "definition": "(adj.) Describing young birds or animals that hatch or are born helpless, needing parental care."
-,
+        ,
         "synonyms": ["helpless-at-birth", "nest-dependent", "immature"]
     },
     {
         "word": "ALTRUISM",
         "difficulty": 2,
         "definition": "(n.) Selfless concern for the well-being of others."
-,
+        ,
         "synonyms": ["selflessness", "generosity", "benevolence"]
     },
     {
         "word": "ALTRUISTIC",
         "difficulty": 2,
         "definition": "(adj.) Showing a selfless concern for the welfare of others."
-,
+        ,
         "synonyms": ["selfless", "generous", "philanthropic"]
     },
     {
         "word": "ALUM",
         "difficulty": 2,
         "definition": "(n.) A double sulfate salt used in medicine and dyeing; a graduate of a school."
-,
+        ,
         "synonyms": ["mineral", "astringent", "salt"]
     },
     {
         "word": "ALUMINIFEROUS",
         "difficulty": 5,
         "definition": "(adj.) Bearing or producing the lightweight metallic element used in foil and aircraft."
-,
+        ,
         "synonyms": ["aluminum-bearing", "metallic", "mineral-rich"]
     },
     {
         "word": "ALUMINOTYPE",
         "difficulty": 5,
         "definition": "(n.) An early photographic method that used a metallic plate as the image base."
-,
+        ,
         "synonyms": ["photo-process", "image-print", "aluminum-print"]
     },
     {
         "word": "ALUMINOUS",
         "difficulty": 5,
         "definition": "(adj.) Having properties associated with a soft, lightweight, silvery-white metal."
-,
+        ,
         "synonyms": ["aluminum-containing", "metallic", "mineral"]
     },
     {
         "word": "ALUMINUM",
         "difficulty": 1,
         "definition": "(n.) A lightweight, silvery-white metallic element widely used in construction and packaging."
-,
+        ,
         "synonyms": ["metal", "alloy", "lightweight-metal"]
     },
     {
         "word": "ALUMNUS",
         "difficulty": 2,
         "definition": "(n.) A former student of a school or university."
-,
+        ,
         "synonyms": ["graduate", "former-student", "alum"]
     },
     {
         "word": "ALVEOLAR",
         "difficulty": 5,
         "definition": "(adj.) Relating to the tiny air sacs in the lungs, or the bony ridge just behind the upper front teeth."
-,
+        ,
         "synonyms": ["socket-related", "dental", "lung-related"]
     },
     {
         "word": "ALVEOLATE",
         "difficulty": 5,
         "definition": "(adj.) Having small cavities or pits; honeycomb-like in structure."
-,
+        ,
         "synonyms": ["pitted", "honeycomb", "cellular"]
     },
     {
         "word": "ALWAYS",
         "difficulty": 1,
         "definition": "(adv.) At all times; on every occasion; forever."
-,
+        ,
         "synonyms": ["forever", "constantly", "perpetually"]
     },
     {
         "word": "ALYSSUM",
         "difficulty": 5,
         "definition": "(n.) A flowering plant of the mustard family, often used in borders and rock gardens."
-,
+        ,
         "synonyms": ["flower", "herb", "sweet-alyssum"]
     },
     {
         "word": "AMADELPHOUS",
         "difficulty": 5,
         "definition": "(adj.) Having stamens united in bundles or clusters."
-,
+        ,
         "synonyms": ["bundle-forming", "grouped", "clustered"]
     },
     {
         "word": "AMAH",
         "difficulty": 4,
         "definition": "(n.) A nursemaid or maid in South and East Asia."
-,
+        ,
         "synonyms": ["nursemaid", "nanny", "housekeeper"]
     },
     {
         "word": "AMALGAM",
         "difficulty": 4,
         "definition": "(n.) A mixture or blend; an alloy of mercury with another metal."
-,
+        ,
         "synonyms": ["blend", "mixture", "combination"]
     },
     {
         "word": "AMALGAMATION",
         "difficulty": 4,
         "definition": "(n.) The process of combining or merging to form a unified whole."
-,
+        ,
         "synonyms": ["merger", "union", "combination"]
     },
     {
         "word": "AMANDINE",
         "difficulty": 5,
         "definition": "(adj.) Garnished or prepared with almonds."
-,
+        ,
         "synonyms": ["almond-style", "almond-garnished", "nutted"]
     },
     {
         "word": "AMANTADINE",
         "difficulty": 5,
         "definition": "(n.) An antiviral drug used to prevent and treat influenza and Parkinson's disease."
-,
+        ,
         "synonyms": ["antiviral", "medication", "dopamine-drug"]
     },
     {
         "word": "AMANUENSIS",
         "difficulty": 5,
         "definition": "(n.) A person who writes from dictation or copies manuscripts; a secretary."
-,
+        ,
         "synonyms": ["scribe", "secretary", "copyist"]
     },
     {
         "word": "AMARANTH",
         "difficulty": 4,
         "definition": "(n.) A plant with showy red flowers; a dark purplish-red color."
-,
+        ,
         "synonyms": ["plant", "purple-dye", "grain"]
     },
     {
         "word": "AMARANTHINE",
         "difficulty": 5,
         "definition": "(adj.) Of a deep purplish-red color; everlasting or unfading."
-,
+        ,
         "synonyms": ["eternal", "unfading", "purple"]
     },
     {
         "word": "AMARETTO",
         "difficulty": 4,
         "definition": "(n.) An Italian almond-flavored liqueur."
-,
+        ,
         "synonyms": ["liqueur", "almond-drink", "Italian-spirit"]
     },
     {
         "word": "AMARYLLIS",
         "difficulty": 4,
         "definition": "(n.) A bulbous plant with large trumpet-shaped flowers, often grown indoors."
-,
+        ,
         "synonyms": ["flower", "bulb", "lily-like"]
     },
     {
         "word": "AMASS",
         "difficulty": 1,
         "definition": "(v.) To gather or accumulate a large amount of something over time."
-,
+        ,
         "synonyms": ["collect", "accumulate", "gather"]
     },
     {
         "word": "AMATEUR",
         "difficulty": 2,
         "definition": "(n.) A person who pursues an activity for pleasure, not as a profession."
-,
+        ,
         "synonyms": ["novice", "hobbyist", "non-professional"]
     },
     {
         "word": "AMATEURISH",
         "difficulty": 4,
         "definition": "(adj.) Performed in an unskilled or unprofessional manner."
-,
+        ,
         "synonyms": ["unskilled", "clumsy", "unprofessional"]
     },
     {
         "word": "AMATHOPHOBIA",
         "difficulty": 5,
         "definition": "(n.) An abnormal fear of dust."
-,
+        ,
         "synonyms": ["dust-fear", "dirt-phobia", "contamination-fear"]
     },
     {
         "word": "AMAZON",
         "difficulty": 1,
         "definition": "(n.) A tall, strong, or athletic woman; a member of a mythical female warrior race."
-,
+        ,
         "synonyms": ["warrior", "river", "strong-woman"]
     },
     {
         "word": "AMAZONITE",
         "difficulty": 5,
         "definition": "(n.) A blue-green variety of feldspar used as a gemstone."
-,
+        ,
         "synonyms": ["mineral", "feldspar", "blue-green-gem"]
     },
     {
         "word": "AMBASSADOR",
         "difficulty": 2,
         "definition": "(n.) A diplomat sent by a state to represent it in another country."
-,
+        ,
         "synonyms": ["diplomat", "envoy", "representative"]
     },
     {
         "word": "AMBER",
         "difficulty": 1,
         "definition": "(n.) Fossilized tree resin, typically yellow-orange, used for jewelry and in research."
-,
+        ,
         "synonyms": ["resin", "fossil-gem", "orange-yellow"]
     },
     {
         "word": "AMBERJACK",
         "difficulty": 2,
         "definition": "(n.) A large, fast-swimming ocean fish popular for sport fishing and food."
-,
+        ,
         "synonyms": ["fish", "jack-fish", "game-fish"]
     },
     {
         "word": "AMBIDEXTERITY",
         "difficulty": 5,
         "definition": "(n.) The ability to use both hands with equal skill."
-,
+        ,
         "synonyms": ["two-handed-skill", "versatility", "dexterity"]
     },
     {
         "word": "AMBIDEXTROUS",
         "difficulty": 4,
         "definition": "(adj.) Able to use both hands equally well."
-,
+        ,
         "synonyms": ["versatile", "dexterous", "two-handed"]
     },
     {
         "word": "AMBIENCE",
         "difficulty": 2,
         "definition": "(n.) The character and atmosphere of a place."
-,
+        ,
         "synonyms": ["atmosphere", "mood", "environment"]
     },
     {
         "word": "AMBIENT",
         "difficulty": 2,
         "definition": "(adj.) Relating to the immediate surroundings; present on all sides."
-,
+        ,
         "synonyms": ["surrounding", "environmental", "background"]
     },
     {
         "word": "AMBIGUITY",
         "difficulty": 2,
         "definition": "(n.) Uncertainty or inexactness of meaning in language."
-,
+        ,
         "synonyms": ["vagueness", "uncertainty", "obscurity"]
     },
     {
         "word": "AMBIGUOUS",
         "difficulty": 2,
         "definition": "(adj.) Open to more than one interpretation; not having a clear meaning."
-,
+        ,
         "synonyms": ["unclear", "vague", "equivocal"]
     },
     {
         "word": "AMBITIOUS",
         "difficulty": 1,
         "definition": "(adj.) Having or showing a strong desire to succeed."
-,
+        ,
         "synonyms": ["aspiring", "driven", "determined"]
     },
     {
         "word": "AMBIVALENTLY",
         "difficulty": 4,
         "definition": "(adv.) In a way that shows mixed feelings or contradictory ideas."
-,
+        ,
         "synonyms": ["uncertainly", "doubtfully", "conflictedly"]
     },
     {
         "word": "AMBLE",
         "difficulty": 2,
         "definition": "(v.) To walk at a slow, relaxed pace."
-,
+        ,
         "synonyms": ["stroll", "wander", "walk-leisurely"]
     },
     {
         "word": "AMBLYOPIA",
         "difficulty": 5,
         "definition": "(n.) Reduced vision in one eye not corrected by glasses; lazy eye."
-,
+        ,
         "synonyms": ["lazy-eye", "vision-disorder", "weak-eye"]
     },
     {
         "word": "AMBRETTE",
         "difficulty": 5,
         "definition": "(n.) A tropical plant whose seeds yield a musky-scented oil used in perfumery."
-,
+        ,
         "synonyms": ["musk-plant", "hibiscus-seed", "aromatic-seed"]
     },
     {
         "word": "AMBROSIA",
         "difficulty": 4,
         "definition": "(n.) Food of the gods in Greek mythology; something extremely pleasing to the senses."
-,
+        ,
         "synonyms": ["nectar", "delicacy", "divine-food"]
     },
     {
         "word": "AMBRY",
         "difficulty": 5,
         "definition": "(n.) A cupboard or recess in a church wall for storing sacred vessels."
-,
+        ,
         "synonyms": ["niche", "cupboard", "church-recess"]
     },
     {
         "word": "AMBULANCE",
         "difficulty": 1,
         "definition": "(n.) A vehicle equipped for transporting sick or injured people to a hospital."
-,
+        ,
         "synonyms": ["emergency-vehicle", "rescue-truck", "medic-van"]
     },
     {
         "word": "AMBULATION",
         "difficulty": 4,
         "definition": "(n.) The ability or act of walking about."
-,
+        ,
         "synonyms": ["walking", "movement", "locomotion"]
     },
     {
         "word": "AMBULATORY",
         "difficulty": 4,
         "definition": "(adj.) Relating to walking; able to walk; relating to an outpatient setting."
-,
+        ,
         "synonyms": ["walking", "mobile", "perambulatory"]
     },
     {
         "word": "AMBUSCADE",
         "difficulty": 5,
         "definition": "(n.) A surprise attack launched from a hidden position."
-,
+        ,
         "synonyms": ["ambush", "trap", "surprise-attack"]
     },
     {
         "word": "AMBUSH",
         "difficulty": 1,
         "definition": "(n.) A surprise attack from a concealed position."
-,
+        ,
         "synonyms": ["trap", "surprise", "waylay"]
     },
     {
         "word": "AMELIORANT",
         "difficulty": 5,
         "definition": "(n.) Something that improves or makes better."
-,
+        ,
         "synonyms": ["improver", "enhancer", "modifier"]
     },
     {
         "word": "AMELIORATE",
         "difficulty": 5,
         "definition": "(v.) To make something bad or unsatisfactory better."
-,
+        ,
         "synonyms": ["improve", "better", "enhance"]
     },
     {
         "word": "AMEN",
         "difficulty": 1,
         "definition": "(interjection) Said at the end of a prayer meaning 'so be it'; expressing agreement."
-,
+        ,
         "synonyms": ["so-be-it", "agreed", "verily"]
     },
     {
         "word": "AMENABLE",
         "difficulty": 2,
         "definition": "(adj.) Open and responsive to suggestion; willing to agree."
-,
+        ,
         "synonyms": ["compliant", "receptive", "agreeable"]
     },
     {
         "word": "AMEND",
         "difficulty": 1,
         "definition": "(v.) To make changes to improve or correct; to modify a law or document."
-,
+        ,
         "synonyms": ["revise", "correct", "modify"]
     },
     {
         "word": "AMENDMENT",
         "difficulty": 1,
         "definition": "(n.) A change or addition designed to improve a document, law, or plan."
-,
+        ,
         "synonyms": ["revision", "correction", "change"]
     },
     {
         "word": "AMENITIES",
         "difficulty": 2,
         "definition": "(n.) Desirable features or facilities of a place; pleasing aspects."
-,
+        ,
         "synonyms": ["comforts", "conveniences", "facilities"]
     },
     {
         "word": "AMENITY",
         "difficulty": 2,
         "definition": "(n.) A desirable and useful feature or facility of a place."
-,
+        ,
         "synonyms": ["convenience", "comfort", "facility"]
     },
     {
         "word": "AMERCE",
         "difficulty": 5,
         "definition": "(v.) To punish by a fine; to impose a fine or penalty."
-,
+        ,
         "synonyms": ["fine", "penalize", "punish"]
     },
     {
         "word": "AMERCEMENT",
         "difficulty": 5,
         "definition": "(n.) A financial penalty imposed at the discretion of a court."
-,
+        ,
         "synonyms": ["penalty", "fine", "forfeiture"]
     },
     {
         "word": "AMERICAN",
         "difficulty": 1,
         "definition": "(adj.) Of or relating to the United States or its people."
-,
+        ,
         "synonyms": ["US-citizen", "New-Worlder", "Yankee"]
     },
     {
         "word": "AMERICIUM",
         "difficulty": 5,
         "definition": "(n.) A radioactive metallic element produced artificially; atomic number 95."
-,
+        ,
         "synonyms": ["element", "actinide", "radioactive-metal"]
     },
     {
         "word": "AMERTOY",
         "difficulty": 5,
         "definition": "(n.) A toy or plaything of American origin or character."
-,
+        ,
         "synonyms": ["toy-type", "novelty-item", "plaything"]
     },
     {
         "word": "AMETHYST",
         "difficulty": 2,
         "definition": "(n.) A violet or purple variety of quartz used as a gemstone."
-,
+        ,
         "synonyms": ["gemstone", "purple-crystal", "quartz"]
     },
     {
         "word": "AMIABLE",
         "difficulty": 2,
         "definition": "(adj.) Having a friendly and pleasant manner."
-,
+        ,
         "synonyms": ["friendly", "pleasant", "congenial"]
     },
     {
         "word": "AMICABLE",
         "difficulty": 2,
         "definition": "(adj.) Characterized by friendliness and absence of discord."
-,
+        ,
         "synonyms": ["peaceful", "cordial", "harmonious"]
     },
     {
         "word": "AMICE",
         "difficulty": 5,
         "definition": "(n.) A white linen cloth worn around the neck and shoulders by a priest during Mass."
-,
+        ,
         "synonyms": ["vestment", "collar-cloth", "liturgical-garment"]
     },
     {
         "word": "AMIDOL",
         "difficulty": 5,
         "definition": "(n.) A chemical compound used as a photographic developer."
-,
+        ,
         "synonyms": ["developer", "photographic-chemical", "reducing-agent"]
     },
     {
         "word": "AMIGO",
         "difficulty": 1,
         "definition": "(n.) A friend (Spanish); used informally in English."
-,
+        ,
         "synonyms": ["friend", "buddy", "companion"]
     },
     {
         "word": "AMINE",
         "difficulty": 4,
         "definition": "(n.) An organic compound derived from ammonia, containing nitrogen."
-,
+        ,
         "synonyms": ["organic-compound", "nitrogen-compound", "base"]
     },
     {
         "word": "AMISS",
         "difficulty": 1,
         "definition": "(adj.) Not quite right; inappropriate or out of place."
-,
+        ,
         "synonyms": ["wrong", "faulty", "awry"]
     },
     {
         "word": "AMITY",
         "difficulty": 2,
         "definition": "(n.) A friendly relationship between people or countries."
-,
+        ,
         "synonyms": ["friendship", "goodwill", "harmony"]
     },
     {
         "word": "AMMETER",
         "difficulty": 4,
         "definition": "(n.) An instrument for measuring the strength of electric current in amperes."
-,
+        ,
         "synonyms": ["current-gauge", "electricity-meter", "ampere-reader"]
     },
     {
         "word": "AMMONIA",
         "difficulty": 2,
         "definition": "(n.) A colorless gas with a sharp smell, used in cleaning products and fertilizers."
-,
+        ,
         "synonyms": ["gas", "chemical", "nitrogen-compound"]
     },
     {
         "word": "AMMONIAC",
         "difficulty": 5,
         "definition": "(adj.) Having a sharp, acrid odor; describing a gum resin from Central Asia historically used in medicine."
-,
+        ,
         "synonyms": ["gum-resin", "volatile", "pungent"]
     },
     {
         "word": "AMMONIACAL",
         "difficulty": 5,
         "definition": "(adj.) Having a sharp, pungent smell characteristic of nitrogen-based compounds."
-,
+        ,
         "synonyms": ["ammonia-smelling", "pungent", "nitrogen-rich"]
     },
     {
         "word": "AMMUNITION",
         "difficulty": 2,
         "definition": "(n.) A supply of bullets and shells for firearms."
-,
+        ,
         "synonyms": ["bullets", "rounds", "ordnance"]
     },
     {
         "word": "AMNESIA",
         "difficulty": 2,
         "definition": "(n.) A partial or total loss of memory, often caused by brain injury or trauma."
-,
+        ,
         "synonyms": ["memory-loss", "forgetfulness", "blackout"]
     },
     {
         "word": "AMNESTY",
         "difficulty": 2,
         "definition": "(n.) An official pardon for people who have been convicted of offenses."
-,
+        ,
         "synonyms": ["pardon", "reprieve", "clemency"]
     },
     {
         "word": "AMOK",
         "difficulty": 2,
         "definition": "(adv.) In a wild, frenzied, uncontrolled manner."
-,
+        ,
         "synonyms": ["frenzy", "wildly", "berserk"]
     },
     {
         "word": "AMOLE",
         "difficulty": 5,
         "definition": "(n.) A plant whose roots are used as soap, found in the American Southwest and Mexico."
-,
+        ,
         "synonyms": ["plant", "soap-plant", "root"]
     },
     {
         "word": "AMONTILLADO",
         "difficulty": 5,
         "definition": "(n.) A medium-dry sherry with a nutty flavor."
-,
+        ,
         "synonyms": ["sherry", "wine", "Spanish-wine"]
     },
     {
         "word": "AMOROUS",
         "difficulty": 2,
         "definition": "(adj.) Showing or feeling deep affection and romantic fondness toward someone."
-,
+        ,
         "synonyms": ["loving", "romantic", "affectionate"]
     },
     {
         "word": "AMORPHOUS",
         "difficulty": 4,
         "definition": "(adj.) Without a clearly defined shape or form; vague or unstructured."
-,
+        ,
         "synonyms": ["shapeless", "formless", "vague"]
     },
     {
         "word": "AMORTIZATION",
         "difficulty": 4,
         "definition": "(n.) The gradual reduction of a debt by regular payments; the spreading of costs."
-,
+        ,
         "synonyms": ["repayment", "write-off", "debt-reduction"]
     },
     {
         "word": "AMOUNT",
         "difficulty": 1,
         "definition": "(n.) The total sum or quantity of something."
-,
+        ,
         "synonyms": ["quantity", "sum", "total"]
     },
     {
         "word": "AMPERAGE",
         "difficulty": 4,
         "definition": "(n.) The magnitude of electric current flowing through a circuit."
-,
+        ,
         "synonyms": ["current", "electrical-flow", "amps"]
     },
     {
         "word": "AMPERE",
         "difficulty": 4,
         "definition": "(n.) The SI unit of electric current."
-,
+        ,
         "synonyms": ["current-unit", "electrical-unit", "amp"]
     },
     {
         "word": "AMPERSAND",
         "difficulty": 4,
         "definition": "(n.) The symbol & standing for 'and.'"
-,
+        ,
         "synonyms": ["and-symbol", "conjunction-mark", "typographic-symbol"]
     },
     {
         "word": "AMPHETAMINE",
         "difficulty": 4,
         "definition": "(n.) A synthetic stimulant drug used medically and illicitly."
-,
+        ,
         "synonyms": ["stimulant", "speed", "psychostimulant"]
     },
     {
         "word": "AMPHIBIAN",
         "difficulty": 2,
         "definition": "(n.) A cold-blooded vertebrate that can live on land and in water."
-,
+        ,
         "synonyms": ["frog", "toad", "dual-habitat-creature"]
     },
     {
         "word": "AMPHIBIOUS",
         "difficulty": 4,
         "definition": "(adj.) Relating to or suited for both land and water."
-,
+        ,
         "synonyms": ["dual-habitat", "land-and-water", "marine"]
     },
     {
         "word": "AMPHICHROME",
         "difficulty": 5,
         "definition": "(adj.) Capable of producing two different colors under different conditions."
-,
+        ,
         "synonyms": ["dual-color", "bicolor", "two-toned"]
     },
     {
         "word": "AMPHICRANIA",
         "difficulty": 5,
         "definition": "(n.) A headache affecting both sides of the head."
-,
+        ,
         "synonyms": ["bilateral-headache", "migraine", "head-pain"]
     },
     {
         "word": "AMPHIDROMIC",
         "difficulty": 5,
         "definition": "(adj.) Relating to a point around which tidal oscillations rotate."
-,
+        ,
         "synonyms": ["tidal-point", "no-tide-zone", "ocean-node"]
     },
     {
         "word": "AMPHIOXUS",
         "difficulty": 5,
         "definition": "(n.) A small, primitive marine animal; a lancelet, important in evolutionary biology."
-,
+        ,
         "synonyms": ["lancelet", "sea-creature", "chordate"]
     },
     {
         "word": "AMPHITHEATER",
         "difficulty": 4,
         "definition": "(n.) An open circular or oval theater with tiered seating around a central area."
-,
+        ,
         "synonyms": ["arena", "colosseum", "stadium"]
     },
     {
         "word": "AMPHORA",
         "difficulty": 5,
         "definition": "(n.) A tall ancient Greek or Roman jar with two handles used for storing wine or oil."
-,
+        ,
         "synonyms": ["jar", "vessel", "clay-container"]
     },
     {
         "word": "AMPHORAE",
         "difficulty": 5,
         "definition": "(n.) Ancient two-handled vessels with narrow necks, used by Greeks and Romans for storing wine or oil."
-,
+        ,
         "synonyms": ["jars", "vessels", "urns"]
     },
     {
         "word": "AMPHORIC",
         "difficulty": 5,
         "definition": "(adj.) Resembling the hollow sound made when blowing over the top of a bottle."
-,
+        ,
         "synonyms": ["resonant", "hollow-sound", "cave-like"]
     },
     {
         "word": "AMPHOTERIC",
         "difficulty": 5,
         "definition": "(adj.) Able to react as both an acid and a base."
-,
+        ,
         "synonyms": ["dual-reactive", "acid-and-base", "neutral"]
     },
     {
         "word": "AMPICILLIN",
         "difficulty": 5,
         "definition": "(n.) A penicillin-type antibiotic used to treat bacterial infections."
-,
+        ,
         "synonyms": ["antibiotic", "penicillin-type", "medication"]
     },
     {
         "word": "AMPLE",
         "difficulty": 1,
         "definition": "(adj.) More than enough; plentiful and spacious."
-,
+        ,
         "synonyms": ["plentiful", "generous", "abundant"]
     },
     {
         "word": "AMPLIATE",
         "difficulty": 5,
         "definition": "(v.) To enlarge or extend."
-,
+        ,
         "synonyms": ["enlarge", "extend", "expand"]
     },
     {
         "word": "AMPLIATIVE",
         "difficulty": 5,
         "definition": "(adj.) Adding to or extending knowledge beyond what is contained in the premises."
-,
+        ,
         "synonyms": ["expanding", "augmenting", "extending"]
     },
     {
         "word": "AMPLIFIER",
         "difficulty": 1,
         "definition": "(n.) A device that boosts the power of electrical signals, commonly used in sound equipment."
-,
+        ,
         "synonyms": ["booster", "loudspeaker", "signal-enhancer"]
     },
     {
         "word": "AMPLIFY",
         "difficulty": 1,
         "definition": "(v.) To increase the volume, size, or strength of something."
-,
+        ,
         "synonyms": ["increase", "boost", "enlarge"]
     },
     {
         "word": "AMPLITUDE",
         "difficulty": 2,
         "definition": "(n.) The maximum extent of vibration; the breadth or fullness of something."
-,
+        ,
         "synonyms": ["magnitude", "extent", "size"]
     },
     {
         "word": "AMPLY",
         "difficulty": 1,
         "definition": "(adv.) More than adequately; plentifully."
-,
+        ,
         "synonyms": ["generously", "abundantly", "sufficiently"]
     },
     {
         "word": "AMPULLAE",
         "difficulty": 5,
         "definition": "(n.) Small flask-shaped body cavities that detect motion, balance, or electrical fields."
-,
+        ,
         "synonyms": ["flasks", "vessels", "anatomy-sacs"]
     },
     {
         "word": "AMPUTEE",
         "difficulty": 2,
         "definition": "(n.) A person who has had one or more limbs surgically removed."
-,
+        ,
         "synonyms": ["limb-loss-patient", "prosthetic-user", "injured-person"]
     },
     {
         "word": "AMULET",
         "difficulty": 2,
         "definition": "(n.) An ornament or object worn as a charm against evil."
-,
+        ,
         "synonyms": ["charm", "talisman", "token"]
     },
     {
         "word": "AMUSE",
         "difficulty": 1,
         "definition": "(v.) To entertain or occupy in a pleasant manner."
-,
+        ,
         "synonyms": ["entertain", "delight", "divert"]
     },
     {
         "word": "AMYELONIC",
         "difficulty": 5,
         "definition": "(adj.) Lacking a spinal cord or bone marrow."
-,
+        ,
         "synonyms": ["without-spinal-cord", "spineless", "cord-less"]
     },
     {
         "word": "AMYGDALA",
         "difficulty": 5,
         "definition": "(n.) An almond-shaped set of neurons in the brain involved in processing emotions."
-,
+        ,
         "synonyms": ["brain-region", "fear-center", "emotion-hub"]
     },
     {
         "word": "AMYGDALINE",
         "difficulty": 5,
         "definition": "(adj.) Almond-shaped; relating to either the brain structure involved in emotion or the tonsils."
-,
+        ,
         "synonyms": ["almond-shaped", "tonsil-like", "amygdala-related"]
     },
     {
         "word": "AMYLACEOUS",
         "difficulty": 5,
         "definition": "(adj.) Relating to or resembling starch."
-,
+        ,
         "synonyms": ["starchy", "starch-like", "carbohydrate"]
     },
     {
         "word": "AMYOTONIA",
         "difficulty": 5,
         "definition": "(n.) A condition characterized by a lack of muscle tone."
-,
+        ,
         "synonyms": ["muscle-weakness", "low-tone", "flaccidity"]
     },
     {
         "word": "AMYOTROPHIC",
         "difficulty": 5,
         "definition": "(adj.) Relating to a progressive wasting of muscle tissue."
-,
+        ,
         "synonyms": ["muscle-wasting", "degenerative", "ALS-related"]
     },
     {
         "word": "ANABASIS",
         "difficulty": 5,
         "definition": "(n.) A military march inland; an arduous journey, especially from coast to interior."
-,
+        ,
         "synonyms": ["march-inland", "military-advance", "expedition"]
     },
     {
         "word": "ANABIBAZON",
         "difficulty": 5,
         "definition": "(n.) The ascending node of a planet's orbit; historically used in astronomy."
-,
+        ,
         "synonyms": ["ascending-node", "orbital-point", "intersection"]
     },
     {
         "word": "ANABLEPID",
         "difficulty": 5,
         "definition": "(n.) A freshwater fish whose eyes are divided to see above and below the water surface simultaneously."
-,
+        ,
         "synonyms": ["four-eyed-fish", "surface-fish", "river-fish"]
     },
     {
         "word": "ANABOLIC",
         "difficulty": 4,
         "definition": "(adj.) Relating to the constructive phase of metabolism; building up body tissue."
-,
+        ,
         "synonyms": ["muscle-building", "constructive", "growth-promoting"]
     },
     {
         "word": "ANACHRONISM",
         "difficulty": 4,
         "definition": "(n.) A thing that belongs to a different time period than the one depicted."
-,
+        ,
         "synonyms": ["relic", "archaism", "time-error"]
     },
     {
         "word": "ANACHRONOUS",
         "difficulty": 5,
         "definition": "(adj.) Out of the correct historical or chronological order."
-,
+        ,
         "synonyms": ["out-of-time", "misplaced", "temporally-wrong"]
     },
     {
         "word": "ANACLASTIC",
         "difficulty": 5,
         "definition": "(adj.) Relating to refraction of light; describing rocks fractured by pressure."
-,
+        ,
         "synonyms": ["refractive", "bent-by-refraction", "light-bending"]
     },
     {
         "word": "ANACOLUTHON",
         "difficulty": 5,
         "definition": "(n.) A rhetorical figure in which a sentence shifts construction midway through."
-,
+        ,
         "synonyms": ["syntax-shift", "grammatical-break", "sentence-change"]
     },
     {
         "word": "ANACONDA",
         "difficulty": 2,
         "definition": "(n.) A very large constricting snake native to South America."
-,
+        ,
         "synonyms": ["snake", "boa", "constrictor"]
     },
     {
         "word": "ANACREONTIC",
         "difficulty": 5,
         "definition": "(adj.) Describing poetry or verse celebrating pleasure, drinking, and romance."
-,
+        ,
         "synonyms": ["lyric-poem", "celebratory-verse", "drinking-song"]
     },
     {
         "word": "ANADIPLOSIS",
         "difficulty": 5,
         "definition": "(n.) A rhetorical device repeating the last word of a clause at the start of the next."
-,
+        ,
         "synonyms": ["word-repetition", "rhetorical-device", "linking-repeat"]
     },
     {
         "word": "ANADROMOUS",
         "difficulty": 5,
         "definition": "(adj.) Describing fish that migrate from the sea to fresh water to spawn, like salmon."
-,
+        ,
         "synonyms": ["ocean-to-river", "migratory", "salmon-like"]
     },
     {
         "word": "ANAGLYPH",
         "difficulty": 5,
         "definition": "(n.) A stereoscopic photograph viewed through colored glasses to create 3D effect."
-,
+        ,
         "synonyms": ["3D-image", "embossed-print", "relief-image"]
     },
     {
         "word": "ANAGNORISIS",
         "difficulty": 5,
         "definition": "(n.) The moment in a play or story when a character makes a critical discovery."
-,
+        ,
         "synonyms": ["recognition", "discovery", "plot-revelation"]
     },
     {
         "word": "ANAGOGIC",
         "difficulty": 5,
         "definition": "(adj.) Relating to the spiritual or mystical interpretation of words or events."
-,
+        ,
         "synonyms": ["mystical", "spiritual", "allegorical"]
     },
     {
         "word": "ANAGRAM",
         "difficulty": 2,
         "definition": "(n.) A word or phrase formed by rearranging the letters of another."
-,
+        ,
         "synonyms": ["word-rearrangement", "letter-shuffle", "word-puzzle"]
     },
     {
         "word": "ANALECTS",
         "difficulty": 5,
         "definition": "(n.) A collection of short literary passages or philosophical sayings."
-,
+        ,
         "synonyms": ["selections", "collected-writings", "anthology"]
     },
     {
         "word": "ANALEMMA",
         "difficulty": 5,
         "definition": "(n.) A scale on a globe showing the sun's declination and equation of time for each day."
-,
+        ,
         "synonyms": ["figure-8-curve", "sun-chart", "time-diagram"]
     },
     {
         "word": "ANALGESIC",
         "difficulty": 4,
         "definition": "(n.) A painkilling drug; acting to relieve pain."
-,
+        ,
         "synonyms": ["painkiller", "pain-reliever", "numbing-agent"]
     },
     {
         "word": "ANALLOBAR",
         "difficulty": 5,
         "definition": "(n.) A region in the atmosphere where atmospheric pressure is decreasing."
-,
+        ,
         "synonyms": ["pressure-zone", "constant-pressure", "isobar"]
     },
     {
         "word": "ANALOGOUS",
         "difficulty": 2,
         "definition": "(adj.) Comparable in certain respects; performing a similar function."
-,
+        ,
         "synonyms": ["similar", "comparable", "parallel"]
     },
     {
         "word": "ANALOGY",
         "difficulty": 2,
         "definition": "(n.) A comparison between two things to explain or clarify."
-,
+        ,
         "synonyms": ["comparison", "parallel", "likeness"]
     },
     {
         "word": "ANALYSAND",
         "difficulty": 5,
         "definition": "(n.) A person undergoing psychoanalysis."
-,
+        ,
         "synonyms": ["patient", "therapy-subject", "analyzed-person"]
     },
     {
         "word": "ANALYSE",
         "difficulty": 2,
         "definition": "(v.) Examine methodically and in detail the constitution or structure of (something, especially information), typically for purposes of explanation and interpretation."
-,
+        ,
         "synonyms": ["examine", "study", "evaluate"]
     },
     {
         "word": "ANALYSIS",
         "difficulty": 2,
         "definition": "(n.) Detailed examination of something to understand its nature or determine its components."
-,
+        ,
         "synonyms": ["examination", "study", "breakdown"]
     },
     {
         "word": "ANALYTICALLY",
         "difficulty": 4,
         "definition": "(adv.) By breaking a subject into its component parts to examine them methodically."
-,
+        ,
         "synonyms": ["logically", "systematically", "carefully"]
     },
     {
@@ -3172,2828 +3181,2828 @@ const DOOZIE_WORDS = [
             "She will analyze the results carefully.",
             "Let us analyze what went wrong."
         ]
-,
+        ,
         "synonyms": ["examine", "study", "evaluate"]
     },
     {
         "word": "ANAMNESIS",
         "difficulty": 5,
         "definition": "(n.) Recollection of past events; a patient's medical history; a liturgical recollection."
-,
+        ,
         "synonyms": ["recollection", "medical-history", "recall"]
     },
     {
         "word": "ANANIAS",
         "difficulty": 5,
         "definition": "(n.) A liar; from the biblical figure who lied to the apostles."
-,
+        ,
         "synonyms": ["liar", "deceiver", "false-witness"]
     },
     {
         "word": "ANANYM",
         "difficulty": 5,
         "definition": "(n.) A name spelled backwards, used as a pseudonym."
-,
+        ,
         "synonyms": ["backward-name", "reversed-word", "transposed-name"]
     },
     {
         "word": "ANAPHORA",
         "difficulty": 5,
         "definition": "(n.) Repetition of a word or phrase at the beginning of successive clauses."
-,
+        ,
         "synonyms": ["repetition", "rhetorical-device", "refrain"]
     },
     {
         "word": "ANAPHORIC",
         "difficulty": 5,
         "definition": "(adj.) Referring back to an earlier word in a sentence."
-,
+        ,
         "synonyms": ["referring-back", "pronoun-like", "referential"]
     },
     {
         "word": "ANAPHYLACTIC",
         "difficulty": 5,
         "definition": "(adj.) Describing a sudden, life-threatening immune response to a foreign substance."
-,
+        ,
         "synonyms": ["allergic-shock", "hypersensitive", "reactive"]
     },
     {
         "word": "ANAPHYLAXIS",
         "difficulty": 5,
         "definition": "(n.) A severe, potentially life-threatening allergic reaction."
-,
+        ,
         "synonyms": ["allergic-reaction", "shock", "hypersensitivity"]
     },
     {
         "word": "ANAPTYXIS",
         "difficulty": 5,
         "definition": "(n.) The insertion of a vowel sound between two consonants to aid pronunciation."
-,
+        ,
         "synonyms": ["vowel-insertion", "epenthesis", "sound-addition"]
     },
     {
         "word": "ANAQUA",
         "difficulty": 5,
         "definition": "(n.) A tree native to Texas and Mexico with rough leaves and small white flowers."
-,
+        ,
         "synonyms": ["tree", "plant", "shrub"]
     },
     {
         "word": "ANARCHIC",
         "difficulty": 2,
         "definition": "(adj.) Characterized by lawlessness and the absence of governing authority."
-,
+        ,
         "synonyms": ["chaotic", "lawless", "unruly"]
     },
     {
         "word": "ANARCHISM",
         "difficulty": 3,
         "definition": "(n.) A political philosophy advocating for abolition of government and state."
-,
+        ,
         "synonyms": ["anti-government", "libertarianism", "anti-authority"]
     },
     {
         "word": "ANARCHY",
         "difficulty": 3,
         "definition": "(n.) A state of disorder due to absence or non-recognition of authority."
-,
+        ,
         "synonyms": ["chaos", "disorder", "lawlessness"]
     },
     {
         "word": "ANASTOMOSIS",
         "difficulty": 5,
         "definition": "(n.) A connection between two tubes, blood vessels, or nerve fibers."
-,
+        ,
         "synonyms": ["junction", "joining", "network-connection"]
     },
     {
         "word": "ANASTROPHE",
         "difficulty": 5,
         "definition": "(n.) A rhetorical inversion of normal word order for effect."
-,
+        ,
         "synonyms": ["inversion", "word-reversal", "syntax-reversal"]
     },
     {
         "word": "ANATHEMA",
         "difficulty": 4,
         "definition": "(n.) Something or someone greatly detested; a formal curse by a church."
-,
+        ,
         "synonyms": ["abomination", "pariah", "taboo"]
     },
     {
         "word": "ANATHEMATIZE",
         "difficulty": 5,
         "definition": "(v.) To formally condemn or excommunicate; to declare something utterly loathsome."
-,
+        ,
         "synonyms": ["curse", "condemn", "denounce"]
     },
     {
         "word": "ANATOCISM",
         "difficulty": 5,
         "definition": "(n.) The charging of compound interest, or interest on unpaid interest."
-,
+        ,
         "synonyms": ["compound-interest", "interest-on-interest", "usury"]
     },
     {
         "word": "ANATOMY",
         "difficulty": 1,
         "definition": "(n.) The branch of science studying the structure of living organisms."
-,
+        ,
         "synonyms": ["structure", "body-science", "dissection"]
     },
     {
         "word": "ANAUDIA",
         "difficulty": 5,
         "definition": "(n.) Complete loss of the ability to speak; aphonia."
-,
+        ,
         "synonyms": ["voicelessness", "aphonia", "loss-of-voice"]
     },
     {
         "word": "ANAUTOGENOUS",
         "difficulty": 5,
         "definition": "(adj.) Describing insects that require a blood meal before producing eggs."
-,
+        ,
         "synonyms": ["not-self-generated", "externally-fed", "dependent"]
     },
     {
         "word": "ANCESTOR",
         "difficulty": 1,
         "definition": "(n.) A person from whom one is descended; a forerunner or precursor."
-,
+        ,
         "synonyms": ["forebear", "predecessor", "progenitor"]
     },
     {
         "word": "ANCESTRAL",
         "difficulty": 3,
         "definition": "(adj.) Passed down through generations of a family; relating to those who came before."
-,
+        ,
         "synonyms": ["hereditary", "inherited", "lineage"]
     },
     {
         "word": "ANCESTRY",
         "difficulty": 3,
         "definition": "(n.) The sequence of family members from whom a person is descended; lineage."
-,
+        ,
         "synonyms": ["lineage", "descent", "heritage"]
     },
     {
         "word": "ANCHOR",
         "difficulty": 1,
         "definition": "(n.) A heavy metal device dropped from a ship to hold it in place."
-,
+        ,
         "synonyms": ["hold", "secure", "mooring"]
     },
     {
         "word": "ANCHORAGE",
         "difficulty": 3,
         "definition": "(n.) A sheltered area of water where vessels can moor; a charge for using such a spot."
-,
+        ,
         "synonyms": ["harbor", "mooring", "port"]
     },
     {
         "word": "ANCHORITIC",
         "difficulty": 5,
         "definition": "(adj.) Of or relating to a hermit who has withdrawn from society for religious devotion."
-,
+        ,
         "synonyms": ["hermit-like", "reclusive", "monastic"]
     },
     {
         "word": "ANCHOVY",
         "difficulty": 3,
         "definition": "(n.) A small, strong-tasting saltwater fish used in cooking and as a condiment."
-,
+        ,
         "synonyms": ["fish", "saltwater-fish", "sardine"]
     },
     {
         "word": "ANCHUSA",
         "difficulty": 5,
         "definition": "(n.) A genus of plants in the borage family with blue, purple, or white flowers."
-,
+        ,
         "synonyms": ["plant", "herb", "borage-relative"]
     },
     {
         "word": "ANCIENT",
         "difficulty": 1,
         "definition": "(adj.) Belonging to the very distant past; very old."
-,
+        ,
         "synonyms": ["old", "antique", "prehistoric"]
     },
     {
         "word": "ANCILLARY",
         "difficulty": 4,
         "definition": "(adj.) Providing necessary support; subordinate or supplementary."
-,
+        ,
         "synonyms": ["supplementary", "auxiliary", "secondary"]
     },
     {
         "word": "ANCIPITAL",
         "difficulty": 5,
         "definition": "(adj.) Two-edged; two-headed; ambiguous in meaning."
-,
+        ,
         "synonyms": ["two-edged", "double-sided", "ambiguous"]
     },
     {
         "word": "ANDIRON",
         "difficulty": 4,
         "definition": "(n.) A metal support used in a fireplace to hold burning wood."
-,
+        ,
         "synonyms": ["firedog", "grate-support", "hearth-iron"]
     },
     {
         "word": "ANDRADITE",
         "difficulty": 5,
         "definition": "(n.) A calcium iron garnet, occurring in various colors including green, yellow, and black."
-,
+        ,
         "synonyms": ["garnet", "gemstone", "calcium-garnet"]
     },
     {
         "word": "ANDRAGOGY",
         "difficulty": 5,
         "definition": "(n.) The theory and practice of educating adult learners."
-,
+        ,
         "synonyms": ["adult-learning", "adult-education", "pedagogy"]
     },
     {
         "word": "ANDROCRACY",
         "difficulty": 5,
         "definition": "(n.) Social and political rule or dominance by men."
-,
+        ,
         "synonyms": ["male-rule", "patriarchy", "male-dominance"]
     },
     {
         "word": "ANDROGYNISM",
         "difficulty": 5,
         "definition": "(n.) The state of having both male and female characteristics."
-,
+        ,
         "synonyms": ["gender-fluidity", "non-binary", "dual-gender"]
     },
     {
         "word": "ANDROGYNOUS",
         "difficulty": 4,
         "definition": "(adj.) Partly male and partly female; having both masculine and feminine characteristics."
-,
+        ,
         "synonyms": ["gender-neutral", "non-binary", "unisex"]
     },
     {
         "word": "ANDROID",
         "difficulty": 3,
         "definition": "(n.) A robot with a human appearance; a mobile operating system developed by Google."
-,
+        ,
         "synonyms": ["robot", "humanoid", "automaton"]
     },
     {
         "word": "ANECDOTAL",
         "difficulty": 3,
         "definition": "(adj.) Based on personal accounts rather than systematic data."
-,
+        ,
         "synonyms": ["informal", "story-based", "narrative"]
     },
     {
         "word": "ANECDOTE",
         "difficulty": 3,
         "definition": "(n.) A short, amusing or interesting story about a real person or event."
-,
+        ,
         "synonyms": ["story", "tale", "account"]
     },
     {
         "word": "ANECHOIC",
         "difficulty": 5,
         "definition": "(adj.) Free from echoes; describing a room designed to absorb all sound reflections."
-,
+        ,
         "synonyms": ["sound-absorbing", "echo-free", "muffled"]
     },
     {
         "word": "ANEMOCHORE",
         "difficulty": 5,
         "definition": "(n.) A plant or seed dispersed by wind."
-,
+        ,
         "synonyms": ["wind-dispersed", "wind-seeded", "anemochorous"]
     },
     {
         "word": "ANEMOLOGY",
         "difficulty": 5,
         "definition": "(n.) The scientific study of winds."
-,
+        ,
         "synonyms": ["wind-science", "meteorology", "wind-study"]
     },
     {
         "word": "ANEMOMETER",
         "difficulty": 5,
         "definition": "(n.) An instrument for measuring wind speed."
-,
+        ,
         "synonyms": ["wind-gauge", "speed-measurer", "weather-tool"]
     },
     {
         "word": "ANEMOMETRY",
         "difficulty": 5,
         "definition": "(n.) The measurement of wind speed and direction."
-,
+        ,
         "synonyms": ["wind-measurement", "wind-speed-study", "meteorology"]
     },
     {
         "word": "ANEMONE",
         "difficulty": 3,
         "definition": "(n.) A flowering plant with delicate, brightly colored petals; also a sea creature with tentacles that resembles a flower."
-,
+        ,
         "synonyms": ["flower", "sea-creature", "windflower"]
     },
     {
         "word": "ANEMOSIS",
         "difficulty": 5,
         "definition": "(n.) Wind-shaking of trees causing wood damage."
-,
+        ,
         "synonyms": ["wind-damage", "tree-damage", "wind-injury"]
     },
     {
         "word": "ANEMOTROPISM",
         "difficulty": 5,
         "definition": "(n.) The growth response of a plant or organism to wind."
-,
+        ,
         "synonyms": ["wind-response", "plant-orientation", "tropism"]
     },
     {
         "word": "ANENT",
         "difficulty": 5,
         "definition": "(preposition) About; concerning (archaic or Scottish)."
-,
+        ,
         "synonyms": ["concerning", "about", "regarding"]
     },
     {
         "word": "ANENTEROUS",
         "difficulty": 5,
         "definition": "(adj.) Without an intestine or gut."
-,
+        ,
         "synonyms": ["without-gut", "gutless", "intestine-free"]
     },
     {
         "word": "ANEROID",
         "difficulty": 5,
         "definition": "(adj.) Not using liquid; describing a type of barometer using no mercury or water."
-,
+        ,
         "synonyms": ["non-liquid", "dry-measuring", "pressure-gauge"]
     },
     {
         "word": "ANESTHESIA",
         "difficulty": 3,
         "definition": "(n.) Loss of sensation, especially induced by drugs before a surgical procedure."
-,
+        ,
         "synonyms": ["numbness", "sedation", "unconsciousness"]
     },
     {
         "word": "ANESTHETIC",
         "difficulty": 3,
         "definition": "(n.) A substance that induces insensitivity to pain."
-,
+        ,
         "synonyms": ["sedative", "numbing", "painkiller"]
     },
     {
         "word": "ANESTHETIZE",
         "difficulty": 4,
         "definition": "(v.) To administer medication that causes a loss of sensation or consciousness before a medical procedure."
-,
+        ,
         "synonyms": ["numb", "sedate", "render-unconscious"]
     },
     {
         "word": "ANEURYSM",
         "difficulty": 4,
         "definition": "(n.) A bulge or ballooning in the wall of a blood vessel, which can rupture."
-,
+        ,
         "synonyms": ["blood-vessel-bulge", "arterial-swelling", "vascular-dilation"]
     },
     {
         "word": "ANFRACTUOUS",
         "difficulty": 5,
         "definition": "(adj.) Winding; sinuous; full of turnings and intricacies."
-,
+        ,
         "synonyms": ["winding", "intricate", "tortuous"]
     },
     {
         "word": "ANGARY",
         "difficulty": 5,
         "definition": "(n.) The legal right of a belligerent to seize or destroy neutral property if necessary."
-,
+        ,
         "synonyms": ["war-right", "belligerent-right", "seizure-right"]
     },
     {
         "word": "ANGEL",
         "difficulty": 1,
         "definition": "(n.) A spiritual being acting as a divine messenger; a kind, beautiful person."
-,
+        ,
         "synonyms": ["spirit", "messenger", "seraph"]
     },
     {
         "word": "ANGELFISH",
         "difficulty": 1,
         "definition": "(n.) A brightly colored tropical fish with long fins, popular in aquariums."
-,
+        ,
         "synonyms": ["tropical-fish", "cichlid", "aquarium-fish"]
     },
     {
         "word": "ANGER",
         "difficulty": 1,
         "definition": "(n.) A strong feeling of annoyance or hostility."
-,
+        ,
         "synonyms": ["rage", "fury", "wrath"]
     },
     {
         "word": "ANGIITIS",
         "difficulty": 5,
         "definition": "(n.) Inflammation of a blood or lymph vessel."
-,
+        ,
         "synonyms": ["vessel-inflammation", "vasculitis", "inflammation"]
     },
     {
         "word": "ANGINA",
         "difficulty": 4,
         "definition": "(n.) Chest pain caused by reduced blood flow to the heart; also refers to throat inflammation."
-,
+        ,
         "synonyms": ["chest-pain", "heart-pain", "cardiac-symptom"]
     },
     {
         "word": "ANGLAISE",
         "difficulty": 5,
         "definition": "(n.) An English-style dance; a style of embroidery with decorative holes."
-,
+        ,
         "synonyms": ["English-dance", "country-dance", "dance-style"]
     },
     {
         "word": "ANGLICIZE",
         "difficulty": 4,
         "definition": "(v.) To make English in form or character; to convert to English language or customs."
-,
+        ,
         "synonyms": ["Anglify", "Britishize", "English-adapt"]
     },
     {
         "word": "ANGLING",
         "difficulty": 1,
         "definition": "(n.) The sport or pastime of fishing with a line and hook."
-,
+        ,
         "synonyms": ["fishing", "rod-fishing", "sport-fishing"]
     },
     {
         "word": "ANGLOPHILIA",
         "difficulty": 5,
         "definition": "(n.) Admiration for England and English culture, customs, and people."
-,
+        ,
         "synonyms": ["love-of-England", "Anglophilia", "British-admiration"]
     },
     {
         "word": "ANGSTROMS",
         "difficulty": 5,
         "definition": "(n.) Extremely small units of length used to measure atomic distances, each equal to one ten-billionth of a meter."
-,
+        ,
         "synonyms": ["units", "length-units", "tiny-measurements"]
     },
     {
         "word": "ANGUISH",
         "difficulty": 3,
         "definition": "(n.) Severe mental or physical pain or suffering."
-,
+        ,
         "synonyms": ["torment", "agony", "suffering"]
     },
     {
         "word": "ANGULAR",
         "difficulty": 1,
         "definition": "(adj.) Having angles or sharp corners; lean and bony in appearance."
-,
+        ,
         "synonyms": ["sharp-cornered", "bony", "geometric"]
     },
     {
         "word": "ANGULARITY",
         "difficulty": 4,
         "definition": "(n.) The quality of having sharp corners or edges; a pointed or bony physical appearance."
-,
+        ,
         "synonyms": ["sharpness", "jaggedness", "rigid-angles"]
     },
     {
         "word": "ANGWANTIBO",
         "difficulty": 5,
         "definition": "(n.) A small, arboreal primate found in West and Central Africa."
-,
+        ,
         "synonyms": ["primate", "pottos-relative", "African-primate"]
     },
     {
         "word": "ANHEDONIA",
         "difficulty": 5,
         "definition": "(n.) Inability to feel pleasure in normally pleasurable activities."
-,
+        ,
         "synonyms": ["joylessness", "pleasure-loss", "emotional-numbness"]
     },
     {
         "word": "ANHINGA",
         "difficulty": 5,
         "definition": "(n.) A large water bird with a long neck that swims underwater to catch fish."
-,
+        ,
         "synonyms": ["water-bird", "snakebird", "darter"]
     },
     {
         "word": "ANHYDRIDE",
         "difficulty": 5,
         "definition": "(n.) A chemical compound derived from another by removing water."
-,
+        ,
         "synonyms": ["chemical-compound", "water-free-compound", "oxide"]
     },
     {
         "word": "ANHYDROUS",
         "difficulty": 5,
         "definition": "(adj.) Without water; describing a substance containing no water."
-,
+        ,
         "synonyms": ["water-free", "dry", "dessicated"]
     },
     {
         "word": "ANICONIC",
         "difficulty": 5,
         "definition": "(adj.) Pertaining to worship without icons; avoiding the use of images of deities."
-,
+        ,
         "synonyms": ["non-representational", "imageless", "abstract"]
     },
     {
         "word": "ANILITY",
         "difficulty": 5,
         "definition": "(n.) The state of being an old woman; dotage; senility."
-,
+        ,
         "synonyms": ["senility", "dotage", "old-womanishness"]
     },
     {
         "word": "ANIMADVERSION",
         "difficulty": 5,
         "definition": "(n.) Criticism or censure; an adverse comment."
-,
+        ,
         "synonyms": ["criticism", "censure", "reproach"]
     },
     {
         "word": "ANIMAL",
         "difficulty": 1,
         "definition": "(n.) A living organism that feeds on organic matter and can move voluntarily."
-,
+        ,
         "synonyms": ["creature", "beast", "organism"]
     },
     {
         "word": "ANIMALCULE",
         "difficulty": 5,
         "definition": "(n.) A tiny creature invisible to the naked eye, visible only through magnification."
-,
+        ,
         "synonyms": ["microorganism", "tiny-creature", "microbe"]
     },
     {
         "word": "ANIMATE",
         "difficulty": 1,
         "definition": "(v.) To give life or energy to; to produce a moving image through sequential drawings."
-,
+        ,
         "synonyms": ["bring-to-life", "lively", "motivate"]
     },
     {
         "word": "ANIMATION",
         "difficulty": 1,
         "definition": "(n.) The state of being full of life; the technique of making moving images."
-,
+        ,
         "synonyms": ["movement", "cartoon", "liveliness"]
     },
     {
         "word": "ANIMISM",
         "difficulty": 4,
         "definition": "(n.) The belief that objects, places, and creatures all possess spirits."
-,
+        ,
         "synonyms": ["spirit-belief", "natural-religion", "pantheism"]
     },
     {
         "word": "ANIMOSITY",
         "difficulty": 3,
         "definition": "(n.) Strong hostility or antipathy."
-,
+        ,
         "synonyms": ["hostility", "hatred", "enmity"]
     },
     {
         "word": "ANIMUS",
         "difficulty": 4,
         "definition": "(n.) Hostility or ill feeling; motivation or intention; in Jungian psychology, the masculine element in female psychology."
-,
+        ,
         "synonyms": ["hostility", "intent", "spirit"]
     },
     {
         "word": "ANIONIC",
         "difficulty": 5,
         "definition": "(adj.) Carrying a negative electric charge; repelled by a negatively charged electrode."
-,
+        ,
         "synonyms": ["negatively-charged", "anion-forming", "electronegative"]
     },
     {
         "word": "ANISE",
         "difficulty": 3,
         "definition": "(n.) A plant whose seeds are used as a spice with a licorice-like flavor."
-,
+        ,
         "synonyms": ["spice", "licorice-herb", "seed-spice"]
     },
     {
         "word": "ANISETTE",
         "difficulty": 4,
         "definition": "(n.) A sweet, licorice-flavored spirit made from the seeds of a flowering herb."
-,
+        ,
         "synonyms": ["liqueur", "anise-drink", "spirit"]
     },
     {
         "word": "ANKH",
         "difficulty": 4,
         "definition": "(n.) An ancient Egyptian hieroglyphic symbol shaped like a cross with a loop, representing life."
-,
+        ,
         "synonyms": ["symbol", "cross", "Egyptian-symbol"]
     },
     {
         "word": "ANKLE",
         "difficulty": 1,
         "definition": "(n.) The joint connecting the foot with the leg."
-,
+        ,
         "synonyms": ["joint", "lower-leg", "foot-joint"]
     },
     {
         "word": "ANKLET",
         "difficulty": 1,
         "definition": "(n.) An ornamental chain or band worn around the ankle."
-,
+        ,
         "synonyms": ["bracelet", "ornament", "jewelry"]
     },
     {
         "word": "ANKYLOSAUR",
         "difficulty": 5,
         "definition": "(n.) A heavily armored herbivorous dinosaur with a bony tail club."
-,
+        ,
         "synonyms": ["dinosaur", "armored-dino", "prehistoric-reptile"]
     },
     {
         "word": "ANLACE",
         "difficulty": 5,
         "definition": "(n.) A short dagger used in the Middle Ages."
-,
+        ,
         "synonyms": ["dagger", "blade", "medieval-knife"]
     },
     {
         "word": "ANNALS",
         "difficulty": 3,
         "definition": "(n.) Historical records arranged in yearly order; chronicles."
-,
+        ,
         "synonyms": ["records", "chronicles", "history"]
     },
     {
         "word": "ANNATES",
         "difficulty": 5,
         "definition": "(n.) The first year's revenue of a church office paid to the pope."
-,
+        ,
         "synonyms": ["church-tax", "first-year-revenue", "ecclesiastical-fee"]
     },
     {
         "word": "ANNEAL",
         "difficulty": 4,
         "definition": "(v.) To heat and slowly cool glass or metal to relieve internal stresses."
-,
+        ,
         "synonyms": ["temper", "heat-treat", "strengthen"]
     },
     {
         "word": "ANNEALED",
         "difficulty": 4,
         "definition": "(v.) Strengthened or toughened through controlled heating followed by slow cooling."
-,
+        ,
         "synonyms": ["tempered", "heat-treated", "hardened"]
     },
     {
         "word": "ANNELID",
         "difficulty": 5,
         "definition": "(n.) A segmented worm, such as an earthworm or leech, with a body divided into rings."
-,
+        ,
         "synonyms": ["worm", "earthworm", "segmented-worm"]
     },
     {
         "word": "ANNEX",
         "difficulty": 1,
         "definition": "(v.) To add a territory or building; an extension added to a building."
-,
+        ,
         "synonyms": ["attach", "append", "incorporate"]
     },
     {
         "word": "ANNEXATION",
         "difficulty": 3,
         "definition": "(n.) The act of one state taking control of another's territory, often by force."
-,
+        ,
         "synonyms": ["takeover", "acquisition", "incorporation"]
     },
     {
         "word": "ANNIHILATE",
         "difficulty": 4,
         "definition": "(v.) To destroy completely; to reduce to nothing."
-,
+        ,
         "synonyms": ["destroy", "obliterate", "eliminate"]
     },
     {
         "word": "ANNIHILATION",
         "difficulty": 4,
         "definition": "(n.) Complete destruction; obliteration."
-,
+        ,
         "synonyms": ["destruction", "obliteration", "elimination"]
     },
     {
         "word": "ANNIVERSARY",
         "difficulty": 1,
         "definition": "(n.) The yearly recurrence of a date marking a notable event."
-,
+        ,
         "synonyms": ["commemoration", "annual-event", "celebration"]
     },
     {
         "word": "ANNOTATE",
         "difficulty": 3,
         "definition": "(v.) To add notes or comments to a text or diagram."
-,
+        ,
         "synonyms": ["comment", "note", "mark"]
     },
     {
         "word": "ANNOUNCE",
         "difficulty": 1,
         "definition": "(v.) To make a public statement about something; to declare formally."
-,
+        ,
         "synonyms": ["declare", "proclaim", "broadcast"]
     },
     {
         "word": "ANNOUNCER",
         "difficulty": 1,
         "definition": "(n.) A person who reads news or introduces programs on radio or television."
-,
+        ,
         "synonyms": ["broadcaster", "presenter", "host"]
     },
     {
         "word": "ANNOYANCE",
         "difficulty": 1,
         "definition": "(n.) The feeling of being slightly angered; something causing this feeling."
-,
+        ,
         "synonyms": ["irritation", "frustration", "nuisance"]
     },
     {
         "word": "ANNUAL",
         "difficulty": 1,
         "definition": "(adj.) Occurring once a year; lasting or valid for one year."
-,
+        ,
         "synonyms": ["yearly", "once-a-year", "perennial"]
     },
     {
         "word": "ANNUITY",
         "difficulty": 3,
         "definition": "(n.) A fixed sum of money paid yearly; an investment yielding fixed annual payments."
-,
+        ,
         "synonyms": ["pension", "income", "stipend"]
     },
     {
         "word": "ANNUL",
         "difficulty": 3,
         "definition": "(v.) To declare invalid or void; to cancel officially."
-,
+        ,
         "synonyms": ["void", "cancel", "invalidate"]
     },
     {
         "word": "ANNULARITY",
         "difficulty": 5,
         "definition": "(n.) The state of being ring-shaped; a ring-like form or structure."
-,
+        ,
         "synonyms": ["ring-form", "circularity", "annular-shape"]
     },
     {
         "word": "ANNULLING",
         "difficulty": 4,
         "definition": "(v.) Canceling or declaring legally void."
-,
+        ,
         "synonyms": ["canceling", "voiding", "invalidating"]
     },
     {
         "word": "ANNULMENT",
         "difficulty": 3,
         "definition": "(n.) The formal declaration that a marriage or contract is invalid."
-,
+        ,
         "synonyms": ["cancellation", "invalidation", "nullification"]
     },
     {
         "word": "ANODYNE",
         "difficulty": 4,
         "definition": "(adj.) Not likely to cause offense; a painkilling drug."
-,
+        ,
         "synonyms": ["soothing", "painless", "bland"]
     },
     {
         "word": "ANOIA",
         "difficulty": 5,
         "definition": "(n.) Dementia; mental deficiency or idiocy."
-,
+        ,
         "synonyms": ["mental-deficiency", "stupidity", "dullness"]
     },
     {
         "word": "ANOINT",
         "difficulty": 3,
         "definition": "(v.) To rub oil on someone as part of a religious ceremony; to officially designate."
-,
+        ,
         "synonyms": ["bless", "consecrate", "anele"]
     },
     {
         "word": "ANOMALOUS",
         "difficulty": 3,
         "definition": "(adj.) Deviating from what is standard, normal, or expected."
-,
+        ,
         "synonyms": ["irregular", "abnormal", "atypical"]
     },
     {
         "word": "ANOMALY",
         "difficulty": 3,
         "definition": "(n.) Something that deviates from what is standard or expected."
-,
+        ,
         "synonyms": ["irregularity", "aberration", "oddity"]
     },
     {
         "word": "ANON",
         "difficulty": 3,
         "definition": "(adv.) Shortly; soon; at another time (archaic)."
-,
+        ,
         "synonyms": ["soon", "shortly", "anonymous"]
     },
     {
         "word": "ANONYMOUS",
         "difficulty": 3,
         "definition": "(adj.) Not identified by name; having no outstanding features."
-,
+        ,
         "synonyms": ["unnamed", "unknown", "unidentified"]
     },
     {
         "word": "ANORAK",
         "difficulty": 3,
         "definition": "(n.) A waterproof jacket; informally, an obsessive enthusiast with narrow interests."
-,
+        ,
         "synonyms": ["jacket", "parka", "windbreaker"]
     },
     {
         "word": "ANOREXIA",
         "difficulty": 4,
         "definition": "(n.) A serious eating disorder marked by extreme restriction of food intake."
-,
+        ,
         "synonyms": ["eating-disorder", "food-avoidance", "starvation"]
     },
     {
         "word": "ANOREXIC",
         "difficulty": 4,
         "definition": "(adj.) Affected by an eating disorder involving self-imposed starvation; abnormally underweight."
-,
+        ,
         "synonyms": ["emaciated", "starved", "underfed"]
     },
     {
         "word": "ANORTHOPIA",
         "difficulty": 5,
         "definition": "(n.) A visual disorder in which straight lines appear curved or distorted."
-,
+        ,
         "synonyms": ["distorted-vision", "visual-defect", "slanted-sight"]
     },
     {
         "word": "ANOSMATIC",
         "difficulty": 5,
         "definition": "(adj.) Lacking the sense of smell."
-,
+        ,
         "synonyms": ["smell-impaired", "anosmic", "odor-blind"]
     },
     {
         "word": "ANOSMIC",
         "difficulty": 5,
         "definition": "(adj.) Unable to detect odors due to loss of the sense of smell."
-,
+        ,
         "synonyms": ["without-smell", "anosmia", "odor-insensitive"]
     },
     {
         "word": "ANSA",
         "difficulty": 5,
         "definition": "(n.) A handle-like structure; used in anatomy and astronomy."
-,
+        ,
         "synonyms": ["handle", "loop", "grip"]
     },
     {
         "word": "ANSCHLUSS",
         "difficulty": 5,
         "definition": "(n.) The 1938 annexation of Austria into Nazi Germany; any annexation."
-,
+        ,
         "synonyms": ["annexation", "union", "absorption"]
     },
     {
         "word": "ANSEROUS",
         "difficulty": 5,
         "definition": "(adj.) Resembling or relating to a goose; goose-like."
-,
+        ,
         "synonyms": ["goose-like", "anserine", "waterfowl"]
     },
     {
         "word": "ANSWERER",
         "difficulty": 3,
         "definition": "(n.) A person who gives a response or reply."
-,
+        ,
         "synonyms": ["respondent", "replier", "solver"]
     },
     {
         "word": "ANTACID",
         "difficulty": 3,
         "definition": "(n.) A substance that neutralizes stomach acid, used to relieve indigestion."
-,
+        ,
         "synonyms": ["stomach-remedy", "acid-neutralizer", "alkaline-medicine"]
     },
     {
         "word": "ANTAEAN",
         "difficulty": 5,
         "definition": "(adj.) Of immense physical strength, like the mythological giant who drew power from the earth."
-,
+        ,
         "synonyms": ["giant-like", "earthly-powered", "strong"]
     },
     {
         "word": "ANTAGONIST",
         "difficulty": 3,
         "definition": "(n.) A person who actively opposes; the adversary or villain in a story."
-,
+        ,
         "synonyms": ["opponent", "adversary", "enemy"]
     },
     {
         "word": "ANTARCTIC",
         "difficulty": 3,
         "definition": "(adj.) Of or pertaining to the frozen continent surrounding the South Pole."
-,
+        ,
         "synonyms": ["polar", "south-pole", "frozen-south"]
     },
     {
         "word": "ANTE",
         "difficulty": 3,
         "definition": "(n.) A stake put up before a card game; an upfront cost or bet."
-,
+        ,
         "synonyms": ["stake", "bet", "upfront-payment"]
     },
     {
         "word": "ANXIOUS",
         "difficulty": 1,
         "definition": "(adj.) Experiencing worry, unease, or nervousness, typically about an imminent event or something with an uncertain outcome."
-,
+        ,
         "synonyms": ["worried", "nervous", "apprehensive"]
     },
     {
         "word": "APARTMENT",
         "difficulty": 1,
         "definition": "(n.) A suite of rooms forming one residence, typically in a building containing a number of these."
-,
+        ,
         "synonyms": ["flat", "dwelling", "residence"]
     },
     {
         "word": "APPARATUS",
         "difficulty": 3,
         "definition": "(n.) The technical equipment or machinery needed for a particular activity or purpose."
-,
+        ,
         "synonyms": ["device", "equipment", "mechanism"]
     },
     {
         "word": "APPARENT",
         "difficulty": 1,
         "definition": "(adj.) Clearly visible or understood; obvious."
-,
+        ,
         "synonyms": ["obvious", "visible", "evident"]
     },
     {
         "word": "APPEARANCE",
         "difficulty": 1,
         "definition": "(n.) The way that someone or something looks."
-,
+        ,
         "synonyms": ["look", "aspect", "semblance"]
     },
     {
         "word": "APPROACH",
         "difficulty": 1,
         "definition": "(v./n.) Come near or nearer to (someone or something) in distance or time."
-,
+        ,
         "synonyms": ["method", "near", "tactic"]
     },
     {
         "word": "APPROXIMATELY",
         "difficulty": 3,
         "definition": "(adv.) Used to show that something is almost, but not completely, accurate or exact; roughly."
-,
+        ,
         "synonyms": ["roughly", "about", "around"]
     },
     {
         "word": "ARCTIC",
         "difficulty": 1,
         "definition": "(adj./n.) Relating to the regions around the North Pole."
-,
+        ,
         "synonyms": ["polar", "north-pole", "frozen-north"]
     },
     {
         "word": "ARGUMENT",
         "difficulty": 1,
         "definition": "(n.) An exchange of diverging or opposite views."
-,
+        ,
         "synonyms": ["dispute", "debate", "contention"]
     },
     {
         "word": "ASCEND",
         "difficulty": 1,
         "definition": "(v.) Go up or climb."
-,
+        ,
         "synonyms": ["climb", "rise", "go-up"]
     },
     {
         "word": "ASSASSINATE",
         "difficulty": 4,
         "definition": "(v.) To deliberately and suddenly kill a prominent or important person, especially for political reasons."
-,
+        ,
         "synonyms": ["eliminate", "remove", "take-down"]
     },
     {
         "word": "ASTHMA",
         "difficulty": 3,
         "definition": "(n.) A respiratory condition marked by spasms in the bronchi of the lungs, causing difficulty in breathing."
-,
+        ,
         "synonyms": ["breathing-disorder", "respiratory-condition", "lung-disease"]
     },
     {
         "word": "ATHEIST",
         "difficulty": 3,
         "definition": "(n.) A person who disbelieves in the existence of God."
-,
+        ,
         "synonyms": ["non-believer", "agnostic", "freethinker"]
     },
     {
         "word": "ATHLETIC",
         "difficulty": 1,
         "definition": "(adj.) Physically strong, fit, and active."
-,
+        ,
         "synonyms": ["sporty", "fit", "active"]
     },
     {
         "word": "ATTENDANCE",
         "difficulty": 1,
         "definition": "(n.) The action or state of going regularly to or being present at a place or event."
-,
+        ,
         "synonyms": ["presence", "participation", "turnout"]
     },
     {
         "word": "AUXILIARY",
         "difficulty": 4,
         "definition": "(adj./n.) Providing supplementary or additional help and support."
-,
+        ,
         "synonyms": ["supplementary", "additional", "supporting"]
     },
     {
         "word": "AWFUL",
         "difficulty": 1,
         "definition": "(adj.) Very bad or unpleasant."
-,
+        ,
         "synonyms": ["terrible", "dreadful", "horrible"]
     },
     {
         "word": "BALLOON",
         "difficulty": 1,
         "definition": "(n./v.) A small colored rubber bag which is inflated with air and then sealed at the neck, used as a child's toy or a decoration."
-,
+        ,
         "synonyms": ["inflate", "float", "expand"]
     },
     {
         "word": "BARBECUE",
         "difficulty": 3,
         "definition": "(n./v.) A meal or gathering at which meat, fish, or other food is cooked out of doors on a rack over an open fire or on a special appliance."
-,
+        ,
         "synonyms": ["grill", "cookout", "roast"]
     },
     {
         "word": "BARGAIN",
         "difficulty": 1,
         "definition": "(n./v.) A thing bought or offered for sale more cheaply than is usual or expected."
-,
+        ,
         "synonyms": ["deal", "negotiate", "agreement"]
     },
     {
         "word": "BASICALLY",
         "difficulty": 1,
         "definition": "(adv.) In the most essential respects; fundamentally."
-,
+        ,
         "synonyms": ["fundamentally", "essentially", "chiefly"]
     },
     {
         "word": "BEGGAR",
         "difficulty": 3,
         "definition": "(n./v.) A person, typically a homeless one, who lives by asking for money or food."
-,
+        ,
         "synonyms": ["pauper", "mendicant", "panhandler"]
     },
     {
         "word": "BEGINNING",
         "difficulty": 1,
         "definition": "(n.) The point in time or space at which something starts."
-,
+        ,
         "synonyms": ["start", "origin", "commencement"]
     },
     {
         "word": "BELIEF",
         "difficulty": 1,
         "definition": "(n.) An acceptance that a statement is true or that something exists."
-,
+        ,
         "synonyms": ["conviction", "faith", "opinion"]
     },
     {
         "word": "BELIEVE",
         "difficulty": 1,
         "definition": "(v.) Accept as true; feel sure of the truth of."
-,
+        ,
         "synonyms": ["trust", "accept", "think"]
     },
     {
         "word": "BENEFICIAL",
         "difficulty": 3,
         "definition": "(adj.) Favorable or advantageous; resulting in good."
-,
+        ,
         "synonyms": ["helpful", "advantageous", "useful"]
     },
     {
         "word": "BENEFIT",
         "difficulty": 1,
         "definition": "(n./v.) An advantage or profit gained from something."
-,
+        ,
         "synonyms": ["advantage", "gain", "profit"]
     },
     {
         "word": "BISCUIT",
         "difficulty": 3,
         "definition": "(n.) A small baked unleavened cake, typically crisp, flat, and sweet."
-,
+        ,
         "synonyms": ["cracker", "cookie", "scone"]
     },
     {
         "word": "BOUNDARIES",
         "difficulty": 3,
         "definition": "(n.) A line that marks the limits of an area; a dividing line."
-,
+        ,
         "synonyms": ["limits", "borders", "confines"]
     },
     {
         "word": "BRILLIANT",
         "difficulty": 3,
         "definition": "(adj.) Very bright and radiant; exceptionally clever."
-,
+        ,
         "synonyms": ["bright", "outstanding", "genius"]
     },
     {
         "word": "BUREAUCRACY",
         "difficulty": 4,
         "definition": "(n.) A system of government in which most of the important decisions are made by state officials rather than by elected representatives."
-,
+        ,
         "synonyms": ["administration", "red-tape", "officialdom"]
     },
     {
         "word": "BUSINESS",
         "difficulty": 1,
         "definition": "(n.) A person's regular occupation, profession, or trade."
-,
+        ,
         "synonyms": ["commerce", "trade", "enterprise"]
     },
     {
         "word": "CALENDAR",
         "difficulty": 1,
         "definition": "(n.) A chart showing the days, weeks, and months of a year."
-,
+        ,
         "synonyms": ["schedule", "planner", "datebook"]
     },
     {
         "word": "CAMOUFLAGE",
         "difficulty": 3,
         "definition": "(n./v.) The disguising of military personnel, equipment, and installations by painting or covering them to make them blend in with their surroundings."
-,
+        ,
         "synonyms": ["disguise", "concealment", "cover"]
     },
     {
         "word": "CANDIDATE",
         "difficulty": 1,
         "definition": "(n.) A person who applies for a job or is nominated for election."
-,
+        ,
         "synonyms": ["applicant", "contender", "nominee"]
     },
     {
         "word": "CARAMEL",
         "difficulty": 3,
         "definition": "(n./adj.) Sugar or syrup heated until it turns brown, used as a flavoring or coloring for food or drink."
-,
+        ,
         "synonyms": ["toffee", "butterscotch", "burnt-sugar"]
     },
     {
         "word": "CATEGORY",
         "difficulty": 1,
         "definition": "(n.) A class or division of people or things."
-,
+        ,
         "synonyms": ["class", "group", "type"]
     },
     {
         "word": "CEMETERY",
         "difficulty": 3,
         "definition": "(n.) A burial ground or a graveyard."
-,
+        ,
         "synonyms": ["graveyard", "burial-ground", "churchyard"]
     },
     {
         "word": "CHALLENGE",
         "difficulty": 1,
         "definition": "(n./v.) A call to take part in a contest or task that tests someone's abilities."
-,
+        ,
         "synonyms": ["test", "difficulty", "confront"]
     },
     {
         "word": "CHANGEABLE",
         "difficulty": 3,
         "definition": "(adj.) Prone to variation or alteration; not fixed or stable."
-,
+        ,
         "synonyms": ["variable", "unstable", "fickle"]
     },
     {
         "word": "CHANGING",
         "difficulty": 1,
         "definition": "(v./adj.) Becoming different."
-,
+        ,
         "synonyms": ["altering", "shifting", "transforming"]
     },
     {
         "word": "CHARACTERISTIC",
         "difficulty": 3,
         "definition": "(adj./n.) A feature or quality belonging typically to a person, place, or thing and serving to identify it."
-,
+        ,
         "synonyms": ["trait", "quality", "feature"]
     },
     {
         "word": "CHIEF",
         "difficulty": 1,
         "definition": "(n./adj.) A leader or ruler of a people or clan."
-,
+        ,
         "synonyms": ["leader", "head", "main"]
     },
     {
         "word": "CHOOSE",
         "difficulty": 1,
         "definition": "(v.) Pick out or select (someone or something) as being the best or most appropriate of two or more alternatives."
-,
+        ,
         "synonyms": ["select", "pick", "opt"]
     },
     {
         "word": "CHOSE",
         "difficulty": 1,
         "definition": "(v.) Made a selection from available options."
-,
+        ,
         "synonyms": ["selected", "picked", "opted"]
     },
     {
         "word": "CHRYSANTHEMUM",
         "difficulty": 5,
         "definition": "(n.) A plant of the daisy family with brightly colored ornamental flowers, typically blooming in autumn."
-,
+        ,
         "synonyms": ["mum", "flower", "autumn-bloom"]
     },
     {
         "word": "CIGARETTE",
         "difficulty": 3,
         "definition": "(n.) A thin cylinder of finely cut tobacco rolled in paper for smoking."
-,
+        ,
         "synonyms": ["smoke", "tobacco", "fag"]
     },
     {
         "word": "CLIMBED",
         "difficulty": 1,
         "definition": "(v.) Moved upward using the hands and feet, or ascended gradually."
-,
+        ,
         "synonyms": ["ascended", "scaled", "went-up"]
     },
     {
         "word": "CLOTH",
         "difficulty": 1,
         "definition": "(n.) Woven or felted fabric made from wool, cotton, or a similar fiber."
-,
+        ,
         "synonyms": ["fabric", "textile", "material"]
     },
     {
         "word": "CLOTHES",
         "difficulty": 1,
         "definition": "(n.) Items worn to cover the body."
-,
+        ,
         "synonyms": ["garments", "clothing", "attire"]
     },
     {
         "word": "CLOTHING",
         "difficulty": 1,
         "definition": "(n.) Garments and wearable items that cover and protect the body."
-,
+        ,
         "synonyms": ["garments", "attire", "dress"]
     },
     {
         "word": "COINCIDENCE",
         "difficulty": 3,
         "definition": "(n.) A remarkable concurrence of events or circumstances without apparent causal connection."
-,
+        ,
         "synonyms": ["chance", "accident", "fluke"]
     },
     {
         "word": "COLLECTIBLE",
         "difficulty": 3,
         "definition": "(adj./n.) An object considered desirable for its rarity, age, or cultural significance."
-,
+        ,
         "synonyms": ["antique", "keepsake", "memorabilia"]
     },
     {
         "word": "COLONEL",
         "difficulty": 3,
         "definition": "(n.) A senior military officer ranking above a major and below a general."
-,
+        ,
         "synonyms": ["officer", "commander", "military-rank"]
     },
     {
         "word": "COLUMN",
         "difficulty": 1,
         "definition": "(n.) A vertical arrangement of items, or a pillar."
-,
+        ,
         "synonyms": ["pillar", "post", "article"]
     },
     {
         "word": "COLUMNIST",
         "difficulty": 3,
         "definition": "(n.) A journalist who regularly writes a dedicated section of a newspaper or magazine."
-,
+        ,
         "synonyms": ["writer", "journalist", "commentator"]
     },
     {
         "word": "COMING",
         "difficulty": 1,
         "definition": "(v./adj./n.) Approaching or arriving."
-,
+        ,
         "synonyms": ["arriving", "forthcoming", "approaching"]
     },
     {
         "word": "COMMISSION",
         "difficulty": 3,
         "definition": "(n./v.) An instruction, command, or duty given to a person or group of people."
-,
+        ,
         "synonyms": ["task", "mandate", "fee"]
     },
     {
         "word": "COMMITMENT",
         "difficulty": 1,
         "definition": "(n.) The state or quality of being dedicated to a cause, activity, etc."
-,
+        ,
         "synonyms": ["dedication", "pledge", "obligation"]
     },
     {
         "word": "COMMITTEE",
         "difficulty": 3,
         "definition": "(n.) A group of people appointed for a specific function."
-,
+        ,
         "synonyms": ["board", "panel", "group"]
     },
     {
         "word": "COMPARATIVE",
         "difficulty": 3,
         "definition": "(adj./n.) Measured against a standard or another thing; the middle degree between positive and superlative."
-,
+        ,
         "synonyms": ["relative", "analogous", "proportional"]
     },
     {
         "word": "COMPETENT",
         "difficulty": 1,
         "definition": "(adj.) Having the necessary ability, knowledge, or skill to do something successfully."
-,
+        ,
         "synonyms": ["capable", "skilled", "qualified"]
     },
     {
         "word": "COMPLETELY",
         "difficulty": 1,
         "definition": "(adv.) Totally; utterly."
-,
+        ,
         "synonyms": ["entirely", "wholly", "totally"]
     },
     {
         "word": "CONCEDE",
         "difficulty": 3,
         "definition": "(v.) Admit that something is true or valid after first denying or resisting it."
-,
+        ,
         "synonyms": ["admit", "yield", "grant"]
     },
     {
         "word": "CONCEIVABLE",
         "difficulty": 4,
         "definition": "(adj.) Capable of being imagined or grasped mentally."
-,
+        ,
         "synonyms": ["possible", "imaginable", "thinkable"]
     },
     {
         "word": "CONCEIVE",
         "difficulty": 3,
         "definition": "(v.) Become pregnant with (a child)."
-,
+        ,
         "synonyms": ["imagine", "devise", "think-up"]
     },
     {
         "word": "CONDEMN",
         "difficulty": 3,
         "definition": "(v.) Express complete disapproval of, typically in public; censure."
-,
+        ,
         "synonyms": ["denounce", "censure", "criticize"]
     },
     {
         "word": "CONDESCEND",
         "difficulty": 3,
         "definition": "(v.) Show feelings of superiority; be patronizing."
-,
+        ,
         "synonyms": ["patronize", "deign", "stoop"]
     },
     {
         "word": "CONNOISSEUR",
         "difficulty": 5,
         "definition": "(n.) An expert judge in matters of taste."
-,
+        ,
         "synonyms": ["expert", "authority", "aficionado"]
     },
     {
         "word": "CONSCIENCE",
         "difficulty": 3,
         "definition": "(n.) An inner feeling acting as a guide to rightness."
-,
+        ,
         "synonyms": ["morals", "ethics", "inner-voice"]
     },
     {
         "word": "CONSCIENTIOUS",
         "difficulty": 5,
         "definition": "(adj.) (Of a person) wishing to do what is right, especially to do one's work or duty well and thoroughly."
-,
+        ,
         "synonyms": ["diligent", "thorough", "careful"]
     },
     {
         "word": "CONSCIOUS",
         "difficulty": 1,
         "definition": "(adj.) Aware of and responding to one's surroundings."
-,
+        ,
         "synonyms": ["aware", "awake", "alert"]
     },
     {
         "word": "CONSENSUS",
         "difficulty": 3,
         "definition": "(n.) General agreement."
-,
+        ,
         "synonyms": ["agreement", "accord", "unanimity"]
     },
     {
         "word": "CONSISTENT",
         "difficulty": 1,
         "definition": "(adj.) Acting or done in the same way over time, especially so as to be fair or accurate."
-,
+        ,
         "synonyms": ["uniform", "steady", "constant"]
     },
     {
         "word": "CONTINUOUS",
         "difficulty": 3,
         "definition": "(adj.) Forming an unbroken whole; without interruption."
-,
+        ,
         "synonyms": ["unbroken", "ongoing", "perpetual"]
     },
     {
         "word": "CONTROLLED",
         "difficulty": 1,
         "definition": "(v./adj.) Managed or kept in check."
-,
+        ,
         "synonyms": ["regulated", "managed", "restrained"]
     },
     {
         "word": "CONTROVERSIAL",
         "difficulty": 4,
         "definition": "(adj.) Giving rise or likely to give rise to public disagreement."
-,
+        ,
         "synonyms": ["disputed", "contentious", "divisive"]
     },
     {
         "word": "CONTROVERSY",
         "difficulty": 3,
         "definition": "(n.) Disagreement, typically when prolonged, public, and heated."
-,
+        ,
         "synonyms": ["dispute", "debate", "conflict"]
     },
     {
         "word": "CONVALESCE",
         "difficulty": 4,
         "definition": "(v.) Recover one's health and strength over time after an illness or operation."
-,
+        ,
         "synonyms": ["recover", "heal", "recuperate"]
     },
     {
         "word": "CONVENIENT",
         "difficulty": 3,
         "definition": "(adj.) Fitting in well with a person's needs, activities, and plans."
-,
+        ,
         "synonyms": ["handy", "suitable", "accessible"]
     },
     {
         "word": "COOLLY",
         "difficulty": 3,
         "definition": "(adv.) In a calm and unemotional manner."
-,
+        ,
         "synonyms": ["calmly", "dispassionately", "calmly"]
     },
     {
         "word": "CORRELATE",
         "difficulty": 3,
         "definition": "(v./n.) Have a mutual relationship or connection, in which one thing affects or depends on another."
-,
+        ,
         "synonyms": ["link", "connect", "associate"]
     },
     {
         "word": "CORRESPONDENCE",
         "difficulty": 4,
         "definition": "(n.) Communication by exchanging letters with someone."
-,
+        ,
         "synonyms": ["letters", "communication", "connection"]
     },
     {
         "word": "COUNSELOR",
         "difficulty": 3,
         "definition": "(n.) A person trained to give guidance on personal, social, or psychological problems."
-,
+        ,
         "synonyms": ["advisor", "guide", "mentor"]
     },
     {
         "word": "COURTEOUS",
         "difficulty": 4,
         "definition": "(adj.) Polite, respectful, or considerate in manner."
-,
+        ,
         "synonyms": ["polite", "respectful", "civil"]
     },
     {
         "word": "COURTESY",
         "difficulty": 3,
         "definition": "(n.) The showing of politeness in one's attitude and behavior toward others."
-,
+        ,
         "synonyms": ["politeness", "respect", "manners"]
     },
     {
         "word": "CRITICISM",
         "difficulty": 1,
         "definition": "(n.) The expression of disapproval of someone or something based on perceived faults or mistakes."
-,
+        ,
         "synonyms": ["critique", "feedback", "judgment"]
     },
     {
         "word": "CRITICIZE",
         "difficulty": 3,
         "definition": "(v.) Indicate the faults of (someone or something) in a disapproving way."
-,
+        ,
         "synonyms": ["judge", "censure", "find-fault"]
     },
     {
         "word": "CURIOSITY",
         "difficulty": 1,
         "definition": "(n.) A strong desire to know or learn something."
-,
+        ,
         "synonyms": ["inquisitiveness", "interest", "wonder"]
     },
     {
         "word": "CURRICULUM",
         "difficulty": 3,
         "definition": "(n.) The subjects comprising a course of study in a school or college."
-,
+        ,
         "synonyms": ["syllabus", "course", "program"]
     },
     {
         "word": "DACHSHUND",
         "difficulty": 5,
         "definition": "(n.) A dog of a short-legged, long-bodied breed."
-,
+        ,
         "synonyms": ["dog", "wiener-dog", "hound"]
     },
     {
         "word": "DAIQUIRI",
         "difficulty": 5,
         "definition": "(n.) A cocktail containing rum, lime juice, and sugar."
-,
+        ,
         "synonyms": ["cocktail", "rum-drink", "beverage"]
     },
     {
         "word": "DEBRIS",
         "difficulty": 3,
         "definition": "(n.) Scattered fragments, typically of something wrecked or destroyed."
-,
+        ,
         "synonyms": ["rubble", "ruins", "wreckage"]
     },
     {
         "word": "DECEIVE",
         "difficulty": 3,
         "definition": "(v.) To cause someone to believe what is not true."
-,
+        ,
         "synonyms": ["mislead", "trick", "delude"]
     },
     {
         "word": "DEDUCTIBLE",
         "difficulty": 3,
         "definition": "(adj./n.) An amount that can be subtracted from income before tax is calculated."
-,
+        ,
         "synonyms": ["exempt", "allowable", "tax-deductible"]
     },
     {
         "word": "DEFENDANT",
         "difficulty": 3,
         "definition": "(n.) An individual, company, or institution sued or accused in a court of law."
-,
+        ,
         "synonyms": ["accused", "respondent", "charged-party"]
     },
     {
         "word": "DEFERRED",
         "difficulty": 3,
         "definition": "(v./adj.) Put off (an action or event) to a later time; postpone."
-,
+        ,
         "synonyms": ["postponed", "delayed", "put-off"]
     },
     {
         "word": "DEFINITELY",
         "difficulty": 3,
         "definition": "(adv.) Without any doubt; unambiguously."
-,
+        ,
         "synonyms": ["certainly", "absolutely", "without-doubt"]
     },
     {
         "word": "DEFINITION",
         "difficulty": 1,
         "definition": "(n.) A statement of the exact meaning of a word, especially in a dictionary."
-,
+        ,
         "synonyms": ["meaning", "explanation", "description"]
     },
     {
         "word": "DEPENDENT",
         "difficulty": 1,
         "definition": "(adj./n.) Contingent on or determined by."
-,
+        ,
         "synonyms": ["reliant", "subordinate", "conditional"]
     },
     {
         "word": "DESCEND",
         "difficulty": 1,
         "definition": "(v.) Move or fall downward."
-,
+        ,
         "synonyms": ["go-down", "fall", "drop"]
     },
     {
         "word": "DESCENDANT",
         "difficulty": 3,
         "definition": "(n./adj.) An offspring or later generation of a person or organism; coming from an earlier source."
-,
+        ,
         "synonyms": ["offspring", "heir", "successor"]
     },
     {
         "word": "DESCRIBE",
         "difficulty": 1,
         "definition": "(v.) Give an account in words of (someone or something), including all the relevant characteristics, qualities, or events."
-,
+        ,
         "synonyms": ["depict", "explain", "portray"]
     },
     {
         "word": "DESCRIPTION",
         "difficulty": 3,
         "definition": "(n.) A spoken or written representation or account of a person, object, or event."
-,
+        ,
         "synonyms": ["account", "portrayal", "explanation"]
     },
     {
         "word": "DESIRABLE",
         "difficulty": 3,
         "definition": "(adj./n.) Wanted or wished for as being attractive, useful, or necessary to course of action."
-,
+        ,
         "synonyms": ["attractive", "wanted", "appealing"]
     },
     {
         "word": "DESPAIR",
         "difficulty": 1,
         "definition": "(n./v.) The complete loss or absence of hope."
-,
+        ,
         "synonyms": ["hopelessness", "despondency", "anguish"]
     },
     {
         "word": "DESPERATE",
         "difficulty": 3,
         "definition": "(adj.) Feeling or showing a hopeless sense."
-,
+        ,
         "synonyms": ["frantic", "hopeless", "urgent"]
     },
     {
         "word": "DETERRENT",
         "difficulty": 3,
         "definition": "(n./adj.) A thing that discourages or is intended to discourage someone from doing something."
-,
+        ,
         "synonyms": ["obstacle", "discouragement", "preventive"]
     },
     {
         "word": "DEVELOP",
         "difficulty": 1,
         "definition": "(v.) Grow or cause to grow and become more mature, advanced, or elaborate."
-,
+        ,
         "synonyms": ["grow", "evolve", "advance"]
     },
     {
         "word": "DICTIONARY",
         "difficulty": 1,
         "definition": "(n.) A book or electronic resource that lists the words of a language (typically in alphabetical order) and gives their meaning, or gives the equivalent words in a different language."
-,
+        ,
         "synonyms": ["lexicon", "glossary", "wordbook"]
     },
     {
         "word": "DIFFERENCE",
         "difficulty": 1,
         "definition": "(n.) A point in which things are not the same."
-,
+        ,
         "synonyms": ["distinction", "variation", "contrast"]
     },
     {
         "word": "DILEMMA",
         "difficulty": 3,
         "definition": "(n.) A situation where a difficult choice has to be made."
-,
+        ,
         "synonyms": ["predicament", "quandary", "problem"]
     },
     {
         "word": "DINING",
         "difficulty": 1,
         "definition": "(v./n.) The activity of eating dinner."
-,
+        ,
         "synonyms": ["eating", "feasting", "mealtime"]
     },
     {
         "word": "DISAPPEARANCE",
         "difficulty": 3,
         "definition": "(n.) An instance or fact of someone or something ceasing to be visible or passing out of sight."
-,
+        ,
         "synonyms": ["vanishing", "absence", "evanescence"]
     },
     {
         "word": "DISAPPOINT",
         "difficulty": 1,
         "definition": "(v.) Fail to fulfill the hopes or expectations of."
-,
+        ,
         "synonyms": ["let-down", "fail", "frustrate"]
     },
     {
         "word": "DISASTROUS",
         "difficulty": 3,
         "definition": "(adj.) Causing great damage."
-,
+        ,
         "synonyms": ["catastrophic", "devastating", "ruinous"]
     },
     {
         "word": "DISCIPLINE",
         "difficulty": 3,
         "definition": "(n./v.) The practice of training people to obey rules."
-,
+        ,
         "synonyms": ["control", "training", "order"]
     },
     {
         "word": "DISEASE",
         "difficulty": 1,
         "definition": "(n.) A disorder of structure or function in a human, animal, or plant, especially one that produces specific signs or symptoms or that affects a specific location and is not simply a direct result of physical injury."
-,
+        ,
         "synonyms": ["illness", "sickness", "ailment"]
     },
     {
         "word": "DISPENSABLE",
         "difficulty": 3,
         "definition": "(adj.) Able to be replaced or done away with; not necessary."
-,
+        ,
         "synonyms": ["unnecessary", "expendable", "disposable"]
     },
     {
         "word": "DISSATISFIED",
         "difficulty": 3,
         "definition": "(adj.) Not content or happy with something."
-,
+        ,
         "synonyms": ["displeased", "unhappy", "discontented"]
     },
     {
         "word": "DISSIPATE",
         "difficulty": 4,
         "definition": "(v.) Disperse or scatter."
-,
+        ,
         "synonyms": ["scatter", "disperse", "waste"]
     },
     {
         "word": "DOMINANT",
         "difficulty": 1,
         "definition": "(adj./n.) Most important, powerful, or influential."
-,
+        ,
         "synonyms": ["leading", "ruling", "prevailing"]
     },
     {
         "word": "DUMBBELL",
         "difficulty": 3,
         "definition": "(n.) A short bar with a weight at each end, used typically in pairs for exercise or muscle-building."
-,
+        ,
         "synonyms": ["weight", "barbell", "dumb-iron"]
     },
     {
         "word": "EASILY",
         "difficulty": 1,
         "definition": "(adv.) Without difficulty or effort."
-,
+        ,
         "synonyms": ["effortlessly", "readily", "simply"]
     },
     {
         "word": "ECSTASY",
         "difficulty": 4,
         "definition": "(n.) An overwhelming feeling of great happiness."
-,
+        ,
         "synonyms": ["bliss", "joy", "euphoria"]
     },
     {
         "word": "EFFECT",
         "difficulty": 1,
         "definition": "(n./v.) A change which is a result of an action."
-,
+        ,
         "synonyms": ["result", "outcome", "impact"]
     },
     {
         "word": "EFFICIENCY",
         "difficulty": 3,
         "definition": "(n.) The ability to achieve success with minimal waste or effort."
-,
+        ,
         "synonyms": ["productivity", "effectiveness", "economy"]
     },
     {
         "word": "EIGHTH",
         "difficulty": 3,
         "definition": "(num./n./adj.) Constituting number eight in a sequence; 8th."
-,
+        ,
         "synonyms": ["one-eighth", "ordinal", "fraction"]
     },
     {
         "word": "EITHER",
         "difficulty": 1,
         "definition": "(pron./adv./conj.) One or the other of two options; used to indicate a choice between two possibilities."
-,
+        ,
         "synonyms": ["one-or-other", "each", "both"]
     },
     {
         "word": "ELIGIBILITY",
         "difficulty": 3,
         "definition": "(n.) The quality of being qualified or entitled to something."
-,
+        ,
         "synonyms": ["qualification", "suitability", "entitlement"]
     },
     {
         "word": "ELIGIBLE",
         "difficulty": 3,
         "definition": "(adj.) Having the right to do or obtain something; satisfying the appropriate conditions."
-,
+        ,
         "synonyms": ["qualified", "suitable", "entitled"]
     },
     {
         "word": "ELIMINATE",
         "difficulty": 1,
         "definition": "(v.) Completely remove or get rid of something."
-,
+        ,
         "synonyms": ["remove", "eradicate", "exclude"]
     },
     {
         "word": "EMBARRASS",
         "difficulty": 3,
         "definition": "(v.) Cause to feel awkward or self-conscious."
-,
+        ,
         "synonyms": ["humiliate", "shame", "fluster"]
     },
     {
         "word": "EMPEROR",
         "difficulty": 1,
         "definition": "(n.) A sovereign ruler of great power and rank, especially one ruling an empire."
-,
+        ,
         "synonyms": ["ruler", "sovereign", "monarch"]
     },
     {
         "word": "ENCOURAGEMENT",
         "difficulty": 3,
         "definition": "(n.) Words or actions that give someone confidence, support, or motivation."
-,
+        ,
         "synonyms": ["support", "motivation", "boost"]
     },
     {
         "word": "ENCOURAGING",
         "difficulty": 3,
         "definition": "(v./adj.) Giving someone support or confidence; supportive."
-,
+        ,
         "synonyms": ["supportive", "uplifting", "reassuring"]
     },
     {
         "word": "ENEMY",
         "difficulty": 1,
         "definition": "(n./adj.) A person who is actively opposed or hostile to someone or something."
-,
+        ,
         "synonyms": ["foe", "adversary", "opponent"]
     },
     {
         "word": "ENTIRELY",
         "difficulty": 1,
         "definition": "(adv.) Completely (often used for emphasis)."
-,
+        ,
         "synonyms": ["completely", "wholly", "totally"]
     },
     {
         "word": "ENTREPRENEUR",
         "difficulty": 5,
         "definition": "(n.) A person who organizes and operates a business or businesses, taking on greater than normal financial risks in order to do so."
-,
+        ,
         "synonyms": ["businessperson", "innovator", "founder"]
     },
     {
         "word": "ENVIRONMENT",
         "difficulty": 1,
         "definition": "(n.) The surroundings or conditions in which one lives."
-,
+        ,
         "synonyms": ["surroundings", "habitat", "ecosystem"]
     },
     {
         "word": "EQUIPMENT",
         "difficulty": 1,
         "definition": "(n.) The necessary items for a particular purpose."
-,
+        ,
         "synonyms": ["gear", "tools", "apparatus"]
     },
     {
         "word": "EQUIPPED",
         "difficulty": 3,
         "definition": "(v./adj.) Supplied with the necessary items for a particular purpose."
-,
+        ,
         "synonyms": ["prepared", "furnished", "outfitted"]
     },
     {
         "word": "EQUIVALENT",
         "difficulty": 3,
         "definition": "(adj./n.) Equal in value, amount, function, meaning, etc."
-,
+        ,
         "synonyms": ["equal", "matching", "interchangeable"]
     },
     {
         "word": "ESPECIALLY",
         "difficulty": 1,
         "definition": "(adv.) Used to single out one person, thing, or situation over all others."
-,
+        ,
         "synonyms": ["particularly", "specifically", "above-all"]
     },
     {
         "word": "ETIQUETTE",
         "difficulty": 4,
         "definition": "(n.) The customary code of polite behavior in society or among members of a particular profession or group."
-,
+        ,
         "synonyms": ["manners", "protocol", "decorum"]
     },
     {
         "word": "EXAGGERATE",
         "difficulty": 3,
         "definition": "(v.) To represent something as being larger than it is."
-,
+        ,
         "synonyms": ["overstate", "embellish", "amplify"]
     },
     {
         "word": "EXCEED",
         "difficulty": 1,
         "definition": "(v.) To be greater in number or size than something."
-,
+        ,
         "synonyms": ["surpass", "outdo", "go-beyond"]
     },
     {
         "word": "EXCELLENCE",
         "difficulty": 3,
         "definition": "(n.) The quality of being outstanding or extremely good."
-,
+        ,
         "synonyms": ["superiority", "quality", "distinction"]
     },
     {
         "word": "EXHAUST",
         "difficulty": 3,
         "definition": "(v./n.) Drain (someone) of their physical or mental resources; tire out."
-,
+        ,
         "synonyms": ["deplete", "tire", "drain"]
     },
     {
         "word": "EXHILARATE",
         "difficulty": 5,
         "definition": "(v.) To make someone feel very happy; thrill."
-,
+        ,
         "synonyms": ["thrill", "excite", "invigorate"]
     },
     {
         "word": "EXISTENCE",
         "difficulty": 3,
         "definition": "(n.) The fact or state of living or having reality."
-,
+        ,
         "synonyms": ["being", "life", "reality"]
     },
     {
         "word": "EXISTENT",
         "difficulty": 3,
         "definition": "(adj.) Currently real or in operation; actually present."
-,
+        ,
         "synonyms": ["real", "present", "actual"]
     },
     {
         "word": "EXPENSE",
         "difficulty": 2,
         "definition": "(n./v.) The cost required for something; the money spent on something."
-,
+        ,
         "synonyms": ["cost", "price", "expenditure"]
     },
     {
         "word": "EXPERIENCE",
         "difficulty": 2,
         "definition": "(n./v.) Knowledge or skill acquired by practical contact."
-,
+        ,
         "synonyms": ["encounter", "knowledge", "involvement"]
     },
     {
         "word": "EXPERIMENT",
         "difficulty": 2,
         "definition": "(n./v.) A scientific procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact."
-,
+        ,
         "synonyms": ["test", "trial", "investigation"]
     },
     {
         "word": "EXPLANATION",
         "difficulty": 3,
         "definition": "(n.) A statement or account that makes something clear."
-,
+        ,
         "synonyms": ["clarification", "account", "description"]
     },
     {
         "word": "EXTREMELY",
         "difficulty": 2,
         "definition": "(adv.) To a very great degree; very."
-,
+        ,
         "synonyms": ["very", "exceedingly", "intensely"]
     },
     {
         "word": "EXUBERANCE",
         "difficulty": 4,
         "definition": "(n.) The quality of being full of energy, excitement, and cheerfulness; ebullience."
-,
+        ,
         "synonyms": ["enthusiasm", "vitality", "liveliness"]
     },
     {
         "word": "FACSIMILE",
         "difficulty": 4,
         "definition": "(n./v.) An exact copy, especially of written or printed material."
-,
+        ,
         "synonyms": ["copy", "duplicate", "replica"]
     },
     {
         "word": "FAHRENHEIT",
         "difficulty": 4,
         "definition": "(n.) Of or denoting a scale of temperature on which water freezes at 32° and boils at 212° under standard conditions."
-,
+        ,
         "synonyms": ["temperature-scale", "heat-measure", "degree-F"]
     },
     {
         "word": "FALLACIOUS",
         "difficulty": 4,
         "definition": "(adj.) Based on a mistaken belief."
-,
+        ,
         "synonyms": ["false", "misleading", "erroneous"]
     },
     {
         "word": "FALLACY",
         "difficulty": 3,
         "definition": "(n.) A mistaken belief, especially one based on unsound argument."
-,
+        ,
         "synonyms": ["error", "misconception", "false-belief"]
     },
     {
         "word": "FAMILIAR",
         "difficulty": 2,
         "definition": "(adj./n.) Well known from long or close association."
-,
+        ,
         "synonyms": ["known", "comfortable", "friendly"]
     },
     {
         "word": "FASCINATING",
         "difficulty": 3,
         "definition": "(adj.) Extremely interesting."
-,
+        ,
         "synonyms": ["captivating", "intriguing", "enthralling"]
     },
     {
         "word": "FEASIBLE",
         "difficulty": 3,
         "definition": "(adj.) Possible to do easily or conveniently."
-,
+        ,
         "synonyms": ["possible", "practicable", "doable"]
     },
     {
         "word": "FEBRUARY",
         "difficulty": 3,
         "definition": "(n.) The second month of the year, in the northern hemisphere usually considered the last month of winter."
-,
+        ,
         "synonyms": ["second-month", "winter-month", "mid-winter"]
     },
     {
         "word": "FICTITIOUS",
         "difficulty": 4,
         "definition": "(adj.) Not real or true, being imaginary or fabricated."
-,
+        ,
         "synonyms": ["fictional", "imaginary", "false"]
     },
     {
         "word": "FIERY",
         "difficulty": 3,
         "definition": "(adj.) Consisting of fire or burning strongly."
-,
+        ,
         "synonyms": ["blazing", "passionate", "hot"]
     },
     {
         "word": "FINALLY",
         "difficulty": 1,
         "definition": "(adv.) After a long time, typically when there has been difficulty or delay."
-,
+        ,
         "synonyms": ["ultimately", "lastly", "eventually"]
     },
     {
         "word": "FINANCIALLY",
         "difficulty": 3,
         "definition": "(adv.) In a way that relates to money."
-,
+        ,
         "synonyms": ["monetarily", "economically", "fiscally"]
     },
     {
         "word": "FLUORESCENT",
         "difficulty": 4,
         "definition": "(adj./n.) Emitting light after absorbing radiation."
-,
+        ,
         "synonyms": ["glowing", "luminous", "bright"]
     },
     {
         "word": "FORCIBLY",
         "difficulty": 3,
         "definition": "(adv.) In a way that involves physical force or violence."
-,
+        ,
         "synonyms": ["by-force", "coercively", "violently"]
     },
     {
         "word": "FOREHEAD",
         "difficulty": 2,
         "definition": "(n.) The part of the face above the eyebrows."
-,
+        ,
         "synonyms": ["brow", "front", "temple"]
     },
     {
         "word": "FOREIGN",
         "difficulty": 2,
         "definition": "(adj.) Of, from, or in a country other than one's own."
-,
+        ,
         "synonyms": ["international", "alien", "overseas"]
     },
     {
         "word": "FOREIGNER",
         "difficulty": 2,
         "definition": "(n.) A person from a country other than one's own."
-,
+        ,
         "synonyms": ["alien", "outsider", "non-native"]
     },
     {
         "word": "FORESEE",
         "difficulty": 2,
         "definition": "(v.) Be aware of beforehand; predict."
-,
+        ,
         "synonyms": ["anticipate", "predict", "envision"]
     },
     {
         "word": "FORFEIT",
         "difficulty": 3,
         "definition": "(v./n./adj.) To lose or give up something as a penalty for wrongdoing or failure."
-,
+        ,
         "synonyms": ["surrender", "sacrifice", "give-up"]
     },
     {
         "word": "FORMERLY",
         "difficulty": 2,
         "definition": "(adv.) In the past; in earlier times."
-,
+        ,
         "synonyms": ["previously", "once", "in-the-past"]
     },
     {
         "word": "FORTY",
         "difficulty": 2,
         "definition": "(num./n./adj.) The number equivalent to four times ten."
-,
+        ,
         "synonyms": ["four-tens", "score-and-twenty", "numeral"]
     },
     {
         "word": "FORWARD",
         "difficulty": 1,
         "definition": "(adv./adj./v.) In the direction that one is facing."
-,
+        ,
         "synonyms": ["ahead", "onward", "advance"]
     },
     {
         "word": "FOURTH",
         "difficulty": 2,
         "definition": "(num./n./adj.) Constituting number four in a sequence; 4th."
-,
+        ,
         "synonyms": ["one-quarter", "ordinal", "next-after-third"]
     },
     {
         "word": "FRIEND",
         "difficulty": 1,
         "definition": "(n.) A person whom one knows and has a bond with."
-,
+        ,
         "synonyms": ["companion", "ally", "confidant"]
     },
     {
         "word": "FUELLING",
         "difficulty": 3,
         "definition": "(v.) Supplying energy or material needed to sustain activity."
-,
+        ,
         "synonyms": ["powering", "charging", "feeding"]
     },
     {
         "word": "FULFILL",
         "difficulty": 2,
         "definition": "(v.) Carry out as required, promised, or expected."
-,
+        ,
         "synonyms": ["complete", "satisfy", "achieve"]
     },
     {
         "word": "FUNDAMENTALLY",
         "difficulty": 3,
         "definition": "(adv.) In central or primary respects."
-,
+        ,
         "synonyms": ["essentially", "basically", "primarily"]
     },
     {
         "word": "GAUGE",
         "difficulty": 3,
         "definition": "(n./v.) An instrument or device for measuring."
-,
+        ,
         "synonyms": ["measure", "assess", "indicator"]
     },
     {
         "word": "GENERALLY",
         "difficulty": 1,
         "definition": "(adv.) In most cases; usually."
-,
+        ,
         "synonyms": ["usually", "typically", "broadly"]
     },
     {
         "word": "GENEROSITY",
         "difficulty": 3,
         "definition": "(n.) The quality of freely giving one's time, money, or resources to others without expecting anything in return."
-,
+        ,
         "synonyms": ["giving", "charity", "benevolence"]
     },
     {
         "word": "GENIUS",
         "difficulty": 2,
         "definition": "(n./adj.) Exceptional intellectual or creative power or other natural ability."
-,
+        ,
         "synonyms": ["prodigy", "mastermind", "intellect"]
     },
     {
         "word": "GHOST",
         "difficulty": 2,
         "definition": "(n./v.) An apparition of a dead person which is believed to appear or become manifest to the living, typically as a nebulous image."
-,
+        ,
         "synonyms": ["spirit", "specter", "phantom"]
     },
     {
         "word": "GLAMOROUS",
         "difficulty": 3,
         "definition": "(adj.) Strikingly attractive or exciting in a way that suggests luxury, elegance, or a charmed life."
-,
+        ,
         "synonyms": ["stylish", "dazzling", "alluring"]
     },
     {
         "word": "GNARLED",
         "difficulty": 3,
         "definition": "(adj.) Knobbly, rough, and twisted, especially with age."
-,
+        ,
         "synonyms": ["twisted", "knotted", "craggy"]
     },
     {
         "word": "GNAT",
         "difficulty": 3,
         "definition": "(n.) A small two-winged fly that resembles a mosquito. Gnats include both biting and non-biting forms, and they typically form large swarms."
-,
+        ,
         "synonyms": ["fly", "insect", "midge"]
     },
     {
         "word": "GNOME",
         "difficulty": 3,
         "definition": "(n.) A legendary dwarfish creature supposed to guard the earth's treasures underground."
-,
+        ,
         "synonyms": ["elf", "sprite", "dwarf"]
     },
     {
         "word": "GORGEOUS",
         "difficulty": 3,
         "definition": "(adj.) Beautiful; very attractive."
-,
+        ,
         "synonyms": ["beautiful", "stunning", "magnificent"]
     },
     {
         "word": "GOVERNMENT",
         "difficulty": 2,
         "definition": "(n.) The group of people with authority to direct and control the affairs of a country, state, or community."
-,
+        ,
         "synonyms": ["administration", "state", "authority"]
     },
     {
         "word": "GOVERNOR",
         "difficulty": 2,
         "definition": "(n.) The elected head of a U.S. state, holding executive authority over its administration."
-,
+        ,
         "synonyms": ["ruler", "leader", "executive"]
     },
     {
         "word": "GRAMMAR",
         "difficulty": 2,
         "definition": "(n.) The whole system and structure of a language or of languages in general."
-,
+        ,
         "synonyms": ["language-rules", "syntax", "linguistics"]
     },
     {
         "word": "GRATEFUL",
         "difficulty": 2,
         "definition": "(adj.) Feeling or showing an appreciation of kindness; thankful."
-,
+        ,
         "synonyms": ["thankful", "appreciative", "obliged"]
     },
     {
         "word": "GRIEVOUS",
         "difficulty": 4,
         "definition": "(adj.) Very severe or serious."
-,
+        ,
         "synonyms": ["serious", "severe", "painful"]
     },
     {
         "word": "GUACAMOLE",
         "difficulty": 4,
         "definition": "(n.) A dish of mashed avocado mixed with chopped onion, tomatoes, chili peppers, and seasoning."
-,
+        ,
         "synonyms": ["avocado-dip", "dip", "Mexican-condiment"]
     },
     {
         "word": "GUARANTEE",
         "difficulty": 3,
         "definition": "(n./v.) A formal promise or assurance that certain conditions will be fulfilled."
-,
+        ,
         "synonyms": ["assurance", "promise", "warranty"]
     },
     {
         "word": "GUARANTEED",
         "difficulty": 3,
         "definition": "(v./adj.) Formal assurance of certain conditions."
-,
+        ,
         "synonyms": ["assured", "promised", "certain"]
     },
     {
         "word": "GUARDIAN",
         "difficulty": 2,
         "definition": "(n./adj.) A person who looks after or is legally responsible for someone who is unable to manage their own affairs, especially an incompetent or a child whose parents have died."
-,
+        ,
         "synonyms": ["protector", "keeper", "custodian"]
     },
     {
         "word": "GUERRILLA",
         "difficulty": 4,
         "definition": "(n./adj.) A member of a small independent group taking part in irregular fighting, typically against larger regular forces."
-,
+        ,
         "synonyms": ["fighter", "insurgent", "partisan"]
     },
     {
         "word": "GUIDANCE",
         "difficulty": 2,
         "definition": "(n.) Advice or information aimed at resolving a problem or difficulty, especially as given by someone in authority."
-,
+        ,
         "synonyms": ["direction", "advice", "counsel"]
     },
     {
         "word": "HANDKERCHIEF",
         "difficulty": 4,
         "definition": "(n.) A square of cotton or other finely woven material intended for wiping one's nose, typically carried in a pocket or handbag."
-,
+        ,
         "synonyms": ["hanky", "cloth", "kerchief"]
     },
     {
         "word": "HAPPILY",
         "difficulty": 1,
         "definition": "(adv.)  In a way that expresses or reflects joy, contentment, or pleasure."
-,
+        ,
         "synonyms": ["joyfully", "cheerfully", "contentedly"]
     },
     {
         "word": "HARASS",
         "difficulty": 3,
         "definition": "(v.) Subject to aggressive pressure or intimidation."
-,
+        ,
         "synonyms": ["bother", "pester", "intimidate"]
     },
     {
         "word": "HEIGHT",
         "difficulty": 2,
         "definition": "(n.) The measurement from base to top or from head to foot."
-,
+        ,
         "synonyms": ["altitude", "elevation", "tallness"]
     },
     {
         "word": "HEINOUS",
         "difficulty": 4,
         "definition": "(adj.) (Of a person or wrongful act, especially a crime) utterly odious or wicked."
-,
+        ,
         "synonyms": ["atrocious", "wicked", "monstrous"]
     },
     {
         "word": "HEMORRHAGE",
         "difficulty": 5,
         "definition": "(n./v.) An escape of blood from a ruptured blood vessel, especially when profuse."
-,
+        ,
         "synonyms": ["bleeding", "blood-loss", "hemorrhaging"]
     },
     {
         "word": "HEROES",
         "difficulty": 2,
         "definition": "(n.) People who are admired or idealized for courage, outstanding achievements, or noble qualities."
-,
+        ,
         "synonyms": ["champions", "idols", "legends"]
     },
     {
         "word": "HESITANCY",
         "difficulty": 3,
         "definition": "(n.) A tentative or slow manner of acting or speaking."
-,
+        ,
         "synonyms": ["uncertainty", "reluctance", "indecision"]
     },
     {
         "word": "HIERARCHY",
         "difficulty": 4,
         "definition": "(n.) A system or organization in which people or groups are ranked one above the other according to status or authority."
-,
+        ,
         "synonyms": ["ranking", "order", "chain-of-command"]
     },
     {
         "word": "HINDRANCE",
         "difficulty": 3,
         "definition": "(n.) A thing that provides resistance, delay, or obstruction to something or someone."
-,
+        ,
         "synonyms": ["obstacle", "barrier", "obstruction"]
     },
     {
         "word": "HOARSE",
         "difficulty": 3,
         "definition": "(adj.) (Of a person's voice) sounding rough and harsh, typically as the result of a sore throat or of shouting."
-,
+        ,
         "synonyms": ["husky", "raspy", "croaky"]
     },
     {
         "word": "HOMOGENEOUS",
         "difficulty": 4,
         "definition": "(adj.) Of the same kind; alike."
-,
+        ,
         "synonyms": ["uniform", "consistent", "identical"]
     },
     {
         "word": "HOPING",
         "difficulty": 1,
         "definition": "(v.) Wanting something to happen or be the case."
-,
+        ,
         "synonyms": ["wishing", "expecting", "anticipating"]
     },
     {
         "word": "HUMOROUS",
         "difficulty": 3,
         "definition": "(adj.) Causing lighthearted laughter and amusement; funny."
-,
+        ,
         "synonyms": ["funny", "comical", "amusing"]
     },
     {
         "word": "HYGIENE",
         "difficulty": 3,
         "definition": "(n.) Conditions or practices conducive to maintaining health and preventing disease, especially through cleanliness."
-,
+        ,
         "synonyms": ["cleanliness", "sanitation", "health"]
     },
     {
         "word": "HYPOCRISY",
         "difficulty": 3,
         "definition": "(n.) The practice of claiming to have moral standards or beliefs to which one's own behavior does not conform; pretense."
-,
+        ,
         "synonyms": ["insincerity", "deception", "duplicity"]
     },
     {
         "word": "HYPOCRITE",
         "difficulty": 3,
         "definition": "(n.) Someone who pretends to hold beliefs or virtues they do not actually possess."
-,
+        ,
         "synonyms": ["fraud", "deceiver", "phony"]
     },
     {
         "word": "IDEAL",
         "difficulty": 1,
         "definition": "(adj./n.) Satisfying one's conception of what is perfect; most suitable."
-,
+        ,
         "synonyms": ["perfect", "model", "utopian"]
     },
     {
         "word": "IDEALLY",
         "difficulty": 2,
         "definition": "(adv.) In the best possible way; perfectly."
-,
+        ,
         "synonyms": ["perfectly", "optimally", "in-theory"]
     },
     {
         "word": "IDIOCY",
         "difficulty": 3,
         "definition": "(n.) Extremely stupid behavior."
-,
+        ,
         "synonyms": ["stupidity", "folly", "foolishness"]
     },
     {
         "word": "IDIOSYNCRASY",
         "difficulty": 5,
         "definition": "(n.) A mode of behavior or way of thought peculiar to an individual."
-,
+        ,
         "synonyms": ["quirk", "peculiarity", "eccentricity"]
     },
     {
         "word": "IGNORANCE",
         "difficulty": 2,
         "definition": "(n.) Lack of knowledge or information."
-,
+        ,
         "synonyms": ["unawareness", "lack-of-knowledge", "inexperience"]
     },
     {
         "word": "IMAGINARY",
         "difficulty": 2,
         "definition": "(adj./n.) Existing only in the mind; not real or physically present."
-,
+        ,
         "synonyms": ["fictional", "unreal", "fanciful"]
     },
     {
         "word": "IMMEDIATELY",
         "difficulty": 3,
         "definition": "(adv.) At once; instantly."
-,
+        ,
         "synonyms": ["instantly", "at-once", "promptly"]
     },
     {
         "word": "IMPLEMENT",
         "difficulty": 2,
         "definition": "(n./v.) A tool, utensil, or other piece of equipment, especially as used for a particular purpose."
-,
+        ,
         "synonyms": ["carry-out", "apply", "carry-out"]
     },
     {
         "word": "INCIDENTALLY",
         "difficulty": 4,
         "definition": "(adv.) Used to add a further but less important point or to introduce a new topic in a conversation; by the way."
-,
+        ,
         "synonyms": ["by-the-way", "coincidentally", "as-an-aside"]
     },
     {
         "word": "INCREDIBLE",
         "difficulty": 2,
         "definition": "(adj.) Impossible to believe; extraordinary."
-,
+        ,
         "synonyms": ["astonishing", "unbelievable", "extraordinary"]
     },
     {
         "word": "INDEPENDENCE",
         "difficulty": 3,
         "definition": "(n.) Freedom from outside control or support."
-,
+        ,
         "synonyms": ["freedom", "autonomy", "self-rule"]
     },
     {
         "word": "INDEPENDENT",
         "difficulty": 2,
         "definition": "(adj.) Free from outside control; not depending on another's authority."
-,
+        ,
         "synonyms": ["autonomous", "free", "self-reliant"]
     },
     {
         "word": "INDICT",
         "difficulty": 4,
         "definition": "(v.) Formally accuse of or charge with a serious crime."
-,
+        ,
         "synonyms": ["charge", "accuse", "prosecute"]
     },
     {
         "word": "INDISPENSABLE",
         "difficulty": 4,
         "definition": "(adj.) Absolutely necessary."
-,
+        ,
         "synonyms": ["essential", "vital", "necessary"]
     },
     {
         "word": "INEVITABLE",
         "difficulty": 3,
         "definition": "(adj./n.) Certain to happen; unavoidable."
-,
+        ,
         "synonyms": ["unavoidable", "certain", "inescapable"]
     },
     {
         "word": "INFLUENTIAL",
         "difficulty": 3,
         "definition": "(adj./n.) Having the power to shape or change the opinions, behaviors, or decisions of others."
-,
+        ,
         "synonyms": ["powerful", "impactful", "important"]
     },
     {
         "word": "INFORMATION",
         "difficulty": 1,
         "definition": "(n.) Facts provided or learned about something or someone."
-,
+        ,
         "synonyms": ["data", "knowledge", "facts"]
     },
     {
         "word": "INGENIOUS",
         "difficulty": 4,
         "definition": "(adj.) (Of a person) clever, original, and inventive."
-,
+        ,
         "synonyms": ["clever", "inventive", "resourceful"]
     },
     {
         "word": "INOCULATE",
         "difficulty": 4,
         "definition": "(v.) Treat (a person or animal) with a vaccine to produce immunity against a disease."
-,
+        ,
         "synonyms": ["vaccinate", "immunize", "inject"]
     },
     {
         "word": "INSISTENT",
         "difficulty": 3,
         "definition": "(adj.) Demanding attention or compliance in a persistent, forceful way."
-,
+        ,
         "synonyms": ["persistent", "determined", "stubborn"]
     },
     {
         "word": "INSUBORDINATE",
         "difficulty": 4,
         "definition": "(adj.) Defiant of authority; disobedient to orders."
-,
+        ,
         "synonyms": ["defiant", "disobedient", "rebellious"]
     },
     {
         "word": "INSURANCE",
         "difficulty": 2,
         "definition": "(n.) A practice or arrangement by which a company or government agency provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment of a premium."
-,
+        ,
         "synonyms": ["coverage", "protection", "assurance"]
     },
     {
         "word": "INTELLIGENCE",
         "difficulty": 3,
         "definition": "(n.) The ability to acquire and apply knowledge and skills."
-,
+        ,
         "synonyms": ["intellect", "wisdom", "cleverness"]
     },
     {
         "word": "INTERFERENCE",
         "difficulty": 3,
         "definition": "(n.) The act of getting involved in a situation in a way that disrupts or prevents normal progress."
-,
+        ,
         "synonyms": ["meddling", "disruption", "obstruction"]
     },
     {
         "word": "INTERRUPT",
         "difficulty": 2,
         "definition": "(v.) Stop the continuous progress of (an activity or process)."
-,
+        ,
         "synonyms": ["pause", "stop", "break-in"]
     },
     {
         "word": "INTRODUCE",
         "difficulty": 2,
         "definition": "(v.) Bring (something, especially a product, measure, or concept) into use or operation for the first time."
-,
+        ,
         "synonyms": ["present", "bring-in", "initiate"]
     },
     {
         "word": "INVEIGLE",
         "difficulty": 5,
         "definition": "(v.) Persuade (someone) to do something by means of deception or flattery."
-,
+        ,
         "synonyms": ["coax", "cajole", "lure"]
     },
     {
         "word": "IRRELEVANT",
         "difficulty": 3,
         "definition": "(adj.) Not connected with or relevant to something."
-,
+        ,
         "synonyms": ["unrelated", "immaterial", "beside-the-point"]
     },
     {
         "word": "IRRESISTIBLE",
         "difficulty": 4,
         "definition": "(adj.) Too attractive and tempting to be resisted."
-,
+        ,
         "synonyms": ["compelling", "overwhelming", "tempting"]
     },
     {
         "word": "ISLAND",
         "difficulty": 2,
         "definition": "(n./v.) A piece of land surrounded by water."
-,
+        ,
         "synonyms": ["isle", "land-mass", "atoll"]
     },
     {
         "word": "ISLE",
         "difficulty": 2,
         "definition": "(n.) An island or peninsula, especially a small one."
-,
+        ,
         "synonyms": ["island", "atoll", "islet"]
     },
     {
         "word": "ITINERARY",
         "difficulty": 4,
         "definition": "(n.) A planned route or journey."
-,
+        ,
         "synonyms": ["schedule", "route", "plan"]
     },
     {
         "word": "JEALOUS",
         "difficulty": 2,
         "definition": "(adj.) Feeling or showing envy of someone or their achievements and advantages."
-,
+        ,
         "synonyms": ["envious", "possessive", "covetous"]
     },
     {
         "word": "JEALOUSY",
         "difficulty": 3,
         "definition": "(n.) Resentful suspicion that a rival threatens something one values, or envious hostility toward another's advantages."
-,
+        ,
         "synonyms": ["envy", "possessiveness", "covetousness"]
     },
     {
         "word": "JEWELLERY",
         "difficulty": 4,
         "definition": "(n.) Decorative personal accessories such as rings and necklaces, typically crafted from precious metals and gemstones."
-,
+        ,
         "synonyms": ["jewelry", "ornaments", "gems"]
     },
     {
         "word": "JUDGMENT",
         "difficulty": 2,
         "definition": "(n.) The ability to make considered decisions or come to sensible conclusions."
-,
+        ,
         "synonyms": ["decision", "ruling", "opinion"]
     },
     {
         "word": "JUDICIAL",
         "difficulty": 3,
         "definition": "(adj.) Of, by, or appropriate to a court or judge."
-,
+        ,
         "synonyms": ["legal", "court-related", "juridical"]
     },
     {
         "word": "KALEIDOSCOPE",
         "difficulty": 4,
         "definition": "(n.) A toy consisting of a tube containing mirrors and pieces of colored glass or paper, whose reflections produce changing patterns when the tube is rotated."
-,
+        ,
         "synonyms": ["pattern-viewer", "shifting-display", "prism-toy"]
     },
     {
         "word": "KERNEL",
         "difficulty": 3,
         "definition": "(n.) A softer, usually edible part of a nut, seed, or fruit stone contained within its shell."
-,
+        ,
         "synonyms": ["core", "seed", "nucleus"]
     },
     {
         "word": "KNACK",
         "difficulty": 3,
         "definition": "(n.) An acquired or natural skill at performing a task."
-,
+        ,
         "synonyms": ["skill", "talent", "gift"]
     },
     {
         "word": "KNOWLEDGE",
         "difficulty": 2,
         "definition": "(n.) Facts, information, and skills acquired by a person through experience or education."
-,
+        ,
         "synonyms": ["understanding", "learning", "wisdom"]
     },
     {
         "word": "LABORATORY",
         "difficulty": 3,
         "definition": "(n.) A room or building equipped for scientific experiments, research, or teaching, or for the manufacture of drugs or chemicals."
-,
+        ,
         "synonyms": ["lab", "research-space", "facility"]
     },
     {
         "word": "LAID",
         "difficulty": 1,
         "definition": "(v.) Placed something down flat in a horizontal position."
-,
+        ,
         "synonyms": ["placed", "put-down", "deposited"]
     },
     {
         "word": "LATER",
         "difficulty": 1,
         "definition": "(adv./adj.) At a time in the near future; soon or afterwards."
-,
+        ,
         "synonyms": ["afterward", "subsequently", "eventually"]
     },
     {
         "word": "LATTER",
         "difficulty": 2,
         "definition": "(adj./n.) Situated or occurring nearer to the end of something than to the beginning."
-,
+        ,
         "synonyms": ["last-mentioned", "second", "recent"]
     },
     {
@@ -6001,2148 +6010,2148 @@ const DOOZIE_WORDS = [
         "difficulty": 1,
         "definition": "(n.) A heavy, bluish-gray metal.",
         "speakAs": "led"
-,
+        ,
         "synonyms": ["guide", "precede", "direct"]
     },
     {
         "word": "LED",
         "difficulty": 1,
         "definition": "(v.) Guided or directed someone toward a destination."
-,
+        ,
         "synonyms": ["guided", "directed", "piloted"]
     },
     {
         "word": "LEGITIMATE",
         "difficulty": 3,
         "definition": "(adj./v.) Conforming to the law or to rules."
-,
+        ,
         "synonyms": ["valid", "lawful", "genuine"]
     },
     {
         "word": "LEISURE",
         "difficulty": 3,
         "definition": "(n.) Use of free time for enjoyment."
-,
+        ,
         "synonyms": ["free-time", "relaxation", "recreation"]
     },
     {
         "word": "LENGTH",
         "difficulty": 2,
         "definition": "(n.) The measurement or extent of something from end to end; the longest dimension of an object."
-,
+        ,
         "synonyms": ["distance", "extent", "measurement"]
     },
     {
         "word": "LIAISON",
         "difficulty": 4,
         "definition": "(n.) Communication or cooperation which facilitates a close working relationship between people or organizations."
-,
+        ,
         "synonyms": ["link", "connection", "intermediary"]
     },
     {
         "word": "LIBRARY",
         "difficulty": 2,
         "definition": "(n.) A building or room containing collections of books, periodicals, and sometimes films and recorded music for people to read, borrow, or refer to."
-,
+        ,
         "synonyms": ["archive", "bookroom", "collection"]
     },
     {
         "word": "LICENSE",
         "difficulty": 2,
         "definition": "(n./v.) A permit from an authority to own or use something, do a particular thing, or carry on a trade."
-,
+        ,
         "synonyms": ["permit", "authorization", "certification"]
     },
     {
         "word": "LIEUTENANT",
         "difficulty": 4,
         "definition": "(n.) A deputy or substitute acting for a superior."
-,
+        ,
         "synonyms": ["deputy", "officer", "second-in-command"]
     },
     {
         "word": "LIGHTNING",
         "difficulty": 2,
         "definition": "(n.) The occurrence of a natural electrical discharge of very short duration and high voltage between a cloud and the ground or within a cloud, accompanied by a bright flash and typically also thunder."
-,
+        ,
         "synonyms": ["bolt", "thunder-flash", "electrical-discharge"]
     },
     {
         "word": "LIKELIHOOD",
         "difficulty": 2,
         "definition": "(n.) The probability of something happening."
-,
+        ,
         "synonyms": ["probability", "chance", "prospect"]
     },
     {
         "word": "LIKELY",
         "difficulty": 1,
         "definition": "(adj./adv.) Such as well might happen or be true; probable."
-,
+        ,
         "synonyms": ["probable", "expected", "apt"]
     },
     {
         "word": "LONELINESS",
         "difficulty": 2,
         "definition": "(n.) Sadness because one has no friends or company."
-,
+        ,
         "synonyms": ["solitude", "isolation", "seclusion"]
     },
     {
         "word": "LOOSE",
         "difficulty": 1,
         "definition": "(adj./v.) Not firmly or tightly fixed in place; detached or able to be detached."
-,
+        ,
         "synonyms": ["slack", "free", "untied"]
     },
     {
         "word": "LOSE",
         "difficulty": 1,
         "definition": "(v.) Be deprived of or cease to have or retain (something)."
-,
+        ,
         "synonyms": ["misplace", "fail", "forfeit"]
     },
     {
         "word": "LOSING",
         "difficulty": 1,
         "definition": "(v.) Be deprived of or cease to have or retain (something)."
-,
+        ,
         "synonyms": ["failing", "forfeiting", "misplacing"]
     },
     {
         "word": "LOVELY",
         "difficulty": 1,
         "definition": "(adj.) Very beautiful or attractive."
-,
+        ,
         "synonyms": ["beautiful", "delightful", "charming"]
     },
     {
         "word": "LUXURY",
         "difficulty": 3,
         "definition": "(n./adj.) The state of great comfort and extravagant living."
-,
+        ,
         "synonyms": ["indulgence", "extravagance", "opulence"]
     },
     {
         "word": "MAGAZINE",
         "difficulty": 2,
         "definition": "(n.) A periodical publication containing articles and illustrations, typically covering a particular subject or area of interest."
-,
+        ,
         "synonyms": ["periodical", "journal", "publication"]
     },
     {
         "word": "MAINTAIN",
         "difficulty": 2,
         "definition": "(v.) Cause or enable (a condition or state of affairs) to continue."
-,
+        ,
         "synonyms": ["keep", "sustain", "uphold"]
     },
     {
         "word": "MAINTENANCE",
         "difficulty": 3,
         "definition": "(n.) The process of preserving a condition or situation or of keeping something in good working order."
-,
+        ,
         "synonyms": ["upkeep", "preservation", "care"]
     },
     {
         "word": "MANAGEABLE",
         "difficulty": 3,
         "definition": "(adj.) Easy to handle, control, or deal with."
-,
+        ,
         "synonyms": ["controllable", "feasible", "workable"]
     },
     {
         "word": "MANEUVER",
         "difficulty": 4,
         "definition": "(n./v.) A movement or series of moves requiring skill and care."
-,
+        ,
         "synonyms": ["tactic", "move", "navigate"]
     },
     {
         "word": "MANUFACTURE",
         "difficulty": 3,
         "definition": "(v./n.) The making of articles on a large scale using machinery."
-,
+        ,
         "synonyms": ["produce", "make", "fabricate"]
     },
     {
         "word": "MARRIAGE",
         "difficulty": 2,
         "definition": "(n.) The legally or formally recognized union of two people as partners in a personal relationship."
-,
+        ,
         "synonyms": ["union", "matrimony", "wedding"]
     },
     {
         "word": "MATHEMATICS",
         "difficulty": 3,
         "definition": "(n.) The abstract science of number, quantity, and space."
-,
+        ,
         "synonyms": ["math", "arithmetic", "calculation"]
     },
     {
         "word": "MEDICINE",
         "difficulty": 2,
         "definition": "(n.) A compound or preparation used for the treatment or prevention of disease, especially a drug or drugs taken by mouth."
-,
+        ,
         "synonyms": ["drug", "treatment", "remedy"]
     },
     {
         "word": "MEDIEVAL",
         "difficulty": 3,
         "definition": "(adj.) Relating to the Middle Ages."
-,
+        ,
         "synonyms": ["mideval", "middle-ages", "dark-ages"]
     },
     {
         "word": "MEMENTO",
         "difficulty": 3,
         "definition": "(n.) An object kept as a reminder or souvenir of a person or event."
-,
+        ,
         "synonyms": ["souvenir", "keepsake", "reminder"]
     },
     {
         "word": "MILLENNIUM",
         "difficulty": 4,
         "definition": "(n.) A period of a thousand years, especially when calculated from the traditional date of the birth of Christ."
-,
+        ,
         "synonyms": ["thousand-years", "era", "epoch"]
     },
     {
         "word": "MILLIONAIRE",
         "difficulty": 3,
         "definition": "(n.) A person of very great wealth, with assets valued in the millions."
-,
+        ,
         "synonyms": ["wealthy-person", "mogul", "tycoon"]
     },
     {
         "word": "MINIATURE",
         "difficulty": 3,
         "definition": "(adj./n.) (Of a thing) of a much smaller size than normal; very small."
-,
+        ,
         "synonyms": ["tiny", "small-scale", "mini"]
     },
     {
         "word": "MINUSCULE",
         "difficulty": 4,
         "definition": "(adj.) Extremely small; tiny."
-,
+        ,
         "synonyms": ["tiny", "minute", "microscopic"]
     },
     {
         "word": "MINUTES",
         "difficulty": 1,
         "definition": "(n.) Sixty-second periods of time."
-,
+        ,
         "synonyms": ["record", "moments", "notes"]
     },
     {
         "word": "MISCELLANEOUS",
         "difficulty": 4,
         "definition": "(adj.) (Of items or people) gathered or considered together, although of various types."
-,
+        ,
         "synonyms": ["varied", "assorted", "mixed"]
     },
     {
         "word": "MISCHIEF",
         "difficulty": 3,
         "definition": "(n.) Playful misbehavior or troublemaking, especially in children."
-,
+        ,
         "synonyms": ["trouble", "harm", "naughtiness"]
     },
     {
         "word": "MISCHIEVOUS",
         "difficulty": 4,
         "definition": "(adj.) (Of a person, animal, or their behavior) causing or showing a fondness for causing trouble in a playful way."
-,
+        ,
         "synonyms": ["naughty", "impish", "troublesome"]
     },
     {
         "word": "MISSILE",
         "difficulty": 2,
         "definition": "(n.) An object or vehicle that is propelled through the air to strike a target at a distance."
-,
+        ,
         "synonyms": ["projectile", "rocket", "weapon"]
     },
     {
         "word": "MISSPELL",
         "difficulty": 3,
         "definition": "(v.) Spell (a word) incorrectly."
-,
+        ,
         "synonyms": ["spell-wrong", "miswrite", "err"]
     },
     {
         "word": "MISSPELLED",
         "difficulty": 3,
         "definition": "(v./adj.) Spelt (a word) incorrectly."
-,
+        ,
         "synonyms": ["incorrectly-spelled", "miswritten", "erroneous"]
     },
     {
         "word": "MNEMONIC",
         "difficulty": 4,
         "definition": "(n./adj.) A device such as a pattern of letters, ideas, or associations that assists in remembering something."
-,
+        ,
         "synonyms": ["memory-aid", "reminder", "device"]
     },
     {
         "word": "MORTGAGE",
         "difficulty": 4,
         "definition": "(n./v.) A legal agreement by which a bank or other creditor lends money at interest in exchange for taking title of the debtor's property, with the condition that the conveyance of title becomes void upon the payment of the debt."
-,
+        ,
         "synonyms": ["loan", "lien", "home-loan"]
     },
     {
         "word": "MOSQUITO",
         "difficulty": 3,
         "definition": "(n.) A slender long-legged fly with aquatic larvae. The bite of the bloodsucking female can transmit a number of serious diseases including malaria and elephantiasis."
-,
+        ,
         "synonyms": ["insect", "bug", "fly"]
     },
     {
         "word": "MOSQUITOES",
         "difficulty": 3,
         "definition": "(n.) Small flying insects that feed on blood and can transmit diseases."
-,
+        ,
         "synonyms": ["insects", "bugs", "flies"]
     },
     {
         "word": "MURMUR",
         "difficulty": 2,
         "definition": "(n./v.) A soft, low, or indistinct sound or utterance."
-,
+        ,
         "synonyms": ["whisper", "hum", "mumble"]
     },
     {
         "word": "MUSCLE",
         "difficulty": 2,
         "definition": "(n./v.) A band or bundle of fibrous tissue in a human or animal body that has the ability to contract, producing movement in or maintaining the position of parts of the body."
-,
+        ,
         "synonyms": ["tissue", "sinew", "strength"]
     },
     {
         "word": "MYSTERIOUS",
         "difficulty": 3,
         "definition": "(adj.) Difficult or impossible to understand, explain, or identify."
-,
+        ,
         "synonyms": ["enigmatic", "puzzling", "secretive"]
     },
     {
         "word": "NAIVE",
         "difficulty": 3,
         "definition": "(adj.) (Of a person or action) showing a lack of experience, wisdom, or judgment."
-,
+        ,
         "synonyms": ["innocent", "gullible", "unsophisticated"]
     },
     {
         "word": "NARRATIVE",
         "difficulty": 3,
         "definition": "(n./adj.) A spoken or written account of connected events; a story."
-,
+        ,
         "synonyms": ["story", "account", "tale"]
     },
     {
         "word": "NATURALLY",
         "difficulty": 1,
         "definition": "(adv.) In a way that is to be expected."
-,
+        ,
         "synonyms": ["inherently", "of-course", "as-expected"]
     },
     {
         "word": "NAUSEOUS",
         "difficulty": 3,
         "definition": "(adj.) Feeling an unsettled stomach with an urge to be sick."
-,
+        ,
         "synonyms": ["sick", "queasy", "ill"]
     },
     {
         "word": "NECESSARY",
         "difficulty": 2,
         "definition": "(adj.) Required to be done, achieved, or present; needed; essential."
-,
+        ,
         "synonyms": ["essential", "required", "vital"]
     },
     {
         "word": "NECESSITY",
         "difficulty": 3,
         "definition": "(n.) The fact of being required or indispensable."
-,
+        ,
         "synonyms": ["need", "requirement", "must"]
     },
     {
         "word": "NEIGHBOR",
         "difficulty": 2,
         "definition": "(n./v.) A person living next door to or very near another."
-,
+        ,
         "synonyms": ["resident", "next-door", "adjacent-person"]
     },
     {
         "word": "NEITHER",
         "difficulty": 2,
         "definition": "(det./pron./adv./conj.) Not either."
-,
+        ,
         "synonyms": ["not-either", "none", "nor"]
     },
     {
         "word": "NEUTRON",
         "difficulty": 3,
         "definition": "(n.) A subatomic particle of about the same mass as a proton but without an electric charge, present in all atomic nuclei except those of ordinary hydrogen."
-,
+        ,
         "synonyms": ["subatomic-particle", "nucleus-particle", "neutral-particle"]
     },
     {
         "word": "NICHE",
         "difficulty": 3,
         "definition": "(n./adj./v.) A comfortable or suitable position in life or employment."
-,
+        ,
         "synonyms": ["specialty", "slot", "role"]
     },
     {
         "word": "NIECE",
         "difficulty": 3,
         "definition": "(n.) A daughter of one's brother or sister, or of one's brother-in-law or sister-in-law."
-,
+        ,
         "synonyms": ["sister's-daughter", "brother's-daughter", "family-member"]
     },
     {
         "word": "NINETY",
         "difficulty": 2,
         "definition": "(num./n./adj.) The cardinal number equivalent to nine times ten; 90."
-,
+        ,
         "synonyms": ["nine-tens", "90", "numeral"]
     },
     {
         "word": "NINTH",
         "difficulty": 2,
         "definition": "(num./n./adj.) Constituting number nine in a sequence; 9th."
-,
+        ,
         "synonyms": ["ordinal", "one-ninth", "number-nine"]
     },
     {
         "word": "NOTICEABLE",
         "difficulty": 3,
         "definition": "(adj.) Plainly visible or obvious; attracting attention."
-,
+        ,
         "synonyms": ["visible", "conspicuous", "obvious"]
     },
     {
         "word": "NOWADAYS",
         "difficulty": 2,
         "definition": "(adv.) At the present time, in contrast with the past."
-,
+        ,
         "synonyms": ["currently", "these-days", "presently"]
     },
     {
         "word": "NUCLEAR",
         "difficulty": 2,
         "definition": "(adj.) Of or relating to the central core of an atom or the energy released by splitting or fusing such cores."
-,
+        ,
         "synonyms": ["atomic", "radioactive", "fissile"]
     },
     {
         "word": "NUISANCE",
         "difficulty": 3,
         "definition": "(n.) A person, thing, or circumstance causing inconvenience or annoyance."
-,
+        ,
         "synonyms": ["annoyance", "irritant", "bother"]
     },
     {
         "word": "OBEDIENCE",
         "difficulty": 3,
         "definition": "(n.) Compliance with an order, request, or law or submission to another's authority."
-,
+        ,
         "synonyms": ["compliance", "submissiveness", "conformity"]
     },
     {
         "word": "OBEDIENT",
         "difficulty": 2,
         "definition": "(adj.) Complying or willing to comply with orders or requests; submissive to another's authority."
-,
+        ,
         "synonyms": ["compliant", "submissive", "dutiful"]
     },
     {
         "word": "OBSTACLE",
         "difficulty": 2,
         "definition": "(n.) A thing that blocks one's way or prevents or hinders progress."
-,
+        ,
         "synonyms": ["barrier", "hindrance", "hurdle"]
     },
     {
         "word": "OCCASION",
         "difficulty": 2,
         "definition": "(n./v.) A particular time or instance of an event."
-,
+        ,
         "synonyms": ["event", "opportunity", "instance"]
     },
     {
         "word": "OCCASIONALLY",
         "difficulty": 3,
         "definition": "(adv.) At infrequent or irregular intervals; now and then."
-,
+        ,
         "synonyms": ["sometimes", "now-and-then", "infrequently"]
     },
     {
         "word": "OCCURRED",
         "difficulty": 3,
         "definition": "(v.) Happened; took place."
-,
+        ,
         "synonyms": ["happened", "took-place", "came-about"]
     },
     {
         "word": "OCCURRENCE",
         "difficulty": 4,
         "definition": "(n.) An incident or event."
-,
+        ,
         "synonyms": ["event", "incident", "happening"]
     },
     {
         "word": "OFF",
         "difficulty": 1,
         "definition": "(adv./prep./adj.) Away from a place or at a distance."
-,
+        ,
         "synonyms": ["away", "not-on", "shut"]
     },
     {
         "word": "OFFICIAL",
         "difficulty": 2,
         "definition": "(adj./n.) Relating to an authority or public body and its duties, actions, and responsibilities."
-,
+        ,
         "synonyms": ["formal", "authorized", "sanctioned"]
     },
     {
         "word": "OFTEN",
         "difficulty": 1,
         "definition": "(adv.) Many times; frequently."
-,
+        ,
         "synonyms": ["frequently", "regularly", "commonly"]
     },
     {
         "word": "OMISSION",
         "difficulty": 3,
         "definition": "(n.) Someone or something that has been left out or excluded."
-,
+        ,
         "synonyms": ["exclusion", "gap", "oversight"]
     },
     {
         "word": "OMIT",
         "difficulty": 2,
         "definition": "(v.) Leave out or exclude (someone or something), either intentionally or forgetfully."
-,
+        ,
         "synonyms": ["leave-out", "exclude", "skip"]
     },
     {
         "word": "OMITTED",
         "difficulty": 3,
         "definition": "(v.) Left something out or failed to include it."
-,
+        ,
         "synonyms": ["excluded", "left-out", "missed"]
     },
     {
         "word": "OPINION",
         "difficulty": 2,
         "definition": "(n.) A view or judgment formed about something, not necessarily based on fact or knowledge."
-,
+        ,
         "synonyms": ["view", "belief", "judgment"]
     },
     {
         "word": "OPPONENT",
         "difficulty": 2,
         "definition": "(n./adj.) Someone who competes against or fights another in a contest, game, or argument; a rival or adversary."
-,
+        ,
         "synonyms": ["adversary", "rival", "foe"]
     },
     {
         "word": "OPPORTUNITY",
         "difficulty": 2,
         "definition": "(n.) A set of circumstances that makes it possible to do something."
-,
+        ,
         "synonyms": ["chance", "opening", "possibility"]
     },
     {
         "word": "OPPRESSION",
         "difficulty": 3,
         "definition": "(n.) Prolonged cruel or unjust treatment or control."
-,
+        ,
         "synonyms": ["tyranny", "suppression", "persecution"]
     },
     {
         "word": "OPTIMISM",
         "difficulty": 3,
         "definition": "(n.) Hopefulness and confidence about the future or the successful outcome of something."
-,
+        ,
         "synonyms": ["hope", "positivity", "confidence"]
     },
     {
         "word": "OPTIMISTIC",
         "difficulty": 3,
         "definition": "(adj.) Hopeful and confident about the future."
-,
+        ,
         "synonyms": ["hopeful", "positive", "confident"]
     },
     {
         "word": "ORCHESTRA",
         "difficulty": 3,
         "definition": "(n.) A large group of musicians playing instrumental music together."
-,
+        ,
         "synonyms": ["ensemble", "philharmonic", "band"]
     },
     {
         "word": "ORDINARILY",
         "difficulty": 3,
         "definition": "(adv.) Under normal circumstances or conditions."
-,
+        ,
         "synonyms": ["usually", "normally", "typically"]
     },
     {
         "word": "ORIGIN",
         "difficulty": 2,
         "definition": "(n.) The point or place where something begins, arises, or is derived."
-,
+        ,
         "synonyms": ["source", "beginning", "root"]
     },
     {
         "word": "ORIGINAL",
         "difficulty": 2,
         "definition": "(adj./n.) Present or existing from the beginning; first or earliest."
-,
+        ,
         "synonyms": ["first", "novel", "authentic"]
     },
     {
         "word": "OUTRAGEOUS",
         "difficulty": 3,
         "definition": "(adj.) Shockingly bad or excessive."
-,
+        ,
         "synonyms": ["shocking", "scandalous", "extreme"]
     },
     {
         "word": "OVERRUN",
         "difficulty": 2,
         "definition": "(v./n.) Spread over or occupy (a place) in large numbers."
-,
+        ,
         "synonyms": ["overwhelm", "exceed", "invade"]
     },
     {
         "word": "PAMPHLET",
         "difficulty": 3,
         "definition": "(n./v.) A small booklet or leaflet containing information or arguments about a single subject."
-,
+        ,
         "synonyms": ["brochure", "leaflet", "flyer"]
     },
     {
         "word": "PAMPHLETS",
         "difficulty": 3,
         "definition": "(n.) Small booklets or leaflets containing information or arguments about a single subject."
-,
+        ,
         "synonyms": ["brochures", "leaflets", "flyers"]
     },
     {
         "word": "PARALLEL",
         "difficulty": 3,
         "definition": "(adj./n./v.) (Of lines, planes, surfaces, or objects) side by side and having the same distance continuously between them."
-,
+        ,
         "synonyms": ["comparable", "corresponding", "analogous"]
     },
     {
         "word": "PARAPHERNALIA",
         "difficulty": 5,
         "definition": "(n.) Miscellaneous articles, especially the equipment needed for a particular activity."
-,
+        ,
         "synonyms": ["equipment", "accessories", "gear"]
     },
     {
         "word": "PARTICULAR",
         "difficulty": 3,
         "definition": "(adj./n.) Used to single out an individual member of a specified group or class."
-,
+        ,
         "synonyms": ["specific", "special", "individual"]
     },
     {
         "word": "PARTICULARLY",
         "difficulty": 3,
         "definition": "(adv.) To a higher degree than is usual or average."
-,
+        ,
         "synonyms": ["specifically", "especially", "notably"]
     },
     {
         "word": "PASTIME",
         "difficulty": 3,
         "definition": "(n.) An activity that someone does regularly for enjoyment rather than work; a hobby."
-,
+        ,
         "synonyms": ["hobby", "leisure", "recreation"]
     },
     {
         "word": "PAVILION",
         "difficulty": 3,
         "definition": "(n./v.) A decorative building used as a shelter in a park or garden."
-,
+        ,
         "synonyms": ["tent", "canopy", "shelter"]
     },
     {
         "word": "PEACEABLE",
         "difficulty": 3,
         "definition": "(adj.) Inclined to avoid argument or violent conflict."
-,
+        ,
         "synonyms": ["peaceful", "calm", "non-violent"]
     },
     {
         "word": "PECULIAR",
         "difficulty": 3,
         "definition": "(adj./n.) Strange or odd; unusual."
-,
+        ,
         "synonyms": ["strange", "odd", "unusual"]
     },
     {
         "word": "PENETRATE",
         "difficulty": 3,
         "definition": "(v.) Succeed in forcing a way into or through (something)."
-,
+        ,
         "synonyms": ["enter", "pierce", "break-through"]
     },
     {
         "word": "PERCEIVE",
         "difficulty": 3,
         "definition": "(v.) Become aware or conscious of (something); come to realize or understand."
-,
+        ,
         "synonyms": ["notice", "observe", "recognize"]
     },
     {
         "word": "PERFORMANCE",
         "difficulty": 2,
         "definition": "(n.) A live presentation of a play, music, or other art before an audience."
-,
+        ,
         "synonyms": ["show", "execution", "act"]
     },
     {
         "word": "PERMANENT",
         "difficulty": 2,
         "definition": "(adj./n.) Lasting or intended to last or remain unchanged indefinitely."
-,
+        ,
         "synonyms": ["lasting", "enduring", "stable"]
     },
     {
         "word": "PERMISSIBLE",
         "difficulty": 3,
         "definition": "(adj.) Within the bounds of what is officially sanctioned or allowed."
-,
+        ,
         "synonyms": ["allowed", "acceptable", "legal"]
     },
     {
         "word": "PERMITTED",
         "difficulty": 3,
         "definition": "(v./adj.) Allowed; given authorization."
-,
+        ,
         "synonyms": ["allowed", "authorized", "sanctioned"]
     },
     {
         "word": "PERSEVERANCE",
         "difficulty": 4,
         "definition": "(n.) Persistence in doing something despite difficulty or delay in achieving success."
-,
+        ,
         "synonyms": ["persistence", "determination", "tenacity"]
     },
     {
         "word": "PERSISTENCE",
         "difficulty": 3,
         "definition": "(n.) Firm or obstinate continuance in a course of action in spite of difficulty or opposition."
-,
+        ,
         "synonyms": ["determination", "resilience", "steadfastness"]
     },
     {
         "word": "PERSONAL",
         "difficulty": 1,
         "definition": "(adj.) Belonging to or affecting a specific individual; private and not shared with others."
-,
+        ,
         "synonyms": ["individual", "private", "subjective"]
     },
     {
         "word": "PERSONNEL",
         "difficulty": 3,
         "definition": "(n.) People employed in an organization or engaged in an organized undertaking such as military service."
-,
+        ,
         "synonyms": ["staff", "employees", "workforce"]
     },
     {
         "word": "PERSPIRATION",
         "difficulty": 4,
         "definition": "(n.) The process of sweating."
-,
+        ,
         "synonyms": ["sweat", "moisture", "exudation"]
     },
     {
         "word": "PHARAOH",
         "difficulty": 4,
         "definition": "(n.) A ruler in ancient Egypt."
-,
+        ,
         "synonyms": ["king", "ruler", "Egyptian-king"]
     },
     {
         "word": "PHYSICAL",
         "difficulty": 2,
         "definition": "(adj./n.) Relating to the body as opposed to the mind."
-,
+        ,
         "synonyms": ["bodily", "material", "tangible"]
     },
     {
         "word": "PHYSICIAN",
         "difficulty": 3,
         "definition": "(n.) A person qualified to practice medicine."
-,
+        ,
         "synonyms": ["doctor", "medic", "healer"]
     },
     {
         "word": "PIECE",
         "difficulty": 1,
         "definition": "(n./v.) A portion of an object or of material, produced by cutting, tearing, or breaking the whole."
-,
+        ,
         "synonyms": ["part", "portion", "fragment"]
     },
     {
         "word": "PILGRIMAGE",
         "difficulty": 3,
         "definition": "(n./v.) A journey to a place associated with someone or something respected or believed to be holy."
-,
+        ,
         "synonyms": ["journey", "quest", "trek"]
     },
     {
         "word": "PITIFUL",
         "difficulty": 2,
         "definition": "(adj.) Deserving or arousing pity."
-,
+        ,
         "synonyms": ["pathetic", "miserable", "sad"]
     },
     {
         "word": "PLANNING",
         "difficulty": 1,
         "definition": "(v./n.) The process of making plans for something."
-,
+        ,
         "synonyms": ["organizing", "preparing", "scheduling"]
     },
     {
         "word": "PLAYWRIGHT",
         "difficulty": 3,
         "definition": "(n.) A person who writes plays."
-,
+        ,
         "synonyms": ["dramatist", "scriptwriter", "author"]
     },
     {
         "word": "PLEASANT",
         "difficulty": 2,
         "definition": "(adj.) Giving a sense of happy satisfaction or enjoyment."
-,
+        ,
         "synonyms": ["enjoyable", "agreeable", "nice"]
     },
     {
         "word": "PORTRAY",
         "difficulty": 3,
         "definition": "(v.) Depict (someone or something) in a work of art or literature."
-,
+        ,
         "synonyms": ["depict", "represent", "paint"]
     },
     {
         "word": "POSSESS",
         "difficulty": 2,
         "definition": "(v.) Have as belonging to one; own."
-,
+        ,
         "synonyms": ["own", "have", "hold"]
     },
     {
         "word": "POSSESSION",
         "difficulty": 3,
         "definition": "(n.) The state of having, owning, or controlling something."
-,
+        ,
         "synonyms": ["ownership", "holding", "belonging"]
     },
     {
         "word": "POSSESSIVE",
         "difficulty": 3,
         "definition": "(adj./n.) Showing a desire to own or dominate."
-,
+        ,
         "synonyms": ["owning", "controlling", "jealous"]
     },
     {
         "word": "POSSIBILITY",
         "difficulty": 3,
         "definition": "(n.) A thing that may happen or be the case."
-,
+        ,
         "synonyms": ["chance", "prospect", "potential"]
     },
     {
         "word": "POSSIBLE",
         "difficulty": 1,
         "definition": "(adj./n.) Able to be done or achieved to happen."
-,
+        ,
         "synonyms": ["feasible", "potential", "achievable"]
     },
     {
         "word": "POTATO",
         "difficulty": 1,
         "definition": "(n.) A starchy plant tuber which is one of the most important food crops, eaten as a vegetable."
-,
+        ,
         "synonyms": ["tuber", "spud", "vegetable"]
     },
     {
         "word": "POTATOES",
         "difficulty": 2,
         "definition": "(n.) A starchy root vegetable widely eaten baked, boiled, or fried."
-,
+        ,
         "synonyms": ["spuds", "tubers", "vegetables"]
     },
     {
         "word": "PRACTICALLY",
         "difficulty": 2,
         "definition": "(adv.) Virtually; almost."
-,
+        ,
         "synonyms": ["virtually", "almost", "nearly"]
     },
     {
         "word": "PRAIRIE",
         "difficulty": 3,
         "definition": "(n.) A large open area of grassland, especially in North America."
-,
+        ,
         "synonyms": ["grassland", "plain", "meadow"]
     },
     {
         "word": "PRECEDE",
         "difficulty": 3,
         "definition": "(v.) Come before (something) in time."
-,
+        ,
         "synonyms": ["come-before", "lead", "predate"]
     },
     {
         "word": "PRECEDENCE",
         "difficulty": 3,
         "definition": "(n.) The condition of being considered more important than someone or something else; priority in importance, order, or rank."
-,
+        ,
         "synonyms": ["priority", "seniority", "rank"]
     },
     {
         "word": "PRECEDING",
         "difficulty": 3,
         "definition": "(adj./v.) Coming before in time or order."
-,
+        ,
         "synonyms": ["previous", "prior", "before"]
     },
     {
         "word": "PREFERENCE",
         "difficulty": 3,
         "definition": "(n.) A greater liking for one alternative over another or others."
-,
+        ,
         "synonyms": ["choice", "liking", "option"]
     },
     {
         "word": "PREFERRED",
         "difficulty": 3,
         "definition": "(adj./v.) Liking one thing better than another."
-,
+        ,
         "synonyms": ["chosen", "favored", "selected"]
     },
     {
         "word": "PREJUDICE",
         "difficulty": 3,
         "definition": "(n./v.) Preconceived opinion that is not based on reason or actual experience."
-,
+        ,
         "synonyms": ["bias", "discrimination", "bigotry"]
     },
     {
         "word": "PREPARATION",
         "difficulty": 3,
         "definition": "(n.) The action or process of making ready or being made ready for use or consideration."
-,
+        ,
         "synonyms": ["readiness", "planning", "groundwork"]
     },
     {
         "word": "PRESCRIPTION",
         "difficulty": 4,
         "definition": "(n./adj.) An instruction written by a medical practitioner that authorizes a patient to be provided with a medicine or treatment."
-,
+        ,
         "synonyms": ["order", "directive", "medical-order"]
     },
     {
         "word": "PRESENCE",
         "difficulty": 2,
         "definition": "(n.) The quality of being in a particular place; a commanding or impressive bearing."
-,
+        ,
         "synonyms": ["attendance", "being-there", "appearance"]
     },
     {
         "word": "PREVALENT",
         "difficulty": 3,
         "definition": "(adj.) Widespread in a particular area or at a particular time."
-,
+        ,
         "synonyms": ["widespread", "common", "rampant"]
     },
     {
         "word": "PRIMITIVE",
         "difficulty": 3,
         "definition": "(adj./n.) Relating to, denoting, or preserving the character of an early stage in the evolutionary or historical development of something."
-,
+        ,
         "synonyms": ["basic", "simple", "prehistoric"]
     },
     {
         "word": "PRINCIPAL",
         "difficulty": 3,
         "definition": "(adj./n.) First in order of importance; main."
-,
+        ,
         "synonyms": ["main", "chief", "headmaster"]
     },
     {
         "word": "PRINCIPLE",
         "difficulty": 3,
         "definition": "(n.) A fundamental truth or proposition that serves as the foundation for a system of belief or behavior or for a chain of reasoning."
-,
+        ,
         "synonyms": ["rule", "value", "belief"]
     },
     {
         "word": "PRIVILEGE",
         "difficulty": 3,
         "definition": "(n./v.) A special right, advantage, or immunity granted or available only to a particular person or group."
-,
+        ,
         "synonyms": ["advantage", "right", "benefit"]
     },
     {
         "word": "PROBABLY",
         "difficulty": 1,
         "definition": "(adv.) Almost certainly; as far as one knows or can tell."
-,
+        ,
         "synonyms": ["likely", "presumably", "in-all-likelihood"]
     },
     {
         "word": "PROCEDURE",
         "difficulty": 3,
         "definition": "(n.) An established or official way of doing something."
-,
+        ,
         "synonyms": ["process", "method", "protocol"]
     },
     {
         "word": "PROCEED",
         "difficulty": 2,
         "definition": "(v./n.) Begin or continue a course of action."
-,
+        ,
         "synonyms": ["continue", "advance", "go-ahead"]
     },
     {
         "word": "PROFESSION",
         "difficulty": 2,
         "definition": "(n.) A paid occupation, especially one that involves prolonged training and a formal qualification."
-,
+        ,
         "synonyms": ["career", "occupation", "vocation"]
     },
     {
         "word": "PROFESSOR",
         "difficulty": 2,
         "definition": "(n.) A university academic of the highest rank."
-,
+        ,
         "synonyms": ["teacher", "educator", "academic"]
     },
     {
         "word": "PROMINENT",
         "difficulty": 3,
         "definition": "(adj.) Important; famous."
-,
+        ,
         "synonyms": ["notable", "leading", "distinguished"]
     },
     {
         "word": "PROMISE",
         "difficulty": 1,
         "definition": "(n./v.) A declaration or assurance that one will do a particular thing or that a particular thing will happen."
-,
+        ,
         "synonyms": ["pledge", "vow", "commitment"]
     },
     {
         "word": "PRONOUNCE",
         "difficulty": 2,
         "definition": "(v.) Make the sound of (a word or part of a word) in the correct or a particular way."
-,
+        ,
         "synonyms": ["say", "speak", "articulate"]
     },
     {
         "word": "PRONUNCIATION",
         "difficulty": 4,
         "definition": "(n.) The way in which a word is pronounced."
-,
+        ,
         "synonyms": ["speech", "enunciation", "diction"]
     },
     {
         "word": "PROPAGANDA",
         "difficulty": 4,
         "definition": "(n.) Information, especially of a biased or misleading nature, used to promote or publicize a particular political cause or point of view."
-,
+        ,
         "synonyms": ["messaging", "spin", "disinformation"]
     },
     {
         "word": "PSYCHOLOGY",
         "difficulty": 4,
         "definition": "(n.) The scientific study of the human mind and its functions, especially those affecting behavior in a given context."
-,
+        ,
         "synonyms": ["mind-science", "behavior-study", "mental-science"]
     },
     {
         "word": "PUBLICLY",
         "difficulty": 2,
         "definition": "(adv.) In a way that is visible or known to all people; openly."
-,
+        ,
         "synonyms": ["openly", "outwardly", "in-public"]
     },
     {
         "word": "PURSUE",
         "difficulty": 2,
         "definition": "(v.) Follow (someone or something) in order to catch or attack them."
-,
+        ,
         "synonyms": ["chase", "follow", "seek"]
     },
     {
         "word": "QUANTITY",
         "difficulty": 2,
         "definition": "(n.) The amount or number of a material or immaterial thing not usually estimated by spatial measurement."
-,
+        ,
         "synonyms": ["amount", "number", "volume"]
     },
     {
         "word": "QUARANTINE",
         "difficulty": 4,
         "definition": "(n./v.) A state, period, or place of isolation in which people or animals that have arrived from elsewhere or been exposed to infectious or contagious disease are placed."
-,
+        ,
         "synonyms": ["isolation", "containment", "sequestration"]
     },
     {
         "word": "QUESTIONNAIRE",
         "difficulty": 4,
         "definition": "(n.) A printed or digital form with a set of structured questions used to gather information from respondents."
-,
+        ,
         "synonyms": ["survey", "form", "poll"]
     },
     {
         "word": "QUEUE",
         "difficulty": 4,
         "definition": "(n./v.) A line or sequence of people or vehicles awaiting their turn to be attended to or to proceed."
-,
+        ,
         "synonyms": ["line", "row", "wait"]
     },
     {
         "word": "QUIZZES",
         "difficulty": 4,
         "definition": "(n./v.) A test of knowledge, especially a brief, informal test given to students."
-,
+        ,
         "synonyms": ["tests", "exams", "challenges"]
     },
     {
         "word": "REALISTICALLY",
         "difficulty": 4,
         "definition": "(adv.) In a way that is true to life."
-,
+        ,
         "synonyms": ["practically", "sensibly", "honestly"]
     },
     {
         "word": "REALIZE",
         "difficulty": 2,
         "definition": "(v.) Become fully aware of (something) as a fact; understand clearly."
-,
+        ,
         "synonyms": ["understand", "achieve", "recognize"]
     },
     {
         "word": "REALLY",
         "difficulty": 1,
         "definition": "(adv.) In actual fact, as opposed to what is said or imagined to be the case."
-,
+        ,
         "synonyms": ["truly", "genuinely", "actually"]
     },
     {
         "word": "RECEDE",
         "difficulty": 4,
         "definition": "(v.) Go or move back or further away from a previous position."
-,
+        ,
         "synonyms": ["retreat", "withdraw", "diminish"]
     },
     {
         "word": "RECEIPT",
         "difficulty": 4,
         "definition": "(n./v.) A document confirming that goods or payment have been handed over."
-,
+        ,
         "synonyms": ["proof-of-purchase", "record", "acknowledgment"]
     },
     {
         "word": "RECEIVE",
         "difficulty": 2,
         "definition": "(v.) Be given, presented with, or paid (something)."
-,
+        ,
         "synonyms": ["get", "obtain", "accept"]
     },
     {
         "word": "RECOGNIZE",
         "difficulty": 2,
         "definition": "(v.) Identify (someone or something) from having encountered them before; know again."
-,
+        ,
         "synonyms": ["identify", "acknowledge", "realize"]
     },
     {
         "word": "RECOMMEND",
         "difficulty": 2,
         "definition": "(v.) Put forward (someone or something) with approval as being suitable for a particular purpose or role."
-,
+        ,
         "synonyms": ["suggest", "advise", "endorse"]
     },
     {
         "word": "REFERENCE",
         "difficulty": 2,
         "definition": "(n./v.) The action of mentioning or alluding to something."
-,
+        ,
         "synonyms": ["citation", "source", "mention"]
     },
     {
         "word": "REFERRED",
         "difficulty": 4,
         "definition": "(v.) Mentioned or alluded to."
-,
+        ,
         "synonyms": ["mentioned", "cited", "directed"]
     },
     {
         "word": "REFERRING",
         "difficulty": 4,
         "definition": "(v.) Mentioning or directing attention to something; sending someone to another source."
-,
+        ,
         "synonyms": ["mentioning", "citing", "alluding"]
     },
     {
         "word": "RELEVANT",
         "difficulty": 2,
         "definition": "(adj.) Closely connected or appropriate to the matter at hand."
-,
+        ,
         "synonyms": ["pertinent", "applicable", "related"]
     },
     {
         "word": "RELIEVING",
         "difficulty": 4,
         "definition": "(v.) Cause (pain, distress, or difficulty) to become less severe or serious."
-,
+        ,
         "synonyms": ["easing", "soothing", "alleviating"]
     },
     {
         "word": "RELIGIOUS",
         "difficulty": 2,
         "definition": "(adj.) Relating to or practicing a belief in a higher power, moral code, and system of worship."
-,
+        ,
         "synonyms": ["devout", "spiritual", "sacred"]
     },
     {
         "word": "REMEMBRANCE",
         "difficulty": 4,
         "definition": "(n.) The act of keeping something in one's memory."
-,
+        ,
         "synonyms": ["memory", "recollection", "commemoration"]
     },
     {
         "word": "REMINISCENCE",
         "difficulty": 4,
         "definition": "(n.) A story told about a past event remembered by the narrator."
-,
+        ,
         "synonyms": ["recollection", "memory", "nostalgia"]
     },
     {
         "word": "REPETITION",
         "difficulty": 4,
         "definition": "(n.) The action of repeating something that has already been said or written."
-,
+        ,
         "synonyms": ["recurrence", "repeat", "reiteration"]
     },
     {
         "word": "REPRESENTATIVE",
         "difficulty": 4,
         "definition": "(adj./n.) Typical of a class, group, or body of opinion."
-,
+        ,
         "synonyms": ["delegate", "spokesperson", "typical"]
     },
     {
         "word": "RESEMBLANCE",
         "difficulty": 4,
         "definition": "(n.) The quality of being similar or looking like something else."
-,
+        ,
         "synonyms": ["similarity", "likeness", "semblance"]
     },
     {
         "word": "RESERVOIR",
         "difficulty": 4,
         "definition": "(n./v.) A large natural or artificial lake used as a source of water supply."
-,
+        ,
         "synonyms": ["lake", "tank", "store"]
     },
     {
         "word": "RESISTANCE",
         "difficulty": 4,
         "definition": "(n.) The refusal to accept or comply with something; the attempt to prevent something by action or argument."
-,
+        ,
         "synonyms": ["opposition", "defiance", "refusal"]
     },
     {
         "word": "RESTAURANT",
         "difficulty": 2,
         "definition": "(n.) A place where people pay to sit and eat meals that are cooked and served on the premises."
-,
+        ,
         "synonyms": ["eatery", "diner", "cafe"]
     },
     {
         "word": "RHEUMATISM",
         "difficulty": 4,
         "definition": "(n.) A medical condition causing painful inflammation and stiffness in the joints or muscles."
-,
+        ,
         "synonyms": ["joint-pain", "arthritis", "stiffness"]
     },
     {
         "word": "RHYTHM",
         "difficulty": 4,
         "definition": "(n.) A strong, regular, repeated pattern of movement or sound."
-,
+        ,
         "synonyms": ["beat", "cadence", "tempo"]
     },
     {
         "word": "RHYTHMICAL",
         "difficulty": 5,
         "definition": "(adj.) Occurring regularly."
-,
+        ,
         "synonyms": ["rhythmic", "musical", "cadenced"]
     },
     {
         "word": "RIDICULOUS",
         "difficulty": 4,
         "definition": "(adj.) Deserving or inviting derision or mockery; absurd."
-,
+        ,
         "synonyms": ["absurd", "laughable", "preposterous"]
     },
     {
         "word": "ROOMMATE",
         "difficulty": 2,
         "definition": "(n.) A person occupying the same room as another."
-,
+        ,
         "synonyms": ["flatmate", "co-habitant", "housemate"]
     },
     {
         "word": "SACRIFICE",
         "difficulty": 4,
         "definition": "(n./v.) An act of slaughtering an animal or person or surrendering a possession as an offering to God or to a divine or supernatural figure."
-,
+        ,
         "synonyms": ["give-up", "offering", "surrender"]
     },
     {
         "word": "SACRILEGIOUS",
         "difficulty": 5,
         "definition": "(adj.) Showing disrespect toward something considered holy or sacred."
-,
+        ,
         "synonyms": ["blasphemous", "profane", "irreverent"]
     },
     {
         "word": "SAFETY",
         "difficulty": 1,
         "definition": "(n./adj.) The condition of being safe from undergoing or causing hurt, injury, or loss."
-,
+        ,
         "synonyms": ["security", "protection", "welfare"]
     },
     {
         "word": "SALARY",
         "difficulty": 2,
         "definition": "(n./v.) A fixed regular payment, typically paid on a monthly or biweekly basis but often expressed as an annual sum, made by an employer to an employee, especially a professional or white-collar worker."
-,
+        ,
         "synonyms": ["wage", "pay", "income"]
     },
     {
         "word": "SATELLITE",
         "difficulty": 4,
         "definition": "(n./adj.) An artificial body placed in orbit around the earth or moon or another planet in order to collect information or for communication."
-,
+        ,
         "synonyms": ["moon", "orbiter", "space-device"]
     },
     {
         "word": "SCARY",
         "difficulty": 1,
         "definition": "(adj.) Causing fear or alarm."
-,
+        ,
         "synonyms": ["frightening", "terrifying", "alarming"]
     },
     {
         "word": "SCENERY",
         "difficulty": 2,
         "definition": "(n.) The natural features of a landscape considered in terms of their appearance, especially when picturesque."
-,
+        ,
         "synonyms": ["landscape", "view", "backdrop"]
     },
     {
         "word": "SCHEDULE",
         "difficulty": 2,
         "definition": "(n./v.) A plan for carrying out a process or procedure, giving lists of intended events and times."
-,
+        ,
         "synonyms": ["timetable", "agenda", "plan"]
     },
     {
         "word": "SCIENCE",
         "difficulty": 1,
         "definition": "(n.) The intellectual and practical activity encompassing the systematic study of the structure and behavior of the physical and natural world through observation and experiment."
-,
+        ,
         "synonyms": ["knowledge", "study", "empirical-inquiry"]
     },
     {
         "word": "SCISSORS",
         "difficulty": 4,
         "definition": "(n.) An instrument used for cutting cloth, paper, and other thin material, consisting of two blades laid one on top of the other and fastened in the middle so as to allow them to be opened and closed by a thumb and finger inserted through rings at one end."
-,
+        ,
         "synonyms": ["shears", "clippers", "cutters"]
     },
     {
         "word": "SECEDE",
         "difficulty": 4,
         "definition": "(v.) Withdraw formally from membership of a federal union, an alliance, or a political or religious organization."
-,
+        ,
         "synonyms": ["withdraw", "break-away", "separate"]
     },
     {
         "word": "SECRETARY",
         "difficulty": 4,
         "definition": "(n.) A person employed by an individual or in an office to assist with correspondence, keep records, and make appointments and similar administrative tasks."
-,
+        ,
         "synonyms": ["administrator", "clerk", "office-manager"]
     },
     {
         "word": "SEIZE",
         "difficulty": 4,
         "definition": "(v.) Take hold of suddenly and forcibly."
-,
+        ,
         "synonyms": ["grab", "capture", "take"]
     },
     {
         "word": "SENSE",
         "difficulty": 1,
         "definition": "(n./v.) A faculty by which the body perceives an external stimulus; one of the faculties of sight, smell, hearing, taste, and touch."
-,
+        ,
         "synonyms": ["perceive", "meaning", "judgment"]
     },
     {
         "word": "SENTENCE",
         "difficulty": 1,
         "definition": "(n./v.) A set of words that is complete in itself, typically containing a subject and predicate, conveying a statement, question, exclamation, or command, and consisting of a main clause and sometimes one or more subordinate clauses."
-,
+        ,
         "synonyms": ["phrase", "statement", "judgment"]
     },
     {
         "word": "SEPARATE",
         "difficulty": 2,
         "definition": "(adj./v.) Forming or viewed as a unit apart or by itself."
-,
+        ,
         "synonyms": ["divide", "split", "distinct"]
     },
     {
         "word": "SEPARATION",
         "definition": "(n.) The act of keeping things distinct or away from each other."
-,
+        ,
         "synonyms": ["division", "split", "disconnection"]
     },
     {
         "word": "SERGEANT",
         "difficulty": 4,
         "definition": "(n.) A non-commissioned officer in the armed forces, ranking above a corporal."
-,
+        ,
         "synonyms": ["officer", "non-com", "military-rank"]
     },
     {
         "word": "SEVERAL",
         "difficulty": 1,
         "definition": "(det./pron./adj.) More than two but not many."
-,
+        ,
         "synonyms": ["many", "numerous", "various"]
     },
     {
         "word": "SEVERELY",
         "difficulty": 2,
         "definition": "(adv.) To an undesirably great or intense degree."
-,
+        ,
         "synonyms": ["harshly", "seriously", "intensely"]
     },
     {
         "word": "SHEPHERD",
         "difficulty": 4,
         "definition": "(n./v.) A person who tends and rears sheep."
-,
+        ,
         "synonyms": ["herder", "pastor", "guide"]
     },
     {
         "word": "SHINING",
         "difficulty": 1,
         "definition": "(adj./v./n.) (Of its surface) reflecting light, typically because very clean or polished."
-,
+        ,
         "synonyms": ["gleaming", "glowing", "radiant"]
     },
     {
         "word": "SIEGE",
         "difficulty": 4,
         "definition": "(n./v.) A military operation in which enemy forces surround a town or building, cutting off essential supplies, with the aim of compelling the surrender of those inside."
-,
+        ,
         "synonyms": ["blockade", "encirclement", "besiegement"]
     },
     {
         "word": "SIMILAR",
         "difficulty": 2,
         "definition": "(adj.) Resembling without being identical."
-,
+        ,
         "synonyms": ["alike", "comparable", "related"]
     },
     {
         "word": "SIMILE",
         "difficulty": 4,
         "definition": "(n.) A figure of speech involving the comparison of one thing with another thing of a different kind, used to make a description more emphatic or vivid (e.g., as brave as a lion, crazy like a fox)."
-,
+        ,
         "synonyms": ["comparison", "metaphor", "analogy"]
     },
     {
         "word": "SIMPLY",
         "difficulty": 1,
         "definition": "(adv.) In a straightforward or easy way."
-,
+        ,
         "synonyms": ["just", "merely", "only"]
     },
     {
         "word": "SIMULTANEOUS",
         "difficulty": 4,
         "definition": "(adj.) Occurring, operating, or done at the same time."
-,
+        ,
         "synonyms": ["concurrent", "coincident", "parallel"]
     },
     {
         "word": "SINCERELY",
         "difficulty": 2,
         "definition": "(adv.) In a genuine, honest, and heartfelt way."
-,
+        ,
         "synonyms": ["genuinely", "honestly", "truly"]
     },
     {
         "word": "SKIING",
         "difficulty": 2,
         "definition": "(n./v.) The action of traveling over snow on skis, especially as a sport or recreation."
-,
+        ,
         "synonyms": ["downhill", "winter-sport", "slalom"]
     },
     {
         "word": "SOPHOMORE",
         "difficulty": 4,
         "definition": "(n./adj.) A second-year college or high school student."
-,
+        ,
         "synonyms": ["second-year", "student", "undergrad"]
     },
     {
         "word": "SOUVENIR",
         "difficulty": 4,
         "definition": "(n./v.) A thing that is kept as a reminder of a person, place, or event."
-,
+        ,
         "synonyms": ["keepsake", "memento", "remembrance"]
     },
     {
         "word": "SPECIFICALLY",
         "difficulty": 4,
         "definition": "(adv.) In a way that is exact and clear; precisely."
-,
+        ,
         "synonyms": ["particularly", "in-detail", "precisely"]
     },
     {
         "word": "SPECIMEN",
         "difficulty": 4,
         "definition": "(n.) A single example of a plant, animal, or object used to represent or study its kind."
-,
+        ,
         "synonyms": ["sample", "example", "representative"]
     },
     {
         "word": "SPEECH",
         "difficulty": 1,
         "definition": "(n.) The expression of or the ability to express thoughts and feelings by articulate sounds."
-,
+        ,
         "synonyms": ["talk", "address", "oration"]
     },
     {
         "word": "SPONSOR",
         "difficulty": 2,
         "definition": "(n./v.) A person or organization that provides funds for a project or activity carried out by another, in particular a person or organization that pays for or contributes to the costs involved in staging a sporting or artistic event in return for advertising."
-,
+        ,
         "synonyms": ["backer", "patron", "supporter"]
     },
     {
         "word": "SPONTANEOUS",
         "difficulty": 4,
         "definition": "(adj.) Performed or occurring as a result of a sudden inner impulse or inclination and without premeditation or external stimulus."
-,
+        ,
         "synonyms": ["impulsive", "unplanned", "instinctive"]
     },
     {
         "word": "STATISTICS",
         "difficulty": 4,
         "definition": "(n.) The practice or science of collecting and analyzing numerical data in large quantities, especially for the purpose of inferring proportions in a whole from those in a representative sample."
-,
+        ,
         "synonyms": ["data", "figures", "numbers"]
     },
     {
         "word": "STOPPED",
         "difficulty": 1,
         "definition": "(v./adj.) (Of an event, action, or process) come to an end; cease to happen."
-,
+        ,
         "synonyms": ["halted", "ceased", "ended"]
     },
     {
         "word": "STRATEGY",
         "difficulty": 4,
         "definition": "(n.) A plan of action or policy designed to achieve a major or overall aim."
-,
+        ,
         "synonyms": ["plan", "tactic", "approach"]
     },
     {
         "word": "STRENGTH",
         "difficulty": 2,
         "definition": "(n.) The power or capacity to resist force or endure."
-,
+        ,
         "synonyms": ["power", "force", "might"]
     },
     {
         "word": "STRENUOUS",
         "difficulty": 4,
         "definition": "(adj.) Requiring or using great exertion."
-,
+        ,
         "synonyms": ["taxing", "demanding", "exhausting"]
     },
     {
         "word": "STUBBORNNESS",
         "difficulty": 4,
         "definition": "(n.) Unreasonable refusal to change one's mind or course of action."
-,
+        ,
         "synonyms": ["obstinacy", "determination", "pigheadedness"]
     },
     {
         "word": "STUDYING",
         "difficulty": 1,
         "definition": "(v./n.) Devoting time and attention to acquiring knowledge on (an academic subject), especially by means of books."
-,
+        ,
         "synonyms": ["learning", "reviewing", "examining"]
     },
     {
         "word": "SUBORDINATE",
         "difficulty": 4,
         "definition": "(adj./n./v.) Lower in rank or position."
-,
+        ,
         "synonyms": ["inferior", "secondary", "dependent"]
     },
     {
         "word": "SUCCEED",
         "difficulty": 2,
         "definition": "(v.) Achieve the desired aim or result."
-,
+        ,
         "synonyms": ["achieve", "accomplish", "prevail"]
     },
     {
         "word": "SUCCESS",
         "difficulty": 2,
         "definition": "(n.) The accomplishment of an aim or purpose."
-,
+        ,
         "synonyms": ["achievement", "triumph", "victory"]
     },
     {
         "word": "SUCCESSFUL",
         "difficulty": 2,
         "definition": "(adj.) Accomplishing an aim or purpose."
-,
+        ,
         "synonyms": ["triumphant", "thriving", "accomplished"]
     },
     {
         "word": "SUCCESSION",
         "difficulty": 4,
         "definition": "(n.) A number of people or things of a similar kind following one after the other."
-,
+        ,
         "synonyms": ["sequence", "series", "progression"]
     },
     {
         "word": "SUFFICIENT",
         "difficulty": 4,
         "definition": "(adj.) Enough; adequate."
-,
+        ,
         "synonyms": ["enough", "adequate", "ample"]
     },
     {
         "word": "SUPERSEDE",
         "difficulty": 4,
         "definition": "(v.) Take the place of (a person or thing previously in authority or use); supplant."
-,
+        ,
         "synonyms": ["replace", "override", "supplant"]
     },
     {
         "word": "SUPPRESS",
         "difficulty": 2,
         "definition": "(v.) Forcibly put an end to."
-,
+        ,
         "synonyms": ["quash", "stifle", "restrain"]
     },
     {
         "word": "SURPRISE",
         "difficulty": 2,
         "definition": "(n./v./adj.) An unexpected or astonishing event, fact, or thing."
-,
+        ,
         "synonyms": ["astonish", "shock", "startle"]
     },
     {
         "word": "SURROUND",
         "difficulty": 2,
         "definition": "(v./n.) Be all around (someone or something)."
-,
+        ,
         "synonyms": ["encircle", "enclose", "encompass"]
     },
     {
         "word": "SUSCEPTIBLE",
         "difficulty": 4,
         "definition": "(adj.) Likely or liable to be influenced or harmed by a particular thing."
-,
+        ,
         "synonyms": ["vulnerable", "prone", "sensitive"]
     },
     {
         "word": "SUSPICIOUS",
         "difficulty": 4,
         "definition": "(adj.) Having or showing a cautious distrust of someone or something."
-,
+        ,
         "synonyms": ["doubtful", "wary", "distrustful"]
     },
     {
         "word": "SYLLABLE",
         "difficulty": 4,
         "definition": "(n./v.) A unit of spoken language built around a single vowel sound, forming part or all of a word."
-,
+        ,
         "synonyms": ["sound-unit", "phoneme", "vowel-unit"]
     },
     {
         "word": "SYMMETRICAL",
         "difficulty": 4,
         "definition": "(adj.) Having balanced, identical proportions on both sides of a central dividing line."
-,
+        ,
         "synonyms": ["balanced", "even", "uniform"]
     },
     {
         "word": "SYNONYMOUS",
         "difficulty": 4,
         "definition": "(adj.) (Of a word or phrase) having the same or nearly the same meaning as another word or phrase in the same language."
-,
+        ,
         "synonyms": ["equivalent", "interchangeable", "alike"]
     },
     {
         "word": "TANGIBLE",
         "difficulty": 4,
         "definition": "(adj./n.) Perceptible by touch."
-,
+        ,
         "synonyms": ["concrete", "palpable", "real"]
     },
     {
         "word": "TECHNICAL",
         "difficulty": 2,
         "definition": "(adj.) Involving specialized knowledge or skills related to a particular field or trade."
-,
+        ,
         "synonyms": ["specialized", "expert", "scientific"]
     },
     {
         "word": "TECHNIQUE",
         "difficulty": 4,
         "definition": "(n.) A way of carrying out a particular task, especially the execution or performance of an artistic work or a scientific procedure."
-,
+        ,
         "synonyms": ["method", "skill", "approach"]
     },
     {
         "word": "TEMPERAMENTAL",
         "difficulty": 4,
         "definition": "(adj.) (Of a person) liable to unreasonable changes of mood."
-,
+        ,
         "synonyms": ["moody", "volatile", "sensitive"]
     },
     {
         "word": "TEMPERATURE",
         "difficulty": 2,
         "definition": "(n.) The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch."
-,
+        ,
         "synonyms": ["heat", "degree", "warmth"]
     },
     {
         "word": "TENDENCY",
         "difficulty": 4,
         "definition": "(n.) An inclination toward a particular characteristic or type of behavior."
-,
+        ,
         "synonyms": ["inclination", "trend", "predisposition"]
     },
     {
         "word": "THEMSELVES",
         "difficulty": 1,
         "definition": "(pron.) Used as the object of a verb or preposition to refer to a group of people or things previously mentioned as the subject of the clause."
-,
+        ,
         "synonyms": ["their-own", "oneself", "reflexive"]
     },
     {
         "word": "THEORIES",
         "difficulty": 2,
         "definition": "(n.) Sets of ideas or principles used to explain facts or events."
-,
+        ,
         "synonyms": ["hypotheses", "concepts", "explanations"]
     },
     {
         "word": "THEREFORE",
         "difficulty": 2,
         "definition": "(adv.) For that reason; consequently."
-,
+        ,
         "synonyms": ["thus", "consequently", "so"]
     },
     {
         "word": "THOROUGH",
         "difficulty": 4,
         "definition": "(adj.) Complete with regard to every detail; not superficial or partial."
-,
+        ,
         "synonyms": ["complete", "exhaustive", "careful"]
     },
     {
         "word": "THOUGH",
         "difficulty": 2,
         "definition": "(adv./conj./n.) In spite of the fact that; although."
-,
+        ,
         "synonyms": ["although", "even-if", "however"]
     },
     {
         "word": "THRESHOLD",
         "difficulty": 4,
         "definition": "(n.) A strip of wood or stone forming the bottom of a doorway and crossed in entering a house or room."
-,
+        ,
         "synonyms": ["limit", "boundary", "point"]
     },
     {
         "word": "THROUGH",
         "difficulty": 1,
         "definition": "(prep./adv./adj.) Moving in one side and out of the other side of (an opening, channel, or location)."
-,
+        ,
         "synonyms": ["across", "via", "by-way-of"]
     },
     {
         "word": "TOMORROW",
         "difficulty": 1,
         "definition": "(adv./n.) On the day after today."
-,
+        ,
         "synonyms": ["next-day", "the-future", "ma\u00f1ana"]
     },
     {
         "word": "TOURNAMENT",
         "difficulty": 4,
         "definition": "(n.) (In a sport or game) a series of contests between a number of competitors, who compete for an overall prize."
-,
+        ,
         "synonyms": ["competition", "contest", "championship"]
     },
     {
         "word": "TOWARDS",
         "difficulty": 1,
         "definition": "(prep.) In the direction of."
-,
+        ,
         "synonyms": ["in-the-direction", "approaching", "near"]
     },
     {
         "word": "TRAGEDY",
         "difficulty": 4,
         "definition": "(n.) An event causing great suffering, destruction, and distress, such as a serious accident, crime, or natural catastrophe."
-,
+        ,
         "synonyms": ["disaster", "catastrophe", "calamity"]
     },
     {
         "word": "TRANSFERRING",
         "difficulty": 4,
         "definition": "(v.) Move from one place to another."
-,
+        ,
         "synonyms": ["moving", "shifting", "relocating"]
     },
     {
         "word": "TRIES",
         "difficulty": 1,
         "definition": "(v.) Makes an attempt or effort to do something."
-,
+        ,
         "synonyms": ["attempts", "endeavors", "efforts"]
     },
     {
         "word": "TRULY",
         "difficulty": 1,
         "definition": "(adv.) In a truthful way."
-,
+        ,
         "synonyms": ["genuinely", "honestly", "sincerely"]
     },
     {
         "word": "TWELFTH",
         "difficulty": 4,
         "definition": "(num./n./adj.) Constituting number twelve in a sequence; 12th."
-,
+        ,
         "synonyms": ["dozenth", "ordinal-twelve", "number-twelve"]
     },
     {
         "word": "TYRANNY",
         "difficulty": 4,
         "definition": "(n.) Cruel and oppressive government or rule."
-,
+        ,
         "synonyms": ["oppression", "despotism", "authoritarianism"]
     },
     {
         "word": "UNDOUBTEDLY",
         "difficulty": 4,
         "definition": "(adv.) Without doubt; certainly."
-,
+        ,
         "synonyms": ["certainly", "unquestionably", "surely"]
     },
     {
         "word": "UNFORGETTABLE",
         "difficulty": 4,
         "definition": "(adj.) Impossible to forget; very memorable."
-,
+        ,
         "synonyms": ["memorable", "indelible", "lasting"]
     },
     {
         "word": "UNIQUE",
         "difficulty": 2,
         "definition": "(adj./n.) Being the only one of its kind; unlike anything else."
-,
+        ,
         "synonyms": ["one-of-a-kind", "singular", "unmatched"]
     },
     {
         "word": "UNNECESSARY",
         "difficulty": 4,
         "definition": "(adj./n.) Not needed."
-,
+        ,
         "synonyms": ["needless", "redundant", "superfluous"]
     },
     {
         "word": "UNTIL",
         "difficulty": 1,
         "definition": "(prep./conj.) Up to (the point in time or the event mentioned)."
-,
+        ,
         "synonyms": ["up-to", "till", "before"]
     },
     {
         "word": "USABLE",
         "difficulty": 2,
         "definition": "(adj.) Able or fit to be used."
-,
+        ,
         "synonyms": ["functional", "serviceable", "operable"]
     },
     {
         "word": "USAGE",
         "difficulty": 2,
         "definition": "(n.) The action of using something or the fact of being used."
-,
+        ,
         "synonyms": ["use", "application", "practice"]
     },
     {
         "word": "USUALLY",
         "difficulty": 1,
         "definition": "(adv.) Under normal conditions; generally."
-,
+        ,
         "synonyms": ["typically", "generally", "normally"]
     },
     {
         "word": "UTILIZATION",
         "difficulty": 4,
         "definition": "(n.) The action of making practical and effective use of something."
-,
+        ,
         "synonyms": ["use", "application", "employment"]
     },
     {
         "word": "VACUUM",
         "difficulty": 4,
         "definition": "(n./v./adj.) A space entirely devoid of matter."
-,
+        ,
         "synonyms": ["void", "emptiness", "suction"]
     },
     {
         "word": "VALUABLE",
         "difficulty": 2,
         "definition": "(adj./n.) Worth a great deal of money."
-,
+        ,
         "synonyms": ["precious", "useful", "worthwhile"]
     },
     {
         "word": "VENGEANCE",
         "difficulty": 4,
         "definition": "(n.) Punishment inflicted or retribution exacted for an injury or wrong."
-,
+        ,
         "synonyms": ["revenge", "retribution", "retaliation"]
     },
     {
         "word": "VIGILANT",
         "difficulty": 4,
         "definition": "(adj.) Keeping careful watch for possible danger or difficulties."
-,
+        ,
         "synonyms": ["watchful", "alert", "observant"]
     },
     {
         "word": "VILLAGE",
         "difficulty": 1,
         "definition": "(n./adj.) A group of houses and associated buildings, larger than a hamlet and smaller than a town, situated in a rural area."
-,
+        ,
         "synonyms": ["hamlet", "settlement", "community"]
     },
     {
         "word": "VILLAIN",
         "difficulty": 4,
         "definition": "(n.) (In a novel, movie, or play) a character whose evil actions or motives are important to the plot."
-,
+        ,
         "synonyms": ["antagonist", "criminal", "wrongdoer"]
     },
     {
         "word": "VIOLENCE",
         "difficulty": 2,
         "definition": "(n.) Behavior involving physical force intended to hurt, damage, or kill someone or something."
-,
+        ,
         "synonyms": ["force", "aggression", "brutality"]
     },
     {
         "word": "VIRTUE",
         "difficulty": 2,
         "definition": "(n.) Behavior showing high moral standards."
-,
+        ,
         "synonyms": ["goodness", "morality", "integrity"]
     },
     {
         "word": "VISIBLE",
         "difficulty": 2,
         "definition": "(adj./n.) Able to be seen."
-,
+        ,
         "synonyms": ["seen", "apparent", "observable"]
     },
     {
         "word": "VISION",
         "difficulty": 2,
         "definition": "(n./v.) The faculty or state of being able to see."
-,
+        ,
         "synonyms": ["sight", "dream", "eyesight"]
     },
     {
         "word": "VOLUME",
         "difficulty": 1,
         "definition": "(n.) A book forming part of a work or series."
-,
+        ,
         "synonyms": ["quantity", "loudness", "bulk"]
     },
     {
         "word": "WARRANT",
         "difficulty": 2,
         "definition": "(n./v.) A document issued by a legal or government official authorizing the police or some other body to make an arrest, search premises, or carry out some other action relating to the administration of justice."
-,
+        ,
         "synonyms": ["justify", "merit", "authorize"]
     },
     {
         "word": "WARRIORS",
         "difficulty": 2,
         "definition": "(n.) (Especially in the past) a brave or experienced soldier or fighter."
-,
+        ,
         "synonyms": ["fighters", "soldiers", "combatants"]
     },
     {
         "word": "WEATHER",
         "difficulty": 1,
         "definition": "(n./v.) The state of the atmosphere at a place and time as regards heat, dryness, sunshine, wind, rain, etc."
-,
+        ,
         "synonyms": ["endure", "survive", "withstand"]
     },
     {
         "word": "WEDNESDAY",
         "difficulty": 4,
         "definition": "(n.) The day of the week before Thursday and after Tuesday."
-,
+        ,
         "synonyms": ["midweek", "mid-week-day", "Wed"]
     },
     {
         "word": "WEIRD",
         "difficulty": 2,
         "definition": "(adj.) Suggesting something supernatural; uncanny."
-,
+        ,
         "synonyms": ["strange", "odd", "bizarre"]
     },
     {
         "word": "WHEREVER",
         "difficulty": 1,
         "definition": "(adv./conj.) In or to whatever place (of which the name is unknown)."
-,
+        ,
         "synonyms": ["everywhere", "anywhere", "wherever-you-go"]
     },
     {
         "word": "WHETHER",
         "difficulty": 2,
         "definition": "(conj.) Expressing a doubt or choice between alternatives."
-,
+        ,
         "synonyms": ["if", "in-case", "regardless"]
     },
     {
         "word": "WHICH",
         "difficulty": 1,
         "definition": "(pron./det.) Asking for information specifying one or more people or things from a definite set."
-,
+        ,
         "synonyms": ["that", "what-one", "the-one-that"]
     },
     {
         "word": "WHOLLY",
         "difficulty": 4,
         "definition": "(adv.) Entirely; fully."
-,
+        ,
         "synonyms": ["completely", "entirely", "fully"]
     },
     {
         "word": "WITHDRAWAL",
         "difficulty": 4,
         "definition": "(n.) The act of removing or pulling back something; also the physical effects of stopping use of an addictive substance."
-,
+        ,
         "synonyms": ["retreat", "removal", "departure"]
     },
     {
         "word": "WITHHOLD",
         "difficulty": 4,
         "definition": "(v.) Refuse to give (something that is due to or is desired by another)."
-,
+        ,
         "synonyms": ["keep-back", "reserve", "retain"]
     },
     {
         "word": "WOMAN",
         "difficulty": 1,
         "definition": "(n.) An adult human female."
-,
+        ,
         "synonyms": ["female", "lady", "adult-woman"]
     },
     {
         "word": "WOMEN",
         "difficulty": 1,
         "definition": "(n.) Adult female human beings."
-,
+        ,
         "synonyms": ["females", "ladies", "adult-women"]
     },
     {
         "word": "WORTHWHILE",
         "difficulty": 2,
         "definition": "(adj.) Sufficiently rewarding or beneficial to justify the time and effort required."
-,
+        ,
         "synonyms": ["valuable", "rewarding", "useful"]
     },
     {
         "word": "WRITING",
         "difficulty": 1,
         "definition": "(n.) The activity or skill of marking coherent words on paper and composing text."
-,
+        ,
         "synonyms": ["authoring", "composing", "penning"]
     },
     {
         "word": "YACHT",
         "difficulty": 4,
         "definition": "(n./v.) A medium-sized sailboat equipped for cruising or racing."
-,
+        ,
         "synonyms": ["sailboat", "vessel", "luxury-boat"]
     },
     {
         "word": "YIELD",
         "difficulty": 2,
         "definition": "(v./n.) Produce or provide (a natural, agricultural, or industrial product)."
-,
+        ,
         "synonyms": ["produce", "surrender", "output"]
     },
     {
         "word": "YOUNG",
         "difficulty": 1,
         "definition": "(adj./n.) Having lived or existed for only a short time."
-,
+        ,
         "synonyms": ["youthful", "immature", "juvenile"]
     },
     {
         "word": "ZUCCHINI",
         "difficulty": 4,
         "definition": "(n.) A green variety of smooth-skinned summer squash."
-,
+        ,
         "synonyms": ["courgette", "squash", "vegetable"]
     }
 ];
@@ -8155,7 +8164,7 @@ const INKLING_WORDS = [
         "sentence": "He had to abandon the ship.",
         "hint": "Leave.",
         "difficulty": 5
-,
+        ,
         "synonyms": ["desert", "forsake", "leave"]
     },
     {
@@ -8168,7 +8177,7 @@ const INKLING_WORDS = [
             "He was not able to attend.",
             "Are you able to help?"
         ]
-,
+        ,
         "synonyms": ["capable", "competent", "skilled"]
     },
     {
@@ -8181,7 +8190,7 @@ const INKLING_WORDS = [
             "It took about an hour.",
             "What is the book about?"
         ]
-,
+        ,
         "synonyms": ["concerning", "around", "regarding"]
     },
     {
@@ -8194,7 +8203,7 @@ const INKLING_WORDS = [
             "The answer is above.",
             "The temperature was above thirty degrees."
         ]
-,
+        ,
         "synonyms": ["over", "higher", "overhead"]
     },
     {
@@ -8203,7 +8212,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Not present in a place.",
         "sentence": "He was absent from school.",
         "hint": "Missing."
-,
+        ,
         "synonyms": ["missing", "away", "gone"]
     },
     {
@@ -8212,7 +8221,7 @@ const INKLING_WORDS = [
         "sentence": "The hotel can accommodate 100 guests.",
         "hint": "Fit in.",
         "difficulty": 5
-,
+        ,
         "synonyms": ["house", "adapt", "comply"]
     },
     {
@@ -8225,7 +8234,7 @@ const INKLING_WORDS = [
             "Leaves accumulate in the yard each autumn."
         ],
         "hint": "Gather."
-,
+        ,
         "synonyms": ["gather", "amass", "collect"]
     },
     {
@@ -8234,7 +8243,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Correct in all details; exact.",
         "sentence": "The report was accurate.",
         "hint": "Correct."
-,
+        ,
         "synonyms": ["correct", "precise", "exact"]
     },
     {
@@ -8247,7 +8256,7 @@ const INKLING_WORDS = [
             "The shop is across the road.",
             "He helped her across the bridge."
         ]
-,
+        ,
         "synonyms": ["over", "spanning", "through"]
     },
     {
@@ -8260,7 +8269,7 @@ const INKLING_WORDS = [
             "It was a brave act.",
             "The second act was the best."
         ]
-,
+        ,
         "synonyms": ["do", "perform", "deed"]
     },
     {
@@ -8273,7 +8282,7 @@ const INKLING_WORDS = [
             "The film had lots of action.",
             "He is a man of action."
         ]
-,
+        ,
         "synonyms": ["deed", "move", "activity"]
     },
     {
@@ -8282,7 +8291,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Engaging in physical activity.",
         "sentence": "She led an active life.",
         "hint": "Busy."
-,
+        ,
         "synonyms": ["lively", "busy", "energetic"]
     },
     {
@@ -8295,7 +8304,7 @@ const INKLING_WORDS = [
             "He is actually very shy.",
             "I actually didn't know that."
         ]
-,
+        ,
         "synonyms": ["really", "in-fact", "truly"]
     },
     {
@@ -8304,7 +8313,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Become adjusted to new conditions.",
         "sentence": "Animals adapt to their environment.",
         "hint": "Change."
-,
+        ,
         "synonyms": ["adjust", "modify", "change"]
     },
     {
@@ -8317,7 +8326,7 @@ const INKLING_WORDS = [
             "She added sugar to her tea.",
             "Let's add more color to the painting."
         ]
-,
+        ,
         "synonyms": ["include", "attach", "increase"]
     },
     {
@@ -8330,7 +8339,7 @@ const INKLING_WORDS = [
             "In addition, there is free parking.",
             "He learned addition and subtraction."
         ]
-,
+        ,
         "synonyms": ["supplement", "plus", "extra"]
     },
     {
@@ -8339,7 +8348,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Satisfactory or acceptable in quality.",
         "sentence": "The food was adequate.",
         "hint": "Enough."
-,
+        ,
         "synonyms": ["enough", "sufficient", "satisfactory"]
     },
     {
@@ -8348,7 +8357,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Stick fast to a surface.",
         "sentence": "The paint will adhere to the wall.",
         "hint": "Stick."
-,
+        ,
         "synonyms": ["stick", "follow", "comply"]
     },
     {
@@ -8361,7 +8370,7 @@ const INKLING_WORDS = [
             "She circled all the adjectives.",
             "Adjectives describe nouns."
         ]
-,
+        ,
         "synonyms": ["descriptor", "modifier", "qualifier"]
     },
     {
@@ -8374,7 +8383,7 @@ const INKLING_WORDS = [
             "She will always adore her grandmother's cooking."
         ],
         "hint": "Love."
-,
+        ,
         "synonyms": ["love", "cherish", "worship"]
     },
     {
@@ -8383,7 +8392,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A person who is fully grown; mature.",
         "sentence": "She is an adult now.",
         "hint": "Grown-up."
-,
+        ,
         "synonyms": ["grown-up", "mature", "senior"]
     },
     {
@@ -8392,7 +8401,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An unusual and exciting experience.",
         "sentence": "They went on an adventure.",
         "hint": "Quest."
-,
+        ,
         "synonyms": ["quest", "journey", "expedition"]
     },
     {
@@ -8401,7 +8410,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Hardship; misfortune.",
         "sentence": "They overcame great adversity.",
         "hint": "Hardship."
-,
+        ,
         "synonyms": ["hardship", "difficulty", "misfortune"]
     },
     {
@@ -8410,7 +8419,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Guidance offered with regard to future action.",
         "sentence": "She gave him some advice.",
         "hint": "Counsel."
-,
+        ,
         "synonyms": ["guidance", "counsel", "recommendation"]
     },
     {
@@ -8419,7 +8428,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Publicly support or recommend; a supporter.",
         "sentence": "He is an advocate for human rights.",
         "hint": "Supporter."
-,
+        ,
         "synonyms": ["champion", "support", "endorse"]
     },
     {
@@ -8437,7 +8446,7 @@ const INKLING_WORDS = [
             "Rain can affect the outcome of a game.",
             "How does music affect your mood?"
         ]
-,
+        ,
         "synonyms": ["influence", "impact", "alter"]
     },
     {
@@ -8446,7 +8455,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Have enough money to pay for.",
         "sentence": "He couldn't afford the car.",
         "hint": "Pay for."
-,
+        ,
         "synonyms": ["manage", "pay-for", "provide"]
     },
     {
@@ -8459,7 +8468,7 @@ const INKLING_WORDS = [
             "Don't be afraid.",
             "He was afraid of the dark."
         ]
-,
+        ,
         "synonyms": ["scared", "frightened", "fearful"]
     },
     {
@@ -8472,7 +8481,7 @@ const INKLING_WORDS = [
             "Africa has many amazing animals.",
             "He studied history in Africa."
         ]
-,
+        ,
         "synonyms": ["continent", "sub-Saharan", "the-motherland"]
     },
     {
@@ -8485,7 +8494,7 @@ const INKLING_WORDS = [
             "After dinner, we went for a walk.",
             "He felt better after sleeping."
         ]
-,
+        ,
         "synonyms": ["following", "later", "subsequent"]
     },
     {
@@ -8498,7 +8507,7 @@ const INKLING_WORDS = [
             "She tried again and succeeded.",
             "I will never do that again."
         ]
-,
+        ,
         "synonyms": ["once-more", "anew", "repeatedly"]
     },
     {
@@ -8511,7 +8520,7 @@ const INKLING_WORDS = [
             "He voted against the plan.",
             "They played against the best team."
         ]
-,
+        ,
         "synonyms": ["opposed", "contrary", "versus"]
     },
     {
@@ -8524,7 +8533,7 @@ const INKLING_WORDS = [
             "Cheese ages well.",
             "She retired at the age of sixty."
         ]
-,
+        ,
         "synonyms": ["era", "period", "maturity"]
     },
     {
@@ -8537,7 +8546,7 @@ const INKLING_WORDS = [
             "He was born twenty years ago.",
             "That was a long time ago."
         ]
-,
+        ,
         "synonyms": ["past", "before", "previously"]
     },
     {
@@ -8555,7 +8564,7 @@ const INKLING_WORDS = [
             "Do you agree that exercise is important?",
             "They agree on most things."
         ]
-,
+        ,
         "synonyms": ["consent", "concur", "accept"]
     },
     {
@@ -8568,7 +8577,7 @@ const INKLING_WORDS = [
             "She agreed with his idea.",
             "He agreed without hesitation."
         ]
-,
+        ,
         "synonyms": ["consented", "accepted", "concurred"]
     },
     {
@@ -8581,7 +8590,7 @@ const INKLING_WORDS = [
             "Look ahead and plan.",
             "He ran far ahead."
         ]
-,
+        ,
         "synonyms": ["forward", "in-front", "preceding"]
     },
     {
@@ -8594,7 +8603,7 @@ const INKLING_WORDS = [
             "She threw the ball in the air.",
             "The air smelled like flowers."
         ]
-,
+        ,
         "synonyms": ["atmosphere", "breeze", "oxygen"]
     },
     {
@@ -8603,7 +8612,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An anxious awareness of danger; to warn.",
         "sentence": "The alarm went off.",
         "hint": "Warning."
-,
+        ,
         "synonyms": ["alert", "warning", "fright"]
     },
     {
@@ -8616,7 +8625,7 @@ const INKLING_WORDS = [
             "She ate all the cake.",
             "All of us went."
         ]
-,
+        ,
         "synonyms": ["entire", "whole", "every"]
     },
     {
@@ -8629,7 +8638,7 @@ const INKLING_WORDS = [
             "She allowed him to stay.",
             "Are pets allowed?"
         ]
-,
+        ,
         "synonyms": ["permit", "let", "grant"]
     },
     {
@@ -8638,7 +8647,7 @@ const INKLING_WORDS = [
         "definition": "(adv.) Not quite; very nearly.",
         "sentence": "He almost fell.",
         "hint": "Nearly."
-,
+        ,
         "synonyms": ["nearly", "practically", "close-to"]
     },
     {
@@ -8647,7 +8656,7 @@ const INKLING_WORDS = [
         "definition": "(adj./adv.) Having no one else present.",
         "sentence": "She was all alone.",
         "hint": "Solely."
-,
+        ,
         "synonyms": ["solitary", "by-oneself", "isolated"]
     },
     {
@@ -8660,7 +8669,7 @@ const INKLING_WORDS = [
             "Come along with us!",
             "He skipped along the path."
         ]
-,
+        ,
         "synonyms": ["beside", "by", "with"]
     },
     {
@@ -8673,7 +8682,7 @@ const INKLING_WORDS = [
             "Have you already eaten?",
             "He had already left."
         ]
-,
+        ,
         "synonyms": ["by-now", "previously", "thus-far"]
     },
     {
@@ -8686,7 +8695,7 @@ const INKLING_WORDS = [
             "I also like chocolate.",
             "He also finished early."
         ]
-,
+        ,
         "synonyms": ["too", "additionally", "moreover"]
     },
     {
@@ -8699,7 +8708,7 @@ const INKLING_WORDS = [
             "She smiled, although she was tired.",
             "He came, although he was late."
         ]
-,
+        ,
         "synonyms": ["though", "even-though", "while"]
     },
     {
@@ -8708,7 +8717,7 @@ const INKLING_WORDS = [
         "definition": "(adv.) At all times; on all occasions.",
         "sentence": "He is always late.",
         "hint": "Ever."
-,
+        ,
         "synonyms": ["forever", "constantly", "perpetually"]
     },
     {
@@ -8717,7 +8726,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Causing great surprise or wonder.",
         "sentence": "The view was amazing.",
         "hint": "Stunning."
-,
+        ,
         "synonyms": ["astonishing", "wonderful", "incredible"]
     },
     {
@@ -8726,7 +8735,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Open to more than one interpretation.",
         "sentence": "The message was ambiguous.",
         "hint": "Unclear."
-,
+        ,
         "synonyms": ["unclear", "vague", "equivocal"]
     },
     {
@@ -8739,7 +8748,7 @@ const INKLING_WORDS = [
             "America has fifty states.",
             "He always dreamed of visiting America."
         ]
-,
+        ,
         "synonyms": ["USA", "New World", "the States"]
     },
     {
@@ -8752,7 +8761,7 @@ const INKLING_WORDS = [
             "He found a coin among the leaves.",
             "They sat among the flowers."
         ]
-,
+        ,
         "synonyms": ["between", "amid", "within"]
     },
     {
@@ -8761,7 +8770,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A quantity of something; to total up.",
         "sentence": "A large amount of money.",
         "hint": "Quantity."
-,
+        ,
         "synonyms": ["quantity", "sum", "total"]
     },
     {
@@ -8779,7 +8788,7 @@ const INKLING_WORDS = [
             "She will analyze the results carefully.",
             "Let us analyze what went wrong."
         ]
-,
+        ,
         "synonyms": ["examine", "study", "evaluate"]
     },
     {
@@ -8792,7 +8801,7 @@ const INKLING_WORDS = [
             "She sang and danced.",
             "We had bread and butter."
         ]
-,
+        ,
         "synonyms": ["plus", "also", "along-with"]
     },
     {
@@ -8805,7 +8814,7 @@ const INKLING_WORDS = [
             "She looked at it from every angle.",
             "The angle was ninety degrees."
         ]
-,
+        ,
         "synonyms": ["slant", "perspective", "corner"]
     },
     {
@@ -8814,7 +8823,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Feeling strong annoyance.",
         "sentence": "He was very angry.",
         "hint": "Mad."
-,
+        ,
         "synonyms": ["furious", "upset", "irate"]
     },
     {
@@ -8823,7 +8832,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A living organism that feeds on organic matter.",
         "sentence": "The dog is an animal.",
         "hint": "Creature."
-,
+        ,
         "synonyms": ["creature", "beast", "organism"]
     },
     {
@@ -8836,7 +8845,7 @@ const INKLING_WORDS = [
             "Let's try another way.",
             "She moved to another city."
         ]
-,
+        ,
         "synonyms": ["additional", "different", "further"]
     },
     {
@@ -8845,7 +8854,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A thing said or written in reaction to a question; to reply.",
         "sentence": "She gave an answer.",
         "hint": "Reply."
-,
+        ,
         "synonyms": ["reply", "response", "solution"]
     },
     {
@@ -8858,7 +8867,7 @@ const INKLING_WORDS = [
             "She likes to anticipate problems before they happen."
         ],
         "hint": "Expect."
-,
+        ,
         "synonyms": ["expect", "foresee", "predict"]
     },
     {
@@ -8871,7 +8880,7 @@ const INKLING_WORDS = [
             "Any of these will work.",
             "She didn't eat any vegetables."
         ]
-,
+        ,
         "synonyms": ["some", "whatever", "whichever"]
     },
     {
@@ -8880,7 +8889,7 @@ const INKLING_WORDS = [
         "definition": "(pron.) Used to refer to a thing of any kind.",
         "sentence": "He didn't say anything.",
         "hint": "Whatever."
-,
+        ,
         "synonyms": ["whatever", "all", "everything"]
     },
     {
@@ -8893,7 +8902,7 @@ const INKLING_WORDS = [
             "He seems to appear at just the right moment."
         ],
         "hint": "Show."
-,
+        ,
         "synonyms": ["seem", "emerge", "look"]
     },
     {
@@ -8902,7 +8911,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A round fruit with red or green skin.",
         "sentence": "He ate an apple.",
         "hint": "Fruit."
-,
+        ,
         "synonyms": ["fruit", "pome", "pippin"]
     },
     {
@@ -8911,7 +8920,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v.) Suitable or proper; take for one's own use.",
         "sentence": "His behavior was appropriate.",
         "hint": "Suitable."
-,
+        ,
         "synonyms": ["suitable", "fitting", "proper"]
     },
     {
@@ -8924,7 +8933,7 @@ const INKLING_WORDS = [
             "You are very tall.",
             "We are going home."
         ]
-,
+        ,
         "synonyms": ["exist", "be", "remain"]
     },
     {
@@ -8933,7 +8942,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A region or part of a town/country.",
         "sentence": "The area was beautiful.",
         "hint": "Region."
-,
+        ,
         "synonyms": ["region", "zone", "space"]
     },
     {
@@ -8946,7 +8955,7 @@ const INKLING_WORDS = [
             "Why do they argue over small things?"
         ],
         "hint": "Fight."
-,
+        ,
         "synonyms": ["debate", "dispute", "contend"]
     },
     {
@@ -8959,7 +8968,7 @@ const INKLING_WORDS = [
             "The soldiers laid down their arms.",
             "He held the baby in his arms."
         ]
-,
+        ,
         "synonyms": ["weapons", "limbs", "armor"]
     },
     {
@@ -8972,7 +8981,7 @@ const INKLING_WORDS = [
             "The army marched through the town.",
             "He admired the strength of the army."
         ]
-,
+        ,
         "synonyms": ["military", "forces", "troops"]
     },
     {
@@ -8981,7 +8990,7 @@ const INKLING_WORDS = [
         "definition": "(prep./adv.) On every side of; surrounding.",
         "sentence": "He looked around.",
         "hint": "Nearby."
-,
+        ,
         "synonyms": ["surrounding", "about", "near"]
     },
     {
@@ -8994,7 +9003,7 @@ const INKLING_WORDS = [
             "The train should arrive on time."
         ],
         "hint": "Reach."
-,
+        ,
         "synonyms": ["reach", "come", "get-there"]
     },
     {
@@ -9007,7 +9016,7 @@ const INKLING_WORDS = [
             "He arrived with flowers.",
             "The letter arrived today."
         ]
-,
+        ,
         "synonyms": ["reached", "came", "got-there"]
     },
     {
@@ -9020,7 +9029,7 @@ const INKLING_WORDS = [
             "He loves modern art.",
             "The museum has great art."
         ]
-,
+        ,
         "synonyms": ["artwork", "craft", "creation"]
     },
     {
@@ -9029,7 +9038,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A person who creates paintings or drawings.",
         "sentence": "She is a talented artist.",
         "hint": "Painter."
-,
+        ,
         "synonyms": ["creator", "painter", "sculptor"]
     },
     {
@@ -9042,7 +9051,7 @@ const INKLING_WORDS = [
             "She asked for directions.",
             "Don't be afraid to ask for help."
         ]
-,
+        ,
         "synonyms": ["inquire", "request", "question"]
     },
     {
@@ -9051,7 +9060,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) In a state of rest where the mind is unconscious.",
         "sentence": "The baby is asleep.",
         "hint": "Sleeping."
-,
+        ,
         "synonyms": ["sleeping", "dormant", "unconscious"]
     },
     {
@@ -9064,7 +9073,7 @@ const INKLING_WORDS = [
             "Teachers assist students who need extra help."
         ],
         "hint": "Help."
-,
+        ,
         "synonyms": ["help", "aid", "support"]
     },
     {
@@ -9077,7 +9086,7 @@ const INKLING_WORDS = [
             "The players plan to attack early in the match."
         ],
         "hint": "Assault."
-,
+        ,
         "synonyms": ["strike", "strike", "offensive"]
     },
     {
@@ -9090,7 +9099,7 @@ const INKLING_WORDS = [
             "Parents are welcome to attend the show."
         ],
         "hint": "Visit."
-,
+        ,
         "synonyms": ["go-to", "be-present", "participate"]
     },
     {
@@ -9099,7 +9108,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The eighth month of the year.",
         "sentence": "He was born in August.",
         "hint": "Month."
-,
+        ,
         "synonyms": ["dignified", "stately", "regal"]
     },
     {
@@ -9108,7 +9117,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A writer of a book or report.",
         "sentence": "He is a famous author.",
         "hint": "Writer."
-,
+        ,
         "synonyms": ["writer", "creator", "novelist"]
     },
     {
@@ -9117,7 +9126,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The season between summer and winter.",
         "sentence": "The leaves fall in autumn.",
         "hint": "Fall."
-,
+        ,
         "synonyms": ["fall", "harvest-season", "October"]
     },
     {
@@ -9126,7 +9135,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A broad road in a town or city.",
         "sentence": "The avenue was lined with trees.",
         "hint": "Street."
-,
+        ,
         "synonyms": ["street", "road", "boulevard"]
     },
     {
@@ -9135,7 +9144,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v.) Not asleep; to stop sleeping.",
         "sentence": "He was wide awake.",
         "hint": "Conscious."
-,
+        ,
         "synonyms": ["alert", "conscious", "up"]
     },
     {
@@ -9148,7 +9157,7 @@ const INKLING_WORDS = [
             "He is away on a trip.",
             "Go away, I'm busy!"
         ]
-,
+        ,
         "synonyms": ["absent", "distant", "gone"]
     },
     {
@@ -9161,7 +9170,7 @@ const INKLING_WORDS = [
             "She held the baby gently.",
             "He smiled at the baby."
         ]
-,
+        ,
         "synonyms": ["infant", "newborn", "tot"]
     },
     {
@@ -9170,7 +9179,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj./adv./v.) The rear surface of the body; rear; return; to support.",
         "sentence": "He turned his back.",
         "hint": "Rear."
-,
+        ,
         "synonyms": ["rear", "behind", "return"]
     },
     {
@@ -9183,7 +9192,7 @@ const INKLING_WORDS = [
             "She felt bad for forgetting.",
             "The weather was really bad."
         ]
-,
+        ,
         "synonyms": ["poor", "evil", "negative"]
     },
     {
@@ -9192,7 +9201,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A small piece of metal or plastic worn to show membership.",
         "sentence": "He wore a badge.",
         "hint": "Token."
-,
+        ,
         "synonyms": ["emblem", "insignia", "pin"]
     },
     {
@@ -9201,7 +9210,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A place where bread and cakes are made.",
         "sentence": "She went to the bakery.",
         "hint": "Bread shop."
-,
+        ,
         "synonyms": ["bread-shop", "patisserie", "bake-house"]
     },
     {
@@ -9214,7 +9223,7 @@ const INKLING_WORDS = [
             "He bounced the ball.",
             "Throw me the ball!"
         ]
-,
+        ,
         "synonyms": ["sphere", "dance", "game-ball"]
     },
     {
@@ -9223,7 +9232,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A small colored rubber bag inflated with air.",
         "sentence": "The boy held a balloon.",
         "hint": "Inflatable."
-,
+        ,
         "synonyms": ["inflate", "float", "expand"]
     },
     {
@@ -9232,7 +9241,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A long curved fruit with a yellow skin.",
         "sentence": "He ate a banana.",
         "hint": "Fruit."
-,
+        ,
         "synonyms": ["fruit", "tropical-fruit", "plantain"]
     },
     {
@@ -9245,7 +9254,7 @@ const INKLING_WORDS = [
             "They sat on the river bank.",
             "He opened an account at the bank."
         ]
-,
+        ,
         "synonyms": ["financial-institution", "shore", "riverbank"]
     },
     {
@@ -9258,7 +9267,7 @@ const INKLING_WORDS = [
             "She is based in London.",
             "He built the base of the model first."
         ]
-,
+        ,
         "synonyms": ["foundation", "bottom", "root"]
     },
     {
@@ -9267,7 +9276,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A container used for carrying things.",
         "sentence": "She put the fruit in a basket.",
         "hint": "Carrier."
-,
+        ,
         "synonyms": ["container", "receptacle", "hamper"]
     },
     {
@@ -9276,7 +9285,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A pebbly or sandy shore by the ocean.",
         "sentence": "They went to the beach.",
         "hint": "Shore."
-,
+        ,
         "synonyms": ["shore", "coast", "seaside"]
     },
     {
@@ -9289,7 +9298,7 @@ const INKLING_WORDS = [
             "She can bear the cold well.",
             "He could not bear to leave."
         ]
-,
+        ,
         "synonyms": ["carry", "endure", "tolerate"]
     },
     {
@@ -9302,7 +9311,7 @@ const INKLING_WORDS = [
             "The beat of the music made her dance.",
             "He beat his rival in the race."
         ]
-,
+        ,
         "synonyms": ["rhythm", "defeat", "pulse"]
     },
     {
@@ -9315,7 +9324,7 @@ const INKLING_WORDS = [
             "What a beautiful sunset!",
             "The garden is beautiful in spring."
         ]
-,
+        ,
         "synonyms": ["stunning", "gorgeous", "lovely"]
     },
     {
@@ -9324,7 +9333,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A combination of qualities that pleases the senses.",
         "sentence": "Nature has great beauty.",
         "hint": "Grace."
-,
+        ,
         "synonyms": ["attractiveness", "loveliness", "elegance"]
     },
     {
@@ -9337,7 +9346,7 @@ const INKLING_WORDS = [
             "He became very quiet.",
             "It became clear what had happened."
         ]
-,
+        ,
         "synonyms": ["turned-into", "grew-into", "evolved"]
     },
     {
@@ -9350,7 +9359,7 @@ const INKLING_WORDS = [
             "I smiled because I was happy.",
             "He ran because he was late."
         ]
-,
+        ,
         "synonyms": ["since", "as", "for"]
     },
     {
@@ -9363,7 +9372,7 @@ const INKLING_WORDS = [
             "Hard work can become a habit."
         ],
         "hint": "Turn."
-,
+        ,
         "synonyms": ["turn", "grow", "transform"]
     },
     {
@@ -9376,7 +9385,7 @@ const INKLING_WORDS = [
             "He went to bed early.",
             "The cat slept at the foot of the bed."
         ]
-,
+        ,
         "synonyms": ["cot", "bunk", "resting-place"]
     },
     {
@@ -9389,7 +9398,7 @@ const INKLING_WORDS = [
             "She has been sick all week.",
             "It has been a long day."
         ]
-,
+        ,
         "synonyms": ["existed", "lived", "was"]
     },
     {
@@ -9402,7 +9411,7 @@ const INKLING_WORDS = [
             "She left before noon.",
             "He called me before the meeting."
         ]
-,
+        ,
         "synonyms": ["prior", "previously", "earlier"]
     },
     {
@@ -9415,7 +9424,7 @@ const INKLING_WORDS = [
             "She began to cry.",
             "It began to snow at night."
         ]
-,
+        ,
         "synonyms": ["started", "commenced", "initiated"]
     },
     {
@@ -9424,7 +9433,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Start; perform the first part of an action.",
         "sentence": "The show will begin.",
         "hint": "Start."
-,
+        ,
         "synonyms": ["start", "commence", "initiate"]
     },
     {
@@ -9437,7 +9446,7 @@ const INKLING_WORDS = [
             "He hid behind the tree.",
             "Don't get left behind."
         ]
-,
+        ,
         "synonyms": ["after", "back", "following"]
     },
     {
@@ -9450,7 +9459,7 @@ const INKLING_WORDS = [
             "Every living being needs water.",
             "He enjoyed being outside."
         ]
-,
+        ,
         "synonyms": ["existence", "creature", "living"]
     },
     {
@@ -9459,7 +9468,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Accept that something is true.",
         "sentence": "I believe you.",
         "hint": "Trust."
-,
+        ,
         "synonyms": ["trust", "accept", "think"]
     },
     {
@@ -9472,7 +9481,7 @@ const INKLING_WORDS = [
             "She rang the doorbell.",
             "The school bell signals the end of class."
         ]
-,
+        ,
         "synonyms": ["chime", "ring", "signal"]
     },
     {
@@ -9485,7 +9494,7 @@ const INKLING_WORDS = [
             "Every child should belong to a community."
         ],
         "hint": "Own."
-,
+        ,
         "synonyms": ["own", "be-part-of", "relate"]
     },
     {
@@ -9498,7 +9507,7 @@ const INKLING_WORDS = [
             "Her name is below mine on the list.",
             "The temperature dropped below zero."
         ]
-,
+        ,
         "synonyms": ["under", "beneath", "lower"]
     },
     {
@@ -9507,7 +9516,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Favorable or advantageous.",
         "sentence": "Exercise is beneficial.",
         "hint": "Good."
-,
+        ,
         "synonyms": ["helpful", "advantageous", "useful"]
     },
     {
@@ -9516,7 +9525,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Well meaning and kindly.",
         "sentence": "A benevolent ruler.",
         "hint": "Kind."
-,
+        ,
         "synonyms": ["kind", "charitable", "generous"]
     },
     {
@@ -9529,7 +9538,7 @@ const INKLING_WORDS = [
             "He stood beside the door.",
             "Leave it beside the phone."
         ]
-,
+        ,
         "synonyms": ["next-to", "alongside", "adjacent"]
     },
     {
@@ -9542,7 +9551,7 @@ const INKLING_WORDS = [
             "That was the best meal I've ever had.",
             "He is my best friend."
         ]
-,
+        ,
         "synonyms": ["finest", "greatest", "optimal"]
     },
     {
@@ -9555,7 +9564,7 @@ const INKLING_WORDS = [
             "He did better on his second try.",
             "This is better than the last one."
         ]
-,
+        ,
         "synonyms": ["superior", "improved", "enhanced"]
     },
     {
@@ -9564,7 +9573,7 @@ const INKLING_WORDS = [
         "definition": "(prep.) In the middle of two things.",
         "sentence": "He sat between them.",
         "hint": "Middle."
-,
+        ,
         "synonyms": ["amid", "in-the-middle", "separating"]
     },
     {
@@ -9573,7 +9582,7 @@ const INKLING_WORDS = [
         "definition": "(prep./adv.) At or to the further side of.",
         "sentence": "The forest is beyond the hill.",
         "hint": "Further."
-,
+        ,
         "synonyms": ["past", "over", "further"]
     },
     {
@@ -9582,7 +9591,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A vehicle with two wheels.",
         "sentence": "He rode his bicycle.",
         "hint": "Bike."
-,
+        ,
         "synonyms": ["bike", "two-wheeler", "cycle"]
     },
     {
@@ -9595,7 +9604,7 @@ const INKLING_WORDS = [
             "That is a big decision.",
             "She has a big smile."
         ]
-,
+        ,
         "synonyms": ["large", "huge", "enormous"]
     },
     {
@@ -9608,7 +9617,7 @@ const INKLING_WORDS = [
             "The bill was passed into law.",
             "The waiter brought the bill."
         ]
-,
+        ,
         "synonyms": ["invoice", "banknote", "legislation"]
     },
     {
@@ -9617,7 +9626,7 @@ const INKLING_WORDS = [
         "definition": "(num.) The number equivalent to a thousand million.",
         "sentence": "A billion stars.",
         "hint": "Number."
-,
+        ,
         "synonyms": ["1000-million", "large-number", "enormous-sum"]
     },
     {
@@ -9626,7 +9635,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An optical instrument with a lens for each eye.",
         "sentence": "He used binoculars.",
         "hint": "Glasses."
-,
+        ,
         "synonyms": ["field-glasses", "opera-glasses", "telescope"]
     },
     {
@@ -9639,7 +9648,7 @@ const INKLING_WORDS = [
             "She fed the birds in the garden.",
             "Many birds fly south in winter."
         ]
-,
+        ,
         "synonyms": ["avians", "winged-animals", "fowl"]
     },
     {
@@ -9648,7 +9657,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The anniversary of the day on which a person was born.",
         "sentence": "It's my birthday.",
         "hint": "Anniversary."
-,
+        ,
         "synonyms": ["anniversary", "natal-day", "birth-anniversary"]
     },
     {
@@ -9661,7 +9670,7 @@ const INKLING_WORDS = [
             "The dog bit the stick.",
             "He worked a little bit more."
         ]
-,
+        ,
         "synonyms": ["piece", "fragment", "small-amount"]
     },
     {
@@ -9674,7 +9683,7 @@ const INKLING_WORDS = [
             "The sky went black.",
             "The cat is jet black."
         ]
-,
+        ,
         "synonyms": ["dark", "ebony", "jet"]
     },
     {
@@ -9683,7 +9692,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A piece of cloth used as a covering; to cover.",
         "sentence": "She needed a blanket.",
         "hint": "Cover."
-,
+        ,
         "synonyms": ["cover", "quilt", "wrap"]
     },
     {
@@ -9696,7 +9705,7 @@ const INKLING_WORDS = [
             "The fallen tree blocked the road.",
             "He used a wooden block."
         ]
-,
+        ,
         "synonyms": ["chunk", "obstruct", "barrier"]
     },
     {
@@ -9709,7 +9718,7 @@ const INKLING_WORDS = [
             "Blood carries oxygen around the body.",
             "She gave blood at the clinic."
         ]
-,
+        ,
         "synonyms": ["fluid", "lineage", "vitality"]
     },
     {
@@ -9718,7 +9727,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A flower or mass of flowers; to produce flowers.",
         "sentence": "The trees are in blossom.",
         "hint": "Flower."
-,
+        ,
         "synonyms": ["flower", "bloom", "flourish"]
     },
     {
@@ -9731,7 +9740,7 @@ const INKLING_WORDS = [
             "The storm dealt a big blow.",
             "She blew on her hot soup."
         ]
-,
+        ,
         "synonyms": ["gust", "strike", "exhale"]
     },
     {
@@ -9744,7 +9753,7 @@ const INKLING_WORDS = [
             "The sea is deep blue.",
             "He painted the door blue."
         ]
-,
+        ,
         "synonyms": ["azure", "navy", "cobalt"]
     },
     {
@@ -9757,7 +9766,7 @@ const INKLING_WORDS = [
             "He wrote on the board.",
             "The board game was fun."
         ]
-,
+        ,
         "synonyms": ["plank", "committee", "get-on"]
     },
     {
@@ -9770,7 +9779,7 @@ const INKLING_WORDS = [
             "He loves sailing his boat.",
             "The boat rocked on the waves."
         ]
-,
+        ,
         "synonyms": ["vessel", "craft", "ship"]
     },
     {
@@ -9783,7 +9792,7 @@ const INKLING_WORDS = [
             "Her whole body was tired.",
             "The body of the bird was very small."
         ]
-,
+        ,
         "synonyms": ["frame", "torso", "form"]
     },
     {
@@ -9796,7 +9805,7 @@ const INKLING_WORDS = [
             "She studied the bones in science.",
             "His bones ached after the long walk."
         ]
-,
+        ,
         "synonyms": ["skeleton", "frame", "remains"]
     },
     {
@@ -9809,7 +9818,7 @@ const INKLING_WORDS = [
             "He left his book at school.",
             "Can I borrow your book?"
         ]
-,
+        ,
         "synonyms": ["novel", "volume", "text"]
     },
     {
@@ -9822,7 +9831,7 @@ const INKLING_WORDS = [
             "He was born to lead.",
             "A new idea was born."
         ]
-,
+        ,
         "synonyms": ["given-life", "brought-forth", "delivered"]
     },
     {
@@ -9835,7 +9844,7 @@ const INKLING_WORDS = [
             "She held both bags.",
             "They both laughed."
         ]
-,
+        ,
         "synonyms": ["each", "either", "two-together"]
     },
     {
@@ -9844,7 +9853,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A narrow-necked container for liquids; to seal liquid inside a container.",
         "sentence": "He drank from a bottle.",
         "hint": "Container."
-,
+        ,
         "synonyms": ["container", "flask", "vessel"]
     },
     {
@@ -9853,7 +9862,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) The lowest point or part; lowest.",
         "sentence": "He reached the bottom.",
         "hint": "Base."
-,
+        ,
         "synonyms": ["base", "lowest-part", "foot"]
     },
     {
@@ -9866,7 +9875,7 @@ const INKLING_WORDS = [
             "He bought flowers.",
             "They bought a house."
         ]
-,
+        ,
         "synonyms": ["purchased", "acquired", "paid-for"]
     },
     {
@@ -9875,7 +9884,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Move quickly up/back from a surface; a springy move.",
         "sentence": "The children love to bounce on the trampoline.",
         "hint": "Spring."
-,
+        ,
         "synonyms": ["spring", "rebound", "leap"]
     },
     {
@@ -9884,7 +9893,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A line that marks the limits of an area.",
         "sentence": "The river is a boundary.",
         "hint": "Limit."
-,
+        ,
         "synonyms": ["border", "edge", "limit"]
     },
     {
@@ -9897,7 +9906,7 @@ const INKLING_WORDS = [
             "He learned to box at the gym.",
             "Put it in the box."
         ]
-,
+        ,
         "synonyms": ["container", "carton", "crate"]
     },
     {
@@ -9910,7 +9919,7 @@ const INKLING_WORDS = [
             "A young boy waved from the window.",
             "She gave the boy a cookie."
         ]
-,
+        ,
         "synonyms": ["lad", "youth", "youngster"]
     },
     {
@@ -9923,7 +9932,7 @@ const INKLING_WORDS = [
             "She climbed the branches.",
             "The company has branches worldwide."
         ]
-,
+        ,
         "synonyms": ["limbs", "boughs", "offshoots"]
     },
     {
@@ -9932,7 +9941,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v./n.) Ready to face danger; to endure; a warrior.",
         "sentence": "He was very brave.",
         "hint": "Courageous."
-,
+        ,
         "synonyms": ["courageous", "bold", "fearless"]
     },
     {
@@ -9941,7 +9950,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Food made of flour, water, and yeast mixture.",
         "sentence": "He ate a piece of bread.",
         "hint": "Food."
-,
+        ,
         "synonyms": ["loaf", "baked-good", "dough"]
     },
     {
@@ -9954,7 +9963,7 @@ const INKLING_WORDS = [
             "Let's take a break.",
             "He broke his arm."
         ]
-,
+        ,
         "synonyms": ["shatter", "pause", "fracture"]
     },
     {
@@ -9963,7 +9972,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The first meal eaten after waking up; to eat a morning meal.",
         "sentence": "He had breakfast.",
         "hint": "Morning meal."
-,
+        ,
         "synonyms": ["morning-meal", "first-meal", "brunch"]
     },
     {
@@ -9972,7 +9981,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A structure crossing an obstacle; to connect.",
         "sentence": "They crossed the bridge.",
         "hint": "Span."
-,
+        ,
         "synonyms": ["span", "overpass", "link"]
     },
     {
@@ -9981,7 +9990,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Giving out or reflecting a lot of light.",
         "sentence": "The sun is bright.",
         "hint": "Shining."
-,
+        ,
         "synonyms": ["luminous", "vivid", "brilliant"]
     },
     {
@@ -9994,7 +10003,7 @@ const INKLING_WORDS = [
             "She brought her own lunch.",
             "Can you bring that to me?"
         ]
-,
+        ,
         "synonyms": ["carry", "deliver", "convey"]
     },
     {
@@ -10007,7 +10016,7 @@ const INKLING_WORDS = [
             "He has a British accent.",
             "British food is often simple."
         ]
-,
+        ,
         "synonyms": ["English", "UK", "from-Britain"]
     },
     {
@@ -10020,7 +10029,7 @@ const INKLING_WORDS = [
             "She had broken the rule.",
             "He fixed the broken chair."
         ]
-,
+        ,
         "synonyms": ["shattered", "damaged", "fractured"]
     },
     {
@@ -10029,7 +10038,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A man or boy in relation to other children of his parents.",
         "sentence": "He is my brother.",
         "hint": "Sibling."
-,
+        ,
         "synonyms": ["sibling", "kin", "fraternal"]
     },
     {
@@ -10042,7 +10051,7 @@ const INKLING_WORDS = [
             "He brought his lunch.",
             "They brought good news."
         ]
-,
+        ,
         "synonyms": ["carried", "delivered", "fetched"]
     },
     {
@@ -10055,7 +10064,7 @@ const INKLING_WORDS = [
             "She wore brown boots.",
             "The leaves turned brown in autumn."
         ]
-,
+        ,
         "synonyms": ["tan", "chocolate", "mahogany"]
     },
     {
@@ -10064,7 +10073,7 @@ const INKLING_WORDS = [
         "definition": "(n./v./adj.) An estimate of income; to plan spending; inexpensive.",
         "sentence": "He planned his budget.",
         "hint": "Finance."
-,
+        ,
         "synonyms": ["plan", "funds", "allocation"]
     },
     {
@@ -10077,7 +10086,7 @@ const INKLING_WORDS = [
             "You can build strength through regular exercise."
         ],
         "hint": "Construct."
-,
+        ,
         "synonyms": ["construct", "erect", "create"]
     },
     {
@@ -10090,7 +10099,7 @@ const INKLING_WORDS = [
             "She works in that building.",
             "They put up a new building last year."
         ]
-,
+        ,
         "synonyms": ["structure", "edifice", "construction"]
     },
     {
@@ -10103,7 +10112,7 @@ const INKLING_WORDS = [
             "She built a sandcastle.",
             "He built the bookcase himself."
         ]
-,
+        ,
         "synonyms": ["constructed", "erected", "assembled"]
     },
     {
@@ -10112,7 +10121,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A heavy load; to weigh down.",
         "sentence": "The burden was heavy.",
         "hint": "Load."
-,
+        ,
         "synonyms": ["load", "weight", "hardship"]
     },
     {
@@ -10125,7 +10134,7 @@ const INKLING_WORDS = [
             "She felt a burning pain.",
             "The wood was burning slowly."
         ]
-,
+        ,
         "synonyms": ["blazing", "on-fire", "searing"]
     },
     {
@@ -10134,7 +10143,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The practice of engaging in commerce.",
         "sentence": "He owns a business.",
         "hint": "Company."
-,
+        ,
         "synonyms": ["commerce", "trade", "enterprise"]
     },
     {
@@ -10147,7 +10156,7 @@ const INKLING_WORDS = [
             "She is small but strong.",
             "I want to go, but I'm busy."
         ]
-,
+        ,
         "synonyms": ["however", "yet", "except"]
     },
     {
@@ -10156,7 +10165,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An insect with broad colorful wings.",
         "sentence": "A butterfly flew by.",
         "hint": "Insect."
-,
+        ,
         "synonyms": ["lepidopteran", "moth-relative", "insect"]
     },
     {
@@ -10169,7 +10178,7 @@ const INKLING_WORDS = [
             "He bought flowers for his mum.",
             "Can I buy that?"
         ]
-,
+        ,
         "synonyms": ["purchase", "acquire", "obtain"]
     },
     {
@@ -10178,7 +10187,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A cupboard with shelves; a committee of advisors.",
         "sentence": "The file is in the cabinet.",
         "hint": "Cupboard."
-,
+        ,
         "synonyms": ["cupboard", "ministers", "case"]
     },
     {
@@ -10187,7 +10196,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A thick rope or wire; to send a message.",
         "sentence": "The cable snapped.",
         "hint": "Wire."
-,
+        ,
         "synonyms": ["wire", "rope", "cord"]
     },
     {
@@ -10196,7 +10205,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Determine mathematically.",
         "sentence": "Calculate the total cost.",
         "hint": "Compute."
-,
+        ,
         "synonyms": ["compute", "work-out", "figure"]
     },
     {
@@ -10205,7 +10214,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A chart showing the days/months.",
         "sentence": "Check the calendar.",
         "hint": "Schedule."
-,
+        ,
         "synonyms": ["schedule", "planner", "datebook"]
     },
     {
@@ -10218,7 +10227,7 @@ const INKLING_WORDS = [
             "He called the dog over.",
             "The bird is called a robin."
         ]
-,
+        ,
         "synonyms": ["named", "summoned", "phoned"]
     },
     {
@@ -10231,7 +10240,7 @@ const INKLING_WORDS = [
             "He came to see us.",
             "The letter came in the morning."
         ]
-,
+        ,
         "synonyms": ["arrived", "appeared", "reached"]
     },
     {
@@ -10240,7 +10249,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A device for recording images.",
         "sentence": "Smile for the camera.",
         "hint": "Recorder."
-,
+        ,
         "synonyms": ["lens", "device", "recorder"]
     },
     {
@@ -10249,7 +10258,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The grounds of a university.",
         "sentence": "The campus is large.",
         "hint": "Grounds."
-,
+        ,
         "synonyms": ["grounds", "school-area", "university"]
     },
     {
@@ -10262,7 +10271,7 @@ const INKLING_WORDS = [
             "She can run very fast.",
             "I can help you with that."
         ]
-,
+        ,
         "synonyms": ["be-able", "tin", "container"]
     },
     {
@@ -10275,7 +10284,7 @@ const INKLING_WORDS = [
             "She can't come today.",
             "He can't stop laughing."
         ]
-,
+        ,
         "synonyms": ["cannot", "unable", "won't"]
     },
     {
@@ -10288,7 +10297,7 @@ const INKLING_WORDS = [
             "They had to cancel the concert."
         ],
         "hint": "Stop."
-,
+        ,
         "synonyms": ["call-off", "annul", "void"]
     },
     {
@@ -10297,7 +10306,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A person who applies for a job or election.",
         "sentence": "She is a strong candidate.",
         "hint": "Applicant."
-,
+        ,
         "synonyms": ["applicant", "contender", "nominee"]
     },
     {
@@ -10310,7 +10319,7 @@ const INKLING_WORDS = [
             "She cannot lift it alone.",
             "You cannot park here."
         ]
-,
+        ,
         "synonyms": ["unable", "can't", "incapable"]
     },
     {
@@ -10319,7 +10328,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A deep gorge.",
         "sentence": "The Grand Canyon is deep.",
         "hint": "Gorge."
-,
+        ,
         "synonyms": ["gorge", "ravine", "chasm"]
     },
     {
@@ -10328,7 +10337,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Maximum amount a thing can contain.",
         "sentence": "The hall was at capacity.",
         "hint": "Limit."
-,
+        ,
         "synonyms": ["ability", "space", "volume"]
     },
     {
@@ -10337,7 +10346,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) Main city; wealth; uppercase letter; excellent.",
         "sentence": "Paris is the capital of France.",
         "hint": "Main city."
-,
+        ,
         "synonyms": ["city", "funds", "main"]
     },
     {
@@ -10346,7 +10355,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Person in command of a ship; to lead.",
         "sentence": "The captain spoke.",
         "hint": "Leader."
-,
+        ,
         "synonyms": ["leader", "skipper", "commander"]
     },
     {
@@ -10355,7 +10364,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A prisoner; held prisoner.",
         "sentence": "They held him captive.",
         "hint": "Prisoner."
-,
+        ,
         "synonyms": ["prisoner", "prisoner", "trapped"]
     },
     {
@@ -10364,7 +10373,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Take into possession; the act of seizing.",
         "sentence": "Capture the flag.",
         "hint": "Seize."
-,
+        ,
         "synonyms": ["catch", "seize", "trap"]
     },
     {
@@ -10377,7 +10386,7 @@ const INKLING_WORDS = [
             "He bought a new car.",
             "The car wouldn't start."
         ]
-,
+        ,
         "synonyms": ["vehicle", "automobile", "motorcar"]
     },
     {
@@ -10386,7 +10395,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The chemical element of atomic number 6.",
         "sentence": "Diamond is pure carbon.",
         "hint": "Element."
-,
+        ,
         "synonyms": ["element", "coal", "graphite"]
     },
     {
@@ -10399,7 +10408,7 @@ const INKLING_WORDS = [
             "Take care!",
             "He showed great care and skill."
         ]
-,
+        ,
         "synonyms": ["concern", "attention", "tend"]
     },
     {
@@ -10408,7 +10417,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An occupation; to move swiftly.",
         "sentence": "A teaching career.",
         "hint": "Job path."
-,
+        ,
         "synonyms": ["profession", "occupation", "vocation"]
     },
     {
@@ -10417,7 +10426,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Making sure of avoiding danger.",
         "sentence": "Be careful!",
         "hint": "Wary."
-,
+        ,
         "synonyms": ["cautious", "attentive", "meticulous"]
     },
     {
@@ -10430,7 +10439,7 @@ const INKLING_WORDS = [
             "Read the instructions carefully.",
             "He placed the ornament carefully on the shelf."
         ]
-,
+        ,
         "synonyms": ["cautiously", "attentively", "thoroughly"]
     },
     {
@@ -10439,7 +10448,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A period of public revelry.",
         "sentence": "They went to the carnival.",
         "hint": "Festival."
-,
+        ,
         "synonyms": ["fair", "festival", "celebration"]
     },
     {
@@ -10452,7 +10461,7 @@ const INKLING_WORDS = [
             "She carried the baby.",
             "He carried his bag on his back."
         ]
-,
+        ,
         "synonyms": ["transport", "bear", "haul"]
     },
     {
@@ -10461,7 +10470,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An animated film; a drawing; to draw a caricature.",
         "sentence": "Watch a cartoon.",
         "hint": "Animation."
-,
+        ,
         "synonyms": ["animation", "comic", "caricature"]
     },
     {
@@ -10474,7 +10483,7 @@ const INKLING_WORDS = [
             "She carried a small case.",
             "It was a difficult case."
         ]
-,
+        ,
         "synonyms": ["instance", "container", "lawsuit"]
     },
     {
@@ -10487,7 +10496,7 @@ const INKLING_WORDS = [
             "The cat purred softly.",
             "He fed the cat."
         ]
-,
+        ,
         "synonyms": ["feline", "kitten", "tabby"]
     },
     {
@@ -10496,7 +10505,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A list of items; to record in a list.",
         "sentence": "Check the catalog.",
         "hint": "List."
-,
+        ,
         "synonyms": ["list", "index", "directory"]
     },
     {
@@ -10509,7 +10518,7 @@ const INKLING_WORDS = [
             "He made a great catch.",
             "Catch me if you can!"
         ]
-,
+        ,
         "synonyms": ["grab", "snare", "capture"]
     },
     {
@@ -10518,7 +10527,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A class or division of people/things.",
         "sentence": "What category is this?",
         "hint": "Class."
-,
+        ,
         "synonyms": ["class", "group", "type"]
     },
     {
@@ -10531,7 +10540,7 @@ const INKLING_WORDS = [
             "She helped herd the cattle.",
             "The farm had fifty head of cattle."
         ]
-,
+        ,
         "synonyms": ["cows", "livestock", "herd"]
     },
     {
@@ -10544,7 +10553,7 @@ const INKLING_WORDS = [
             "He caught a cold.",
             "They caught the thief."
         ]
-,
+        ,
         "synonyms": ["captured", "grabbed", "seized"]
     },
     {
@@ -10557,7 +10566,7 @@ const INKLING_WORDS = [
             "Loud noise can cause headaches.",
             "She fought for a good cause."
         ]
-,
+        ,
         "synonyms": ["reason", "origin", "produce"]
     },
     {
@@ -10566,7 +10575,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Care taken to avoid danger; to warn.",
         "sentence": "Proceed with caution.",
         "hint": "Care."
-,
+        ,
         "synonyms": ["care", "warning", "watchfulness"]
     },
     {
@@ -10575,7 +10584,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The upper interior surface of a room.",
         "sentence": "Look at the ceiling.",
         "hint": "Top."
-,
+        ,
         "synonyms": ["roof", "top", "overhead-surface"]
     },
     {
@@ -10584,7 +10593,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Acknowledge a significant day.",
         "sentence": "Celebrate the victory.",
         "hint": "Honor."
-,
+        ,
         "synonyms": ["honor", "commemorate", "observe"]
     },
     {
@@ -10597,7 +10606,7 @@ const INKLING_WORDS = [
             "She studied plant cells.",
             "He looked at the cells under a microscope."
         ]
-,
+        ,
         "synonyms": ["units", "organisms", "compartments"]
     },
     {
@@ -10610,7 +10619,7 @@ const INKLING_WORDS = [
             "The school is near the city center.",
             "Center the text on the page."
         ]
-,
+        ,
         "synonyms": ["middle", "hub", "core"]
     },
     {
@@ -10623,7 +10632,7 @@ const INKLING_WORDS = [
             "She found a few cents in her pocket.",
             "That is worth every cent."
         ]
-,
+        ,
         "synonyms": ["pennies", "coins", "change"]
     },
     {
@@ -10632,7 +10641,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A period of one hundred years.",
         "sentence": "The 21st century.",
         "hint": "100 years."
-,
+        ,
         "synonyms": ["hundred-years", "era", "period"]
     },
     {
@@ -10645,7 +10654,7 @@ const INKLING_WORDS = [
             "There are certain rules to follow.",
             "She was certain she was right."
         ]
-,
+        ,
         "synonyms": ["sure", "definite", "positive"]
     },
     {
@@ -10654,7 +10663,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A large room used for formal events.",
         "sentence": "The council chamber.",
         "hint": "Room."
-,
+        ,
         "synonyms": ["room", "hall", "cavity"]
     },
     {
@@ -10663,7 +10672,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A person who has defeated all rivals; to support a cause.",
         "sentence": "He is a champion.",
         "hint": "Winner."
-,
+        ,
         "synonyms": ["defend", "support", "advocate"]
     },
     {
@@ -10676,7 +10685,7 @@ const INKLING_WORDS = [
             "He got a chance to speak.",
             "Don't miss this chance!"
         ]
-,
+        ,
         "synonyms": ["opportunity", "luck", "probability"]
     },
     {
@@ -10689,7 +10698,7 @@ const INKLING_WORDS = [
             "The weather can change quickly.",
             "She noticed a change in his mood."
         ]
-,
+        ,
         "synonyms": ["alter", "shift", "transform"]
     },
     {
@@ -10698,7 +10707,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A length of water joining two seas; to direct.",
         "sentence": "The English Channel.",
         "hint": "Waterway."
-,
+        ,
         "synonyms": ["route", "station", "waterway"]
     },
     {
@@ -10707,7 +10716,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A main division of a book.",
         "sentence": "Read the first chapter.",
         "hint": "Section."
-,
+        ,
         "synonyms": ["section", "installment", "division"]
     },
     {
@@ -10716,7 +10725,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The mental qualities moral qualities.",
         "sentence": "He has strong character.",
         "hint": "Nature."
-,
+        ,
         "synonyms": ["person", "trait", "nature"]
     },
     {
@@ -10725,7 +10734,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An organization set up to help those in need.",
         "sentence": "She gave to charity.",
         "hint": "Help group."
-,
+        ,
         "synonyms": ["donation", "kindness", "aid"]
     },
     {
@@ -10734,7 +10743,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A code word for the letter C.",
         "sentence": "Alpha, Bravo, Charlie.",
         "hint": "Name/Code."
-,
+        ,
         "synonyms": ["fool", "name", "phonetic-C"]
     },
     {
@@ -10743,7 +10752,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Pleasant or attractive.",
         "sentence": "What a charming house.",
         "hint": "Pleasant."
-,
+        ,
         "synonyms": ["delightful", "enchanting", "lovely"]
     },
     {
@@ -10756,7 +10765,7 @@ const INKLING_WORDS = [
             "He charted the ship's course.",
             "The chart showed the results clearly."
         ]
-,
+        ,
         "synonyms": ["graph", "map", "diagram"]
     },
     {
@@ -10765,7 +10774,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A written grant by a country's power; to hire.",
         "sentence": "The royal charter.",
         "hint": "Grant."
-,
+        ,
         "synonyms": ["document", "contract", "license"]
     },
     {
@@ -10778,7 +10787,7 @@ const INKLING_WORDS = [
             "Put a check next to each item.",
             "She checked the time on her phone."
         ]
-,
+        ,
         "synonyms": ["inspect", "verify", "restraint"]
     },
     {
@@ -10791,7 +10800,7 @@ const INKLING_WORDS = [
             "She is the chief editor.",
             "He is the chief reason for the problem."
         ]
-,
+        ,
         "synonyms": ["leader", "head", "main"]
     },
     {
@@ -10804,7 +10813,7 @@ const INKLING_WORDS = [
             "Every child needs love.",
             "He was a curious child."
         ]
-,
+        ,
         "synonyms": ["youngster", "kid", "offspring"]
     },
     {
@@ -10817,7 +10826,7 @@ const INKLING_WORDS = [
             "She reads to the children every night.",
             "All children deserve a good education."
         ]
-,
+        ,
         "synonyms": ["kids", "youngsters", "offspring"]
     },
     {
@@ -10826,7 +10835,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A vertical pipe which conducts smoke from a fire.",
         "sentence": "Smoke rose from the chimney.",
         "hint": "Smoke stack."
-,
+        ,
         "synonyms": ["flue", "smokestack", "vent"]
     },
     {
@@ -10839,7 +10848,7 @@ const INKLING_WORDS = [
             "She chose the red one.",
             "He couldn't choose between them."
         ]
-,
+        ,
         "synonyms": ["select", "pick", "opt"]
     },
     {
@@ -10848,7 +10857,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A factual written account of historical events; to record.",
         "sentence": "The book is a chronicle of the war.",
         "hint": "History."
-,
+        ,
         "synonyms": ["record", "history", "account"]
     },
     {
@@ -10861,7 +10870,7 @@ const INKLING_WORDS = [
             "I could not help but chuckle at the silly mistake."
         ],
         "hint": "Laugh."
-,
+        ,
         "synonyms": ["laugh", "giggle", "snicker"]
     },
     {
@@ -10870,7 +10879,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A building used for Christian worship.",
         "sentence": "They went to church.",
         "hint": "Chapel."
-,
+        ,
         "synonyms": ["chapel", "temple", "cathedral"]
     },
     {
@@ -10879,7 +10888,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A movie theater.",
         "sentence": "Let's go to the cinema.",
         "hint": "Theater."
-,
+        ,
         "synonyms": ["movie-theater", "film-house", "pictures"]
     },
     {
@@ -10888,7 +10897,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A perfectly round flat shape; to move in a curved path around something.",
         "sentence": "Draw a circle.",
         "hint": "Ring."
-,
+        ,
         "synonyms": ["round", "ring", "loop"]
     },
     {
@@ -10897,7 +10906,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A path for an electrical current.",
         "sentence": "Complete the circuit.",
         "hint": "Path."
-,
+        ,
         "synonyms": ["loop", "route", "track"]
     },
     {
@@ -10910,7 +10919,7 @@ const INKLING_WORDS = [
             "Ideas circulate quickly through a school."
         ],
         "hint": "Flow."
-,
+        ,
         "synonyms": ["spread", "flow", "distribute"]
     },
     {
@@ -10919,7 +10928,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A legally recognized subject of a state.",
         "sentence": "He is a British citizen.",
         "hint": "Subject."
-,
+        ,
         "synonyms": ["resident", "national", "inhabitant"]
     },
     {
@@ -10932,7 +10941,7 @@ const INKLING_WORDS = [
             "The city lights looked beautiful.",
             "It is a busy city."
         ]
-,
+        ,
         "synonyms": ["town", "metropolis", "urban-area"]
     },
     {
@@ -10945,7 +10954,7 @@ const INKLING_WORDS = [
             "Please clarify whether the meeting is today or tomorrow."
         ],
         "hint": "Explain."
-,
+        ,
         "synonyms": ["explain", "clear-up", "illuminate"]
     },
     {
@@ -10958,7 +10967,7 @@ const INKLING_WORDS = [
             "He was the best in his class.",
             "All students in the class listened."
         ]
-,
+        ,
         "synonyms": ["group", "category", "lesson"]
     },
     {
@@ -10967,7 +10976,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n.) Judged over a period of time to be of quality; a work of art.",
         "sentence": "A classic novel.",
         "hint": "Standard."
-,
+        ,
         "synonyms": ["timeless", "traditional", "definitive"]
     },
     {
@@ -10980,7 +10989,7 @@ const INKLING_WORDS = [
             "The windows are very clean.",
             "Please keep this area clean."
         ]
-,
+        ,
         "synonyms": ["neat", "tidy", "pure"]
     },
     {
@@ -10993,7 +11002,7 @@ const INKLING_WORDS = [
             "She cleared the table.",
             "The sky is clear and blue."
         ]
-,
+        ,
         "synonyms": ["obvious", "transparent", "bright"]
     },
     {
@@ -11002,7 +11011,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The weather conditions prevailing in an area.",
         "sentence": "The climate is changing.",
         "hint": "Weather pattern."
-,
+        ,
         "synonyms": ["weather-pattern", "atmosphere", "conditions"]
     },
     {
@@ -11015,7 +11024,7 @@ const INKLING_WORDS = [
             "He climbed the ladder.",
             "They climbed up to the roof."
         ]
-,
+        ,
         "synonyms": ["ascended", "scaled", "went-up"]
     },
     {
@@ -11028,7 +11037,7 @@ const INKLING_WORDS = [
             "The shops are very close.",
             "She lives close to the park."
         ]
-,
+        ,
         "synonyms": ["near", "shut", "intimate"]
     },
     {
@@ -11037,7 +11046,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A tall cupboard or wardrobe.",
         "sentence": "Hang it in the closet.",
         "hint": "Cupboard."
-,
+        ,
         "synonyms": ["wardrobe", "cupboard", "storage"]
     },
     {
@@ -11050,7 +11059,7 @@ const INKLING_WORDS = [
             "He put on clean clothes.",
             "Pack warm clothes for the trip."
         ]
-,
+        ,
         "synonyms": ["garments", "clothing", "attire"]
     },
     {
@@ -11063,7 +11072,7 @@ const INKLING_WORDS = [
             "She watched the clouds drift by.",
             "The sky was full of clouds."
         ]
-,
+        ,
         "synonyms": ["mist", "haze", "vapor"]
     },
     {
@@ -11076,7 +11085,7 @@ const INKLING_WORDS = [
             "She lives on the coast.",
             "The coast was beautiful in summer."
         ]
-,
+        ,
         "synonyms": ["shoreline", "seaside", "beach"]
     },
     {
@@ -11085,7 +11094,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Logical and consistent.",
         "sentence": "He gave a coherent argument.",
         "hint": "Logical."
-,
+        ,
         "synonyms": ["logical", "consistent", "rational"]
     },
     {
@@ -11098,7 +11107,7 @@ const INKLING_WORDS = [
             "Their birthdays coincide, so they share a party."
         ],
         "hint": "Match up."
-,
+        ,
         "synonyms": ["align", "overlap", "correspond"]
     },
     {
@@ -11111,7 +11120,7 @@ const INKLING_WORDS = [
             "She caught a cold.",
             "The wind is cold."
         ]
-,
+        ,
         "synonyms": ["chilly", "freezing", "cool"]
     },
     {
@@ -11120,7 +11129,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Bring or gather together.",
         "sentence": "Collect your things.",
         "hint": "Gather."
-,
+        ,
         "synonyms": ["gather", "assemble", "accumulate"]
     },
     {
@@ -11129,7 +11138,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An educational institution.",
         "sentence": "He is going to college.",
         "hint": "School."
-,
+        ,
         "synonyms": ["university", "institution", "academy"]
     },
     {
@@ -11138,7 +11147,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A country or area under the control of another.",
         "sentence": "The British colony.",
         "hint": "Settlement."
-,
+        ,
         "synonyms": ["settlement", "dependency", "territory"]
     },
     {
@@ -11151,7 +11160,7 @@ const INKLING_WORDS = [
             "She colored the picture with crayons.",
             "The sunset had beautiful colors."
         ]
-,
+        ,
         "synonyms": ["hue", "shade", "tint"]
     },
     {
@@ -11160,7 +11169,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Having many bright or varied hues; vivid and striking in appearance.",
         "sentence": "A colorful painting.",
         "hint": "Vibrant."
-,
+        ,
         "synonyms": ["vivid", "vibrant", "bright"]
     },
     {
@@ -11169,7 +11178,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An upright pillar supporting a structure.",
         "sentence": "A marble column.",
         "hint": "Pillar."
-,
+        ,
         "synonyms": ["pillar", "post", "article"]
     },
     {
@@ -11182,7 +11191,7 @@ const INKLING_WORDS = [
             "She will come at noon.",
             "Did he come to the party?"
         ]
-,
+        ,
         "synonyms": ["arrive", "approach", "visit"]
     },
     {
@@ -11191,7 +11200,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A movie or play intended to make people laugh.",
         "sentence": "A great comedy.",
         "hint": "Humor."
-,
+        ,
         "synonyms": ["humor", "farce", "satire"]
     },
     {
@@ -11200,7 +11209,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A state of physical ease; to console.",
         "sentence": "He lived in comfort.",
         "hint": "Ease."
-,
+        ,
         "synonyms": ["ease", "solace", "soothe"]
     },
     {
@@ -11209,7 +11218,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Give an authoritative order; an order.",
         "sentence": "The officer gave a command.",
         "hint": "Order."
-,
+        ,
         "synonyms": ["order", "direct", "instruct"]
     },
     {
@@ -11222,7 +11231,7 @@ const INKLING_WORDS = [
             "We commend her for her outstanding work."
         ],
         "hint": "Praise."
-,
+        ,
         "synonyms": ["praise", "endorse", "recommend"]
     },
     {
@@ -11231,7 +11240,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A verbal or written remark; to remark.",
         "sentence": "He made a comment.",
         "hint": "Remark."
-,
+        ,
         "synonyms": ["remark", "observation", "note"]
     },
     {
@@ -11240,7 +11249,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The activity of buying and selling.",
         "sentence": "Chamber of commerce.",
         "hint": "Trade."
-,
+        ,
         "synonyms": ["trade", "business", "industry"]
     },
     {
@@ -11249,7 +11258,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Occurring, found, or done often.",
         "sentence": "A common mistake.",
         "hint": "Usual."
-,
+        ,
         "synonyms": ["ordinary", "shared", "frequent"]
     },
     {
@@ -11258,7 +11267,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A group of people living together.",
         "sentence": "A local community.",
         "hint": "Society."
-,
+        ,
         "synonyms": ["society", "group", "neighborhood"]
     },
     {
@@ -11267,7 +11276,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n./v.) Closely packed together; a small case; to compress.",
         "sentence": "A compact car.",
         "hint": "Dense."
-,
+        ,
         "synonyms": ["dense", "concise", "small"]
     },
     {
@@ -11276,7 +11285,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A person whom one spends a lot of time with.",
         "sentence": "A faithful companion.",
         "hint": "Friend."
-,
+        ,
         "synonyms": ["friend", "partner", "associate"]
     },
     {
@@ -11285,7 +11294,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A commercial business.",
         "sentence": "He started a company.",
         "hint": "Firm."
-,
+        ,
         "synonyms": ["firm", "group", "companion"]
     },
     {
@@ -11294,7 +11303,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Estimate or measure the similarity between.",
         "sentence": "Compare the two books.",
         "hint": "Contrast."
-,
+        ,
         "synonyms": ["contrast", "assess", "match"]
     },
     {
@@ -11303,7 +11312,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Sympathetic pity and concern.",
         "sentence": "She showed great compassion for others.",
         "hint": "Pity."
-,
+        ,
         "synonyms": ["empathy", "sympathy", "kindness"]
     },
     {
@@ -11312,7 +11321,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Strive to gain or win something.",
         "sentence": "They compete for the prize.",
         "hint": "Vie."
-,
+        ,
         "synonyms": ["rival", "contest", "strive"]
     },
     {
@@ -11321,7 +11330,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Express dissatisfaction or annoyance.",
         "sentence": "Don't complain.",
         "hint": "Grumble."
-,
+        ,
         "synonyms": ["gripe", "grumble", "protest"]
     },
     {
@@ -11330,7 +11339,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Something that pairs perfectly with another to make a whole; to go well together with something else.",
         "sentence": "The wine was a perfect complement.",
         "hint": "Addition."
-,
+        ,
         "synonyms": ["complete", "enhance", "pair"]
     },
     {
@@ -11339,7 +11348,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v.) Having all the necessary or appropriate parts; to finish.",
         "sentence": "The set is complete.",
         "hint": "Full."
-,
+        ,
         "synonyms": ["finish", "entire", "total"]
     },
     {
@@ -11348,7 +11357,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n.) Consisting of many different parts; a group of buildings.",
         "sentence": "It's a complex problem.",
         "hint": "Complicated."
-,
+        ,
         "synonyms": ["intricate", "complicated", "compound"]
     },
     {
@@ -11361,7 +11370,7 @@ const INKLING_WORDS = [
             "They asked him to compose a new school song."
         ],
         "hint": "Create."
-,
+        ,
         "synonyms": ["create", "write", "form"]
     },
     {
@@ -11370,7 +11379,7 @@ const INKLING_WORDS = [
         "definition": "(n./v./adj.) A substance formed from two or more elements chemically joined; to worsen or intensify a problem.",
         "sentence": "A chemical compound.",
         "hint": "Mixture."
-,
+        ,
         "synonyms": ["worsen", "intensify", "aggravate"]
     },
     {
@@ -11383,7 +11392,7 @@ const INKLING_WORDS = [
             "The meal will comprise three courses."
         ],
         "hint": "Include."
-,
+        ,
         "synonyms": ["include", "contain", "consist-of"]
     },
     {
@@ -11392,7 +11401,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An electronic device for storing data.",
         "sentence": "Use the computer.",
         "hint": "PC."
-,
+        ,
         "synonyms": ["device", "machine", "PC"]
     },
     {
@@ -11401,7 +11410,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Focus all one's attention on.",
         "sentence": "Concentrate on the task.",
         "hint": "Focus."
-,
+        ,
         "synonyms": ["focus", "condense", "center"]
     },
     {
@@ -11410,7 +11419,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An abstract idea; a general notion.",
         "sentence": "A new concept.",
         "hint": "Idea."
-,
+        ,
         "synonyms": ["idea", "notion", "theory"]
     },
     {
@@ -11423,7 +11432,7 @@ const INKLING_WORDS = [
             "Does this topic concern you?"
         ],
         "hint": "Worry."
-,
+        ,
         "synonyms": ["worry", "issue", "matter"]
     },
     {
@@ -11432,7 +11441,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A musical performance; to arrange.",
         "sentence": "They went to a concert.",
         "hint": "Show."
-,
+        ,
         "synonyms": ["performance", "show", "recital"]
     },
     {
@@ -11445,7 +11454,7 @@ const INKLING_WORDS = [
             "She made a concession to keep the peace."
         ],
         "hint": "Grant."
-,
+        ,
         "synonyms": ["allowance", "compromise", "privilege"]
     },
     {
@@ -11454,7 +11463,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Giving information clearly in few words.",
         "sentence": "A concise summary.",
         "hint": "Brief."
-,
+        ,
         "synonyms": ["brief", "terse", "succinct"]
     },
     {
@@ -11463,7 +11472,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Bring to an end.",
         "sentence": "Conclude the meeting.",
         "hint": "End."
-,
+        ,
         "synonyms": ["finish", "decide", "infer"]
     },
     {
@@ -11472,7 +11481,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n.) Existing in a physical form; a building material.",
         "sentence": "Concrete evidence.",
         "hint": "Physical."
-,
+        ,
         "synonyms": ["specific", "tangible", "solid"]
     },
     {
@@ -11481,7 +11490,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Be of the same opinion; agree.",
         "sentence": "I concur with your opinion.",
         "hint": "Agree."
-,
+        ,
         "synonyms": ["agree", "coincide", "consent"]
     },
     {
@@ -11494,7 +11503,7 @@ const INKLING_WORDS = [
             "Can you condense your essay into a paragraph?"
         ],
         "hint": "Compact."
-,
+        ,
         "synonyms": ["shorten", "compress", "concentrate"]
     },
     {
@@ -11503,7 +11512,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The state or quality of something at a given time; to train or prepare for a specific purpose.",
         "sentence": "Good condition.",
         "hint": "State."
-,
+        ,
         "synonyms": ["state", "requirement", "circumstance"]
     },
     {
@@ -11516,7 +11525,7 @@ const INKLING_WORDS = [
             "The weather conditions were terrible.",
             "He worked in poor conditions."
         ]
-,
+        ,
         "synonyms": ["circumstances", "terms", "requirements"]
     },
     {
@@ -11529,7 +11538,7 @@ const INKLING_WORDS = [
             "How you conduct yourself matters."
         ],
         "hint": "Direct."
-,
+        ,
         "synonyms": ["behavior", "lead", "manage"]
     },
     {
@@ -11542,7 +11551,7 @@ const INKLING_WORDS = [
             "I must confess I forgot about the meeting."
         ],
         "hint": "Admit."
-,
+        ,
         "synonyms": ["admit", "acknowledge", "reveal"]
     },
     {
@@ -11551,7 +11560,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A feeling of self-assurance.",
         "sentence": "He has confidence.",
         "hint": "Assurance."
-,
+        ,
         "synonyms": ["assurance", "trust", "belief"]
     },
     {
@@ -11560,7 +11569,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Establish the truth or correctness of.",
         "sentence": "Confirm your order.",
         "hint": "Verify."
-,
+        ,
         "synonyms": ["verify", "affirm", "prove"]
     },
     {
@@ -11569,7 +11578,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A serious disagreement or argument; to clash.",
         "sentence": "A long conflict.",
         "hint": "Fight."
-,
+        ,
         "synonyms": ["clash", "dispute", "struggle"]
     },
     {
@@ -11578,7 +11587,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Make bewildered or perplexed.",
         "sentence": "Don't confuse me.",
         "hint": "Baffle."
-,
+        ,
         "synonyms": ["bewilder", "perplex", "mix-up"]
     },
     {
@@ -11587,7 +11596,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A national legislative body.",
         "sentence": "The US Congress.",
         "hint": "Legislature."
-,
+        ,
         "synonyms": ["assembly", "legislature", "parliament"]
     },
     {
@@ -11596,7 +11605,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Bring together or into contact.",
         "sentence": "Connect the dots.",
         "hint": "Join."
-,
+        ,
         "synonyms": ["link", "join", "attach"]
     },
     {
@@ -11605,7 +11614,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Overcome and take control of.",
         "sentence": "Conquer the mountain.",
         "hint": "Defeat."
-,
+        ,
         "synonyms": ["defeat", "overcome", "subdue"]
     },
     {
@@ -11614,7 +11623,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Aware of and responding to surroundings.",
         "sentence": "He was conscious.",
         "hint": "Aware."
-,
+        ,
         "synonyms": ["aware", "awake", "alert"]
     },
     {
@@ -11623,7 +11632,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Permission for something to happen; to agree.",
         "sentence": "He gave his consent.",
         "hint": "Agreement."
-,
+        ,
         "synonyms": ["agree", "permit", "approve"]
     },
     {
@@ -11632,7 +11641,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Following as a result or effect.",
         "sentence": "Consequent loss.",
         "hint": "Resulting."
-,
+        ,
         "synonyms": ["resulting", "following", "subsequent"]
     },
     {
@@ -11641,7 +11650,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Protect from harm or destruction.",
         "sentence": "Conserve water.",
         "hint": "Save."
-,
+        ,
         "synonyms": ["protect", "save", "preserve"]
     },
     {
@@ -11650,7 +11659,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Think carefully about something.",
         "sentence": "Consider the facts.",
         "hint": "Think."
-,
+        ,
         "synonyms": ["think", "contemplate", "regard"]
     },
     {
@@ -11663,7 +11672,7 @@ const INKLING_WORDS = [
             "A good team must consist of people who trust each other."
         ],
         "hint": "Comprise."
-,
+        ,
         "synonyms": ["contain", "comprise", "include"]
     },
     {
@@ -11672,7 +11681,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Comfort someone at a time of grief; a control panel.",
         "sentence": "To console a friend.",
         "hint": "Comfort."
-,
+        ,
         "synonyms": ["comfort", "soothe", "control-panel"]
     },
     {
@@ -11685,7 +11694,7 @@ const INKLING_WORDS = [
             "She identified each consonant.",
             "The word has three consonants."
         ]
-,
+        ,
         "synonyms": ["letter", "sound", "non-vowel"]
     },
     {
@@ -11694,7 +11703,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Standing out so as to be clearly visible.",
         "sentence": "A conspicuous sign.",
         "hint": "Obvious."
-,
+        ,
         "synonyms": ["obvious", "visible", "prominent"]
     },
     {
@@ -11707,7 +11716,7 @@ const INKLING_WORDS = [
             "It seemed as if the weather and traffic conspire against us."
         ],
         "hint": "Plot."
-,
+        ,
         "synonyms": ["plot", "scheme", "collude"]
     },
     {
@@ -11716,7 +11725,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Occurring continuously over time.",
         "sentence": "The noise was constant.",
         "hint": "Steady."
-,
+        ,
         "synonyms": ["steady", "continuous", "unchanging"]
     },
     {
@@ -11729,7 +11738,7 @@ const INKLING_WORDS = [
             "What does it mean to constitute a good friend?"
         ],
         "hint": "Make up."
-,
+        ,
         "synonyms": ["form", "make-up", "establish"]
     },
     {
@@ -11742,7 +11751,7 @@ const INKLING_WORDS = [
             "Lack of funds can constrain a project."
         ],
         "hint": "Limit."
-,
+        ,
         "synonyms": ["restrict", "limit", "confine"]
     },
     {
@@ -11751,7 +11760,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Build or erect something; an idea or theory.",
         "sentence": "Construct a tower.",
         "hint": "Build."
-,
+        ,
         "synonyms": ["build", "create", "assemble"]
     },
     {
@@ -11760,7 +11769,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Seek information or advice from.",
         "sentence": "Consult a lawyer.",
         "hint": "Ask."
-,
+        ,
         "synonyms": ["seek-advice", "refer", "check-with"]
     },
     {
@@ -11769,7 +11778,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Eat, drink, or ingest.",
         "sentence": "They consume a lot of energy.",
         "hint": "Use up."
-,
+        ,
         "synonyms": ["use-up", "eat", "devour"]
     },
     {
@@ -11778,7 +11787,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Physical touching; to communicate with.",
         "sentence": "Keep in contact.",
         "hint": "Touch."
-,
+        ,
         "synonyms": ["reach", "touch", "connection"]
     },
     {
@@ -11791,7 +11800,7 @@ const INKLING_WORDS = [
             "Books contain a wealth of knowledge."
         ],
         "hint": "Hold."
-,
+        ,
         "synonyms": ["hold", "include", "restrain"]
     },
     {
@@ -11804,7 +11813,7 @@ const INKLING_WORDS = [
             "She will contemplate the offer before deciding."
         ],
         "hint": "Think."
-,
+        ,
         "synonyms": ["think", "consider", "ponder"]
     },
     {
@@ -11817,7 +11826,7 @@ const INKLING_WORDS = [
             "Make sure the content of your speech is clear."
         ],
         "hint": "Subject."
-,
+        ,
         "synonyms": ["material", "satisfied", "substance"]
     },
     {
@@ -11826,7 +11835,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An event in which people compete; to dispute.",
         "sentence": "He won the contest.",
         "hint": "Competition."
-,
+        ,
         "synonyms": ["competition", "dispute", "challenge"]
     },
     {
@@ -11835,7 +11844,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Circumstances forming a setting.",
         "sentence": "He took my words out of context.",
         "hint": "Setting."
-,
+        ,
         "synonyms": ["setting", "circumstances", "background"]
     },
     {
@@ -11844,7 +11853,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Persist in an activity or process.",
         "sentence": "Please continue.",
         "hint": "Keep going."
-,
+        ,
         "synonyms": ["go-on", "persist", "proceed"]
     },
     {
@@ -11857,7 +11866,7 @@ const INKLING_WORDS = [
             "He continued his story.",
             "They continued working despite the rain."
         ]
-,
+        ,
         "synonyms": ["ongoing", "persisted", "sustained"]
     },
     {
@@ -11866,7 +11875,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A written or spoken agreement; to decrease in size.",
         "sentence": "Sign the contract.",
         "hint": "Agreement."
-,
+        ,
         "synonyms": ["agreement", "shrink", "deal"]
     },
     {
@@ -11875,7 +11884,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Deny the truth of a statement.",
         "sentence": "The reports contradict each other.",
         "hint": "Deny."
-,
+        ,
         "synonyms": ["deny", "oppose", "negate"]
     },
     {
@@ -11884,7 +11893,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) State of being strikingly different; to compare.",
         "sentence": "The contrast is sharp.",
         "hint": "Difference."
-,
+        ,
         "synonyms": ["difference", "oppose", "compare"]
     },
     {
@@ -11893,7 +11902,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Give something in order to achieve.",
         "sentence": "Contribute some money.",
         "hint": "Giving."
-,
+        ,
         "synonyms": ["give", "add", "donate"]
     },
     {
@@ -11902,7 +11911,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Power to influence or direct; a means of directing.",
         "sentence": "He lost control.",
         "hint": "Direct."
-,
+        ,
         "synonyms": ["manage", "restrain", "power"]
     },
     {
@@ -11911,7 +11920,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Disagreement, typically prolonged.",
         "sentence": "The plan caused a lot of controversy.",
         "hint": "Dispute."
-,
+        ,
         "synonyms": ["dispute", "debate", "conflict"]
     },
     {
@@ -11920,7 +11929,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Talk with someone in an exchange of words; the reverse or opposite of something.",
         "sentence": "Converse with him.",
         "hint": "Talk."
-,
+        ,
         "synonyms": ["talk", "speak", "discuss"]
     },
     {
@@ -11929,7 +11938,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Cause to change in form/function; a person who has changed beliefs.",
         "sentence": "Convert the file.",
         "hint": "Change."
-,
+        ,
         "synonyms": ["change", "transform", "switch"]
     },
     {
@@ -11938,7 +11947,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Transport or carry to a place.",
         "sentence": "The trucks convey the goods.",
         "hint": "Carry."
-,
+        ,
         "synonyms": ["carry", "express", "communicate"]
     },
     {
@@ -11947,7 +11956,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Cause someone to believe firmly.",
         "sentence": "Convince the judge.",
         "hint": "Persuade."
-,
+        ,
         "synonyms": ["persuade", "sway", "assure"]
     },
     {
@@ -11960,7 +11969,7 @@ const INKLING_WORDS = [
             "He is a great cook.",
             "Cook the pasta for ten minutes."
         ]
-,
+        ,
         "synonyms": ["prepare", "chef", "heat"]
     },
     {
@@ -11969,7 +11978,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The practice or skill of preparing food.",
         "sentence": "A cookery book.",
         "hint": "Cooking."
-,
+        ,
         "synonyms": ["cooking", "culinary-art", "cuisine"]
     },
     {
@@ -11982,7 +11991,7 @@ const INKLING_WORDS = [
             "She cooled down in the shade.",
             "He wore cool sunglasses."
         ]
-,
+        ,
         "synonyms": ["cold", "calm", "trendy"]
     },
     {
@@ -11995,7 +12004,7 @@ const INKLING_WORDS = [
             "Animals sometimes cooperate to find food."
         ],
         "hint": "Work together."
-,
+        ,
         "synonyms": ["work-together", "collaborate", "assist"]
     },
     {
@@ -12004,7 +12013,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Bring the different elements of a complex activity; a set of values.",
         "sentence": "Coordinate the event.",
         "hint": "Organize."
-,
+        ,
         "synonyms": ["organize", "align", "manage"]
     },
     {
@@ -12013,7 +12022,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A reddish-brown metallic element; having a reddish-brown hue.",
         "sentence": "Copper wire.",
         "hint": "Metal."
-,
+        ,
         "synonyms": ["metal", "element", "reddish-metal"]
     },
     {
@@ -12022,7 +12031,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An area of woodland in which trees are cut; to cut back.",
         "sentence": "The old coppice.",
         "hint": "Grove."
-,
+        ,
         "synonyms": ["thicket", "copse", "wood"]
     },
     {
@@ -12035,7 +12044,7 @@ const INKLING_WORDS = [
             "Please copy the notes.",
             "He copied the drawing carefully."
         ]
-,
+        ,
         "synonyms": ["duplicate", "imitate", "replicate"]
     },
     {
@@ -12044,7 +12053,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The legal right that protects creators from having their work copied without permission; to register that right.",
         "sentence": "The copyright is held.",
         "hint": "Legal right."
-,
+        ,
         "synonyms": ["intellectual-property", "legal-protection", "ownership"]
     },
     {
@@ -12057,7 +12066,7 @@ const INKLING_WORDS = [
             "He grew corn in his field.",
             "Corn is used to make popcorn."
         ]
-,
+        ,
         "synonyms": ["maize", "grain", "starch"]
     },
     {
@@ -12066,7 +12075,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A place where two sides meet; to trap.",
         "sentence": "Turn the corner.",
         "hint": "Angle."
-,
+        ,
         "synonyms": ["angle", "bend", "nook"]
     },
     {
@@ -12075,7 +12084,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Relating to a large company or group.",
         "sentence": "Corporate office.",
         "hint": "Company."
-,
+        ,
         "synonyms": ["company", "organizational", "business"]
     },
     {
@@ -12084,7 +12093,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v.) Free from error; to fix an error.",
         "sentence": "The answer is correct.",
         "hint": "Right."
-,
+        ,
         "synonyms": ["right", "accurate", "fix"]
     },
     {
@@ -12093,7 +12102,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Have a close similarity; match or agree.",
         "sentence": "Marks correspond.",
         "hint": "Match."
-,
+        ,
         "synonyms": ["match", "write", "relate"]
     },
     {
@@ -12106,7 +12115,7 @@ const INKLING_WORDS = [
             "Scientists need data to corroborate a theory."
         ],
         "hint": "Confirm."
-,
+        ,
         "synonyms": ["confirm", "support", "back-up"]
     },
     {
@@ -12115,7 +12124,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v.) Willing to act dishonestly for personal gain; to cause someone or something to become dishonest or damaged.",
         "sentence": "A corrupt official.",
         "hint": "Dishonest."
-,
+        ,
         "synonyms": ["dishonest", "taint", "depraved"]
     },
     {
@@ -12128,7 +12137,7 @@ const INKLING_WORDS = [
             "The repair cost a lot.",
             "She paid the full cost."
         ]
-,
+        ,
         "synonyms": ["price", "expense", "charge"]
     },
     {
@@ -12137,7 +12146,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A set of clothes worn by an actor.",
         "sentence": "Halloween costume.",
         "hint": "Outfit."
-,
+        ,
         "synonyms": ["outfit", "dress", "attire"]
     },
     {
@@ -12146,7 +12155,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A small house, typically one in the country.",
         "sentence": "A cozy cottage.",
         "hint": "Small house."
-,
+        ,
         "synonyms": ["cabin", "hut", "bungalow"]
     },
     {
@@ -12159,7 +12168,7 @@ const INKLING_WORDS = [
             "Cotton is soft and light.",
             "He wiped it with a cotton cloth."
         ]
-,
+        ,
         "synonyms": ["fabric", "fiber", "plant"]
     },
     {
@@ -12172,7 +12181,7 @@ const INKLING_WORDS = [
             "She could swim at age three.",
             "I could see the lights from far away."
         ]
-,
+        ,
         "synonyms": ["was-able-to", "might", "had-the-ability"]
     },
     {
@@ -12185,7 +12194,7 @@ const INKLING_WORDS = [
             "He couldn't remember the answer.",
             "I couldn't believe it!"
         ]
-,
+        ,
         "synonyms": ["was-unable", "could-not", "was-incapable"]
     },
     {
@@ -12194,7 +12203,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An advisory, deliberative, or legislative body.",
         "sentence": "The city council.",
         "hint": "Assembly."
-,
+        ,
         "synonyms": ["board", "committee", "body"]
     },
     {
@@ -12203,7 +12212,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Advice, especially that given formally; to advise.",
         "sentence": "Wise counsel.",
         "hint": "Advice."
-,
+        ,
         "synonyms": ["advice", "guide", "lawyer"]
     },
     {
@@ -12216,7 +12225,7 @@ const INKLING_WORDS = [
             "Every vote counts.",
             "He lost count."
         ]
-,
+        ,
         "synonyms": ["tally", "enumerate", "number"]
     },
     {
@@ -12225,7 +12234,7 @@ const INKLING_WORDS = [
         "definition": "(n./v./adj.) A long flat-topped fixture in a shop; to oppose; opposite.",
         "sentence": "The kitchen counter.",
         "hint": "Table."
-,
+        ,
         "synonyms": ["oppose", "surface", "opposite"]
     },
     {
@@ -12234,7 +12243,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A nation with its own government; rural.",
         "sentence": "He loves his country.",
         "hint": "Nation."
-,
+        ,
         "synonyms": ["nation", "land", "state"]
     },
     {
@@ -12243,7 +12252,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Two people or things; to join.",
         "sentence": "A happy couple.",
         "hint": "Pair."
-,
+        ,
         "synonyms": ["pair", "two", "partners"]
     },
     {
@@ -12252,7 +12261,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The ability to do something that frightens one.",
         "sentence": "He showed great courage.",
         "hint": "Bravery."
-,
+        ,
         "synonyms": ["bravery", "valor", "nerve"]
     },
     {
@@ -12261,7 +12270,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The route or direction; to flow.",
         "sentence": "Take a course.",
         "hint": "Path."
-,
+        ,
         "synonyms": ["path", "class", "route"]
     },
     {
@@ -12270,7 +12279,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The showing of politeness in one's attitude.",
         "sentence": "With courtesy.",
         "hint": "Politeness."
-,
+        ,
         "synonyms": ["politeness", "respect", "manners"]
     },
     {
@@ -12279,7 +12288,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A child of one's aunt or uncle.",
         "sentence": "He is my cousin.",
         "hint": "Relative."
-,
+        ,
         "synonyms": ["relative", "kin", "extended-family"]
     },
     {
@@ -12292,7 +12301,7 @@ const INKLING_WORDS = [
             "The ground was covered in snow.",
             "He covered the food with a cloth."
         ]
-,
+        ,
         "synonyms": ["hidden", "coated", "protected"]
     },
     {
@@ -12305,7 +12314,7 @@ const INKLING_WORDS = [
             "She milked the cows.",
             "He counted twelve cows."
         ]
-,
+        ,
         "synonyms": ["cattle", "bovines", "herd"]
     },
     {
@@ -12318,7 +12327,7 @@ const INKLING_WORDS = [
             "The radio began to crackle in the bad weather."
         ],
         "hint": "Pop."
-,
+        ,
         "synonyms": ["snap", "pop", "fizz"]
     },
     {
@@ -12331,7 +12340,7 @@ const INKLING_WORDS = [
             "You can create a new document by clicking here.",
             "Children love to create their own stories."
         ]
-,
+        ,
         "synonyms": ["make", "produce", "generate"]
     },
     {
@@ -12340,7 +12349,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An animal, as distinct from a human.",
         "sentence": "A strange creature.",
         "hint": "Being."
-,
+        ,
         "synonyms": ["animal", "being", "organism"]
     },
     {
@@ -12349,7 +12358,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The ability of a customer to obtain goods; to attribute.",
         "sentence": "Store credit.",
         "hint": "Reputation."
-,
+        ,
         "synonyms": ["recognition", "trust", "loan"]
     },
     {
@@ -12358,7 +12367,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An insect related to the grasshopper.",
         "sentence": "He heard a cricket.",
         "hint": "Insect."
-,
+        ,
         "synonyms": ["sport", "insect", "game"]
     },
     {
@@ -12371,7 +12380,7 @@ const INKLING_WORDS = [
             "She cried at the end of the film.",
             "He cried out for help."
         ]
-,
+        ,
         "synonyms": ["wept", "sobbed", "called-out"]
     },
     {
@@ -12380,7 +12389,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A person who has committed a crime; relating to crime.",
         "sentence": "A criminal act.",
         "hint": "Outlaw."
-,
+        ,
         "synonyms": ["offender", "lawbreaker", "felon"]
     },
     {
@@ -12389,7 +12398,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Standard by which something is judged.",
         "sentence": "The main criterion for a job.",
         "hint": "Standard."
-,
+        ,
         "synonyms": ["standard", "measure", "benchmark"]
     },
     {
@@ -12402,7 +12411,7 @@ const INKLING_WORDS = [
             "She harvested the crops.",
             "Good rain helps crops grow."
         ]
-,
+        ,
         "synonyms": ["produce", "harvest", "plants"]
     },
     {
@@ -12415,7 +12424,7 @@ const INKLING_WORDS = [
             "He drew a red cross.",
             "She was very cross with him."
         ]
-,
+        ,
         "synonyms": ["angry", "traverse", "intersect"]
     },
     {
@@ -12428,7 +12437,7 @@ const INKLING_WORDS = [
             "People crowded into the hall.",
             "She pushed through the crowd."
         ]
-,
+        ,
         "synonyms": ["mass", "group", "throng"]
     },
     {
@@ -12437,7 +12446,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Decisive or critical.",
         "sentence": "The role of the teacher is crucial.",
         "hint": "Essential."
-,
+        ,
         "synonyms": ["vital", "critical", "essential"]
     },
     {
@@ -12446,7 +12455,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A transparent mineral; clear.",
         "sentence": "The water was crystal clear.",
         "hint": "Mineral."
-,
+        ,
         "synonyms": ["gem", "clear", "prism"]
     },
     {
@@ -12455,7 +12464,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The arts and industrial achievements; to grow cells.",
         "sentence": "A diverse culture.",
         "hint": "Tradition."
-,
+        ,
         "synonyms": ["civilization", "society", "tradition"]
     },
     {
@@ -12464,7 +12473,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Increasing by successive additions.",
         "sentence": "The cumulative effect of smoking.",
         "hint": "Total."
-,
+        ,
         "synonyms": ["growing", "accumulated", "increasing"]
     },
     {
@@ -12473,7 +12482,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A cabinet or small recess with a door.",
         "sentence": "The plates are in the cupboard.",
         "hint": "Cabinet."
-,
+        ,
         "synonyms": ["cabinet", "closet", "storage"]
     },
     {
@@ -12482,7 +12491,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n.) Belonging to the present time; a flow of water/air/electricity.",
         "sentence": "The current situation.",
         "hint": "Present."
-,
+        ,
         "synonyms": ["present", "flow", "contemporary"]
     },
     {
@@ -12491,7 +12500,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A hanging cloth used to block light or provide privacy over a window.",
         "sentence": "Close the curtain.",
         "hint": "Drape."
-,
+        ,
         "synonyms": ["drape", "blind", "screen"]
     },
     {
@@ -12500,7 +12509,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A soft bag of cloth stuffed with firm material; to soften an impact.",
         "sentence": "Sit on the cushion.",
         "hint": "Pillow."
-,
+        ,
         "synonyms": ["pillow", "pad", "buffer"]
     },
     {
@@ -12509,7 +12518,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A traditional practice; made to order.",
         "sentence": "An old custom.",
         "hint": "Tradition."
-,
+        ,
         "synonyms": ["tradition", "habit", "practice"]
     },
     {
@@ -12522,7 +12531,7 @@ const INKLING_WORDS = [
             "He has a small cut on his hand.",
             "Please cut along the dotted line."
         ]
-,
+        ,
         "synonyms": ["slice", "reduce", "sever"]
     },
     {
@@ -12531,7 +12540,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A solid geometric figure with straight parallel sides.",
         "sentence": "The tank is a cylinder.",
         "hint": "Tube."
-,
+        ,
         "synonyms": ["tube", "drum", "barrel"]
     },
     {
@@ -12540,7 +12549,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Physical harm caused to something; to harm.",
         "sentence": "There was some damage.",
         "hint": "Harm."
-,
+        ,
         "synonyms": ["harm", "injury", "impair"]
     },
     {
@@ -12553,7 +12562,7 @@ const INKLING_WORDS = [
             "They had a dance at the school.",
             "He danced all night."
         ]
-,
+        ,
         "synonyms": ["move", "rhythm", "choreography"]
     },
     {
@@ -12562,7 +12571,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The possibility of suffering harm.",
         "sentence": "The sign warned of danger.",
         "hint": "Risk."
-,
+        ,
         "synonyms": ["risk", "peril", "hazard"]
     },
     {
@@ -12575,7 +12584,7 @@ const INKLING_WORDS = [
             "It was a dark and stormy night.",
             "The room went dark."
         ]
-,
+        ,
         "synonyms": ["dim", "gloomy", "night"]
     },
     {
@@ -12584,7 +12593,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A girl or woman in relation to her parents.",
         "sentence": "She is my daughter.",
         "hint": "Child."
-,
+        ,
         "synonyms": ["child", "girl", "offspring"]
     },
     {
@@ -12597,7 +12606,7 @@ const INKLING_WORDS = [
             "She works five days a week.",
             "Have a great day!"
         ]
-,
+        ,
         "synonyms": ["date", "daytime", "period"]
     },
     {
@@ -12610,7 +12619,7 @@ const INKLING_WORDS = [
             "Dead leaves covered the ground.",
             "He was dead tired after the run."
         ]
-,
+        ,
         "synonyms": ["deceased", "lifeless", "gone"]
     },
     {
@@ -12623,7 +12632,7 @@ const INKLING_WORDS = [
             "She dealt the cards.",
             "It was a great deal."
         ]
-,
+        ,
         "synonyms": ["agreement", "bargain", "handle"]
     },
     {
@@ -12636,7 +12645,7 @@ const INKLING_WORDS = [
             "He faced death bravely.",
             "The news of her death spread quickly."
         ]
-,
+        ,
         "synonyms": ["demise", "end", "passing"]
     },
     {
@@ -12645,7 +12654,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A formal discussion on a topic; to argue formally.",
         "sentence": "The debate was lively.",
         "hint": "Discussion."
-,
+        ,
         "synonyms": ["discussion", "argument", "dispute"]
     },
     {
@@ -12654,7 +12663,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A period of ten years.",
         "sentence": "A decade ago.",
         "hint": "10 years."
-,
+        ,
         "synonyms": ["ten-years", "period", "era"]
     },
     {
@@ -12667,7 +12676,7 @@ const INKLING_WORDS = [
             "He decided to stay home.",
             "Can you decide by Friday?"
         ]
-,
+        ,
         "synonyms": ["determine", "choose", "resolve"]
     },
     {
@@ -12676,7 +12685,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) Relating to or denoting a system of numbers based on ten.",
         "sentence": "A decimal point.",
         "hint": "Fractional."
-,
+        ,
         "synonyms": ["fraction", "tenth", "numeric"]
     },
     {
@@ -12685,7 +12694,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Say something in a solemn and emphatic manner.",
         "sentence": "I declare war.",
         "hint": "State."
-,
+        ,
         "synonyms": ["announce", "proclaim", "state"]
     },
     {
@@ -12698,7 +12707,7 @@ const INKLING_WORDS = [
             "She may decline the invitation politely."
         ],
         "hint": "Decrease."
-,
+        ,
         "synonyms": ["decrease", "refuse", "fall"]
     },
     {
@@ -12711,7 +12720,7 @@ const INKLING_WORDS = [
             "She thought deeply about the question.",
             "He has a deep voice."
         ]
-,
+        ,
         "synonyms": ["profound", "vast", "low"]
     },
     {
@@ -12720,7 +12729,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Resist an attack made on something.",
         "sentence": "Defend your position.",
         "hint": "Protect."
-,
+        ,
         "synonyms": ["protect", "guard", "justify"]
     },
     {
@@ -12729,7 +12738,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An amount, level, or extent; a unit of measurement.",
         "sentence": "A high degree of skill.",
         "hint": "Level."
-,
+        ,
         "synonyms": ["level", "amount", "qualification"]
     },
     {
@@ -12738,7 +12747,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v.) Done consciously and intentionally; to think carefully.",
         "sentence": "A deliberate act.",
         "hint": "Intentional."
-,
+        ,
         "synonyms": ["intentional", "careful", "consider"]
     },
     {
@@ -12747,7 +12756,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) Great pleasure; to please greatly.",
         "sentence": "To her delight.",
         "hint": "Joy."
-,
+        ,
         "synonyms": ["joy", "please", "pleasure"]
     },
     {
@@ -12756,7 +12765,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Bring and hand over to a proper recipient.",
         "sentence": "Deliver the package.",
         "hint": "Bring."
-,
+        ,
         "synonyms": ["bring", "hand-over", "supply"]
     },
     {
@@ -12765,7 +12774,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An insistent and peremptory request; to request insistently.",
         "sentence": "There is a high demand.",
         "hint": "Request."
-,
+        ,
         "synonyms": ["require", "request", "insist"]
     },
     {
@@ -12778,7 +12787,7 @@ const INKLING_WORDS = [
             "Passengers must depart the aircraft quickly."
         ],
         "hint": "Leave."
-,
+        ,
         "synonyms": ["leave", "go", "exit"]
     },
     {
@@ -12787,7 +12796,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A sum of money kept in a bank account; to put down.",
         "sentence": "Make a deposit.",
         "hint": "Payment."
-,
+        ,
         "synonyms": ["place", "saving", "sediment"]
     },
     {
@@ -12796,7 +12805,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The distance from the top or surface to the bottom.",
         "sentence": "Check the depth.",
         "hint": "Deepness."
-,
+        ,
         "synonyms": ["profundity", "deepness", "intensity"]
     },
     {
@@ -12809,7 +12818,7 @@ const INKLING_WORDS = [
             "She described the house in detail.",
             "Can you describe the person?"
         ]
-,
+        ,
         "synonyms": ["depict", "explain", "portray"]
     },
     {
@@ -12818,7 +12827,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An arid area of land; to abandon.",
         "sentence": "The Sahara Desert.",
         "hint": "Arid land."
-,
+        ,
         "synonyms": ["abandon", "wasteland", "arid-land"]
     },
     {
@@ -12827,7 +12836,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Be worthy of or entitled to.",
         "sentence": "You deserve a prize.",
         "hint": "Earn."
-,
+        ,
         "synonyms": ["merit", "warrant", "earn"]
     },
     {
@@ -12836,7 +12845,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A plan or drawing produced to show the look; to plan.",
         "sentence": "A new design.",
         "hint": "Plan."
-,
+        ,
         "synonyms": ["plan", "create", "layout"]
     },
     {
@@ -12845,7 +12854,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A strong feeling of wanting to have something; to want.",
         "sentence": "A desire for power.",
         "hint": "Want."
-,
+        ,
         "synonyms": ["want", "wish", "longing"]
     },
     {
@@ -12858,7 +12867,7 @@ const INKLING_WORDS = [
             "She included all the details.",
             "He gave few details."
         ]
-,
+        ,
         "synonyms": ["specifics", "particulars", "facts"]
     },
     {
@@ -12867,7 +12876,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Discover or identify the presence or existence of.",
         "sentence": "Detect the error.",
         "hint": "Discover."
-,
+        ,
         "synonyms": ["find", "discover", "sense"]
     },
     {
@@ -12876,7 +12885,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Cause something to occur in a particular way.",
         "sentence": "Determine the cause.",
         "hint": "Decide."
-,
+        ,
         "synonyms": ["decide", "establish", "resolve"]
     },
     {
@@ -12885,7 +12894,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Grow or cause to grow and become more mature.",
         "sentence": "Develop a plan.",
         "hint": "Grow."
-,
+        ,
         "synonyms": ["grow", "evolve", "advance"]
     },
     {
@@ -12898,7 +12907,7 @@ const INKLING_WORDS = [
             "The plan has developed well.",
             "He developed a useful skill."
         ]
-,
+        ,
         "synonyms": ["grown", "advanced", "evolved"]
     },
     {
@@ -12907,7 +12916,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A thing made or adapted for a particular purpose.",
         "sentence": "A mobile device.",
         "hint": "Gadget."
-,
+        ,
         "synonyms": ["tool", "gadget", "instrument"]
     },
     {
@@ -12916,7 +12925,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Give all or a large part of one's time.",
         "sentence": "Devote your time.",
         "hint": "Dedicate."
-,
+        ,
         "synonyms": ["dedicate", "commit", "give"]
     },
     {
@@ -12925,7 +12934,7 @@ const INKLING_WORDS = [
         "definition": "(n./adj.) A precious stone consisting of clear colorless crystalline carbon.",
         "sentence": "A diamond ring.",
         "hint": "Gemstone."
-,
+        ,
         "synonyms": ["gem", "shape", "precious-stone"]
     },
     {
@@ -12934,7 +12943,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A book in which one keeps a daily record of events.",
         "sentence": "She wrote in her diary.",
         "hint": "Journal."
-,
+        ,
         "synonyms": ["journal", "log", "record"]
     },
     {
@@ -12947,7 +12956,7 @@ const INKLING_WORDS = [
             "Use a dictionary when you are unsure.",
             "He bought a large dictionary."
         ]
-,
+        ,
         "synonyms": ["lexicon", "glossary", "wordbook"]
     },
     {
@@ -12960,7 +12969,7 @@ const INKLING_WORDS = [
             "She did a great job.",
             "He did not come."
         ]
-,
+        ,
         "synonyms": ["performed", "accomplished", "achieved"]
     },
     {
@@ -12973,7 +12982,7 @@ const INKLING_WORDS = [
             "I didn't hear you.",
             "He didn't finish his dinner."
         ]
-,
+        ,
         "synonyms": ["did-not", "failed-to", "refused-to"]
     },
     {
@@ -12986,7 +12995,7 @@ const INKLING_WORDS = [
             "He died peacefully.",
             "She was sad when her fish died."
         ]
-,
+        ,
         "synonyms": ["perished", "expired", "perished"]
     },
     {
@@ -12999,7 +13008,7 @@ const INKLING_WORDS = [
             "She made a real difference.",
             "There is a big difference between the two."
         ]
-,
+        ,
         "synonyms": ["distinction", "variation", "contrast"]
     },
     {
@@ -13012,7 +13021,7 @@ const INKLING_WORDS = [
             "She wore a different hat each day.",
             "That is a different story."
         ]
-,
+        ,
         "synonyms": ["distinct", "unlike", "varied"]
     },
     {
@@ -13025,7 +13034,7 @@ const INKLING_WORDS = [
             "She found it difficult to decide.",
             "He faced a difficult problem."
         ]
-,
+        ,
         "synonyms": ["hard", "challenging", "taxing"]
     },
     {
@@ -13034,7 +13043,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Breakdown food in the stomach; a compilation of information.",
         "sentence": "Digest your food.",
         "hint": "Process."
-,
+        ,
         "synonyms": ["absorb", "process", "summarize"]
     },
     {
@@ -13043,7 +13052,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Using or expressed as numerical values, especially binary code; relating to electronic technology.",
         "sentence": "A digital clock.",
         "hint": "Electronic."
-,
+        ,
         "synonyms": ["electronic", "online", "numeric"]
     },
     {
@@ -13052,7 +13061,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Showing care and conscientiousness.",
         "sentence": "He was a diligent student.",
         "hint": "Hardworking."
-,
+        ,
         "synonyms": ["hardworking", "industrious", "thorough"]
     },
     {
@@ -13061,7 +13070,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A fossil reptile of the Mesozoic era.",
         "sentence": "The dinosaur was huge.",
         "hint": "Ancient reptile."
-,
+        ,
         "synonyms": ["prehistoric-creature", "fossil-animal", "reptile"]
     },
     {
@@ -13070,7 +13079,7 @@ const INKLING_WORDS = [
         "definition": "(adj./v./adv.) Extending or moving from one place to another; to manage.",
         "sentence": "A direct route.",
         "hint": "Straight."
-,
+        ,
         "synonyms": ["straight", "guide", "manage"]
     },
     {
@@ -13083,7 +13092,7 @@ const INKLING_WORDS = [
             "He gave clear directions.",
             "Which direction is north?"
         ]
-,
+        ,
         "synonyms": ["way", "course", "guidance"]
     },
     {
@@ -13092,7 +13101,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A sudden event that causes great damage.",
         "sentence": "A natural disaster.",
         "hint": "Catastrophe."
-,
+        ,
         "synonyms": ["catastrophe", "calamity", "crisis"]
     },
     {
@@ -13101,7 +13110,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Get rid of someone or something as no longer useful.",
         "sentence": "Discard the trash.",
         "hint": "Reject."
-,
+        ,
         "synonyms": ["throw-away", "abandon", "dispose"]
     },
     {
@@ -13110,7 +13119,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Find unexpectedly or during a search.",
         "sentence": "Discover the truth.",
         "hint": "Find."
-,
+        ,
         "synonyms": ["find", "uncover", "learn"]
     },
     {
@@ -13123,7 +13132,7 @@ const INKLING_WORDS = [
             "He discovered a passion for art.",
             "They discovered an old map."
         ]
-,
+        ,
         "synonyms": ["found", "uncovered", "revealed"]
     },
     {
@@ -13132,7 +13141,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A disorder of structure or function in a human.",
         "sentence": "A rare disease.",
         "hint": "Illness."
-,
+        ,
         "synonyms": ["illness", "sickness", "ailment"]
     },
     {
@@ -13141,7 +13150,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A flexible removable magnetic disk.",
         "sentence": "Save it on a diskette.",
         "hint": "Floppy disk."
-,
+        ,
         "synonyms": ["floppy-disk", "disk", "storage-medium"]
     },
     {
@@ -13150,7 +13159,7 @@ const INKLING_WORDS = [
         "definition": "(v.) Order or allow to leave; send away.",
         "sentence": "Dismiss the class.",
         "hint": "Reject."
-,
+        ,
         "synonyms": ["disregard", "fire", "reject"]
     },
     {
@@ -13159,7 +13168,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Put something in a prominent place; an exhibition.",
         "sentence": "Display the flags.",
         "hint": "Show."
-,
+        ,
         "synonyms": ["show", "exhibit", "present"]
     },
     {
@@ -13168,7 +13177,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) An amount of space between two things; to separate.",
         "sentence": "The distance is great.",
         "hint": "Space."
-,
+        ,
         "synonyms": ["gap", "space", "length"]
     },
     {
@@ -13177,7 +13186,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Recognizably different in nature from something else.",
         "sentence": "A distinct smell.",
         "hint": "Clear."
-,
+        ,
         "synonyms": ["different", "clear", "separate"]
     },
     {
@@ -13186,7 +13195,7 @@ const INKLING_WORDS = [
         "definition": "(n.) An area of a country or city.",
         "sentence": "A shopping district.",
         "hint": "Area."
-,
+        ,
         "synonyms": ["area", "region", "zone"]
     },
     {
@@ -13195,7 +13204,7 @@ const INKLING_WORDS = [
         "definition": "(v./n.) Separate or be separated into parts; a disagreement.",
         "sentence": "Divide the cake.",
         "hint": "Split."
-,
+        ,
         "synonyms": ["split", "separate", "partition"]
     },
     {
@@ -13208,7 +13217,7 @@ const INKLING_WORDS = [
             "The class was divided into two teams.",
             "The country was divided."
         ]
-,
+        ,
         "synonyms": ["split", "separated", "partitioned"]
     },
     {
@@ -13221,7 +13230,7 @@ const INKLING_WORDS = [
             "He led a division of soldiers.",
             "The company has a sales division."
         ]
-,
+        ,
         "synonyms": ["split", "section", "department"]
     },
     {
@@ -13230,7 +13239,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A person who is qualified to treat people who are ill; to falsify.",
         "sentence": "See a doctor.",
         "hint": "Physician."
-,
+        ,
         "synonyms": ["physician", "healer", "MD"]
     },
     {
@@ -13243,7 +13252,7 @@ const INKLING_WORDS = [
             "Does he know you?",
             "It does not matter."
         ]
-,
+        ,
         "synonyms": ["performs", "acts", "accomplishes"]
     },
     {
@@ -13256,7 +13265,7 @@ const INKLING_WORDS = [
             "He doesn't know.",
             "It doesn't matter."
         ]
-,
+        ,
         "synonyms": ["does-not", "fails-to", "won't"]
     },
     {
@@ -13269,7 +13278,7 @@ const INKLING_WORDS = [
             "The dog barked loudly.",
             "He walked his dog every morning."
         ]
-,
+        ,
         "synonyms": ["canine", "hound", "pup"]
     },
     {
@@ -13278,7 +13287,7 @@ const INKLING_WORDS = [
         "definition": "(n.) The basic monetary unit of the US.",
         "sentence": "It costs one dollar.",
         "hint": "Currency."
-,
+        ,
         "synonyms": ["currency", "buck", "bill"]
     },
     {
@@ -13291,7 +13300,7 @@ const INKLING_WORDS = [
             "He had a few dollars left.",
             "The toy cost ten dollars."
         ]
-,
+        ,
         "synonyms": ["money", "currency", "funds"]
     },
     {
@@ -13300,7 +13309,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A small gregarious toothed whale.",
         "sentence": "The dolphin jumped.",
         "hint": "Sea mammal."
-,
+        ,
         "synonyms": ["porpoise", "marine-mammal", "sea-creature"]
     },
     {
@@ -13309,7 +13318,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n.) Relating to the running of a home; a servant.",
         "sentence": "A domestic animal.",
         "hint": "Houshold."
-,
+        ,
         "synonyms": ["household", "tame", "national"]
     },
     {
@@ -13322,7 +13331,7 @@ const INKLING_WORDS = [
             "I don't like spicy food.",
             "Don't run inside."
         ]
-,
+        ,
         "synonyms": ["do-not", "won't", "refuse-to"]
     },
     {
@@ -13335,7 +13344,7 @@ const INKLING_WORDS = [
             "She has done all the work.",
             "Well done!"
         ]
-,
+        ,
         "synonyms": ["finished", "completed", "accomplished"]
     },
     {
@@ -13348,7 +13357,7 @@ const INKLING_WORDS = [
             "Close the door behind you.",
             "He held the door open for her."
         ]
-,
+        ,
         "synonyms": ["entrance", "exit", "portal"]
     },
     {
@@ -13361,7 +13370,7 @@ const INKLING_WORDS = [
             "Sit down, please.",
             "She looked down at her feet."
         ]
-,
+        ,
         "synonyms": ["below", "decline", "lower"]
     },
     {
@@ -13370,7 +13379,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A mythical monster like a giant reptile.",
         "sentence": "The dragon breathed fire.",
         "hint": "Mythical beast."
-,
+        ,
         "synonyms": ["beast", "mythical-creature", "serpent"]
     },
     {
@@ -13383,7 +13392,7 @@ const INKLING_WORDS = [
             "The match ended in a draw.",
             "He drew a map of the village."
         ]
-,
+        ,
         "synonyms": ["sketch", "attract", "tie"]
     },
     {
@@ -13396,7 +13405,7 @@ const INKLING_WORDS = [
             "He was drawing a map.",
             "The drawing was very detailed."
         ]
-,
+        ,
         "synonyms": ["sketch", "illustration", "picture"]
     },
     {
@@ -13405,7 +13414,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A series of thoughts occurring in a person's sleep; to imagine.",
         "sentence": "I had a dream.",
         "hint": "Vision."
-,
+        ,
         "synonyms": ["vision", "aspire", "reverie"]
     },
     {
@@ -13414,7 +13423,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) A one-piece garment for a woman; to clothe.",
         "sentence": "She wore a blue dress.",
         "hint": "Gown."
-,
+        ,
         "synonyms": ["gown", "attire", "clothe"]
     },
     {
@@ -13427,7 +13436,7 @@ const INKLING_WORDS = [
             "You may drift off to sleep if you are very tired."
         ],
         "hint": "Float."
-,
+        ,
         "synonyms": ["float", "wander", "current"]
     },
     {
@@ -13440,7 +13449,7 @@ const INKLING_WORDS = [
             "It is a short drive.",
             "He drove carefully in the snow."
         ]
-,
+        ,
         "synonyms": ["motivate", "operate", "propel"]
     },
     {
@@ -13453,7 +13462,7 @@ const INKLING_WORDS = [
             "A drop of rain fell.",
             "Don't drop the plates!"
         ]
-,
+        ,
         "synonyms": ["fall", "decrease", "let-fall"]
     },
     {
@@ -13466,7 +13475,7 @@ const INKLING_WORDS = [
             "The ground is very dry.",
             "She left the dishes to dry."
         ]
-,
+        ,
         "synonyms": ["arid", "desiccated", "not-wet"]
     },
     {
@@ -13475,7 +13484,7 @@ const INKLING_WORDS = [
         "definition": "(prep.) Throughout the course or duration of.",
         "sentence": "During the day.",
         "hint": "Throughout."
-,
+        ,
         "synonyms": ["throughout", "in-the-course-of", "while"]
     },
     {
@@ -13484,7 +13493,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A line of hereditary rulers of a country.",
         "sentence": "The Ming dynasty.",
         "hint": "Lineage."
-,
+        ,
         "synonyms": ["lineage", "ruling-family", "era"]
     },
     {
@@ -13497,7 +13506,7 @@ const INKLING_WORDS = [
             "She gave each one a hug.",
             "Each day is different."
         ]
-,
+        ,
         "synonyms": ["every", "apiece", "individual"]
     },
     {
@@ -13506,7 +13515,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Wanting to do or have something very much.",
         "sentence": "He was eager to learn.",
         "hint": "Keen."
-,
+        ,
         "synonyms": ["enthusiastic", "keen", "ready"]
     },
     {
@@ -13515,7 +13524,7 @@ const INKLING_WORDS = [
         "definition": "(adj./adv.) Happening before the usual or expected time.",
         "sentence": "An early start.",
         "hint": "Soon."
-,
+        ,
         "synonyms": ["soon", "before-time", "initial"]
     },
     {
@@ -13528,7 +13537,7 @@ const INKLING_WORDS = [
             "The dog's ears perked up.",
             "He has sharp ears."
         ]
-,
+        ,
         "synonyms": ["hearing-organs", "auricles", "lobes"]
     },
     {
@@ -13537,7 +13546,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The planet on which we live; to connect to ground.",
         "sentence": "The Earth is round.",
         "hint": "Planet."
-,
+        ,
         "synonyms": ["ground", "soil", "planet"]
     },
     {
@@ -13550,7 +13559,7 @@ const INKLING_WORDS = [
             "The east wind was cold.",
             "They drove east all day."
         ]
-,
+        ,
         "synonyms": ["orient", "sunrise-direction", "eastern"]
     },
     {
@@ -13559,7 +13568,7 @@ const INKLING_WORDS = [
         "definition": "(adj./adv.) Achieved without great effort.",
         "sentence": "An easy task.",
         "hint": "Simple."
-,
+        ,
         "synonyms": ["simple", "effortless", "uncomplicated"]
     },
     {
@@ -13572,7 +13581,7 @@ const INKLING_WORDS = [
             "Let's eat dinner.",
             "The dog eats twice a day."
         ]
-,
+        ,
         "synonyms": ["consume", "devour", "dine"]
     },
     {
@@ -13581,7 +13590,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A repetition of a sound caused by reflection.",
         "sentence": "Hear the echo.",
         "hint": "Resonance."
-,
+        ,
         "synonyms": ["reverberate", "reflect", "repeat"]
     },
     {
@@ -13590,7 +13599,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The outside limit of an object; to move slowly.",
         "sentence": "Stand on the edge.",
         "hint": "Border."
-,
+        ,
         "synonyms": ["border", "rim", "side"]
     },
     {
@@ -13599,7 +13608,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A person who is in charge of and determines the final content.",
         "sentence": "The newspaper editor.",
         "hint": "Reviewer."
-,
+        ,
         "synonyms": ["publisher", "reviser", "director"]
     },
     {
@@ -13612,7 +13621,7 @@ const INKLING_WORDS = [
             "She effected a great change.",
             "What is the effect of the change?"
         ]
-,
+        ,
         "synonyms": ["result", "outcome", "impact"]
     },
     {
@@ -13621,7 +13630,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A vigorous or determined attempt.",
         "sentence": "It took a lot of effort.",
         "hint": "Try."
-,
+        ,
         "synonyms": ["attempt", "exertion", "work"]
     },
     {
@@ -13634,7 +13643,7 @@ const INKLING_WORDS = [
             "He scrambled some eggs.",
             "The eggs were painted for Easter."
         ]
-,
+        ,
         "synonyms": ["ova", "embryos", "breakfast-food"]
     },
     {
@@ -13643,7 +13652,7 @@ const INKLING_WORDS = [
         "definition": "(num.) The number equivalent to the product of two and four.",
         "sentence": "There are eight books.",
         "hint": "Number."
-,
+        ,
         "synonyms": ["8", "octet", "numeral"]
     },
     {
@@ -13652,7 +13661,7 @@ const INKLING_WORDS = [
         "definition": "(num.) The number equivalent to the product of two and nine.",
         "sentence": "He is eighteen.",
         "hint": "Number."
-,
+        ,
         "synonyms": ["18", "teen-number", "numeral"]
     },
     {
@@ -13661,7 +13670,7 @@ const INKLING_WORDS = [
         "definition": "(adv./pron./adj.) Used before the first of two alternatives.",
         "sentence": "Either one is fine.",
         "hint": "One or other."
-,
+        ,
         "synonyms": ["one-or-other", "each", "both"]
     },
     {
@@ -13670,7 +13679,7 @@ const INKLING_WORDS = [
         "definition": "(n./v.) The joint between the forearm and the upper arm; to push.",
         "sentence": "He bumped his elbow.",
         "hint": "Joint."
-,
+        ,
         "synonyms": ["joint", "arm-bend", "nudge"]
     },
     {
@@ -13679,7 +13688,7 @@ const INKLING_WORDS = [
         "definition": "(adj./n.) Old or aging; old people.",
         "sentence": "Respect the elderly.",
         "hint": "Old."
-,
+        ,
         "synonyms": ["aged", "senior", "old"]
     },
     {
@@ -13692,7 +13701,7 @@ const INKLING_WORDS = [
             "The electric fan whirred.",
             "He fixed the electric heater."
         ]
-,
+        ,
         "synonyms": ["electrical", "powered", "energized"]
     },
     {
@@ -13701,7 +13710,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Pleasingly graceful and stylish in appearance.",
         "sentence": "An elegant dress.",
         "hint": "Graceful."
-,
+        ,
         "synonyms": ["graceful", "refined", "stylish"]
     },
     {
@@ -13710,7 +13719,7 @@ const INKLING_WORDS = [
         "definition": "(n.) A part or aspect of something abstract.",
         "sentence": "The element of surprise.",
         "hint": "Part."
-,
+        ,
         "synonyms": ["component", "atom", "part"]
     },
     {
@@ -13723,7 +13732,7 @@ const INKLING_WORDS = [
             "Air and water are key elements.",
             "He included all the key elements."
         ]
-,
+        ,
         "synonyms": ["components", "basics", "essentials"]
     },
     {
@@ -13736,7 +13745,7 @@ const INKLING_WORDS = [
             "What else do you need?",
             "Let's try something else."
         ]
-,
+        ,
         "synonyms": ["otherwise", "different", "additionally"]
     },
     {
@@ -13745,7 +13754,7 @@ const INKLING_WORDS = [
         "definition": "(n.) Understand and share feelings.",
         "sentence": "He felt empathy for his friend.",
         "hint": "Understanding."
-,
+        ,
         "synonyms": ["compassion", "understanding", "sympathy"]
     },
     {
@@ -13758,7 +13767,7 @@ const INKLING_WORDS = [
             "The road ends here.",
             "She waited until the very end."
         ]
-,
+        ,
         "synonyms": ["finish", "conclusion", "stop"]
     },
     {
@@ -13771,7 +13780,7 @@ const INKLING_WORDS = [
             "Food gives us energy.",
             "Solar panels turn sunlight into energy."
         ]
-,
+        ,
         "synonyms": ["power", "vitality", "force"]
     },
     {
@@ -13784,7 +13793,7 @@ const INKLING_WORDS = [
             "She checked the car engine.",
             "A steam engine powered the old train."
         ]
-,
+        ,
         "synonyms": ["motor", "machine", "power-unit"]
     },
     {
@@ -13797,7 +13806,7 @@ const INKLING_WORDS = [
             "England is known for its rain.",
             "He supports the England football team."
         ]
-,
+        ,
         "synonyms": ["Britain", "UK", "English-nation"]
     },
     {
@@ -13810,7 +13819,7 @@ const INKLING_WORDS = [
             "He is studying English literature.",
             "English is spoken in many countries."
         ]
-,
+        ,
         "synonyms": ["British", "language", "Anglo"]
     },
     {
@@ -13823,7 +13832,7 @@ const INKLING_WORDS = [
             "I hope you enjoy the show.",
             "He enjoyed every moment."
         ]
-,
+        ,
         "synonyms": ["relish", "delight-in", "appreciate"]
     },
     {
@@ -13836,7 +13845,7 @@ const INKLING_WORDS = [
             "She was tired enough to sleep.",
             "That is enough noise!"
         ]
-,
+        ,
         "synonyms": ["sufficient", "adequate", "ample"]
     },
     {
@@ -13849,7 +13858,7 @@ const INKLING_WORDS = [
             "He entered the competition.",
             "They entered quietly."
         ]
-,
+        ,
         "synonyms": ["came-in", "walked-in", "joined"]
     },
     {
@@ -13862,7 +13871,7 @@ const INKLING_WORDS = [
             "The entire class passed.",
             "He slept the entire afternoon."
         ]
-,
+        ,
         "synonyms": ["whole", "complete", "total"]
     },
     {
@@ -13875,7 +13884,7 @@ const INKLING_WORDS = [
             "Two plus two equals four.",
             "She shared the cake in equal parts."
         ]
-,
+        ,
         "synonyms": ["same", "even", "fair"]
     },
     {
@@ -13888,7 +13897,7 @@ const INKLING_WORDS = [
             "An equation has two equal sides.",
             "Write an equation for the problem."
         ]
-,
+        ,
         "synonyms": ["formula", "expression", "balance"]
     },
     {
@@ -13901,7 +13910,7 @@ const INKLING_WORDS = [
             "I love autumn, especially the colors.",
             "He is especially good at maths."
         ]
-,
+        ,
         "synonyms": ["particularly", "specifically", "above-all"]
     },
     {
@@ -13914,7 +13923,7 @@ const INKLING_WORDS = [
             "France is in Europe.",
             "Europe has many historic cities."
         ]
-,
+        ,
         "synonyms": ["continent", "Western-world", "EU"]
     },
     {
@@ -13927,7 +13936,7 @@ const INKLING_WORDS = [
             "The floor is not even.",
             "Even a child could do it."
         ]
-,
+        ,
         "synonyms": ["flat", "equal", "still"]
     },
     {
@@ -13940,7 +13949,7 @@ const INKLING_WORDS = [
             "They went for a walk in the evening.",
             "Good evening!"
         ]
-,
+        ,
         "synonyms": ["dusk", "nightfall", "eventide"]
     },
     {
@@ -13953,7 +13962,7 @@ const INKLING_WORDS = [
             "She is the best I have ever seen.",
             "Don't ever give up."
         ]
-,
+        ,
         "synonyms": ["always", "at-any-time", "constantly"]
     },
     {
@@ -13966,7 +13975,7 @@ const INKLING_WORDS = [
             "Every student got a prize.",
             "He knows every word of the song."
         ]
-,
+        ,
         "synonyms": ["each", "all", "any"]
     },
     {
@@ -13979,7 +13988,7 @@ const INKLING_WORDS = [
             "Everyone is welcome.",
             "He made everyone laugh."
         ]
-,
+        ,
         "synonyms": ["everybody", "all-people", "each-person"]
     },
     {
@@ -13992,7 +14001,7 @@ const INKLING_WORDS = [
             "Everything was in order.",
             "He gave everything he had."
         ]
-,
+        ,
         "synonyms": ["all", "the-lot", "entirety"]
     },
     {
@@ -14005,7 +14014,7 @@ const INKLING_WORDS = [
             "She arrived at exactly noon.",
             "He followed the rules exactly."
         ]
-,
+        ,
         "synonyms": ["precisely", "correctly", "accurately"]
     },
     {
@@ -14018,7 +14027,7 @@ const INKLING_WORDS = [
             "She sets a great example.",
             "Here is an example of the rule."
         ]
-,
+        ,
         "synonyms": ["instance", "case", "model"]
     },
     {
@@ -14031,7 +14040,7 @@ const INKLING_WORDS = [
             "She ate everything except the carrots.",
             "It was perfect, except for the weather."
         ]
-,
+        ,
         "synonyms": ["apart-from", "excluding", "save"]
     },
     {
@@ -14044,7 +14053,7 @@ const INKLING_WORDS = [
             "She found the trip very exciting.",
             "He told an exciting story."
         ]
-,
+        ,
         "synonyms": ["thrilling", "exhilarating", "stimulating"]
     },
     {
@@ -14057,7 +14066,7 @@ const INKLING_WORDS = [
             "She exercised every morning.",
             "Running is great exercise."
         ]
-,
+        ,
         "synonyms": ["use", "practice", "exert"]
     },
     {
@@ -14070,7 +14079,7 @@ const INKLING_WORDS = [
             "She expects too much.",
             "He expected a reply."
         ]
-,
+        ,
         "synonyms": ["anticipate", "await", "assume"]
     },
     {
@@ -14083,7 +14092,7 @@ const INKLING_WORDS = [
             "He experienced great joy.",
             "That was an amazing experience."
         ]
-,
+        ,
         "synonyms": ["encounter", "knowledge", "involvement"]
     },
     {
@@ -14096,7 +14105,7 @@ const INKLING_WORDS = [
             "She experimented with new recipes.",
             "The experiment was a great success."
         ]
-,
+        ,
         "synonyms": ["test", "trial", "investigation"]
     },
     {
@@ -14109,7 +14118,7 @@ const INKLING_WORDS = [
             "She explained the rules.",
             "He explained why he was late."
         ]
-,
+        ,
         "synonyms": ["clarify", "describe", "elaborate"]
     },
     {
@@ -14122,7 +14131,7 @@ const INKLING_WORDS = [
             "He took the express train.",
             "It is hard to express feelings."
         ]
-,
+        ,
         "synonyms": ["state", "convey", "utter"]
     },
     {
@@ -14135,7 +14144,7 @@ const INKLING_WORDS = [
             "He rubbed his eyes.",
             "The cat's eyes glowed in the dark."
         ]
-,
+        ,
         "synonyms": ["sight-organs", "pupils", "vision"]
     },
     {
@@ -14148,7 +14157,7 @@ const INKLING_WORDS = [
             "He faced the crowd bravely.",
             "A smile spread across her face."
         ]
-,
+        ,
         "synonyms": ["visage", "front", "confront"]
     },
     {
@@ -14161,7 +14170,7 @@ const INKLING_WORDS = [
             "She checked the facts before writing.",
             "The fact is, we need more time."
         ]
-,
+        ,
         "synonyms": ["truth", "reality", "certainty"]
     },
     {
@@ -14174,7 +14183,7 @@ const INKLING_WORDS = [
             "She worked in one of the factories.",
             "Factories make many products."
         ]
-,
+        ,
         "synonyms": ["plants", "works", "manufacturing-facilities"]
     },
     {
@@ -14187,7 +14196,7 @@ const INKLING_WORDS = [
             "She considered all the factors.",
             "Weather is one of the factors."
         ]
-,
+        ,
         "synonyms": ["elements", "influences", "components"]
     },
     {
@@ -14200,7 +14209,7 @@ const INKLING_WORDS = [
             "They went to the summer fair.",
             "That is not fair!"
         ]
-,
+        ,
         "synonyms": ["just", "equal", "light"]
     },
     {
@@ -14213,7 +14222,7 @@ const INKLING_WORDS = [
             "The leaves fall in autumn.",
             "She caught him before he could fall."
         ]
-,
+        ,
         "synonyms": ["descend", "autumn", "drop"]
     },
     {
@@ -14226,7 +14235,7 @@ const INKLING_WORDS = [
             "They spent time with family over the holidays.",
             "He comes from a big family."
         ]
-,
+        ,
         "synonyms": ["relatives", "kin", "household"]
     },
     {
@@ -14239,7 +14248,7 @@ const INKLING_WORDS = [
             "He visited a famous landmark.",
             "The town is famous for its cheese."
         ]
-,
+        ,
         "synonyms": ["well-known", "celebrated", "renowned"]
     },
     {
@@ -14252,7 +14261,7 @@ const INKLING_WORDS = [
             "She traveled far from home.",
             "How far is it to the beach?"
         ]
-,
+        ,
         "synonyms": ["distant", "remote", "away"]
     },
     {
@@ -14265,7 +14274,7 @@ const INKLING_WORDS = [
             "He farms wheat and barley.",
             "The farm has chickens and cows."
         ]
-,
+        ,
         "synonyms": ["ranch", "estate", "homestead"]
     },
     {
@@ -14278,7 +14287,7 @@ const INKLING_WORDS = [
             "The farmers harvested the crops.",
             "She spoke to local farmers."
         ]
-,
+        ,
         "synonyms": ["growers", "cultivators", "agriculturalists"]
     },
     {
@@ -14291,7 +14300,7 @@ const INKLING_WORDS = [
             "He drove too fast.",
             "The river flows fast here."
         ]
-,
+        ,
         "synonyms": ["quick", "rapid", "swift"]
     },
     {
@@ -14304,7 +14313,7 @@ const INKLING_WORDS = [
             "My father makes great soup.",
             "The father carried his child on his back."
         ]
-,
+        ,
         "synonyms": ["dad", "patriarch", "sire"]
     },
     {
@@ -14317,7 +14326,7 @@ const INKLING_WORDS = [
             "He fears no one.",
             "Fear can hold you back."
         ]
-,
+        ,
         "synonyms": ["terror", "dread", "fright"]
     },
     {
@@ -14330,7 +14339,7 @@ const INKLING_WORDS = [
             "She felt the soft fabric.",
             "I feel very tired today."
         ]
-,
+        ,
         "synonyms": ["sense", "touch", "perceive"]
     },
     {
@@ -14343,7 +14352,7 @@ const INKLING_WORDS = [
             "He was feeling tired.",
             "I have a good feeling about this."
         ]
-,
+        ,
         "synonyms": ["emotion", "sensation", "sense"]
     },
     {
@@ -14356,7 +14365,7 @@ const INKLING_WORDS = [
             "The path was ten feet wide.",
             "His feet were sore from walking."
         ]
-,
+        ,
         "synonyms": ["tootsies", "paws", "foot"]
     },
     {
@@ -14369,7 +14378,7 @@ const INKLING_WORDS = [
             "He fell asleep quickly.",
             "Leaves fell from the tree."
         ]
-,
+        ,
         "synonyms": ["dropped", "fell-down", "tumbled"]
     },
     {
@@ -14382,7 +14391,7 @@ const INKLING_WORDS = [
             "He felt very proud.",
             "The fabric felt very soft."
         ]
-,
+        ,
         "synonyms": ["sensed", "experienced", "touched"]
     },
     {
@@ -14395,7 +14404,7 @@ const INKLING_WORDS = [
             "Only a few people came.",
             "He said a few words."
         ]
-,
+        ,
         "synonyms": ["several", "not-many", "limited"]
     },
     {
@@ -14408,7 +14417,7 @@ const INKLING_WORDS = [
             "She is an expert in her field.",
             "He ran across the open field."
         ]
-,
+        ,
         "synonyms": ["meadow", "domain", "area"]
     },
     {
@@ -14421,7 +14430,7 @@ const INKLING_WORDS = [
             "See fig. three for details.",
             "He had never tried a fig before."
         ]
-,
+        ,
         "synonyms": ["fruit", "tree-fruit", "dried-fruit"]
     },
     {
@@ -14434,7 +14443,7 @@ const INKLING_WORDS = [
             "Don't start a fight.",
             "She fought hard for her rights."
         ]
-,
+        ,
         "synonyms": ["battle", "conflict", "struggle"]
     },
     {
@@ -14447,7 +14456,7 @@ const INKLING_WORDS = [
             "I can't figure it out.",
             "The figure in the distance was tall."
         ]
-,
+        ,
         "synonyms": ["number", "shape", "person"]
     },
     {
@@ -14460,7 +14469,7 @@ const INKLING_WORDS = [
             "The room was filled with laughter.",
             "He filled in the form."
         ]
-,
+        ,
         "synonyms": ["full", "packed", "loaded"]
     },
     {
@@ -14473,7 +14482,7 @@ const INKLING_WORDS = [
             "He finally arrived.",
             "They finally agreed."
         ]
-,
+        ,
         "synonyms": ["ultimately", "lastly", "eventually"]
     },
     {
@@ -14486,7 +14495,7 @@ const INKLING_WORDS = [
             "She tried to find a solution.",
             "He found a coin on the ground."
         ]
-,
+        ,
         "synonyms": ["discover", "locate", "obtain"]
     },
     {
@@ -14499,7 +14508,7 @@ const INKLING_WORDS = [
             "She paid a fine for parking.",
             "Everything will be fine."
         ]
-,
+        ,
         "synonyms": ["good", "penalty", "thin"]
     },
     {
@@ -14512,7 +14521,7 @@ const INKLING_WORDS = [
             "His fingers were cold.",
             "She had paint on her fingers."
         ]
-,
+        ,
         "synonyms": ["digits", "phalanges", "appendages"]
     },
     {
@@ -14525,7 +14534,7 @@ const INKLING_WORDS = [
             "He finished his homework.",
             "Are you finished?"
         ]
-,
+        ,
         "synonyms": ["done", "ended", "completed"]
     },
     {
@@ -14538,7 +14547,7 @@ const INKLING_WORDS = [
             "He was fired from his job.",
             "The fire kept us warm."
         ]
-,
+        ,
         "synonyms": ["blaze", "dismiss", "flame"]
     },
     {
@@ -14551,7 +14560,7 @@ const INKLING_WORDS = [
             "First, wash your hands.",
             "He finished first in the race."
         ]
-,
+        ,
         "synonyms": ["initial", "primary", "top"]
     },
     {
@@ -14564,7 +14573,7 @@ const INKLING_WORDS = [
             "We went fishing on the weekend.",
             "There are colorful fish in the pond."
         ]
-,
+        ,
         "synonyms": ["aquatic-creature", "seafood", "catch"]
     },
     {
@@ -14577,7 +14586,7 @@ const INKLING_WORDS = [
             "Do these shoes fit?",
             "He kept fit by running."
         ]
-,
+        ,
         "synonyms": ["suitable", "healthy", "proper"]
     },
     {
@@ -14590,7 +14599,7 @@ const INKLING_WORDS = [
             "He was only five years old.",
             "We need five more players."
         ]
-,
+        ,
         "synonyms": ["5", "quint", "handful"]
     },
     {
@@ -14603,7 +14612,7 @@ const INKLING_WORDS = [
             "The land is very flat.",
             "He played a flat note."
         ]
-,
+        ,
         "synonyms": ["level", "apartment", "dull"]
     },
     {
@@ -14616,7 +14625,7 @@ const INKLING_WORDS = [
             "The book fell on the floor.",
             "He sat on the floor."
         ]
-,
+        ,
         "synonyms": ["ground", "story", "bottom"]
     },
     {
@@ -14629,7 +14638,7 @@ const INKLING_WORDS = [
             "She got into the flow of writing.",
             "He watched the water flow."
         ]
-,
+        ,
         "synonyms": ["stream", "run", "move-freely"]
     },
     {
@@ -14642,7 +14651,7 @@ const INKLING_WORDS = [
             "The flowers smelled wonderful.",
             "He gave her a bunch of flowers."
         ]
-,
+        ,
         "synonyms": ["blooms", "blossoms", "flora"]
     },
     {
@@ -14655,7 +14664,7 @@ const INKLING_WORDS = [
             "There is a fly on the window.",
             "She wants to fly a plane one day."
         ]
-,
+        ,
         "synonyms": ["soar", "insect", "pilot"]
     },
     {
@@ -14668,7 +14677,7 @@ const INKLING_WORDS = [
             "Follow the instructions carefully.",
             "She followed the path through the forest."
         ]
-,
+        ,
         "synonyms": ["pursue", "imitate", "come-after"]
     },
     {
@@ -14681,7 +14690,7 @@ const INKLING_WORDS = [
             "What is your favorite food?",
             "The food at that restaurant is great."
         ]
-,
+        ,
         "synonyms": ["nourishment", "sustenance", "fare"]
     },
     {
@@ -14694,7 +14703,7 @@ const INKLING_WORDS = [
             "The tree is six feet tall.",
             "He tapped his foot to the music."
         ]
-,
+        ,
         "synonyms": ["base", "lower-limb", "measure"]
     },
     {
@@ -14707,7 +14716,7 @@ const INKLING_WORDS = [
             "We waited for an hour.",
             "She trained for the race."
         ]
-,
+        ,
         "synonyms": ["in-favor-of", "on-behalf-of", "because-of"]
     },
     {
@@ -14720,7 +14729,7 @@ const INKLING_WORDS = [
             "She forced the door open.",
             "He used all his force to lift it."
         ]
-,
+        ,
         "synonyms": ["power", "compel", "strength"]
     },
     {
@@ -14733,7 +14742,7 @@ const INKLING_WORDS = [
             "The forest was quiet and cool.",
             "Many animals live in the forest."
         ]
-,
+        ,
         "synonyms": ["woods", "timber", "woodland"]
     },
     {
@@ -14746,7 +14755,7 @@ const INKLING_WORDS = [
             "Ice can form in cold weather.",
             "The children formed a circle."
         ]
-,
+        ,
         "synonyms": ["shape", "create", "type"]
     },
     {
@@ -14759,7 +14768,7 @@ const INKLING_WORDS = [
             "He is a forward thinker.",
             "Look forward, not back."
         ]
-,
+        ,
         "synonyms": ["ahead", "onward", "advance"]
     },
     {
@@ -14772,7 +14781,7 @@ const INKLING_WORDS = [
             "He found a stray dog.",
             "They found a solution."
         ]
-,
+        ,
         "synonyms": ["discovered", "established", "came-across"]
     },
     {
@@ -14785,7 +14794,7 @@ const INKLING_WORDS = [
             "The table has four legs.",
             "They waited for four hours."
         ]
-,
+        ,
         "synonyms": ["4", "quartet", "quadruple"]
     },
     {
@@ -14798,7 +14807,7 @@ const INKLING_WORDS = [
             "One half is a fraction.",
             "He understood fractions well."
         ]
-,
+        ,
         "synonyms": ["portion", "part", "ratio"]
     },
     {
@@ -14811,7 +14820,7 @@ const INKLING_WORDS = [
             "France is known for its cuisine.",
             "He learned French before visiting France."
         ]
-,
+        ,
         "synonyms": ["French-nation", "Gallic", "European-country"]
     },
     {
@@ -14824,7 +14833,7 @@ const INKLING_WORDS = [
             "She freed the bird from the cage.",
             "He had a free afternoon."
         ]
-,
+        ,
         "synonyms": ["liberate", "no-cost", "unrestricted"]
     },
     {
@@ -14837,7 +14846,7 @@ const INKLING_WORDS = [
             "He ordered French toast.",
             "French food is known worldwide."
         ]
-,
+        ,
         "synonyms": ["Gallic", "from-France", "language"]
     },
     {
@@ -14850,7 +14859,7 @@ const INKLING_WORDS = [
             "The air was fresh and cool.",
             "He started with a fresh page."
         ]
-,
+        ,
         "synonyms": ["new", "clean", "unspoiled"]
     },
     {
@@ -14863,7 +14872,7 @@ const INKLING_WORDS = [
             "They have been friends for years.",
             "Good friends are hard to find."
         ]
-,
+        ,
         "synonyms": ["companions", "allies", "pals"]
     },
     {
@@ -14876,7 +14885,7 @@ const INKLING_WORDS = [
             "I got a letter from him.",
             "We drove from the city."
         ]
-,
+        ,
         "synonyms": ["originating", "away-from", "out-of"]
     },
     {
@@ -14889,7 +14898,7 @@ const INKLING_WORDS = [
             "He answered the front door.",
             "There is a garden at the front of the house."
         ]
-,
+        ,
         "synonyms": ["face", "forward-part", "lead"]
     },
     {
@@ -14898,7 +14907,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Economical with money or food.",
         "sentence": "He led a frugal lifestyle.",
         "hint": "Thrifty."
-,
+        ,
         "synonyms": ["thrifty", "economical", "sparing"]
     },
     {
@@ -14911,7 +14920,7 @@ const INKLING_WORDS = [
             "He picked fruit from the tree.",
             "Fruit is full of vitamins."
         ]
-,
+        ,
         "synonyms": ["produce", "product", "yield"]
     },
     {
@@ -14924,7 +14933,7 @@ const INKLING_WORDS = [
             "She ate until she was full.",
             "He gave her his full attention."
         ]
-,
+        ,
         "synonyms": ["filled", "complete", "satisfied"]
     },
     {
@@ -14937,7 +14946,7 @@ const INKLING_WORDS = [
             "That was a really fun game.",
             "She makes everything fun."
         ]
-,
+        ,
         "synonyms": ["enjoyment", "amusement", "recreation"]
     },
     {
@@ -14950,7 +14959,7 @@ const INKLING_WORDS = [
             "What game do you want to play?",
             "He loves board games."
         ]
-,
+        ,
         "synonyms": ["sport", "match", "play"]
     },
     {
@@ -14963,7 +14972,7 @@ const INKLING_WORDS = [
             "The garden is in full bloom.",
             "He built a pond in the garden."
         ]
-,
+        ,
         "synonyms": ["yard", "plot", "park"]
     },
     {
@@ -14976,7 +14985,7 @@ const INKLING_WORDS = [
             "Oxygen is a gas.",
             "She smelled gas in the kitchen."
         ]
-,
+        ,
         "synonyms": ["fuel", "vapor", "petrol"]
     },
     {
@@ -14989,7 +14998,7 @@ const INKLING_WORDS = [
             "He gave all he had.",
             "They gave us a warm welcome."
         ]
-,
+        ,
         "synonyms": ["donated", "offered", "handed"]
     },
     {
@@ -15002,7 +15011,7 @@ const INKLING_WORDS = [
             "The general gave the order.",
             "She has a general understanding."
         ]
-,
+        ,
         "synonyms": ["common", "broad", "commander"]
     },
     {
@@ -15015,7 +15024,7 @@ const INKLING_WORDS = [
             "She will get better soon.",
             "He got a new bike."
         ]
-,
+        ,
         "synonyms": ["obtain", "acquire", "receive"]
     },
     {
@@ -15028,7 +15037,7 @@ const INKLING_WORDS = [
             "She is a very brave girl.",
             "The girl smiled at her friend."
         ]
-,
+        ,
         "synonyms": ["female-child", "lass", "young-woman"]
     },
     {
@@ -15041,7 +15050,7 @@ const INKLING_WORDS = [
             "She gave him a cookie.",
             "Please give it back."
         ]
-,
+        ,
         "synonyms": ["donate", "hand-over", "grant"]
     },
     {
@@ -15054,7 +15063,7 @@ const INKLING_WORDS = [
             "Be careful, the glass is sharp.",
             "The window is made of glass."
         ]
-,
+        ,
         "synonyms": ["transparent-material", "cup", "mirror"]
     },
     {
@@ -15067,7 +15076,7 @@ const INKLING_WORDS = [
             "He gave thanks to God.",
             "Many people believe in God."
         ]
-,
+        ,
         "synonyms": ["deity", "divine-being", "creator"]
     },
     {
@@ -15080,7 +15089,7 @@ const INKLING_WORDS = [
             "The ring is made of gold.",
             "The leaves turned gold in autumn."
         ]
-,
+        ,
         "synonyms": ["precious-metal", "yellow-metal", "treasure"]
     },
     {
@@ -15093,7 +15102,7 @@ const INKLING_WORDS = [
             "All the cake is gone.",
             "He is long gone."
         ]
-,
+        ,
         "synonyms": ["absent", "left", "departed"]
     },
     {
@@ -15106,7 +15115,7 @@ const INKLING_WORDS = [
             "Have a good day!",
             "That was a really good book."
         ]
-,
+        ,
         "synonyms": ["excellent", "kind", "beneficial"]
     },
     {
@@ -15119,7 +15128,7 @@ const INKLING_WORDS = [
             "He got lost in the forest.",
             "We got ice cream after dinner."
         ]
-,
+        ,
         "synonyms": ["received", "obtained", "became"]
     },
     {
@@ -15132,7 +15141,7 @@ const INKLING_WORDS = [
             "She works for the government.",
             "People voted for a new government."
         ]
-,
+        ,
         "synonyms": ["administration", "state", "authority"]
     },
     {
@@ -15145,7 +15154,7 @@ const INKLING_WORDS = [
             "She lay on the cool grass.",
             "He mowed the grass."
         ]
-,
+        ,
         "synonyms": ["lawn", "meadow", "turf"]
     },
     {
@@ -15158,7 +15167,7 @@ const INKLING_WORDS = [
             "It was a great adventure.",
             "We had a great time."
         ]
-,
+        ,
         "synonyms": ["wonderful", "large", "excellent"]
     },
     {
@@ -15171,7 +15180,7 @@ const INKLING_WORDS = [
             "He ordered Greek salad.",
             "Greek is an ancient language."
         ]
-,
+        ,
         "synonyms": ["Hellenic", "from-Greece", "Grecian"]
     },
     {
@@ -15184,7 +15193,7 @@ const INKLING_WORDS = [
             "The grass is green.",
             "He has a green thumb."
         ]
-,
+        ,
         "synonyms": ["color", "eco-friendly", "nature"]
     },
     {
@@ -15197,7 +15206,7 @@ const INKLING_WORDS = [
             "He grew a beard.",
             "The plant grew very fast."
         ]
-,
+        ,
         "synonyms": ["expanded", "developed", "matured"]
     },
     {
@@ -15210,7 +15219,7 @@ const INKLING_WORDS = [
             "The ground was wet after the rain.",
             "He planted seeds in the ground."
         ]
-,
+        ,
         "synonyms": ["soil", "floor", "basis"]
     },
     {
@@ -15223,7 +15232,7 @@ const INKLING_WORDS = [
             "Group the animals by size.",
             "A group of birds flew past."
         ]
-,
+        ,
         "synonyms": ["set", "cluster", "team"]
     },
     {
@@ -15236,7 +15245,7 @@ const INKLING_WORDS = [
             "She grew tomatoes in her garden.",
             "Children grow so fast."
         ]
-,
+        ,
         "synonyms": ["expand", "develop", "increase"]
     },
     {
@@ -15249,7 +15258,7 @@ const INKLING_WORDS = [
             "She guessed the right answer.",
             "I guess it will be cold."
         ]
-,
+        ,
         "synonyms": ["estimate", "suppose", "conjecture"]
     },
     {
@@ -15262,7 +15271,7 @@ const INKLING_WORDS = [
             "They had a great time.",
             "He had two dogs."
         ]
-,
+        ,
         "synonyms": ["possessed", "experienced", "owned"]
     },
     {
@@ -15275,7 +15284,7 @@ const INKLING_WORDS = [
             "He brushed his hair.",
             "The cat left hair on the sofa."
         ]
-,
+        ,
         "synonyms": ["tresses", "locks", "follicles"]
     },
     {
@@ -15288,7 +15297,7 @@ const INKLING_WORDS = [
             "Half the class was absent.",
             "He filled the glass half full."
         ]
-,
+        ,
         "synonyms": ["semi", "50-percent", "partial"]
     },
     {
@@ -15301,7 +15310,7 @@ const INKLING_WORDS = [
             "Give me your hand.",
             "He waved his hand goodbye."
         ]
-,
+        ,
         "synonyms": ["palm", "worker", "assist"]
     },
     {
@@ -15314,7 +15323,7 @@ const INKLING_WORDS = [
             "It all happened so fast.",
             "She told me what happened."
         ]
-,
+        ,
         "synonyms": ["occurred", "took-place", "came-about"]
     },
     {
@@ -15327,7 +15336,7 @@ const INKLING_WORDS = [
             "I am so happy for you!",
             "He smiled a happy smile."
         ]
-,
+        ,
         "synonyms": ["joyful", "content", "pleased"]
     },
     {
@@ -15340,7 +15349,7 @@ const INKLING_WORDS = [
             "She worked very hard.",
             "The ground was hard after the frost."
         ]
-,
+        ,
         "synonyms": ["difficult", "solid", "firm"]
     },
     {
@@ -15353,7 +15362,7 @@ const INKLING_WORDS = [
             "He has blue eyes.",
             "The dog has a red collar."
         ]
-,
+        ,
         "synonyms": ["owns", "possesses", "holds"]
     },
     {
@@ -15366,7 +15375,7 @@ const INKLING_WORDS = [
             "He put on his hat.",
             "The hat kept the sun off her face."
         ]
-,
+        ,
         "synonyms": ["cap", "headwear", "bonnet"]
     },
     {
@@ -15379,7 +15388,7 @@ const INKLING_WORDS = [
             "They have two cars.",
             "Do you have a pen?"
         ]
-,
+        ,
         "synonyms": ["own", "possess", "hold"]
     },
     {
@@ -15392,7 +15401,7 @@ const INKLING_WORDS = [
             "He is the head of the team.",
             "She bumped her head."
         ]
-,
+        ,
         "synonyms": ["leader", "top", "mind"]
     },
     {
@@ -15405,7 +15414,7 @@ const INKLING_WORDS = [
             "She heard a strange noise.",
             "I could hear them talking upstairs."
         ]
-,
+        ,
         "synonyms": ["listen", "detect-sound", "learn"]
     },
     {
@@ -15418,7 +15427,7 @@ const INKLING_WORDS = [
             "I heard you were moving.",
             "He heard the thunder."
         ]
-,
+        ,
         "synonyms": ["listened", "detected", "found-out"]
     },
     {
@@ -15431,7 +15440,7 @@ const INKLING_WORDS = [
             "She has a kind heart.",
             "He gave it his whole heart."
         ]
-,
+        ,
         "synonyms": ["core", "cardiac-organ", "center"]
     },
     {
@@ -15444,7 +15453,7 @@ const INKLING_WORDS = [
             "Heat the soup gently.",
             "The heat was unbearable."
         ]
-,
+        ,
         "synonyms": ["warmth", "temperature", "intensity"]
     },
     {
@@ -15457,7 +15466,7 @@ const INKLING_WORDS = [
             "She carried a heavy load.",
             "That bag looks too heavy."
         ]
-,
+        ,
         "synonyms": ["weighty", "dense", "serious"]
     },
     {
@@ -15470,7 +15479,7 @@ const INKLING_WORDS = [
             "He held the door open.",
             "They held a meeting."
         ]
-,
+        ,
         "synonyms": ["gripped", "maintained", "kept"]
     },
     {
@@ -15483,7 +15492,7 @@ const INKLING_WORDS = [
             "She always helps others.",
             "I need a little help."
         ]
-,
+        ,
         "synonyms": ["assist", "aid", "support"]
     },
     {
@@ -15496,7 +15505,7 @@ const INKLING_WORDS = [
             "He gave her a flower.",
             "I know her well."
         ]
-,
+        ,
         "synonyms": ["belonging-to-her", "she", "female"]
     },
     {
@@ -15509,7 +15518,7 @@ const INKLING_WORDS = [
             "She has lived here all her life.",
             "Come here, quickly!"
         ]
-,
+        ,
         "synonyms": ["at-this-place", "present", "now"]
     },
     {
@@ -15522,7 +15531,7 @@ const INKLING_WORDS = [
             "He hid the letter.",
             "The cat hid under the bed."
         ]
-,
+        ,
         "synonyms": ["concealed", "kept-secret", "covered"]
     },
     {
@@ -15535,7 +15544,7 @@ const INKLING_WORDS = [
             "She scored high on the test.",
             "It was a high mountain."
         ]
-,
+        ,
         "synonyms": ["tall", "elevated", "great"]
     },
     {
@@ -15548,7 +15557,7 @@ const INKLING_WORDS = [
             "They rolled down the grassy hill.",
             "The house sat on a hill."
         ]
-,
+        ,
         "synonyms": ["rise", "mound", "incline"]
     },
     {
@@ -15561,7 +15570,7 @@ const INKLING_WORDS = [
             "I saw him yesterday.",
             "Tell him to call me."
         ]
-,
+        ,
         "synonyms": ["he", "that-person", "male"]
     },
     {
@@ -15574,7 +15583,7 @@ const INKLING_WORDS = [
             "He hurt himself playing football.",
             "He kept it all to himself."
         ]
-,
+        ,
         "synonyms": ["he-alone", "self", "personally"]
     },
     {
@@ -15587,7 +15596,7 @@ const INKLING_WORDS = [
             "He lost his keys.",
             "His dog is friendly."
         ]
-,
+        ,
         "synonyms": ["belonging-to-him", "male-possessive", "that-man's"]
     },
     {
@@ -15600,7 +15609,7 @@ const INKLING_WORDS = [
             "This building has a great history.",
             "He studied history at school."
         ]
-,
+        ,
         "synonyms": ["past", "record", "chronicle"]
     },
     {
@@ -15613,7 +15622,7 @@ const INKLING_WORDS = [
             "He bought a new hoe.",
             "The farmer worked with a hoe."
         ]
-,
+        ,
         "synonyms": ["garden-tool", "cultivator", "weeder"]
     },
     {
@@ -15626,7 +15635,7 @@ const INKLING_WORDS = [
             "She grabbed hold of the rope.",
             "He held the door open."
         ]
-,
+        ,
         "synonyms": ["grip", "keep", "contain"]
     },
     {
@@ -15639,7 +15648,7 @@ const INKLING_WORDS = [
             "She dug a hole in the garden.",
             "The rabbit went into its hole."
         ]
-,
+        ,
         "synonyms": ["opening", "gap", "cavity"]
     },
     {
@@ -15652,7 +15661,7 @@ const INKLING_WORDS = [
             "There is no place like home.",
             "He made himself at home."
         ]
-,
+        ,
         "synonyms": ["house", "dwelling", "residence"]
     },
     {
@@ -15665,7 +15674,7 @@ const INKLING_WORDS = [
             "She never lost hope.",
             "There is still hope."
         ]
-,
+        ,
         "synonyms": ["wish", "expect", "aspiration"]
     },
     {
@@ -15678,7 +15687,7 @@ const INKLING_WORDS = [
             "The horse galloped across the field.",
             "He fed the horse a carrot."
         ]
-,
+        ,
         "synonyms": ["steed", "stallion", "equine"]
     },
     {
@@ -15691,7 +15700,7 @@ const INKLING_WORDS = [
             "It was a very hot day.",
             "She drank a hot cup of tea."
         ]
-,
+        ,
         "synonyms": ["warm", "fiery", "spicy"]
     },
     {
@@ -15704,7 +15713,7 @@ const INKLING_WORDS = [
             "The drive takes two hours.",
             "He works long hours."
         ]
-,
+        ,
         "synonyms": ["time-units", "periods", "sixty-minutes"]
     },
     {
@@ -15717,7 +15726,7 @@ const INKLING_WORDS = [
             "They built a new house.",
             "The dog sat outside the house."
         ]
-,
+        ,
         "synonyms": ["home", "dwelling", "residence"]
     },
     {
@@ -15730,7 +15739,7 @@ const INKLING_WORDS = [
             "I know how to cook.",
             "Show me how it works."
         ]
-,
+        ,
         "synonyms": ["in-what-way", "by-what-means", "to-what-extent"]
     },
     {
@@ -15743,7 +15752,7 @@ const INKLING_WORDS = [
             "However, I disagree.",
             "You can do it however you like."
         ]
-,
+        ,
         "synonyms": ["but", "though", "yet"]
     },
     {
@@ -15756,7 +15765,7 @@ const INKLING_WORDS = [
             "She made a huge effort.",
             "They lived in a huge house."
         ]
-,
+        ,
         "synonyms": ["enormous", "vast", "gigantic"]
     },
     {
@@ -15769,7 +15778,7 @@ const INKLING_WORDS = [
             "It is a human reaction.",
             "She studies human behavior."
         ]
-,
+        ,
         "synonyms": ["person", "mortal", "mankind"]
     },
     {
@@ -15782,7 +15791,7 @@ const INKLING_WORDS = [
             "A hundred people came.",
             "It costs two hundred pounds."
         ]
-,
+        ,
         "synonyms": ["century", "100", "a-great-many"]
     },
     {
@@ -15795,7 +15804,7 @@ const INKLING_WORDS = [
             "She went job hunting.",
             "He spent weekends hunting."
         ]
-,
+        ,
         "synonyms": ["pursuing", "tracking", "chasing"]
     },
     {
@@ -15808,7 +15817,7 @@ const INKLING_WORDS = [
             "I'll help you with that.",
             "I'll call you later."
         ]
-,
+        ,
         "synonyms": ["I-will", "I-shall", "I-intend-to"]
     },
     {
@@ -15821,7 +15830,7 @@ const INKLING_WORDS = [
             "The pond was covered with ice.",
             "Be careful on the ice."
         ]
-,
+        ,
         "synonyms": ["frozen-water", "frost", "sleet"]
     },
     {
@@ -15834,7 +15843,7 @@ const INKLING_WORDS = [
             "She had a clever idea.",
             "I have no idea what happened."
         ]
-,
+        ,
         "synonyms": ["thought", "concept", "notion"]
     },
     {
@@ -15847,7 +15856,7 @@ const INKLING_WORDS = [
             "She made an important decision.",
             "It is important to be kind."
         ]
-,
+        ,
         "synonyms": ["significant", "vital", "major"]
     },
     {
@@ -15860,7 +15869,7 @@ const INKLING_WORDS = [
             "The screen is twelve inches wide.",
             "He measured it in inches."
         ]
-,
+        ,
         "synonyms": ["units", "measures", "small-lengths"]
     },
     {
@@ -15873,7 +15882,7 @@ const INKLING_WORDS = [
             "The price includes breakfast.",
             "She included everyone in the game."
         ]
-,
+        ,
         "synonyms": ["contain", "consist-of", "incorporate"]
     },
     {
@@ -15886,7 +15895,7 @@ const INKLING_WORDS = [
             "There has been an increase in sales.",
             "He increased the volume."
         ]
-,
+        ,
         "synonyms": ["grow", "rise", "expand"]
     },
     {
@@ -15899,7 +15908,7 @@ const INKLING_WORDS = [
             "They learned about Native Indian history.",
             "The Indian elephant is very large."
         ]
-,
+        ,
         "synonyms": ["from-India", "Native-American", "South-Asian"]
     },
     {
@@ -15912,7 +15921,7 @@ const INKLING_WORDS = [
             "A red light can indicate danger.",
             "She will indicate her choice with a tick."
         ]
-,
+        ,
         "synonyms": ["show", "signal", "point-to"]
     },
     {
@@ -15925,7 +15934,7 @@ const INKLING_WORDS = [
             "The industry grew quickly.",
             "He studied local industry."
         ]
-,
+        ,
         "synonyms": ["business", "manufacturing", "sector"]
     },
     {
@@ -15934,7 +15943,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Certain to happen; unavoidable.",
         "sentence": "Death is inevitable.",
         "hint": "Unavoidable."
-,
+        ,
         "synonyms": ["unavoidable", "certain", "inescapable"]
     },
     {
@@ -15947,7 +15956,7 @@ const INKLING_WORDS = [
             "Can I get some information?",
             "He had all the information he needed."
         ]
-,
+        ,
         "synonyms": ["data", "knowledge", "facts"]
     },
     {
@@ -15960,7 +15969,7 @@ const INKLING_WORDS = [
             "She wasn't afraid of insects.",
             "Insects pollinate flowers."
         ]
-,
+        ,
         "synonyms": ["bugs", "arthropods", "creepy-crawlies"]
     },
     {
@@ -15973,7 +15982,7 @@ const INKLING_WORDS = [
             "She found it inside the box.",
             "It is warmer inside."
         ]
-,
+        ,
         "synonyms": ["within", "interior", "inner"]
     },
     {
@@ -15986,7 +15995,7 @@ const INKLING_WORDS = [
             "He took the bus instead of driving.",
             "Can I have this instead?"
         ]
-,
+        ,
         "synonyms": ["in-place-of", "as-an-alternative", "alternatively"]
     },
     {
@@ -15999,7 +16008,7 @@ const INKLING_WORDS = [
             "The surgeon's instruments were laid out.",
             "Musical instruments fill the room."
         ]
-,
+        ,
         "synonyms": ["tools", "devices", "apparatus"]
     },
     {
@@ -16012,7 +16021,7 @@ const INKLING_WORDS = [
             "Does this interest you?",
             "He showed great interest in the subject."
         ]
-,
+        ,
         "synonyms": ["curiosity", "stake", "fascination"]
     },
     {
@@ -16025,7 +16034,7 @@ const INKLING_WORDS = [
             "She is a very interesting person.",
             "He found the book very interesting."
         ]
-,
+        ,
         "synonyms": ["engaging", "absorbing", "intriguing"]
     },
     {
@@ -16038,7 +16047,7 @@ const INKLING_WORDS = [
             "He jumped into the pool.",
             "Pour the milk into the cup."
         ]
-,
+        ,
         "synonyms": ["inside", "toward", "within"]
     },
     {
@@ -16051,7 +16060,7 @@ const INKLING_WORDS = [
             "The gate is made of iron.",
             "He has an iron will."
         ]
-,
+        ,
         "synonyms": ["metal", "press", "firm"]
     },
     {
@@ -16064,7 +16073,7 @@ const INKLING_WORDS = [
             "They sailed to the island.",
             "The island had beautiful beaches."
         ]
-,
+        ,
         "synonyms": ["isle", "land-mass", "atoll"]
     },
     {
@@ -16077,7 +16086,7 @@ const INKLING_WORDS = [
             "She isn't coming today.",
             "That isn't the right answer."
         ]
-,
+        ,
         "synonyms": ["is-not", "isn't-so", "not-true"]
     },
     {
@@ -16090,7 +16099,7 @@ const INKLING_WORDS = [
             "It's going to be fun!",
             "It's time to go home."
         ]
-,
+        ,
         "synonyms": ["it-is", "it-has", "belonging-to-it"]
     },
     {
@@ -16103,7 +16112,7 @@ const INKLING_WORDS = [
             "The tree lost its leaves.",
             "The book has its own charm."
         ]
-,
+        ,
         "synonyms": ["belonging-to-it", "of-it", "possessive-it"]
     },
     {
@@ -16116,7 +16125,7 @@ const INKLING_WORDS = [
             "The door opened by itself.",
             "The problem solved itself."
         ]
-,
+        ,
         "synonyms": ["itself", "alone", "by-itself"]
     },
     {
@@ -16129,7 +16138,7 @@ const INKLING_WORDS = [
             "He loves Japanese food.",
             "Japanese art is very beautiful."
         ]
-,
+        ,
         "synonyms": ["from-Japan", "East-Asian", "Nihon"]
     },
     {
@@ -16142,7 +16151,7 @@ const INKLING_WORDS = [
             "He did a fantastic job.",
             "Getting a job was hard."
         ]
-,
+        ,
         "synonyms": ["work", "occupation", "task"]
     },
     {
@@ -16155,7 +16164,7 @@ const INKLING_WORDS = [
             "He joined the library.",
             "They joined hands."
         ]
-,
+        ,
         "synonyms": ["connected", "merged", "linked"]
     },
     {
@@ -16168,7 +16177,7 @@ const INKLING_WORDS = [
             "He jumped over the fence.",
             "The frog jumped into the pond."
         ]
-,
+        ,
         "synonyms": ["leaped", "sprang", "vaulted"]
     },
     {
@@ -16181,7 +16190,7 @@ const INKLING_WORDS = [
             "It is just one block away.",
             "That is not just."
         ]
-,
+        ,
         "synonyms": ["fair", "merely", "recently"]
     },
     {
@@ -16194,7 +16203,7 @@ const INKLING_WORDS = [
             "She kept her promise.",
             "He tries to keep fit."
         ]
-,
+        ,
         "synonyms": ["hold", "maintain", "retain"]
     },
     {
@@ -16207,7 +16216,7 @@ const INKLING_WORDS = [
             "He kept all her letters.",
             "They kept going through the storm."
         ]
-,
+        ,
         "synonyms": ["maintained", "held", "preserved"]
     },
     {
@@ -16220,7 +16229,7 @@ const INKLING_WORDS = [
             "That is the key point.",
             "He found the key under the mat."
         ]
-,
+        ,
         "synonyms": ["essential", "answer", "clue"]
     },
     {
@@ -16233,7 +16242,7 @@ const INKLING_WORDS = [
             "He killed the spider.",
             "The storm killed many trees."
         ]
-,
+        ,
         "synonyms": ["slain", "slain", "eliminated"]
     },
     {
@@ -16246,7 +16255,7 @@ const INKLING_WORDS = [
             "What kind of music do you like?",
             "He did a kind thing for his neighbor."
         ]
-,
+        ,
         "synonyms": ["type", "sort", "generous"]
     },
     {
@@ -16259,7 +16268,7 @@ const INKLING_WORDS = [
             "She curtsied before the king.",
             "The king declared a holiday."
         ]
-,
+        ,
         "synonyms": ["monarch", "ruler", "sovereign"]
     },
     {
@@ -16272,7 +16281,7 @@ const INKLING_WORDS = [
             "He knew she was upset.",
             "I knew something was wrong."
         ]
-,
+        ,
         "synonyms": ["understood", "was-aware", "recognized"]
     },
     {
@@ -16285,7 +16294,7 @@ const INKLING_WORDS = [
             "I know her from school.",
             "She does not know his name."
         ]
-,
+        ,
         "synonyms": ["understand", "be-aware", "recognize"]
     },
     {
@@ -16298,7 +16307,7 @@ const INKLING_WORDS = [
             "He has known her for years.",
             "It is widely known."
         ]
-,
+        ,
         "synonyms": ["recognized", "familiar", "established"]
     },
     {
@@ -16311,7 +16320,7 @@ const INKLING_WORDS = [
             "She was a true lady.",
             "Ladies and gentlemen, please be seated."
         ]
-,
+        ,
         "synonyms": ["woman", "gentlewoman", "dame"]
     },
     {
@@ -16324,7 +16333,7 @@ const INKLING_WORDS = [
             "The lake is frozen in winter.",
             "He fished at the lake."
         ]
-,
+        ,
         "synonyms": ["pond", "reservoir", "body-of-water"]
     },
     {
@@ -16337,7 +16346,7 @@ const INKLING_WORDS = [
             "She owns a piece of land.",
             "They traveled over land and sea."
         ]
-,
+        ,
         "synonyms": ["ground", "territory", "arrive"]
     },
     {
@@ -16350,7 +16359,7 @@ const INKLING_WORDS = [
             "Language is a powerful tool.",
             "He is learning a new language."
         ]
-,
+        ,
         "synonyms": ["tongue", "speech", "dialect"]
     },
     {
@@ -16363,7 +16372,7 @@ const INKLING_WORDS = [
             "A large crowd gathered.",
             "She carried a large bag."
         ]
-,
+        ,
         "synonyms": ["big", "massive", "extensive"]
     },
     {
@@ -16376,7 +16385,7 @@ const INKLING_WORDS = [
             "This is the last piece of cake.",
             "I saw her last week."
         ]
-,
+        ,
         "synonyms": ["final", "endure", "most-recent"]
     },
     {
@@ -16389,7 +16398,7 @@ const INKLING_WORDS = [
             "He always works late.",
             "Don't be late for dinner."
         ]
-,
+        ,
         "synonyms": ["delayed", "recent", "overdue"]
     },
     {
@@ -16402,7 +16411,7 @@ const INKLING_WORDS = [
             "They all laughed together.",
             "He laughed until he cried."
         ]
-,
+        ,
         "synonyms": ["chuckled", "giggled", "tittered"]
     },
     {
@@ -16415,7 +16424,7 @@ const INKLING_WORDS = [
             "She studied law at university.",
             "There is a law against it."
         ]
-,
+        ,
         "synonyms": ["rule", "regulation", "statute"]
     },
     {
@@ -16428,7 +16437,7 @@ const INKLING_WORDS = [
             "The dog lay in the shade.",
             "He lay the book down carefully."
         ]
-,
+        ,
         "synonyms": ["place", "set-down", "rest"]
     },
     {
@@ -16441,7 +16450,7 @@ const INKLING_WORDS = [
             "Lead is a heavy metal.",
             "He took the lead in the race."
         ]
-,
+        ,
         "synonyms": ["guide", "precede", "direct"]
     },
     {
@@ -16454,7 +16463,7 @@ const INKLING_WORDS = [
             "You can learn from mistakes.",
             "He learned to ride a bike."
         ]
-,
+        ,
         "synonyms": ["study", "discover", "acquire"]
     },
     {
@@ -16467,7 +16476,7 @@ const INKLING_WORDS = [
             "At least try.",
             "That is the least helpful thing to say."
         ]
-,
+        ,
         "synonyms": ["minimum", "fewest", "slightest"]
     },
     {
@@ -16480,7 +16489,7 @@ const INKLING_WORDS = [
             "Don't forget to leave a note.",
             "He leaves for work at seven."
         ]
-,
+        ,
         "synonyms": ["depart", "exit", "abandon"]
     },
     {
@@ -16493,7 +16502,7 @@ const INKLING_WORDS = [
             "He led the way home.",
             "She was led to her seat."
         ]
-,
+        ,
         "synonyms": ["guided", "directed", "piloted"]
     },
     {
@@ -16506,7 +16515,7 @@ const INKLING_WORDS = [
             "She left her hat at school.",
             "He sat to my left."
         ]
-,
+        ,
         "synonyms": ["departed", "remaining", "direction"]
     },
     {
@@ -16519,7 +16528,7 @@ const INKLING_WORDS = [
             "The table has four legs.",
             "He crossed his legs."
         ]
-,
+        ,
         "synonyms": ["limbs", "lower-limbs", "walking-limbs"]
     },
     {
@@ -16532,7 +16541,7 @@ const INKLING_WORDS = [
             "The length of the film was two hours.",
             "She walked the full length of the beach."
         ]
-,
+        ,
         "synonyms": ["distance", "extent", "measurement"]
     },
     {
@@ -16545,7 +16554,7 @@ const INKLING_WORDS = [
             "Try to make less noise.",
             "The walk took less time than expected."
         ]
-,
+        ,
         "synonyms": ["fewer", "smaller", "not-as-much"]
     },
     {
@@ -16558,7 +16567,7 @@ const INKLING_WORDS = [
             "She let the cat in.",
             "He wouldn't let go."
         ]
-,
+        ,
         "synonyms": ["allow", "permit", "rent"]
     },
     {
@@ -16571,7 +16580,7 @@ const INKLING_WORDS = [
             "Let's try that again.",
             "Let's eat."
         ]
-,
+        ,
         "synonyms": ["let-us", "shall-we", "come-on"]
     },
     {
@@ -16584,7 +16593,7 @@ const INKLING_WORDS = [
             "Write a capital letter at the start.",
             "The letter A starts many words."
         ]
-,
+        ,
         "synonyms": ["missive", "character", "note"]
     },
     {
@@ -16597,7 +16606,7 @@ const INKLING_WORDS = [
             "The table is not level.",
             "He was at an advanced level."
         ]
-,
+        ,
         "synonyms": ["even", "floor", "stage"]
     },
     {
@@ -16610,7 +16619,7 @@ const INKLING_WORDS = [
             "He told a lie.",
             "She lay down on the grass."
         ]
-,
+        ,
         "synonyms": ["recline", "falsehood", "be-situated"]
     },
     {
@@ -16623,7 +16632,7 @@ const INKLING_WORDS = [
             "Life is full of surprises.",
             "He saved the animal's life."
         ]
-,
+        ,
         "synonyms": ["existence", "vitality", "living"]
     },
     {
@@ -16636,7 +16645,7 @@ const INKLING_WORDS = [
             "He lifted her spirits.",
             "The fog lifted by noon."
         ]
-,
+        ,
         "synonyms": ["raised", "elevated", "hoisted"]
     },
     {
@@ -16649,7 +16658,7 @@ const INKLING_WORDS = [
             "The bag is very light.",
             "She lit the candle."
         ]
-,
+        ,
         "synonyms": ["luminosity", "bright", "gentle"]
     },
     {
@@ -16662,7 +16671,7 @@ const INKLING_WORDS = [
             "I like chocolate.",
             "Do you like music?"
         ]
-,
+        ,
         "synonyms": ["similar", "enjoy", "such-as"]
     },
     {
@@ -16675,7 +16684,7 @@ const INKLING_WORDS = [
             "There was a long line at the store.",
             "She lined up the jars neatly."
         ]
-,
+        ,
         "synonyms": ["row", "mark", "boundary"]
     },
     {
@@ -16688,7 +16697,7 @@ const INKLING_WORDS = [
             "List all the things you need.",
             "Cross items off the list."
         ]
-,
+        ,
         "synonyms": ["catalog", "series", "enumerate"]
     },
     {
@@ -16701,7 +16710,7 @@ const INKLING_WORDS = [
             "She loves to listen to music.",
             "He listened without saying a word."
         ]
-,
+        ,
         "synonyms": ["hear", "pay-attention", "heed"]
     },
     {
@@ -16714,7 +16723,7 @@ const INKLING_WORDS = [
             "I am a little tired.",
             "He ate only a little."
         ]
-,
+        ,
         "synonyms": ["small", "minor", "few"]
     },
     {
@@ -16727,7 +16736,7 @@ const INKLING_WORDS = [
             "We watched the live concert.",
             "Plants need water to live."
         ]
-,
+        ,
         "synonyms": ["exist", "reside", "breathe"]
     },
     {
@@ -16740,7 +16749,7 @@ const INKLING_WORDS = [
             "The school is located near the park.",
             "He located the missing file."
         ]
-,
+        ,
         "synonyms": ["situated", "placed", "positioned"]
     },
     {
@@ -16753,7 +16762,7 @@ const INKLING_WORDS = [
             "She has long hair.",
             "We waited a long time."
         ]
-,
+        ,
         "synonyms": ["extended", "lengthy", "yearn"]
     },
     {
@@ -16766,7 +16775,7 @@ const INKLING_WORDS = [
             "Take a look at this.",
             "She gave him a long look."
         ]
-,
+        ,
         "synonyms": ["see", "appear", "gaze"]
     },
     {
@@ -16779,7 +16788,7 @@ const INKLING_WORDS = [
             "He lost his keys.",
             "The dog was lost for two days."
         ]
-,
+        ,
         "synonyms": ["misplaced", "defeated", "confused"]
     },
     {
@@ -16792,7 +16801,7 @@ const INKLING_WORDS = [
             "There was a lot to do.",
             "He bought an empty lot."
         ]
-,
+        ,
         "synonyms": ["many", "plot", "bunch"]
     },
     {
@@ -16805,7 +16814,7 @@ const INKLING_WORDS = [
             "He has a loud laugh.",
             "She spoke in a loud voice."
         ]
-,
+        ,
         "synonyms": ["noisy", "boisterous", "strong"]
     },
     {
@@ -16818,7 +16827,7 @@ const INKLING_WORDS = [
             "I love sunny days.",
             "He smiled with love."
         ]
-,
+        ,
         "synonyms": ["affection", "adore", "cherish"]
     },
     {
@@ -16831,7 +16840,7 @@ const INKLING_WORDS = [
             "She spoke in a low voice.",
             "The river is very low this year."
         ]
-,
+        ,
         "synonyms": ["short", "quiet", "inferior"]
     },
     {
@@ -16844,7 +16853,7 @@ const INKLING_WORDS = [
             "She used the coffee machine.",
             "He fixed the machine himself."
         ]
-,
+        ,
         "synonyms": ["device", "mechanism", "apparatus"]
     },
     {
@@ -16857,7 +16866,7 @@ const INKLING_WORDS = [
             "He made a big mistake.",
             "They made a new rule."
         ]
-,
+        ,
         "synonyms": ["created", "built", "caused"]
     },
     {
@@ -16870,7 +16879,7 @@ const INKLING_WORDS = [
             "She found the main entrance.",
             "He waited on the main road."
         ]
-,
+        ,
         "synonyms": ["primary", "chief", "principal"]
     },
     {
@@ -16883,7 +16892,7 @@ const INKLING_WORDS = [
             "He studied music as his major.",
             "It was a major event."
         ]
-,
+        ,
         "synonyms": ["large", "important", "key"]
     },
     {
@@ -16896,7 +16905,7 @@ const INKLING_WORDS = [
             "She can make her own clothes.",
             "He made a paper plane."
         ]
-,
+        ,
         "synonyms": ["create", "produce", "cause"]
     },
     {
@@ -16909,7 +16918,7 @@ const INKLING_WORDS = [
             "He met her at the mall.",
             "The mall was very busy on Saturday."
         ]
-,
+        ,
         "synonyms": ["shopping-center", "plaza", "arcade"]
     },
     {
@@ -16922,7 +16931,7 @@ const INKLING_WORDS = [
             "How many apples are left?",
             "She has many friends."
         ]
-,
+        ,
         "synonyms": ["numerous", "multiple", "plenty"]
     },
     {
@@ -16935,7 +16944,7 @@ const INKLING_WORDS = [
             "He mapped the new hiking trail.",
             "The map showed the whole city."
         ]
-,
+        ,
         "synonyms": ["chart", "diagram", "plan"]
     },
     {
@@ -16948,7 +16957,7 @@ const INKLING_WORDS = [
             "March is the third month.",
             "He marched off proudly."
         ]
-,
+        ,
         "synonyms": ["walk", "advance", "parade"]
     },
     {
@@ -16961,7 +16970,7 @@ const INKLING_WORDS = [
             "Mark the spot with an X.",
             "There was a mark on the wall."
         ]
-,
+        ,
         "synonyms": ["sign", "score", "indicate"]
     },
     {
@@ -16974,7 +16983,7 @@ const INKLING_WORDS = [
             "These socks don't match.",
             "He struck a match."
         ]
-,
+        ,
         "synonyms": ["equal", "correspond", "pair"]
     },
     {
@@ -16987,7 +16996,7 @@ const INKLING_WORDS = [
             "She chose a soft material.",
             "The material was not relevant."
         ]
-,
+        ,
         "synonyms": ["substance", "fabric", "matter"]
     },
     {
@@ -17000,7 +17009,7 @@ const INKLING_WORDS = [
             "What is the matter?",
             "All matter takes up space."
         ]
-,
+        ,
         "synonyms": ["issue", "substance", "importance"]
     },
     {
@@ -17013,7 +17022,7 @@ const INKLING_WORDS = [
             "It may rain today.",
             "You may leave when you're done."
         ]
-,
+        ,
         "synonyms": ["might", "can", "permission"]
     },
     {
@@ -17026,7 +17035,7 @@ const INKLING_WORDS = [
             "She said maybe.",
             "Maybe we should try again."
         ]
-,
+        ,
         "synonyms": ["perhaps", "possibly", "conceivably"]
     },
     {
@@ -17039,7 +17048,7 @@ const INKLING_WORDS = [
             "She found the means to solve it.",
             "Hard work means success."
         ]
-,
+        ,
         "synonyms": ["method", "implies", "resources"]
     },
     {
@@ -17052,7 +17061,7 @@ const INKLING_WORDS = [
             "Please take the measurements.",
             "He used a ruler to measure the line."
         ]
-,
+        ,
         "synonyms": ["gauge", "quantity", "assess"]
     },
     {
@@ -17065,7 +17074,7 @@ const INKLING_WORDS = [
             "He cooked the meat slowly.",
             "The meat was very tender."
         ]
-,
+        ,
         "synonyms": ["flesh", "protein", "cut"]
     },
     {
@@ -17078,7 +17087,7 @@ const INKLING_WORDS = [
             "She met her best friend at school.",
             "It is nice to meet you."
         ]
-,
+        ,
         "synonyms": ["encounter", "join", "gather"]
     },
     {
@@ -17091,7 +17100,7 @@ const INKLING_WORDS = [
             "He whistled a cheerful melody.",
             "The melody stayed in her head."
         ]
-,
+        ,
         "synonyms": ["tune", "song", "refrain"]
     },
     {
@@ -17104,7 +17113,7 @@ const INKLING_WORDS = [
             "She is one of the club's members.",
             "The members voted for a change."
         ]
-,
+        ,
         "synonyms": ["participants", "parts", "associates"]
     },
     {
@@ -17117,7 +17126,7 @@ const INKLING_WORDS = [
             "The men played football.",
             "Two men stood at the door."
         ]
-,
+        ,
         "synonyms": ["males", "mankind", "gentlemen"]
     },
     {
@@ -17130,7 +17139,7 @@ const INKLING_WORDS = [
             "She found a piece of metal.",
             "Metal conducts electricity."
         ]
-,
+        ,
         "synonyms": ["ore", "alloy", "element"]
     },
     {
@@ -17143,7 +17152,7 @@ const INKLING_WORDS = [
             "Try a different method.",
             "What method do you use?"
         ]
-,
+        ,
         "synonyms": ["approach", "way", "technique"]
     },
     {
@@ -17152,7 +17161,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Showing great attention to detail.",
         "sentence": "He was meticulous in his work.",
         "hint": "Careful."
-,
+        ,
         "synonyms": ["careful", "thorough", "precise"]
     },
     {
@@ -17165,7 +17174,7 @@ const INKLING_WORDS = [
             "He sat in the middle seat.",
             "The middle section was the longest."
         ]
-,
+        ,
         "synonyms": ["center", "amid", "intermediate"]
     },
     {
@@ -17178,7 +17187,7 @@ const INKLING_WORDS = [
             "She tried with all her might.",
             "He might be home by now."
         ]
-,
+        ,
         "synonyms": ["power", "may", "strength"]
     },
     {
@@ -17191,7 +17200,7 @@ const INKLING_WORDS = [
             "We drove for twenty miles.",
             "The beach is half a mile away."
         ]
-,
+        ,
         "synonyms": ["distance", "measure", "unit"]
     },
     {
@@ -17204,7 +17213,7 @@ const INKLING_WORDS = [
             "Cows produce milk.",
             "He added milk to the tea."
         ]
-,
+        ,
         "synonyms": ["dairy", "liquid", "feed"]
     },
     {
@@ -17217,7 +17226,7 @@ const INKLING_WORDS = [
             "She sold a million copies.",
             "He won a million pounds."
         ]
-,
+        ,
         "synonyms": ["1000-thousand", "large-number", "mega"]
     },
     {
@@ -17230,7 +17239,7 @@ const INKLING_WORDS = [
             "Do you mind if I sit here?",
             "Keep an open mind."
         ]
-,
+        ,
         "synonyms": ["intellect", "brain", "think"]
     },
     {
@@ -17243,7 +17252,7 @@ const INKLING_WORDS = [
             "He works in a coal mine.",
             "Is this chair mine?"
         ]
-,
+        ,
         "synonyms": ["own", "excavate", "dig"]
     },
     {
@@ -17256,7 +17265,7 @@ const INKLING_WORDS = [
             "She waited for a few minutes.",
             "He ran the mile in six minutes."
         ]
-,
+        ,
         "synonyms": ["record", "moments", "notes"]
     },
     {
@@ -17269,7 +17278,7 @@ const INKLING_WORDS = [
             "She missed the bus.",
             "Good morning, Miss Smith."
         ]
-,
+        ,
         "synonyms": ["fail-to-hit", "long-for", "mistake"]
     },
     {
@@ -17282,7 +17291,7 @@ const INKLING_WORDS = [
             "He drives a modern car.",
             "The building has a modern design."
         ]
-,
+        ,
         "synonyms": ["contemporary", "current", "up-to-date"]
     },
     {
@@ -17295,7 +17304,7 @@ const INKLING_WORDS = [
             "She studied molecules in chemistry.",
             "Molecules are too tiny to see."
         ]
-,
+        ,
         "synonyms": ["particles", "atoms", "compounds"]
     },
     {
@@ -17308,7 +17317,7 @@ const INKLING_WORDS = [
             "That was a special moment.",
             "Just a moment, please."
         ]
-,
+        ,
         "synonyms": ["instant", "occasion", "second"]
     },
     {
@@ -17321,7 +17330,7 @@ const INKLING_WORDS = [
             "Do you have any money?",
             "Money doesn't grow on trees."
         ]
-,
+        ,
         "synonyms": ["currency", "funds", "cash"]
     },
     {
@@ -17334,7 +17343,7 @@ const INKLING_WORDS = [
             "The project took many months.",
             "There are twelve months in a year."
         ]
-,
+        ,
         "synonyms": ["periods", "time-units", "twelve"]
     },
     {
@@ -17347,7 +17356,7 @@ const INKLING_WORDS = [
             "She gazed at the full moon.",
             "A full moon lights up the night."
         ]
-,
+        ,
         "synonyms": ["lunar", "satellite", "crescent"]
     },
     {
@@ -17360,7 +17369,7 @@ const INKLING_WORDS = [
             "She works more than anyone.",
             "We need more time."
         ]
-,
+        ,
         "synonyms": ["additional", "extra", "further"]
     },
     {
@@ -17373,7 +17382,7 @@ const INKLING_WORDS = [
             "Good morning!",
             "He jogs in the morning."
         ]
-,
+        ,
         "synonyms": ["dawn", "early-day", "daybreak"]
     },
     {
@@ -17386,7 +17395,7 @@ const INKLING_WORDS = [
             "She was the most helpful.",
             "I ate the most cake."
         ]
-,
+        ,
         "synonyms": ["greatest", "majority", "maximum"]
     },
     {
@@ -17399,7 +17408,7 @@ const INKLING_WORDS = [
             "She is a great mother.",
             "The mother bird fed her chicks."
         ]
-,
+        ,
         "synonyms": ["mum", "mama", "matriarch"]
     },
     {
@@ -17412,7 +17421,7 @@ const INKLING_WORDS = [
             "She hiked through the mountains.",
             "The view of the mountains was stunning."
         ]
-,
+        ,
         "synonyms": ["peaks", "highlands", "ranges"]
     },
     {
@@ -17425,7 +17434,7 @@ const INKLING_WORDS = [
             "Don't talk with your mouth full.",
             "He had a big smile on his mouth."
         ]
-,
+        ,
         "synonyms": ["opening", "lips", "oral-cavity"]
     },
     {
@@ -17438,7 +17447,7 @@ const INKLING_WORDS = [
             "They are moving to a new house.",
             "Don't move a muscle."
         ]
-,
+        ,
         "synonyms": ["shift", "advance", "motivate"]
     },
     {
@@ -17451,7 +17460,7 @@ const INKLING_WORDS = [
             "He joined the environmental movement.",
             "Every movement was graceful."
         ]
-,
+        ,
         "synonyms": ["motion", "shift", "campaign"]
     },
     {
@@ -17464,7 +17473,7 @@ const INKLING_WORDS = [
             "Thank you so much.",
             "How much does it cost?"
         ]
-,
+        ,
         "synonyms": ["many", "greatly", "considerably"]
     },
     {
@@ -17477,7 +17486,7 @@ const INKLING_WORDS = [
             "What kind of music do you like?",
             "The music at the party was great."
         ]
-,
+        ,
         "synonyms": ["sound", "melody", "harmony"]
     },
     {
@@ -17490,7 +17499,7 @@ const INKLING_WORDS = [
             "She must be very tired.",
             "We must leave by noon."
         ]
-,
+        ,
         "synonyms": ["have-to", "need", "required"]
     },
     {
@@ -17503,7 +17512,7 @@ const INKLING_WORDS = [
             "She named her cat Snowflake.",
             "His name is on the list."
         ]
-,
+        ,
         "synonyms": ["title", "identity", "call"]
     },
     {
@@ -17516,7 +17525,7 @@ const INKLING_WORDS = [
             "The whole nation watched the event.",
             "A nation needs strong leaders."
         ]
-,
+        ,
         "synonyms": ["country", "state", "people"]
     },
     {
@@ -17529,7 +17538,7 @@ const INKLING_WORDS = [
             "Honey is a natural sweetener.",
             "It is natural to feel nervous."
         ]
-,
+        ,
         "synonyms": ["innate", "organic", "normal"]
     },
     {
@@ -17542,7 +17551,7 @@ const INKLING_WORDS = [
             "The store is very near.",
             "Is the beach near here?"
         ]
-,
+        ,
         "synonyms": ["close", "beside", "adjacent"]
     },
     {
@@ -17555,7 +17564,7 @@ const INKLING_WORDS = [
             "Is it necessary to go?",
             "She brought only what was necessary."
         ]
-,
+        ,
         "synonyms": ["essential", "required", "vital"]
     },
     {
@@ -17568,7 +17577,7 @@ const INKLING_WORDS = [
             "We need more water.",
             "She has all she needs."
         ]
-,
+        ,
         "synonyms": ["require", "want", "must-have"]
     },
     {
@@ -17581,7 +17590,7 @@ const INKLING_WORDS = [
             "Never give up.",
             "I will never forget that day."
         ]
-,
+        ,
         "synonyms": ["not-ever", "at-no-time", "not-once"]
     },
     {
@@ -17594,7 +17603,7 @@ const INKLING_WORDS = [
             "I started a new book.",
             "The new student joined our class."
         ]
-,
+        ,
         "synonyms": ["fresh", "novel", "recent"]
     },
     {
@@ -17607,7 +17616,7 @@ const INKLING_WORDS = [
             "Next, add the eggs.",
             "I will see you next week."
         ]
-,
+        ,
         "synonyms": ["following", "adjacent", "upcoming"]
     },
     {
@@ -17620,7 +17629,7 @@ const INKLING_WORDS = [
             "It was a quiet night.",
             "The stars shone all night long."
         ]
-,
+        ,
         "synonyms": ["dark", "evening", "nocturnal"]
     },
     {
@@ -17633,7 +17642,7 @@ const INKLING_WORDS = [
             "The north wind is cold.",
             "They live in north Wales."
         ]
-,
+        ,
         "synonyms": ["direction", "polar", "upward"]
     },
     {
@@ -17646,7 +17655,7 @@ const INKLING_WORDS = [
             "The northern lights are beautiful.",
             "He came from northern England."
         ]
-,
+        ,
         "synonyms": ["northern-region", "upper", "boreal"]
     },
     {
@@ -17659,7 +17668,7 @@ const INKLING_WORDS = [
             "He blew his nose.",
             "The dog sniffed with its nose."
         ]
-,
+        ,
         "synonyms": ["snout", "nasal", "smell-organ"]
     },
     {
@@ -17672,7 +17681,7 @@ const INKLING_WORDS = [
             "That is not correct.",
             "She did not come."
         ]
-,
+        ,
         "synonyms": ["no", "negative", "opposite"]
     },
     {
@@ -17685,7 +17694,7 @@ const INKLING_WORDS = [
             "He played the wrong note.",
             "Please note the time carefully."
         ]
-,
+        ,
         "synonyms": ["notice", "record", "sound"]
     },
     {
@@ -17698,7 +17707,7 @@ const INKLING_WORDS = [
             "She said nothing.",
             "He did nothing all day."
         ]
-,
+        ,
         "synonyms": ["nil", "zero", "void"]
     },
     {
@@ -17711,7 +17720,7 @@ const INKLING_WORDS = [
             "She put up a notice on the board.",
             "He noticed a strange smell."
         ]
-,
+        ,
         "synonyms": ["observe", "sign", "announcement"]
     },
     {
@@ -17724,7 +17733,7 @@ const INKLING_WORDS = [
             "She circled every noun.",
             "A noun can be a person, place, or thing."
         ]
-,
+        ,
         "synonyms": ["thing-word", "naming-word", "substantive"]
     },
     {
@@ -17737,7 +17746,7 @@ const INKLING_WORDS = [
             "Now is a good time to start.",
             "Do it now, please."
         ]
-,
+        ,
         "synonyms": ["present", "at-this-moment", "immediately"]
     },
     {
@@ -17750,7 +17759,7 @@ const INKLING_WORDS = [
             "What is your phone number?",
             "A large number of people came."
         ]
-,
+        ,
         "synonyms": ["digit", "quantity", "numeral"]
     },
     {
@@ -17763,7 +17772,7 @@ const INKLING_WORDS = [
             "The clock uses Roman numerals.",
             "Write the numeral five."
         ]
-,
+        ,
         "synonyms": ["digit", "figure", "number"]
     },
     {
@@ -17776,7 +17785,7 @@ const INKLING_WORDS = [
             "He objected to the new rule.",
             "What is that shiny object?"
         ]
-,
+        ,
         "synonyms": ["thing", "item", "oppose"]
     },
     {
@@ -17789,7 +17798,7 @@ const INKLING_WORDS = [
             "He observed the rules.",
             "Scientists observe nature closely."
         ]
-,
+        ,
         "synonyms": ["watch", "notice", "study"]
     },
     {
@@ -17802,7 +17811,7 @@ const INKLING_WORDS = [
             "She sailed across the ocean.",
             "Many creatures live in the ocean."
         ]
-,
+        ,
         "synonyms": ["sea", "deep", "marine"]
     },
     {
@@ -17815,7 +17824,7 @@ const INKLING_WORDS = [
             "She jumped off the swing.",
             "The TV is off."
         ]
-,
+        ,
         "synonyms": ["away", "not-on", "shut"]
     },
     {
@@ -17828,7 +17837,7 @@ const INKLING_WORDS = [
             "He held public office.",
             "The post office is on the high street."
         ]
-,
+        ,
         "synonyms": ["workplace", "bureau", "position"]
     },
     {
@@ -17841,7 +17850,7 @@ const INKLING_WORDS = [
             "How often do you exercise?",
             "He often reads before bed."
         ]
-,
+        ,
         "synonyms": ["frequently", "regularly", "commonly"]
     },
     {
@@ -17854,7 +17863,7 @@ const INKLING_WORDS = [
             "My dog is five years old.",
             "She found an old photo."
         ]
-,
+        ,
         "synonyms": ["aged", "ancient", "former"]
     },
     {
@@ -17867,7 +17876,7 @@ const INKLING_WORDS = [
             "Once, she got lost in the woods.",
             "Once you start, don't stop."
         ]
-,
+        ,
         "synonyms": ["one-time", "formerly", "as-soon-as"]
     },
     {
@@ -17880,7 +17889,7 @@ const INKLING_WORDS = [
             "One of us will go.",
             "Take one cookie."
         ]
-,
+        ,
         "synonyms": ["single", "unity", "alone"]
     },
     {
@@ -17893,7 +17902,7 @@ const INKLING_WORDS = [
             "I only have one coin.",
             "He only sleeps four hours a night."
         ]
-,
+        ,
         "synonyms": ["solely", "merely", "just"]
     },
     {
@@ -17906,7 +17915,7 @@ const INKLING_WORDS = [
             "The shop is open all day.",
             "She opened the gift slowly."
         ]
-,
+        ,
         "synonyms": ["accessible", "unlock", "public"]
     },
     {
@@ -17919,7 +17928,7 @@ const INKLING_WORDS = [
             "She sat opposite him.",
             "Black is the opposite of white."
         ]
-,
+        ,
         "synonyms": ["contrary", "reverse", "facing"]
     },
     {
@@ -17932,7 +17941,7 @@ const INKLING_WORDS = [
             "He gave the order to start.",
             "Keep your things in order."
         ]
-,
+        ,
         "synonyms": ["command", "sequence", "request"]
     },
     {
@@ -17945,7 +17954,7 @@ const INKLING_WORDS = [
             "Do you have any other ideas?",
             "I'll take the other one."
         ]
-,
+        ,
         "synonyms": ["different", "another", "remaining"]
     },
     {
@@ -17958,7 +17967,7 @@ const INKLING_WORDS = [
             "We did our best.",
             "Our team won the game."
         ]
-,
+        ,
         "synonyms": ["belonging-to-us", "shared", "collective"]
     },
     {
@@ -17971,7 +17980,7 @@ const INKLING_WORDS = [
             "Get out of the rain.",
             "The lights went out."
         ]
-,
+        ,
         "synonyms": ["outside", "beyond", "away"]
     },
     {
@@ -17984,7 +17993,7 @@ const INKLING_WORDS = [
             "It is cold outside.",
             "There is a cat outside the window."
         ]
-,
+        ,
         "synonyms": ["exterior", "outdoors", "external"]
     },
     {
@@ -17997,7 +18006,7 @@ const INKLING_WORDS = [
             "The game is over.",
             "She jumped over the puddle."
         ]
-,
+        ,
         "synonyms": ["above", "across", "finished"]
     },
     {
@@ -18010,7 +18019,7 @@ const INKLING_WORDS = [
             "He owns a small shop.",
             "Do you own a pet?"
         ]
-,
+        ,
         "synonyms": ["possess", "personal", "individual"]
     },
     {
@@ -18023,7 +18032,7 @@ const INKLING_WORDS = [
             "She needed more oxygen.",
             "Oxygen is needed for fire."
         ]
-,
+        ,
         "synonyms": ["gas", "element", "O2"]
     },
     {
@@ -18036,7 +18045,7 @@ const INKLING_WORDS = [
             "She wrote on every page.",
             "The last page had a surprise ending."
         ]
-,
+        ,
         "synonyms": ["leaf", "screen", "summon"]
     },
     {
@@ -18049,7 +18058,7 @@ const INKLING_WORDS = [
             "He mixed the paint.",
             "The walls need a fresh coat of paint."
         ]
-,
+        ,
         "synonyms": ["color", "apply-paint", "depict"]
     },
     {
@@ -18062,7 +18071,7 @@ const INKLING_WORDS = [
             "They make a great pair.",
             "He found a pair of socks."
         ]
-,
+        ,
         "synonyms": ["couple", "two", "match"]
     },
     {
@@ -18075,7 +18084,7 @@ const INKLING_WORDS = [
             "Please sign the paper.",
             "He folded the paper into a boat."
         ]
-,
+        ,
         "synonyms": ["document", "newspaper", "sheet"]
     },
     {
@@ -18088,7 +18097,7 @@ const INKLING_WORDS = [
             "Each of the paragraphs had a clear topic.",
             "She read the first two paragraphs."
         ]
-,
+        ,
         "synonyms": ["sections", "blocks", "passages"]
     },
     {
@@ -18101,7 +18110,7 @@ const INKLING_WORDS = [
             "He parked the car.",
             "The park is lovely in spring."
         ]
-,
+        ,
         "synonyms": ["garden", "reserve", "stop"]
     },
     {
@@ -18114,7 +18123,7 @@ const INKLING_WORDS = [
             "She played a big part in the show.",
             "They parted ways at the corner."
         ]
-,
+        ,
         "synonyms": ["piece", "role", "section"]
     },
     {
@@ -18127,7 +18136,7 @@ const INKLING_WORDS = [
             "Is there anything particular you need?",
             "He is very particular about his food."
         ]
-,
+        ,
         "synonyms": ["specific", "special", "individual"]
     },
     {
@@ -18140,7 +18149,7 @@ const INKLING_WORDS = [
             "He joined a political party.",
             "The party was full of laughter."
         ]
-,
+        ,
         "synonyms": ["group", "celebration", "faction"]
     },
     {
@@ -18153,7 +18162,7 @@ const INKLING_WORDS = [
             "He passed me the salt.",
             "The car passed quickly."
         ]
-,
+        ,
         "synonyms": ["went-by", "approved", "exceeded"]
     },
     {
@@ -18166,7 +18175,7 @@ const INKLING_WORDS = [
             "He drove past the school.",
             "The past can teach us a lot."
         ]
-,
+        ,
         "synonyms": ["former", "history", "beyond"]
     },
     {
@@ -18179,7 +18188,7 @@ const INKLING_WORDS = [
             "Can you spot the pattern?",
             "The carpet has a nice pattern."
         ]
-,
+        ,
         "synonyms": ["design", "sequence", "template"]
     },
     {
@@ -18192,7 +18201,7 @@ const INKLING_WORDS = [
             "He got a pay rise.",
             "How much do I pay?"
         ]
-,
+        ,
         "synonyms": ["compensate", "salary", "settle"]
     },
     {
@@ -18205,7 +18214,7 @@ const INKLING_WORDS = [
             "People need food and water.",
             "She likes meeting new people."
         ]
-,
+        ,
         "synonyms": ["persons", "humans", "society"]
     },
     {
@@ -18218,7 +18227,7 @@ const INKLING_WORDS = [
             "She runs five miles per day.",
             "He earns more per hour now."
         ]
-,
+        ,
         "synonyms": ["for-each", "each", "per-unit"]
     },
     {
@@ -18231,7 +18240,7 @@ const INKLING_WORDS = [
             "That is perhaps the best idea.",
             "He was, perhaps, right."
         ]
-,
+        ,
         "synonyms": ["maybe", "possibly", "conceivably"]
     },
     {
@@ -18244,7 +18253,7 @@ const INKLING_WORDS = [
             "End the sentence with a period.",
             "It was a difficult period."
         ]
-,
+        ,
         "synonyms": ["era", "time-span", "full-stop"]
     },
     {
@@ -18257,7 +18266,7 @@ const INKLING_WORDS = [
             "Each person got a turn.",
             "Who is that person?"
         ]
-,
+        ,
         "synonyms": ["individual", "human", "being"]
     },
     {
@@ -18270,7 +18279,7 @@ const INKLING_WORDS = [
             "She used a great phrase.",
             "He didn't understand the phrase."
         ]
-,
+        ,
         "synonyms": ["expression", "saying", "clause"]
     },
     {
@@ -18283,7 +18292,7 @@ const INKLING_WORDS = [
             "He picked the winning number.",
             "They picked apples from the tree."
         ]
-,
+        ,
         "synonyms": ["chosen", "selected", "harvested"]
     },
     {
@@ -18296,7 +18305,7 @@ const INKLING_WORDS = [
             "Hang the picture on the wall.",
             "I took a picture of the sunset."
         ]
-,
+        ,
         "synonyms": ["image", "photo", "illustration"]
     },
     {
@@ -18309,7 +18318,7 @@ const INKLING_WORDS = [
             "She found a missing piece.",
             "He played a beautiful piece of music."
         ]
-,
+        ,
         "synonyms": ["part", "portion", "fragment"]
     },
     {
@@ -18322,7 +18331,7 @@ const INKLING_WORDS = [
             "Place the cup on the table.",
             "She found a quiet place to read."
         ]
-,
+        ,
         "synonyms": ["location", "position", "put"]
     },
     {
@@ -18335,7 +18344,7 @@ const INKLING_WORDS = [
             "The plains stretched for miles.",
             "She stared out across the open plains."
         ]
-,
+        ,
         "synonyms": ["flatlands", "prairies", "steppes"]
     },
     {
@@ -18348,7 +18357,7 @@ const INKLING_WORDS = [
             "She planned the whole trip.",
             "He had a clever plan."
         ]
-,
+        ,
         "synonyms": ["scheme", "design", "intend"]
     },
     {
@@ -18361,7 +18370,7 @@ const INKLING_WORDS = [
             "He drew a flat plane in maths.",
             "The plane landed smoothly."
         ]
-,
+        ,
         "synonyms": ["aircraft", "flat-surface", "level"]
     },
     {
@@ -18374,7 +18383,7 @@ const INKLING_WORDS = [
             "Planets orbit the sun.",
             "He drew all the planets in order."
         ]
-,
+        ,
         "synonyms": ["worlds", "celestial-bodies", "spheres"]
     },
     {
@@ -18387,7 +18396,7 @@ const INKLING_WORDS = [
             "She planted flowers in the garden.",
             "A cactus is a tough plant."
         ]
-,
+        ,
         "synonyms": ["grow", "greenery", "factory"]
     },
     {
@@ -18400,7 +18409,7 @@ const INKLING_WORDS = [
             "She was in the school play.",
             "Let's play a game."
         ]
-,
+        ,
         "synonyms": ["game", "perform", "fun"]
     },
     {
@@ -18413,7 +18422,7 @@ const INKLING_WORDS = [
             "She aimed to please.",
             "Can I have some water, please?"
         ]
-,
+        ,
         "synonyms": ["satisfy", "kindly", "delight"]
     },
     {
@@ -18426,7 +18435,7 @@ const INKLING_WORDS = [
             "She wrote the plural form.",
             "What is the plural of mouse?"
         ]
-,
+        ,
         "synonyms": ["multiple", "more-than-one", "collective"]
     },
     {
@@ -18439,7 +18448,7 @@ const INKLING_WORDS = [
             "He read a poem aloud.",
             "The poem made her smile."
         ]
-,
+        ,
         "synonyms": ["verse", "lyric", "rhyme"]
     },
     {
@@ -18452,7 +18461,7 @@ const INKLING_WORDS = [
             "Don't point at people.",
             "What is the point of this?"
         ]
-,
+        ,
         "synonyms": ["location", "tip", "idea"]
     },
     {
@@ -18465,7 +18474,7 @@ const INKLING_WORDS = [
             "Penguins live near the South Pole.",
             "He put up the flag on the pole."
         ]
-,
+        ,
         "synonyms": ["post", "region", "stick"]
     },
     {
@@ -18478,7 +18487,7 @@ const INKLING_WORDS = [
             "That was a poor excuse.",
             "She felt sorry for the poor animal."
         ]
-,
+        ,
         "synonyms": ["impoverished", "bad", "unfortunate"]
     },
     {
@@ -18491,7 +18500,7 @@ const INKLING_WORDS = [
             "He applied for the position.",
             "What position do you play?"
         ]
-,
+        ,
         "synonyms": ["location", "stance", "job"]
     },
     {
@@ -18504,7 +18513,7 @@ const INKLING_WORDS = [
             "Is it possible to change?",
             "She did everything possible to help."
         ]
-,
+        ,
         "synonyms": ["feasible", "potential", "achievable"]
     },
     {
@@ -18517,7 +18526,7 @@ const INKLING_WORDS = [
             "That bag weighs twenty pounds.",
             "It costs five pounds."
         ]
-,
+        ,
         "synonyms": ["currency", "weight", "pounds-sterling"]
     },
     {
@@ -18530,7 +18539,7 @@ const INKLING_WORDS = [
             "The wind powers the turbine.",
             "She used her power wisely."
         ]
-,
+        ,
         "synonyms": ["strength", "energy", "authority"]
     },
     {
@@ -18543,7 +18552,7 @@ const INKLING_WORDS = [
             "She practiced piano every day.",
             "He went to football practice."
         ]
-,
+        ,
         "synonyms": ["exercise", "habit", "training"]
     },
     {
@@ -18552,7 +18561,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Dealing with things realistically.",
         "sentence": "She took a pragmatic approach.",
         "hint": "Practical."
-,
+        ,
         "synonyms": ["practical", "realistic", "sensible"]
     },
     {
@@ -18565,7 +18574,7 @@ const INKLING_WORDS = [
             "He was well prepared.",
             "They prepared for the worst."
         ]
-,
+        ,
         "synonyms": ["ready", "equipped", "planned"]
     },
     {
@@ -18578,7 +18587,7 @@ const INKLING_WORDS = [
             "All students must be present.",
             "He presented his work to the class."
         ]
-,
+        ,
         "synonyms": ["gift", "now", "introduce"]
     },
     {
@@ -18591,7 +18600,7 @@ const INKLING_WORDS = [
             "She was elected president of the club.",
             "He wrote a letter to the president."
         ]
-,
+        ,
         "synonyms": ["head-of-state", "leader", "chief"]
     },
     {
@@ -18604,7 +18613,7 @@ const INKLING_WORDS = [
             "It was pretty easy.",
             "He wore a pretty bow tie."
         ]
-,
+        ,
         "synonyms": ["attractive", "fairly", "lovely"]
     },
     {
@@ -18617,7 +18626,7 @@ const INKLING_WORDS = [
             "He read the printed page.",
             "The forms were printed clearly."
         ]
-,
+        ,
         "synonyms": ["published", "typed", "produced"]
     },
     {
@@ -18630,7 +18639,7 @@ const INKLING_WORDS = [
             "It is probably the best choice.",
             "He's probably already there."
         ]
-,
+        ,
         "synonyms": ["likely", "presumably", "in-all-likelihood"]
     },
     {
@@ -18643,7 +18652,7 @@ const INKLING_WORDS = [
             "That is a big problem.",
             "We worked together to fix the problem."
         ]
-,
+        ,
         "synonyms": ["issue", "challenge", "difficulty"]
     },
     {
@@ -18656,7 +18665,7 @@ const INKLING_WORDS = [
             "He processed the data.",
             "It is a long process."
         ]
-,
+        ,
         "synonyms": ["method", "procedure", "develop"]
     },
     {
@@ -18669,7 +18678,7 @@ const INKLING_WORDS = [
             "The farm sells fresh produce.",
             "This factory produces toys."
         ]
-,
+        ,
         "synonyms": ["create", "yield", "make"]
     },
     {
@@ -18682,7 +18691,7 @@ const INKLING_WORDS = [
             "She buys natural products.",
             "The shop has new products."
         ]
-,
+        ,
         "synonyms": ["goods", "items", "results"]
     },
     {
@@ -18695,7 +18704,7 @@ const INKLING_WORDS = [
             "He protected his property.",
             "Rubber has elastic properties."
         ]
-,
+        ,
         "synonyms": ["asset", "land", "characteristic"]
     },
     {
@@ -18708,7 +18717,7 @@ const INKLING_WORDS = [
             "Can you provide an example?",
             "He provided shelter for the family."
         ]
-,
+        ,
         "synonyms": ["supply", "offer", "give"]
     },
     {
@@ -18721,7 +18730,7 @@ const INKLING_WORDS = [
             "He pulled out a coin.",
             "The horse pulled the cart."
         ]
-,
+        ,
         "synonyms": ["dragged", "tugged", "drawn"]
     },
     {
@@ -18734,7 +18743,7 @@ const INKLING_WORDS = [
             "He pushed the cart.",
             "They pushed through the crowd."
         ]
-,
+        ,
         "synonyms": ["shoved", "propelled", "forced"]
     },
     {
@@ -18747,7 +18756,7 @@ const INKLING_WORDS = [
             "She put on her coat.",
             "He put his hand up."
         ]
-,
+        ,
         "synonyms": ["place", "set", "position"]
     },
     {
@@ -18760,7 +18769,7 @@ const INKLING_WORDS = [
             "Any questions?",
             "He answered all the questions correctly."
         ]
-,
+        ,
         "synonyms": ["queries", "inquiries", "interrogations"]
     },
     {
@@ -18773,7 +18782,7 @@ const INKLING_WORDS = [
             "He ran quickly to the door.",
             "Please come quickly!"
         ]
-,
+        ,
         "synonyms": ["rapidly", "fast", "swiftly"]
     },
     {
@@ -18786,7 +18795,7 @@ const INKLING_WORDS = [
             "The room was very quiet.",
             "She likes quiet mornings."
         ]
-,
+        ,
         "synonyms": ["silent", "calm", "still"]
     },
     {
@@ -18799,7 +18808,7 @@ const INKLING_WORDS = [
             "She is quite good at painting.",
             "I am not quite sure."
         ]
-,
+        ,
         "synonyms": ["rather", "fairly", "completely"]
     },
     {
@@ -18812,7 +18821,7 @@ const INKLING_WORDS = [
             "He raced his friend to the gate.",
             "The whole race watched with pride."
         ]
-,
+        ,
         "synonyms": ["competition", "ethnicity", "sprint"]
     },
     {
@@ -18825,7 +18834,7 @@ const INKLING_WORDS = [
             "They heard the news on the radio.",
             "He fixed the old radio."
         ]
-,
+        ,
         "synonyms": ["broadcast", "wireless", "receiver"]
     },
     {
@@ -18838,7 +18847,7 @@ const INKLING_WORDS = [
             "The rain made puddles.",
             "She loves dancing in the rain."
         ]
-,
+        ,
         "synonyms": ["precipitation", "drizzle", "shower"]
     },
     {
@@ -18851,7 +18860,7 @@ const INKLING_WORDS = [
             "He was raised in the country.",
             "They raised money for charity."
         ]
-,
+        ,
         "synonyms": ["elevated", "grew-up", "collected"]
     },
     {
@@ -18864,7 +18873,7 @@ const INKLING_WORDS = [
             "He ran all the way home.",
             "The dog ran through the field."
         ]
-,
+        ,
         "synonyms": ["sprinted", "operated", "fled"]
     },
     {
@@ -18877,7 +18886,7 @@ const INKLING_WORDS = [
             "It was rather cold.",
             "I'd rather have tea."
         ]
-,
+        ,
         "synonyms": ["somewhat", "instead", "quite"]
     },
     {
@@ -18890,7 +18899,7 @@ const INKLING_WORDS = [
             "He reached for the last book.",
             "We finally reached the city."
         ]
-,
+        ,
         "synonyms": ["arrived-at", "achieved", "contacted"]
     },
     {
@@ -18903,7 +18912,7 @@ const INKLING_WORDS = [
             "He read the letter aloud.",
             "Can you read this sign?"
         ]
-,
+        ,
         "synonyms": ["study", "interpret", "peruse"]
     },
     {
@@ -18916,7 +18925,7 @@ const INKLING_WORDS = [
             "She was ready before everyone else.",
             "Dinner is almost ready."
         ]
-,
+        ,
         "synonyms": ["prepared", "willing", "set"]
     },
     {
@@ -18929,7 +18938,7 @@ const INKLING_WORDS = [
             "She has real talent.",
             "He could not believe it was real."
         ]
-,
+        ,
         "synonyms": ["actual", "genuine", "true"]
     },
     {
@@ -18942,7 +18951,7 @@ const INKLING_WORDS = [
             "Is there a reason for this?",
             "He had good reasons to be proud."
         ]
-,
+        ,
         "synonyms": ["cause", "rationale", "motive"]
     },
     {
@@ -18955,7 +18964,7 @@ const INKLING_WORDS = [
             "He received good news.",
             "They received a warm welcome."
         ]
-,
+        ,
         "synonyms": ["got", "accepted", "welcomed"]
     },
     {
@@ -18968,7 +18977,7 @@ const INKLING_WORDS = [
             "He recorded the meeting.",
             "Keep a record of your spending."
         ]
-,
+        ,
         "synonyms": ["log", "account", "register"]
     },
     {
@@ -18981,7 +18990,7 @@ const INKLING_WORDS = [
             "His face went bright red.",
             "Roses are red."
         ]
-,
+        ,
         "synonyms": ["crimson", "scarlet", "ruby"]
     },
     {
@@ -18994,7 +19003,7 @@ const INKLING_WORDS = [
             "The region is known for its wine.",
             "He explored every region of the country."
         ]
-,
+        ,
         "synonyms": ["area", "zone", "territory"]
     },
     {
@@ -19007,7 +19016,7 @@ const INKLING_WORDS = [
             "He remained behind after school.",
             "Some questions remain unanswered."
         ]
-,
+        ,
         "synonyms": ["stay", "persist", "last"]
     },
     {
@@ -19020,7 +19029,7 @@ const INKLING_WORDS = [
             "She always remembers birthdays.",
             "Remember to lock the door."
         ]
-,
+        ,
         "synonyms": ["recall", "recollect", "retain"]
     },
     {
@@ -19033,7 +19042,7 @@ const INKLING_WORDS = [
             "He made the same mistake repeatedly.",
             "The lesson was repeated for clarity."
         ]
-,
+        ,
         "synonyms": ["recurred", "reiterated", "duplicated"]
     },
     {
@@ -19046,7 +19055,7 @@ const INKLING_WORDS = [
             "He reported the news.",
             "Please report any problems."
         ]
-,
+        ,
         "synonyms": ["account", "announce", "document"]
     },
     {
@@ -19059,7 +19068,7 @@ const INKLING_WORDS = [
             "The symbol represents peace.",
             "He represents the company well."
         ]
-,
+        ,
         "synonyms": ["depict", "symbolize", "stand-for"]
     },
     {
@@ -19068,7 +19077,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Recover quickly from difficulties.",
         "sentence": "Children are often very resilient.",
         "hint": "Tough."
-,
+        ,
         "synonyms": ["tough", "flexible", "adaptable"]
     },
     {
@@ -19081,7 +19090,7 @@ const INKLING_WORDS = [
             "He rested after the long run.",
             "Take a five-minute rest."
         ]
-,
+        ,
         "synonyms": ["relax", "remainder", "sleep"]
     },
     {
@@ -19094,7 +19103,7 @@ const INKLING_WORDS = [
             "Hard work results in success.",
             "What was the result of the match?"
         ]
-,
+        ,
         "synonyms": ["outcome", "effect", "consequence"]
     },
     {
@@ -19107,7 +19116,7 @@ const INKLING_WORDS = [
             "He pressed return on the keyboard.",
             "They looked forward to their return."
         ]
-,
+        ,
         "synonyms": ["come-back", "give-back", "restore"]
     },
     {
@@ -19120,7 +19129,7 @@ const INKLING_WORDS = [
             "The music had a strong rhythm.",
             "He clapped along with the rhythm."
         ]
-,
+        ,
         "synonyms": ["beat", "cadence", "tempo"]
     },
     {
@@ -19133,7 +19142,7 @@ const INKLING_WORDS = [
             "The soil is rich and dark.",
             "He is very rich."
         ]
-,
+        ,
         "synonyms": ["wealthy", "abundant", "flavorful"]
     },
     {
@@ -19146,7 +19155,7 @@ const INKLING_WORDS = [
             "It was a smooth ride.",
             "Can I have a ride?"
         ]
-,
+        ,
         "synonyms": ["travel", "drive", "journey"]
     },
     {
@@ -19159,7 +19168,7 @@ const INKLING_WORDS = [
             "Turn right at the corner.",
             "She gave the right answer."
         ]
-,
+        ,
         "synonyms": ["correct", "just", "direction"]
     },
     {
@@ -19172,7 +19181,7 @@ const INKLING_WORDS = [
             "The phone rang loudly.",
             "He rang the doorbell."
         ]
-,
+        ,
         "synonyms": ["circle", "phone", "chime"]
     },
     {
@@ -19185,7 +19194,7 @@ const INKLING_WORDS = [
             "The sun rises in the east.",
             "Prices are on the rise."
         ]
-,
+        ,
         "synonyms": ["ascend", "increase", "climb"]
     },
     {
@@ -19198,7 +19207,7 @@ const INKLING_WORDS = [
             "The river flooded in spring.",
             "She sat beside the river."
         ]
-,
+        ,
         "synonyms": ["stream", "waterway", "tributary"]
     },
     {
@@ -19211,7 +19220,7 @@ const INKLING_WORDS = [
             "She crossed the road carefully.",
             "They lived at the end of the road."
         ]
-,
+        ,
         "synonyms": ["street", "path", "highway"]
     },
     {
@@ -19224,7 +19233,7 @@ const INKLING_WORDS = [
             "The music really rocks!",
             "She rocked the baby to sleep."
         ]
-,
+        ,
         "synonyms": ["stone", "music", "steady"]
     },
     {
@@ -19237,7 +19246,7 @@ const INKLING_WORDS = [
             "She rolled out the pastry.",
             "He rolled up his sleeves."
         ]
-,
+        ,
         "synonyms": ["turned-over", "moved", "wound"]
     },
     {
@@ -19250,7 +19259,7 @@ const INKLING_WORDS = [
             "There is no more room in the bag.",
             "The waiting room was full."
         ]
-,
+        ,
         "synonyms": ["space", "chamber", "bedroom"]
     },
     {
@@ -19263,7 +19272,7 @@ const INKLING_WORDS = [
             "She traced her roots to Ireland.",
             "Pull it out by the root."
         ]
-,
+        ,
         "synonyms": ["origin", "foundation", "base"]
     },
     {
@@ -19276,7 +19285,7 @@ const INKLING_WORDS = [
             "He climbed the rope.",
             "The rope was long and strong."
         ]
-,
+        ,
         "synonyms": ["cord", "cable", "string"]
     },
     {
@@ -19289,7 +19298,7 @@ const INKLING_WORDS = [
             "He rose early.",
             "The sun rose over the hills."
         ]
-,
+        ,
         "synonyms": ["climbed", "flower", "got-up"]
     },
     {
@@ -19302,7 +19311,7 @@ const INKLING_WORDS = [
             "He rowed the boat to shore.",
             "Plant the seeds in a row."
         ]
-,
+        ,
         "synonyms": ["line", "argument", "paddle"]
     },
     {
@@ -19315,7 +19324,7 @@ const INKLING_WORDS = [
             "She ruled the kingdom wisely.",
             "There is a rule against running indoors."
         ]
-,
+        ,
         "synonyms": ["law", "govern", "principle"]
     },
     {
@@ -19328,7 +19337,7 @@ const INKLING_WORDS = [
             "They went for a run.",
             "He runs every morning."
         ]
-,
+        ,
         "synonyms": ["sprint", "manage", "flow"]
     },
     {
@@ -19341,7 +19350,7 @@ const INKLING_WORDS = [
             "He kept money in a safe.",
             "Is it safe to swim here?"
         ]
-,
+        ,
         "synonyms": ["secure", "protected", "harmless"]
     },
     {
@@ -19354,7 +19363,7 @@ const INKLING_WORDS = [
             "She said she was tired.",
             "They said goodbye at the door."
         ]
-,
+        ,
         "synonyms": ["spoke", "uttered", "declared"]
     },
     {
@@ -19367,7 +19376,7 @@ const INKLING_WORDS = [
             "The sail flapped in the wind.",
             "She wants to learn to sail."
         ]
-,
+        ,
         "synonyms": ["navigate", "canvas", "travel-by-water"]
     },
     {
@@ -19380,7 +19389,7 @@ const INKLING_WORDS = [
             "She said the same thing.",
             "They both made the same mistake."
         ]
-,
+        ,
         "synonyms": ["identical", "equal", "alike"]
     },
     {
@@ -19393,7 +19402,7 @@ const INKLING_WORDS = [
             "The sand was warm and soft.",
             "He wrote her name in the sand."
         ]
-,
+        ,
         "synonyms": ["grains", "beach-material", "grit"]
     },
     {
@@ -19406,7 +19415,7 @@ const INKLING_WORDS = [
             "He sat very still.",
             "They sat together at lunch."
         ]
-,
+        ,
         "synonyms": ["seated", "settled", "remained"]
     },
     {
@@ -19419,7 +19428,7 @@ const INKLING_WORDS = [
             "Please save your progress before leaving.",
             "We need to save energy by turning off the lights."
         ]
-,
+        ,
         "synonyms": ["rescue", "preserve", "store"]
     },
     {
@@ -19432,7 +19441,7 @@ const INKLING_WORDS = [
             "He used a saw to cut the wood.",
             "I saw you at the market."
         ]
-,
+        ,
         "synonyms": ["viewed", "observed", "tool"]
     },
     {
@@ -19445,7 +19454,7 @@ const INKLING_WORDS = [
             "He always has something nice to say.",
             "She said it clearly."
         ]
-,
+        ,
         "synonyms": ["speak", "declare", "utter"]
     },
     {
@@ -19458,7 +19467,7 @@ const INKLING_WORDS = [
             "He scaled the wall easily.",
             "The map is drawn to scale."
         ]
-,
+        ,
         "synonyms": ["measure", "climb", "weigh"]
     },
     {
@@ -19471,7 +19480,7 @@ const INKLING_WORDS = [
             "School starts at eight.",
             "He loves school."
         ]
-,
+        ,
         "synonyms": ["institution", "educate", "academy"]
     },
     {
@@ -19484,7 +19493,7 @@ const INKLING_WORDS = [
             "Science explains many things.",
             "He studied science at school."
         ]
-,
+        ,
         "synonyms": ["knowledge", "study", "empirical-inquiry"]
     },
     {
@@ -19497,7 +19506,7 @@ const INKLING_WORDS = [
             "She wants to work with scientists.",
             "The scientists worked in a lab."
         ]
-,
+        ,
         "synonyms": ["researchers", "experts", "scholars"]
     },
     {
@@ -19510,7 +19519,7 @@ const INKLING_WORDS = [
             "What was the final score?",
             "He checked the score on his phone."
         ]
-,
+        ,
         "synonyms": ["points", "achieve", "tally"]
     },
     {
@@ -19523,7 +19532,7 @@ const INKLING_WORDS = [
             "The sea was rough today.",
             "They sailed across the sea."
         ]
-,
+        ,
         "synonyms": ["ocean", "deep-water", "brine"]
     },
     {
@@ -19536,7 +19545,7 @@ const INKLING_WORDS = [
             "He seated himself quietly.",
             "Is this seat taken?"
         ]
-,
+        ,
         "synonyms": ["chair", "place", "position"]
     },
     {
@@ -19549,7 +19558,7 @@ const INKLING_WORDS = [
             "Wait just one second.",
             "He is the second tallest in the class."
         ]
-,
+        ,
         "synonyms": ["another", "moment", "runner-up"]
     },
     {
@@ -19562,7 +19571,7 @@ const INKLING_WORDS = [
             "She works in the science section.",
             "The book is divided into sections."
         ]
-,
+        ,
         "synonyms": ["part", "area", "division"]
     },
     {
@@ -19575,7 +19584,7 @@ const INKLING_WORDS = [
             "Did you see that?",
             "She will see us tomorrow."
         ]
-,
+        ,
         "synonyms": ["observe", "view", "understand"]
     },
     {
@@ -19588,7 +19597,7 @@ const INKLING_WORDS = [
             "The seeds sprouted in a week.",
             "He scattered seeds across the soil."
         ]
-,
+        ,
         "synonyms": ["kernels", "origins", "grains"]
     },
     {
@@ -19601,7 +19610,7 @@ const INKLING_WORDS = [
             "It seems like a good idea.",
             "She doesn't seem happy."
         ]
-,
+        ,
         "synonyms": ["appear", "look", "give-impression"]
     },
     {
@@ -19614,7 +19623,7 @@ const INKLING_WORDS = [
             "She has seen that film before.",
             "I've never seen anything like it."
         ]
-,
+        ,
         "synonyms": ["observed", "witnessed", "noticed"]
     },
     {
@@ -19627,7 +19636,7 @@ const INKLING_WORDS = [
             "He sold his bike.",
             "They sell bread at the market."
         ]
-,
+        ,
         "synonyms": ["trade", "market", "vend"]
     },
     {
@@ -19640,7 +19649,7 @@ const INKLING_WORDS = [
             "Can you send me the file?",
             "He sent flowers to his mum."
         ]
-,
+        ,
         "synonyms": ["dispatch", "transmit", "forward"]
     },
     {
@@ -19653,7 +19662,7 @@ const INKLING_WORDS = [
             "She sensed danger.",
             "He has a great sense of humor."
         ]
-,
+        ,
         "synonyms": ["perceive", "meaning", "judgment"]
     },
     {
@@ -19666,7 +19675,7 @@ const INKLING_WORDS = [
             "He sent flowers to her.",
             "The letter was sent yesterday."
         ]
-,
+        ,
         "synonyms": ["dispatched", "transmitted", "forwarded"]
     },
     {
@@ -19679,7 +19688,7 @@ const INKLING_WORDS = [
             "She spoke in short sentences.",
             "The first sentence grabbed my attention."
         ]
-,
+        ,
         "synonyms": ["phrase", "statement", "judgment"]
     },
     {
@@ -19692,7 +19701,7 @@ const INKLING_WORDS = [
             "She separated the eggs.",
             "Keep these two groups separate."
         ]
-,
+        ,
         "synonyms": ["divide", "split", "distinct"]
     },
     {
@@ -19705,7 +19714,7 @@ const INKLING_WORDS = [
             "The restaurant will serve food until ten.",
             "Athletes who serve their sport inspire others."
         ]
-,
+        ,
         "synonyms": ["help", "provide", "function"]
     },
     {
@@ -19718,7 +19727,7 @@ const INKLING_WORDS = [
             "She bought a set of pens.",
             "The sun set at seven."
         ]
-,
+        ,
         "synonyms": ["place", "group", "establish"]
     },
     {
@@ -19731,7 +19740,7 @@ const INKLING_WORDS = [
             "She settled into her seat.",
             "The argument was finally settled."
         ]
-,
+        ,
         "synonyms": ["resolved", "established", "moved-in"]
     },
     {
@@ -19744,7 +19753,7 @@ const INKLING_WORDS = [
             "He woke up at seven.",
             "The week has seven days."
         ]
-,
+        ,
         "synonyms": ["7", "septet", "numeral"]
     },
     {
@@ -19757,7 +19766,7 @@ const INKLING_WORDS = [
             "He called several times.",
             "I have seen her several times."
         ]
-,
+        ,
         "synonyms": ["many", "numerous", "various"]
     },
     {
@@ -19770,7 +19779,7 @@ const INKLING_WORDS = [
             "She shall return by evening.",
             "I shall do my best."
         ]
-,
+        ,
         "synonyms": ["will", "should", "ought"]
     },
     {
@@ -19783,7 +19792,7 @@ const INKLING_WORDS = [
             "She shaped the clay into a bowl.",
             "A circle is a round shape."
         ]
-,
+        ,
         "synonyms": ["form", "mold", "figure"]
     },
     {
@@ -19796,7 +19805,7 @@ const INKLING_WORDS = [
             "She has a sharp mind.",
             "He heard a sharp sound."
         ]
-,
+        ,
         "synonyms": ["keen", "acute", "pointed"]
     },
     {
@@ -19809,7 +19818,7 @@ const INKLING_WORDS = [
             "She loves to paint.",
             "She arrived on time."
         ]
-,
+        ,
         "synonyms": ["female", "her", "woman"]
     },
     {
@@ -19822,7 +19831,7 @@ const INKLING_WORDS = [
             "The order was shipped today.",
             "She waved as the ship left."
         ]
-,
+        ,
         "synonyms": ["vessel", "boat", "dispatch"]
     },
     {
@@ -19835,7 +19844,7 @@ const INKLING_WORDS = [
             "He polished his shoes.",
             "These shoes are too tight."
         ]
-,
+        ,
         "synonyms": ["footwear", "boots", "sneakers"]
     },
     {
@@ -19848,7 +19857,7 @@ const INKLING_WORDS = [
             "He loves to shop.",
             "The shop sells fruit and vegetables."
         ]
-,
+        ,
         "synonyms": ["store", "buy", "retail"]
     },
     {
@@ -19861,7 +19870,7 @@ const INKLING_WORDS = [
             "The summer was too short.",
             "He gave a short but clear answer."
         ]
-,
+        ,
         "synonyms": ["brief", "small", "lacking"]
     },
     {
@@ -19874,7 +19883,7 @@ const INKLING_WORDS = [
             "She should arrive by noon.",
             "We should be on time."
         ]
-,
+        ,
         "synonyms": ["ought-to", "must", "supposed-to"]
     },
     {
@@ -19887,7 +19896,7 @@ const INKLING_WORDS = [
             "He carried the bag on his shoulder.",
             "She looked back over her shoulder."
         ]
-,
+        ,
         "synonyms": ["joint", "carry", "support"]
     },
     {
@@ -19900,7 +19909,7 @@ const INKLING_WORDS = [
             "He shouted across the field.",
             "They shouted with joy."
         ]
-,
+        ,
         "synonyms": ["yelled", "cried-out", "exclaimed"]
     },
     {
@@ -19913,7 +19922,7 @@ const INKLING_WORDS = [
             "The show was fantastic.",
             "She showed us around the museum."
         ]
-,
+        ,
         "synonyms": ["display", "exhibit", "demonstrate"]
     },
     {
@@ -19926,7 +19935,7 @@ const INKLING_WORDS = [
             "He was shown the door.",
             "The results were shown on screen."
         ]
-,
+        ,
         "synonyms": ["displayed", "proved", "revealed"]
     },
     {
@@ -19939,7 +19948,7 @@ const INKLING_WORDS = [
             "Which side are you on?",
             "The ball hit the side of the wall."
         ]
-,
+        ,
         "synonyms": ["edge", "position", "faction"]
     },
     {
@@ -19952,7 +19961,7 @@ const INKLING_WORDS = [
             "The waterfall was a wonderful sight.",
             "He had sharp sight."
         ]
-,
+        ,
         "synonyms": ["vision", "view", "spectacle"]
     },
     {
@@ -19965,7 +19974,7 @@ const INKLING_WORDS = [
             "A stop sign is red and white.",
             "He showed a sign of improvement."
         ]
-,
+        ,
         "synonyms": ["signal", "omen", "mark"]
     },
     {
@@ -19978,7 +19987,7 @@ const INKLING_WORDS = [
             "She stood in silent awe.",
             "He gave a silent nod."
         ]
-,
+        ,
         "synonyms": ["quiet", "mute", "still"]
     },
     {
@@ -19991,7 +20000,7 @@ const INKLING_WORDS = [
             "Their ideas are very similar.",
             "She found a similar dress."
         ]
-,
+        ,
         "synonyms": ["alike", "comparable", "related"]
     },
     {
@@ -20004,7 +20013,7 @@ const INKLING_WORDS = [
             "She explained it in a simple way.",
             "He made a simple mistake."
         ]
-,
+        ,
         "synonyms": ["easy", "basic", "plain"]
     },
     {
@@ -20017,7 +20026,7 @@ const INKLING_WORDS = [
             "Since it is late, let's go home.",
             "I haven't seen him since Monday."
         ]
-,
+        ,
         "synonyms": ["because", "from-the-time", "as"]
     },
     {
@@ -20030,7 +20039,7 @@ const INKLING_WORDS = [
             "Can you sing that song?",
             "He sings in the shower."
         ]
-,
+        ,
         "synonyms": ["chant", "warble", "vocalize"]
     },
     {
@@ -20043,7 +20052,7 @@ const INKLING_WORDS = [
             "She is single.",
             "He ate every single one."
         ]
-,
+        ,
         "synonyms": ["one", "alone", "unmarried"]
     },
     {
@@ -20056,7 +20065,7 @@ const INKLING_WORDS = [
             "She addressed him as sir.",
             "Excuse me, sir, do you need help?"
         ]
-,
+        ,
         "synonyms": ["gentleman", "title", "honorific"]
     },
     {
@@ -20069,7 +20078,7 @@ const INKLING_WORDS = [
             "Her sister is very funny.",
             "They are sisters."
         ]
-,
+        ,
         "synonyms": ["sibling", "kin", "female-sibling"]
     },
     {
@@ -20082,7 +20091,7 @@ const INKLING_WORDS = [
             "She visited the historic site.",
             "The website is the best site for help."
         ]
-,
+        ,
         "synonyms": ["location", "place", "website"]
     },
     {
@@ -20095,7 +20104,7 @@ const INKLING_WORDS = [
             "He is six years old.",
             "There are six eggs left."
         ]
-,
+        ,
         "synonyms": ["6", "sextet", "half-dozen"]
     },
     {
@@ -20108,7 +20117,7 @@ const INKLING_WORDS = [
             "The boxes come in all sizes.",
             "She chose the right size."
         ]
-,
+        ,
         "synonyms": ["dimensions", "magnitude", "measure"]
     },
     {
@@ -20121,7 +20130,7 @@ const INKLING_WORDS = [
             "The sun burned his skin.",
             "She put lotion on her skin."
         ]
-,
+        ,
         "synonyms": ["hide", "surface", "dermis"]
     },
     {
@@ -20134,7 +20143,7 @@ const INKLING_WORDS = [
             "Stars appear in the sky at night.",
             "She gazed up at the sky."
         ]
-,
+        ,
         "synonyms": ["heavens", "firmament", "atmosphere"]
     },
     {
@@ -20147,7 +20156,7 @@ const INKLING_WORDS = [
             "He needs more sleep.",
             "Good sleep is important."
         ]
-,
+        ,
         "synonyms": ["rest", "slumber", "doze"]
     },
     {
@@ -20160,7 +20169,7 @@ const INKLING_WORDS = [
             "He slowly opened the door.",
             "The snail moved very slowly."
         ]
-,
+        ,
         "synonyms": ["gradually", "gently", "unhurriedly"]
     },
     {
@@ -20173,7 +20182,7 @@ const INKLING_WORDS = [
             "He found a small bug.",
             "The kitten was very small."
         ]
-,
+        ,
         "synonyms": ["tiny", "little", "minor"]
     },
     {
@@ -20186,7 +20195,7 @@ const INKLING_WORDS = [
             "What is that strange smell?",
             "He could smell dinner cooking."
         ]
-,
+        ,
         "synonyms": ["scent", "aroma", "odor"]
     },
     {
@@ -20199,7 +20208,7 @@ const INKLING_WORDS = [
             "He has a big smile.",
             "The baby's smile is lovely."
         ]
-,
+        ,
         "synonyms": ["grin", "beam", "smirk"]
     },
     {
@@ -20212,7 +20221,7 @@ const INKLING_WORDS = [
             "It snowed all night.",
             "She made a snowball."
         ]
-,
+        ,
         "synonyms": ["ice-crystals", "sleet", "flurries"]
     },
     {
@@ -20225,7 +20234,7 @@ const INKLING_WORDS = [
             "She spoke in a soft voice.",
             "The cat's fur is so soft."
         ]
-,
+        ,
         "synonyms": ["gentle", "smooth", "quiet"]
     },
     {
@@ -20238,7 +20247,7 @@ const INKLING_WORDS = [
             "She dug her hands into the soil.",
             "Plants need good soil to grow."
         ]
-,
+        ,
         "synonyms": ["earth", "dirt", "ground"]
     },
     {
@@ -20251,7 +20260,7 @@ const INKLING_WORDS = [
             "She read about the soldiers.",
             "Many soldiers came home safely."
         ]
-,
+        ,
         "synonyms": ["troops", "fighters", "warriors"]
     },
     {
@@ -20264,7 +20273,7 @@ const INKLING_WORDS = [
             "Salt water is a solution.",
             "He had no solution."
         ]
-,
+        ,
         "synonyms": ["answer", "resolution", "mixture"]
     },
     {
@@ -20277,7 +20286,7 @@ const INKLING_WORDS = [
             "Can you solve this riddle?",
             "He solved the problem quickly."
         ]
-,
+        ,
         "synonyms": ["answer", "fix", "resolve"]
     },
     {
@@ -20290,7 +20299,7 @@ const INKLING_WORDS = [
             "Some people like snow.",
             "She bought some fruit."
         ]
-,
+        ,
         "synonyms": ["a-few", "certain", "several"]
     },
     {
@@ -20303,7 +20312,7 @@ const INKLING_WORDS = [
             "Can someone help me?",
             "She met someone interesting today."
         ]
-,
+        ,
         "synonyms": ["somebody", "a-person", "individual"]
     },
     {
@@ -20316,7 +20325,7 @@ const INKLING_WORDS = [
             "Can I get you something?",
             "There is something in my shoe."
         ]
-,
+        ,
         "synonyms": ["a-thing", "an-item", "matter"]
     },
     {
@@ -20329,7 +20338,7 @@ const INKLING_WORDS = [
             "He is sometimes grumpy in the morning.",
             "It sometimes rains in summer."
         ]
-,
+        ,
         "synonyms": ["occasionally", "now-and-then", "at-times"]
     },
     {
@@ -20342,7 +20351,7 @@ const INKLING_WORDS = [
             "He is her only son.",
             "Their son is starting school this year."
         ]
-,
+        ,
         "synonyms": ["male-offspring", "boy", "heir"]
     },
     {
@@ -20355,7 +20364,7 @@ const INKLING_WORDS = [
             "What is your favorite song?",
             "He hummed a quiet song."
         ]
-,
+        ,
         "synonyms": ["melody", "tune", "lyric"]
     },
     {
@@ -20368,7 +20377,7 @@ const INKLING_WORDS = [
             "See you soon!",
             "The rain will stop soon."
         ]
-,
+        ,
         "synonyms": ["shortly", "presently", "quickly"]
     },
     {
@@ -20381,7 +20390,7 @@ const INKLING_WORDS = [
             "That sounds like a great idea.",
             "The alarm sounded loudly."
         ]
-,
+        ,
         "synonyms": ["noise", "healthy", "wave"]
     },
     {
@@ -20394,7 +20403,7 @@ const INKLING_WORDS = [
             "The south coast is warm.",
             "The birds flew south."
         ]
-,
+        ,
         "synonyms": ["lower-direction", "polar-south", "southern"]
     },
     {
@@ -20407,7 +20416,7 @@ const INKLING_WORDS = [
             "They enjoyed the southern sunshine.",
             "He has a southern accent."
         ]
-,
+        ,
         "synonyms": ["austral", "lower", "south-of"]
     },
     {
@@ -20420,7 +20429,7 @@ const INKLING_WORDS = [
             "Leave a space between the words.",
             "There is no space in the bag."
         ]
-,
+        ,
         "synonyms": ["area", "outer-space", "gap"]
     },
     {
@@ -20433,7 +20442,7 @@ const INKLING_WORDS = [
             "Can I speak to you?",
             "He speaks three languages."
         ]
-,
+        ,
         "synonyms": ["talk", "say", "communicate"]
     },
     {
@@ -20446,7 +20455,7 @@ const INKLING_WORDS = [
             "She is a very special person.",
             "He made a special effort."
         ]
-,
+        ,
         "synonyms": ["unique", "distinct", "extraordinary"]
     },
     {
@@ -20459,7 +20468,7 @@ const INKLING_WORDS = [
             "She sped through the work.",
             "Light travels at great speed."
         ]
-,
+        ,
         "synonyms": ["velocity", "pace", "rate"]
     },
     {
@@ -20472,7 +20481,7 @@ const INKLING_WORDS = [
             "She cast a magic spell.",
             "We had a cold spell in March."
         ]
-,
+        ,
         "synonyms": ["enchantment", "name-letters", "period"]
     },
     {
@@ -20485,7 +20494,7 @@ const INKLING_WORDS = [
             "He had a spot on his shirt.",
             "This is a nice spot for a picnic."
         ]
-,
+        ,
         "synonyms": ["location", "stain", "notice"]
     },
     {
@@ -20498,7 +20507,7 @@ const INKLING_WORDS = [
             "News spreads fast.",
             "The fire spread quickly."
         ]
-,
+        ,
         "synonyms": ["expand", "scatter", "extend"]
     },
     {
@@ -20511,7 +20520,7 @@ const INKLING_WORDS = [
             "He sprang to his feet.",
             "Spring is finally here."
         ]
-,
+        ,
         "synonyms": ["season", "bounce", "source"]
     },
     {
@@ -20520,7 +20529,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) False or fake.",
         "sentence": "A spurious claim.",
         "hint": "False."
-,
+        ,
         "synonyms": ["false", "fake", "counterfeit"]
     },
     {
@@ -20533,7 +20542,7 @@ const INKLING_WORDS = [
             "A square has four equal sides.",
             "Let's call it square."
         ]
-,
+        ,
         "synonyms": ["geometric-shape", "plaza", "even"]
     },
     {
@@ -20546,7 +20555,7 @@ const INKLING_WORDS = [
             "He can't stand the cold.",
             "There is a music stand in the corner."
         ]
-,
+        ,
         "synonyms": ["rise", "bear", "position"]
     },
     {
@@ -20559,7 +20568,7 @@ const INKLING_WORDS = [
             "She counted the stars.",
             "We saw millions of stars in the desert."
         ]
-,
+        ,
         "synonyms": ["celestial-bodies", "celebrities", "luminaries"]
     },
     {
@@ -20572,7 +20581,7 @@ const INKLING_WORDS = [
             "She got off to a great start.",
             "The race starts at noon."
         ]
-,
+        ,
         "synonyms": ["begin", "launch", "commence"]
     },
     {
@@ -20585,7 +20594,7 @@ const INKLING_WORDS = [
             "Please state your full name.",
             "She stated her case clearly."
         ]
-,
+        ,
         "synonyms": ["country", "condition", "declare"]
     },
     {
@@ -20598,7 +20607,7 @@ const INKLING_WORDS = [
             "He gave a statement to the police.",
             "The statement was signed."
         ]
-,
+        ,
         "synonyms": ["declaration", "claim", "assertion"]
     },
     {
@@ -20611,7 +20620,7 @@ const INKLING_WORDS = [
             "She stayed late at school.",
             "Can you stay a little longer?"
         ]
-,
+        ,
         "synonyms": ["remain", "abide", "lodge"]
     },
     {
@@ -20624,7 +20633,7 @@ const INKLING_WORDS = [
             "She has nerves of steel.",
             "He bent the steel bar."
         ]
-,
+        ,
         "synonyms": ["iron-alloy", "strengthen", "metal"]
     },
     {
@@ -20637,7 +20646,7 @@ const INKLING_WORDS = [
             "She took one step forward.",
             "He stepped over the puddle."
         ]
-,
+        ,
         "synonyms": ["pace", "action", "stair"]
     },
     {
@@ -20650,7 +20659,7 @@ const INKLING_WORDS = [
             "Stick the picture on the page.",
             "The glue didn't stick."
         ]
-,
+        ,
         "synonyms": ["rod", "adhere", "branch"]
     },
     {
@@ -20663,7 +20672,7 @@ const INKLING_WORDS = [
             "Sit still for a moment.",
             "The pond was still and calm."
         ]
-,
+        ,
         "synonyms": ["quiet", "motionless", "yet"]
     },
     {
@@ -20676,7 +20685,7 @@ const INKLING_WORDS = [
             "He weighs twelve stone.",
             "The wall is built of stone."
         ]
-,
+        ,
         "synonyms": ["rock", "gem", "pebble"]
     },
     {
@@ -20689,7 +20698,7 @@ const INKLING_WORDS = [
             "He stood very still.",
             "They stood in line for an hour."
         ]
-,
+        ,
         "synonyms": ["was-standing", "tolerated", "was-upright"]
     },
     {
@@ -20702,7 +20711,7 @@ const INKLING_WORDS = [
             "The bus stop is on the corner.",
             "She stopped running when she reached the top."
         ]
-,
+        ,
         "synonyms": ["halt", "cease", "prevent"]
     },
     {
@@ -20715,7 +20724,7 @@ const INKLING_WORDS = [
             "Store the biscuits in a tin.",
             "He ran a grocery store."
         ]
-,
+        ,
         "synonyms": ["shop", "save", "storage"]
     },
     {
@@ -20728,7 +20737,7 @@ const INKLING_WORDS = [
             "The story had a happy ending.",
             "He wrote a story about a dragon."
         ]
-,
+        ,
         "synonyms": ["tale", "narrative", "account"]
     },
     {
@@ -20741,7 +20750,7 @@ const INKLING_WORDS = [
             "Go straight ahead.",
             "She stood up straight."
         ]
-,
+        ,
         "synonyms": ["direct", "unbent", "honest"]
     },
     {
@@ -20754,7 +20763,7 @@ const INKLING_WORDS = [
             "That is very strange.",
             "He had a strange feeling."
         ]
-,
+        ,
         "synonyms": ["odd", "unusual", "peculiar"]
     },
     {
@@ -20767,7 +20776,7 @@ const INKLING_WORDS = [
             "He streamed the film online.",
             "The stream flowed gently."
         ]
-,
+        ,
         "synonyms": ["creek", "flow", "current"]
     },
     {
@@ -20780,7 +20789,7 @@ const INKLING_WORDS = [
             "He crossed the street.",
             "The street was covered in autumn leaves."
         ]
-,
+        ,
         "synonyms": ["road", "avenue", "lane"]
     },
     {
@@ -20793,7 +20802,7 @@ const INKLING_WORDS = [
             "He stretched out on the sofa.",
             "The road stretched for miles."
         ]
-,
+        ,
         "synonyms": ["extended", "expanded", "pulled"]
     },
     {
@@ -20806,7 +20815,7 @@ const INKLING_WORDS = [
             "He strung the beads together.",
             "The kite was on a long string."
         ]
-,
+        ,
         "synonyms": ["cord", "thread", "series"]
     },
     {
@@ -20819,7 +20828,7 @@ const INKLING_WORDS = [
             "The wind was strong today.",
             "He has a strong sense of justice."
         ]
-,
+        ,
         "synonyms": ["powerful", "robust", "intense"]
     },
     {
@@ -20832,7 +20841,7 @@ const INKLING_WORDS = [
             "She teaches forty students.",
             "All students passed the exam."
         ]
-,
+        ,
         "synonyms": ["learners", "pupils", "scholars"]
     },
     {
@@ -20845,7 +20854,7 @@ const INKLING_WORDS = [
             "He did a study on birds.",
             "You need to study for the test."
         ]
-,
+        ,
         "synonyms": ["learn", "examine", "research"]
     },
     {
@@ -20858,7 +20867,7 @@ const INKLING_WORDS = [
             "Please don't change the subject.",
             "He is subject to rules."
         ]
-,
+        ,
         "synonyms": ["topic", "theme", "subordinate"]
     },
     {
@@ -20871,7 +20880,7 @@ const INKLING_WORDS = [
             "She tested several substances.",
             "He listed all the substances used."
         ]
-,
+        ,
         "synonyms": ["materials", "compounds", "matter"]
     },
     {
@@ -20884,7 +20893,7 @@ const INKLING_WORDS = [
             "I've never seen such beauty.",
             "Such things rarely happen."
         ]
-,
+        ,
         "synonyms": ["so", "this-kind-of", "to-this-degree"]
     },
     {
@@ -20897,7 +20906,7 @@ const INKLING_WORDS = [
             "He suddenly remembered.",
             "It suddenly started to rain."
         ]
-,
+        ,
         "synonyms": ["abruptly", "unexpectedly", "all-at-once"]
     },
     {
@@ -20910,7 +20919,7 @@ const INKLING_WORDS = [
             "The suffix -er means a person who does.",
             "He learned about suffixes in class."
         ]
-,
+        ,
         "synonyms": ["ending", "affix", "word-ending"]
     },
     {
@@ -20923,7 +20932,7 @@ const INKLING_WORDS = [
             "Too much sugar is bad for you.",
             "He bought a bag of sugar."
         ]
-,
+        ,
         "synonyms": ["sweetener", "sucrose", "glucose"]
     },
     {
@@ -20936,7 +20945,7 @@ const INKLING_WORDS = [
             "He suggested a different plan.",
             "They suggested meeting at noon."
         ]
-,
+        ,
         "synonyms": ["proposed", "recommended", "implied"]
     },
     {
@@ -20949,7 +20958,7 @@ const INKLING_WORDS = [
             "What is the sum of three and four?",
             "The sum of parts is greater than the whole."
         ]
-,
+        ,
         "synonyms": ["total", "amount", "add-up"]
     },
     {
@@ -20962,7 +20971,7 @@ const INKLING_WORDS = [
             "They played outside all summer.",
             "Summer holidays are the best."
         ]
-,
+        ,
         "synonyms": ["warm-season", "June-August", "sunshine"]
     },
     {
@@ -20975,7 +20984,7 @@ const INKLING_WORDS = [
             "Don't look directly at the sun.",
             "She sat in the sun and read."
         ]
-,
+        ,
         "synonyms": ["star", "solar", "sunshine"]
     },
     {
@@ -20988,7 +20997,7 @@ const INKLING_WORDS = [
             "The supply ran out.",
             "He stocks a good supply of wood."
         ]
-,
+        ,
         "synonyms": ["provide", "stock", "give"]
     },
     {
@@ -21001,7 +21010,7 @@ const INKLING_WORDS = [
             "She supposed he had forgotten.",
             "What do you suppose happened?"
         ]
-,
+        ,
         "synonyms": ["assume", "presume", "imagine"]
     },
     {
@@ -21014,7 +21023,7 @@ const INKLING_WORDS = [
             "She is sure she left it here.",
             "Sure, I will help."
         ]
-,
+        ,
         "synonyms": ["certain", "confident", "reliable"]
     },
     {
@@ -21027,7 +21036,7 @@ const INKLING_WORDS = [
             "The ball bounced off the surface.",
             "Ice forms on the surface of ponds."
         ]
-,
+        ,
         "synonyms": ["face", "top", "exterior"]
     },
     {
@@ -21040,7 +21049,7 @@ const INKLING_WORDS = [
             "She surprised him with a cake.",
             "He was surprised to see her."
         ]
-,
+        ,
         "synonyms": ["astonish", "shock", "startle"]
     },
     {
@@ -21053,7 +21062,7 @@ const INKLING_WORDS = [
             "He swam across the river.",
             "Can you swim?"
         ]
-,
+        ,
         "synonyms": ["stroke", "glide", "paddle"]
     },
     {
@@ -21066,7 +21075,7 @@ const INKLING_WORDS = [
             "The word happy has two syllables.",
             "She counted the syllables in each word."
         ]
-,
+        ,
         "synonyms": ["sound-units", "phonemes", "word-parts"]
     },
     {
@@ -21079,7 +21088,7 @@ const INKLING_WORDS = [
             "Peace symbols were painted on the wall.",
             "He learned the musical symbols."
         ]
-,
+        ,
         "synonyms": ["signs", "icons", "representations"]
     },
     {
@@ -21092,7 +21101,7 @@ const INKLING_WORDS = [
             "She understands the system well.",
             "There is a new bus system."
         ]
-,
+        ,
         "synonyms": ["structure", "network", "method"]
     },
     {
@@ -21105,7 +21114,7 @@ const INKLING_WORDS = [
             "The table is made of oak.",
             "She sat at the kitchen table."
         ]
-,
+        ,
         "synonyms": ["postpone", "submit", "present"]
     },
     {
@@ -21118,7 +21127,7 @@ const INKLING_WORDS = [
             "She took the bus to school.",
             "He took her hand."
         ]
-,
+        ,
         "synonyms": ["grab", "accept", "require"]
     },
     {
@@ -21131,7 +21140,7 @@ const INKLING_WORDS = [
             "They had a long talk.",
             "Let's talk about it later."
         ]
-,
+        ,
         "synonyms": ["speak", "chat", "discuss"]
     },
     {
@@ -21144,7 +21153,7 @@ const INKLING_WORDS = [
             "The tall trees swayed in the wind.",
             "He wore a tall hat."
         ]
-,
+        ,
         "synonyms": ["high", "lofty", "towering"]
     },
     {
@@ -21157,7 +21166,7 @@ const INKLING_WORDS = [
             "Her teacher praised her work.",
             "He became a teacher after college."
         ]
-,
+        ,
         "synonyms": ["educator", "tutor", "instructor"]
     },
     {
@@ -21170,7 +21179,7 @@ const INKLING_WORDS = [
             "The team won the match.",
             "He is a great team player."
         ]
-,
+        ,
         "synonyms": ["group", "squad", "collective"]
     },
     {
@@ -21183,7 +21192,7 @@ const INKLING_WORDS = [
             "She told him the news.",
             "He told a funny story."
         ]
-,
+        ,
         "synonyms": ["inform", "narrate", "instruct"]
     },
     {
@@ -21196,7 +21205,7 @@ const INKLING_WORDS = [
             "What is the temperature outside?",
             "She took the temperature of the soup."
         ]
-,
+        ,
         "synonyms": ["heat", "degree", "warmth"]
     },
     {
@@ -21209,7 +21218,7 @@ const INKLING_WORDS = [
             "He counted to ten slowly.",
             "The shop closes at ten o'clock."
         ]
-,
+        ,
         "synonyms": ["10", "decade-number", "numeral"]
     },
     {
@@ -21222,7 +21231,7 @@ const INKLING_WORDS = [
             "He agreed to the terms.",
             "The terms of the deal were fair."
         ]
-,
+        ,
         "synonyms": ["conditions", "words", "phrases"]
     },
     {
@@ -21235,7 +21244,7 @@ const INKLING_WORDS = [
             "We will test the theory.",
             "He studied hard for the test."
         ]
-,
+        ,
         "synonyms": ["exam", "trial", "assess"]
     },
     {
@@ -21248,7 +21257,7 @@ const INKLING_WORDS = [
             "This is better than that.",
             "He runs faster than his brother."
         ]
-,
+        ,
         "synonyms": ["compared-to", "more-than", "other-than"]
     },
     {
@@ -21261,7 +21270,7 @@ const INKLING_WORDS = [
             "That is my book.",
             "She said that she was tired."
         ]
-,
+        ,
         "synonyms": ["the-one", "those", "which"]
     },
     {
@@ -21274,7 +21283,7 @@ const INKLING_WORDS = [
             "Please pass the salt.",
             "The sun rises in the east."
         ]
-,
+        ,
         "synonyms": ["definite-article", "that-particular", "the-one"]
     },
     {
@@ -21287,7 +21296,7 @@ const INKLING_WORDS = [
             "They forgot their bags.",
             "Their dog ran away."
         ]
-,
+        ,
         "synonyms": ["belonging-to-them", "possessive", "their-own"]
     },
     {
@@ -21300,7 +21309,7 @@ const INKLING_WORDS = [
             "I saw them at the park.",
             "She helped them with their bags."
         ]
-,
+        ,
         "synonyms": ["those-people", "those-things", "they"]
     },
     {
@@ -21313,7 +21322,7 @@ const INKLING_WORDS = [
             "The children dressed themselves.",
             "They had only themselves to blame."
         ]
-,
+        ,
         "synonyms": ["their-own", "oneself", "reflexive"]
     },
     {
@@ -21326,7 +21335,7 @@ const INKLING_WORDS = [
             "She was younger then.",
             "Finish this, then start the next."
         ]
-,
+        ,
         "synonyms": ["at-that-time", "next", "therefore"]
     },
     {
@@ -21339,7 +21348,7 @@ const INKLING_WORDS = [
             "There is a cat on the roof.",
             "We have been there before."
         ]
-,
+        ,
         "synonyms": ["at-that-place", "in-that-location", "yonder"]
     },
     {
@@ -21352,7 +21361,7 @@ const INKLING_WORDS = [
             "Are these yours?",
             "I made these cookies."
         ]
-,
+        ,
         "synonyms": ["this-group", "the-ones-here", "those-near"]
     },
     {
@@ -21365,7 +21374,7 @@ const INKLING_WORDS = [
             "They won the game.",
             "Are they ready?"
         ]
-,
+        ,
         "synonyms": ["those-people", "the-group", "those"]
     },
     {
@@ -21378,7 +21387,7 @@ const INKLING_WORDS = [
             "She wore a thick coat.",
             "The forest was thick with trees."
         ]
-,
+        ,
         "synonyms": ["dense", "broad", "deep"]
     },
     {
@@ -21391,7 +21400,7 @@ const INKLING_WORDS = [
             "He wore a thin jumper.",
             "The walls are very thin here."
         ]
-,
+        ,
         "synonyms": ["slender", "narrow", "lean"]
     },
     {
@@ -21404,7 +21413,7 @@ const INKLING_WORDS = [
             "I have too many things to do.",
             "Strange things happen here."
         ]
-,
+        ,
         "synonyms": ["objects", "matters", "items"]
     },
     {
@@ -21417,7 +21426,7 @@ const INKLING_WORDS = [
             "She thinks deeply about everything.",
             "What do you think?"
         ]
-,
+        ,
         "synonyms": ["believe", "consider", "ponder"]
     },
     {
@@ -21430,7 +21439,7 @@ const INKLING_WORDS = [
             "He ate a third of the pie.",
             "The third question was tricky."
         ]
-,
+        ,
         "synonyms": ["one-third", "ordinal-three", "bronze"]
     },
     {
@@ -21443,7 +21452,7 @@ const INKLING_WORDS = [
             "I like this song.",
             "Take this with you."
         ]
-,
+        ,
         "synonyms": ["the-one", "the-present", "the-current"]
     },
     {
@@ -21456,7 +21465,7 @@ const INKLING_WORDS = [
             "Are those your books?",
             "I like those better."
         ]
-,
+        ,
         "synonyms": ["those-ones", "that-group", "they"]
     },
     {
@@ -21469,7 +21478,7 @@ const INKLING_WORDS = [
             "I like him, though he can be stubborn.",
             "It was odd, though not surprising."
         ]
-,
+        ,
         "synonyms": ["although", "even-if", "however"]
     },
     {
@@ -21482,7 +21491,7 @@ const INKLING_WORDS = [
             "I thought it was funny.",
             "He thought of a clever plan."
         ]
-,
+        ,
         "synonyms": ["idea", "opinion", "ponder"]
     },
     {
@@ -21495,7 +21504,7 @@ const INKLING_WORDS = [
             "She earned thousands of steps on her walk.",
             "Thousands of birds filled the sky."
         ]
-,
+        ,
         "synonyms": ["many", "multiple-hundreds", "large-number"]
     },
     {
@@ -21508,7 +21517,7 @@ const INKLING_WORDS = [
             "We waited for three hours.",
             "They need three more players."
         ]
-,
+        ,
         "synonyms": ["3", "trio", "triple"]
     },
     {
@@ -21521,7 +21530,7 @@ const INKLING_WORDS = [
             "He drove through the tunnel.",
             "I got through the whole book."
         ]
-,
+        ,
         "synonyms": ["across", "via", "by-way-of"]
     },
     {
@@ -21534,7 +21543,7 @@ const INKLING_WORDS = [
             "He said nothing, thus avoiding trouble.",
             "She was tired, thus she went home."
         ]
-,
+        ,
         "synonyms": ["therefore", "so", "consequently"]
     },
     {
@@ -21547,7 +21556,7 @@ const INKLING_WORDS = [
             "He tied the bag shut.",
             "The match ended tied."
         ]
-,
+        ,
         "synonyms": ["bound", "fastened", "linked"]
     },
     {
@@ -21560,7 +21569,7 @@ const INKLING_WORDS = [
             "She had a great time at the party.",
             "Time flies when you're having fun."
         ]
-,
+        ,
         "synonyms": ["period", "moment", "clock"]
     },
     {
@@ -21573,7 +21582,7 @@ const INKLING_WORDS = [
             "She made a tiny mistake.",
             "He found a tiny crack in the wall."
         ]
-,
+        ,
         "synonyms": ["small", "minute", "minuscule"]
     },
     {
@@ -21586,7 +21595,7 @@ const INKLING_WORDS = [
             "What are we doing today?",
             "I need to finish it today."
         ]
-,
+        ,
         "synonyms": ["this-day", "presently", "now"]
     },
     {
@@ -21599,7 +21608,7 @@ const INKLING_WORDS = [
             "They worked together on the project.",
             "Let's sing together."
         ]
-,
+        ,
         "synonyms": ["jointly", "combined", "as-one"]
     },
     {
@@ -21612,7 +21621,7 @@ const INKLING_WORDS = [
             "He told the truth.",
             "They told us to wait here."
         ]
-,
+        ,
         "synonyms": ["narrated", "informed", "instructed"]
     },
     {
@@ -21625,7 +21634,7 @@ const INKLING_WORDS = [
             "The room was painted in warm tones.",
             "He set the tone for the day."
         ]
-,
+        ,
         "synonyms": ["sound", "manner", "shade"]
     },
     {
@@ -21638,7 +21647,7 @@ const INKLING_WORDS = [
             "It was too cold outside.",
             "The soup is too hot."
         ]
-,
+        ,
         "synonyms": ["also", "as-well", "excessively"]
     },
     {
@@ -21651,7 +21660,7 @@ const INKLING_WORDS = [
             "He took the bus home.",
             "They took a long walk."
         ]
-,
+        ,
         "synonyms": ["grabbed", "accepted", "required"]
     },
     {
@@ -21664,7 +21673,7 @@ const INKLING_WORDS = [
             "He kept all his tools in a shed.",
             "The tools were laid out neatly."
         ]
-,
+        ,
         "synonyms": ["instruments", "equipment", "implements"]
     },
     {
@@ -21677,7 +21686,7 @@ const INKLING_WORDS = [
             "He is a top student.",
             "The top of the jar is stuck."
         ]
-,
+        ,
         "synonyms": ["summit", "peak", "best"]
     },
     {
@@ -21690,7 +21699,7 @@ const INKLING_WORDS = [
             "She added up the total.",
             "It was a total surprise."
         ]
-,
+        ,
         "synonyms": ["complete", "whole", "sum"]
     },
     {
@@ -21703,7 +21712,7 @@ const INKLING_WORDS = [
             "She touched the soft fur.",
             "A light touch was enough."
         ]
-,
+        ,
         "synonyms": ["feel", "contact", "affect"]
     },
     {
@@ -21716,7 +21725,7 @@ const INKLING_WORDS = [
             "He moved toward the light.",
             "They headed toward the exit."
         ]
-,
+        ,
         "synonyms": ["in-the-direction-of", "near", "regarding"]
     },
     {
@@ -21729,7 +21738,7 @@ const INKLING_WORDS = [
             "He walked through the town center.",
             "The whole town came to the festival."
         ]
-,
+        ,
         "synonyms": ["village", "municipality", "settlement"]
     },
     {
@@ -21742,7 +21751,7 @@ const INKLING_WORDS = [
             "He tracked the package.",
             "The track led into the forest."
         ]
-,
+        ,
         "synonyms": ["trail", "monitor", "path"]
     },
     {
@@ -21755,7 +21764,7 @@ const INKLING_WORDS = [
             "Countries trade with each other.",
             "He worked in the trade."
         ]
-,
+        ,
         "synonyms": ["commerce", "exchange", "business"]
     },
     {
@@ -21768,7 +21777,7 @@ const INKLING_WORDS = [
             "He trains twice a week.",
             "The train was on time."
         ]
-,
+        ,
         "synonyms": ["instruct", "practice", "rail-vehicle"]
     },
     {
@@ -21781,7 +21790,7 @@ const INKLING_WORDS = [
             "He bought a travel guide.",
             "They traveled by train."
         ]
-,
+        ,
         "synonyms": ["journey", "voyage", "go"]
     },
     {
@@ -21794,7 +21803,7 @@ const INKLING_WORDS = [
             "The tree had red leaves in autumn.",
             "She sat under the tree."
         ]
-,
+        ,
         "synonyms": ["plant", "timber", "arboreal"]
     },
     {
@@ -21807,7 +21816,7 @@ const INKLING_WORDS = [
             "A triangle has three angles.",
             "He built a triangle from sticks."
         ]
-,
+        ,
         "synonyms": ["three-sided-shape", "delta", "trigon"]
     },
     {
@@ -21820,7 +21829,7 @@ const INKLING_WORDS = [
             "She tripped on the step.",
             "He planned a trip to the coast."
         ]
-,
+        ,
         "synonyms": ["journey", "stumble", "excursion"]
     },
     {
@@ -21833,7 +21842,7 @@ const INKLING_WORDS = [
             "He is always troubled by noise.",
             "Don't get into trouble!"
         ]
-,
+        ,
         "synonyms": ["problem", "difficulty", "bother"]
     },
     {
@@ -21846,7 +21855,7 @@ const INKLING_WORDS = [
             "She drove a delivery truck.",
             "He loaded the truck."
         ]
-,
+        ,
         "synonyms": ["lorry", "vehicle", "van"]
     },
     {
@@ -21859,7 +21868,7 @@ const INKLING_WORDS = [
             "She told him the true reason.",
             "That is a true friend."
         ]
-,
+        ,
         "synonyms": ["accurate", "genuine", "real"]
     },
     {
@@ -21872,7 +21881,7 @@ const INKLING_WORDS = [
             "She tried hard but failed.",
             "Can I try on these shoes?"
         ]
-,
+        ,
         "synonyms": ["attempt", "endeavor", "test"]
     },
     {
@@ -21885,7 +21894,7 @@ const INKLING_WORDS = [
             "He traveled on the London tube.",
             "Squeeze the tube from the bottom."
         ]
-,
+        ,
         "synonyms": ["pipe", "cylinder", "passage"]
     },
     {
@@ -21898,7 +21907,7 @@ const INKLING_WORDS = [
             "It is my turn to speak.",
             "She turned the key slowly."
         ]
-,
+        ,
         "synonyms": ["rotate", "change-direction", "become"]
     },
     {
@@ -21911,7 +21920,7 @@ const INKLING_WORDS = [
             "She ate two slices of pizza.",
             "Two birds sat on the fence."
         ]
-,
+        ,
         "synonyms": ["pair", "couple", "dual"]
     },
     {
@@ -21924,7 +21933,7 @@ const INKLING_WORDS = [
             "She types very fast.",
             "He typed the report quickly."
         ]
-,
+        ,
         "synonyms": ["kind", "sort", "category"]
     },
     {
@@ -21937,7 +21946,7 @@ const INKLING_WORDS = [
             "His uncle told great stories.",
             "She visited her uncle every summer."
         ]
-,
+        ,
         "synonyms": ["relative", "father's-brother", "mother's-brother"]
     },
     {
@@ -21950,7 +21959,7 @@ const INKLING_WORDS = [
             "Her name is under the title.",
             "He hid under the table."
         ]
-,
+        ,
         "synonyms": ["below", "beneath", "less-than"]
     },
     {
@@ -21963,7 +21972,7 @@ const INKLING_WORDS = [
             "She drew an underline below her name.",
             "He underlined the most important parts."
         ]
-,
+        ,
         "synonyms": ["emphasize", "underline-text", "mark"]
     },
     {
@@ -21976,7 +21985,7 @@ const INKLING_WORDS = [
             "She understands how it works.",
             "I don't understand this problem."
         ]
-,
+        ,
         "synonyms": ["comprehend", "know", "grasp"]
     },
     {
@@ -21989,7 +21998,7 @@ const INKLING_WORDS = [
             "She finished unit three.",
             "The kitchen units are all white."
         ]
-,
+        ,
         "synonyms": ["element", "module", "measure"]
     },
     {
@@ -22002,7 +22011,7 @@ const INKLING_WORDS = [
             "Don't leave until it's done.",
             "He worked until midnight."
         ]
-,
+        ,
         "synonyms": ["up-to", "till", "before"]
     },
     {
@@ -22015,7 +22024,7 @@ const INKLING_WORDS = [
             "She placed the gift upon the table.",
             "He stumbled upon the answer."
         ]
-,
+        ,
         "synonyms": ["on-top-of", "onto", "as-soon-as"]
     },
     {
@@ -22028,7 +22037,7 @@ const INKLING_WORDS = [
             "What is the use of this tool?",
             "She knows how to use a compass."
         ]
-,
+        ,
         "synonyms": ["utilize", "employ", "apply"]
     },
     {
@@ -22041,7 +22050,7 @@ const INKLING_WORDS = [
             "He usually wakes up early.",
             "I usually have toast for breakfast."
         ]
-,
+        ,
         "synonyms": ["typically", "generally", "normally"]
     },
     {
@@ -22054,7 +22063,7 @@ const INKLING_WORDS = [
             "She walked down into the valley.",
             "A river ran through the valley."
         ]
-,
+        ,
         "synonyms": ["gorge", "basin", "dale"]
     },
     {
@@ -22067,7 +22076,7 @@ const INKLING_WORDS = [
             "She values honesty.",
             "He sold it for good value."
         ]
-,
+        ,
         "synonyms": ["worth", "importance", "cost"]
     },
     {
@@ -22080,7 +22089,7 @@ const INKLING_WORDS = [
             "He tried various methods.",
             "There are various reasons."
         ]
-,
+        ,
         "synonyms": ["diverse", "assorted", "different"]
     },
     {
@@ -22089,7 +22098,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Respected due to age or wisdom.",
         "sentence": "A venerable elder.",
         "hint": "Respected."
-,
+        ,
         "synonyms": ["respected", "esteemed", "revered"]
     },
     {
@@ -22102,7 +22111,7 @@ const INKLING_WORDS = [
             "She underlined each verb.",
             "Every sentence needs a verb."
         ]
-,
+        ,
         "synonyms": ["action-word", "doing-word", "predicator"]
     },
     {
@@ -22115,7 +22124,7 @@ const INKLING_WORDS = [
             "I am very hungry.",
             "The water is very cold."
         ]
-,
+        ,
         "synonyms": ["extremely", "greatly", "highly"]
     },
     {
@@ -22128,7 +22137,7 @@ const INKLING_WORDS = [
             "She viewed the paintings.",
             "In his view, it was wrong."
         ]
-,
+        ,
         "synonyms": ["opinion", "sight", "perspective"]
     },
     {
@@ -22141,7 +22150,7 @@ const INKLING_WORDS = [
             "The village had one shop.",
             "Everyone in the village knew each other."
         ]
-,
+        ,
         "synonyms": ["hamlet", "settlement", "community"]
     },
     {
@@ -22154,7 +22163,7 @@ const INKLING_WORDS = [
             "It was a short visit.",
             "He came to visit on Sunday."
         ]
-,
+        ,
         "synonyms": ["call", "trip", "attend"]
     },
     {
@@ -22167,7 +22176,7 @@ const INKLING_WORDS = [
             "He lowered his voice.",
             "I can hear her voice down the hall."
         ]
-,
+        ,
         "synonyms": ["sound", "speak", "tone"]
     },
     {
@@ -22180,7 +22189,7 @@ const INKLING_WORDS = [
             "Every English word has at least one vowel.",
             "She underlined each vowel."
         ]
-,
+        ,
         "synonyms": ["open-sound", "a-e-i-o-u", "vocal"]
     },
     {
@@ -22193,7 +22202,7 @@ const INKLING_WORDS = [
             "There was a long wait.",
             "She waited patiently."
         ]
-,
+        ,
         "synonyms": ["pause", "stay", "expect"]
     },
     {
@@ -22206,7 +22215,7 @@ const INKLING_WORDS = [
             "Let's go for a walk.",
             "He walked slowly through the park."
         ]
-,
+        ,
         "synonyms": ["stroll", "stride", "go-on-foot"]
     },
     {
@@ -22219,7 +22228,7 @@ const INKLING_WORDS = [
             "He leaned against the wall.",
             "The garden wall is made of stone."
         ]
-,
+        ,
         "synonyms": ["barrier", "partition", "fortification"]
     },
     {
@@ -22232,7 +22241,7 @@ const INKLING_WORDS = [
             "What do you want for dinner?",
             "She wants to be a pilot."
         ]
-,
+        ,
         "synonyms": ["desire", "wish", "need"]
     },
     {
@@ -22245,7 +22254,7 @@ const INKLING_WORDS = [
             "She learned about the war in history class.",
             "They hoped for an end to the war."
         ]
-,
+        ,
         "synonyms": ["conflict", "battle", "warfare"]
     },
     {
@@ -22258,7 +22267,7 @@ const INKLING_WORDS = [
             "She warmed the soup.",
             "It is warm by the fire."
         ]
-,
+        ,
         "synonyms": ["heated", "friendly", "temperature"]
     },
     {
@@ -22267,7 +22276,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Showing caution about dangers.",
         "sentence": "She was wary of strangers.",
         "hint": "Cautious."
-,
+        ,
         "synonyms": ["cautious", "guarded", "vigilant"]
     },
     {
@@ -22280,7 +22289,7 @@ const INKLING_WORDS = [
             "It was a sunny day.",
             "He was very tired."
         ]
-,
+        ,
         "synonyms": ["existed", "was-present", "had-been"]
     },
     {
@@ -22293,7 +22302,7 @@ const INKLING_WORDS = [
             "The car needs a wash.",
             "She washed the dishes."
         ]
-,
+        ,
         "synonyms": ["clean", "rinse", "launder"]
     },
     {
@@ -22306,7 +22315,7 @@ const INKLING_WORDS = [
             "He moved to Washington state.",
             "Washington is the capital of the USA."
         ]
-,
+        ,
         "synonyms": ["state", "capital", "George-Washington"]
     },
     {
@@ -22319,7 +22328,7 @@ const INKLING_WORDS = [
             "He wasn't at school today.",
             "That wasn't what I meant."
         ]
-,
+        ,
         "synonyms": ["was-not", "had-not-been", "never-was"]
     },
     {
@@ -22332,7 +22341,7 @@ const INKLING_WORDS = [
             "He glanced at his watch.",
             "I like to watch the sunset."
         ]
-,
+        ,
         "synonyms": ["observe", "timepiece", "guard"]
     },
     {
@@ -22345,7 +22354,7 @@ const INKLING_WORDS = [
             "The water in the lake is cold.",
             "She watered the plants."
         ]
-,
+        ,
         "synonyms": ["liquid", "hydrate", "fluid"]
     },
     {
@@ -22358,7 +22367,7 @@ const INKLING_WORDS = [
             "She waved goodbye from the window.",
             "The flag waved in the wind."
         ]
-,
+        ,
         "synonyms": ["ripples", "swells", "undulations"]
     },
     {
@@ -22371,7 +22380,7 @@ const INKLING_WORDS = [
             "There is no easy way to do this.",
             "That is the wrong way."
         ]
-,
+        ,
         "synonyms": ["method", "direction", "path"]
     },
     {
@@ -22384,7 +22393,7 @@ const INKLING_WORDS = [
             "We'll need umbrellas.",
             "We'll do it together."
         ]
-,
+        ,
         "synonyms": ["we-will", "we-shall", "us"]
     },
     {
@@ -22397,7 +22406,7 @@ const INKLING_WORDS = [
             "She wears glasses.",
             "He wore a hat in the sun."
         ]
-,
+        ,
         "synonyms": ["dress", "carry", "sport"]
     },
     {
@@ -22410,7 +22419,7 @@ const INKLING_WORDS = [
             "She checked the weather forecast.",
             "Cold weather can be dangerous."
         ]
-,
+        ,
         "synonyms": ["endure", "survive", "withstand"]
     },
     {
@@ -22423,7 +22432,7 @@ const INKLING_WORDS = [
             "Next week is my birthday.",
             "He worked hard all week."
         ]
-,
+        ,
         "synonyms": ["seven-days", "period", "span"]
     },
     {
@@ -22436,7 +22445,7 @@ const INKLING_WORDS = [
             "The weight was too heavy to lift.",
             "He lost weight over the summer."
         ]
-,
+        ,
         "synonyms": ["mass", "heaviness", "burden"]
     },
     {
@@ -22449,7 +22458,7 @@ const INKLING_WORDS = [
             "Are you feeling well?",
             "He swims well."
         ]
-,
+        ,
         "synonyms": ["healthy", "good", "shaft"]
     },
     {
@@ -22462,7 +22471,7 @@ const INKLING_WORDS = [
             "She went to bed early.",
             "He went for a long walk."
         ]
-,
+        ,
         "synonyms": ["traveled", "departed", "moved"]
     },
     {
@@ -22475,7 +22484,7 @@ const INKLING_WORDS = [
             "We were late.",
             "The shoes were muddy."
         ]
-,
+        ,
         "synonyms": ["existed", "had-been", "were-present"]
     },
     {
@@ -22488,7 +22497,7 @@ const INKLING_WORDS = [
             "The sun sets in the west.",
             "Wild weather blew in from the west."
         ]
-,
+        ,
         "synonyms": ["direction", "sunset-side", "western"]
     },
     {
@@ -22501,7 +22510,7 @@ const INKLING_WORDS = [
             "They watched a western film.",
             "He traveled through the western states."
         ]
-,
+        ,
         "synonyms": ["from-the-west", "occidental", "cowboy"]
     },
     {
@@ -22514,7 +22523,7 @@ const INKLING_WORDS = [
             "I don't know what to say.",
             "What time is it?"
         ]
-,
+        ,
         "synonyms": ["which-thing", "that-which", "inquiry"]
     },
     {
@@ -22527,7 +22536,7 @@ const INKLING_WORDS = [
             "She spun the wheels of her chair.",
             "The cart had four wheels."
         ]
-,
+        ,
         "synonyms": ["circles", "tires", "rotating-parts"]
     },
     {
@@ -22540,7 +22549,7 @@ const INKLING_WORDS = [
             "Call me when you arrive.",
             "She smiled when she saw him."
         ]
-,
+        ,
         "synonyms": ["at-what-time", "at-the-moment", "if"]
     },
     {
@@ -22553,7 +22562,7 @@ const INKLING_WORDS = [
             "I know where she lives.",
             "Where did you go?"
         ]
-,
+        ,
         "synonyms": ["at-what-place", "in-which", "location"]
     },
     {
@@ -22566,7 +22575,7 @@ const INKLING_WORDS = [
             "Tell me whether you are coming.",
             "It doesn't matter whether it rains."
         ]
-,
+        ,
         "synonyms": ["if", "in-case", "regardless"]
     },
     {
@@ -22579,7 +22588,7 @@ const INKLING_WORDS = [
             "I don't know which road to take.",
             "Which one is yours?"
         ]
-,
+        ,
         "synonyms": ["that", "what-one", "the-one-that"]
     },
     {
@@ -22592,7 +22601,7 @@ const INKLING_WORDS = [
             "Wait here for a while.",
             "He napped while the baby slept."
         ]
-,
+        ,
         "synonyms": ["during", "although", "meanwhile"]
     },
     {
@@ -22605,7 +22614,7 @@ const INKLING_WORDS = [
             "The rabbit had white fur.",
             "Snow is white."
         ]
-,
+        ,
         "synonyms": ["pale", "snow-colored", "light"]
     },
     {
@@ -22618,7 +22627,7 @@ const INKLING_WORDS = [
             "She is the one who called.",
             "I know who did it."
         ]
-,
+        ,
         "synonyms": ["which-person", "that-individual", "whoever"]
     },
     {
@@ -22631,7 +22640,7 @@ const INKLING_WORDS = [
             "The whole class joined in.",
             "Tell me the whole story."
         ]
-,
+        ,
         "synonyms": ["complete", "entire", "all"]
     },
     {
@@ -22644,7 +22653,7 @@ const INKLING_WORDS = [
             "She knew whose book it was.",
             "I don't know whose it is."
         ]
-,
+        ,
         "synonyms": ["belonging-to-whom", "of-which-person", "possessive-who"]
     },
     {
@@ -22657,7 +22666,7 @@ const INKLING_WORDS = [
             "I don't know why he left.",
             "She asked why the sky is blue."
         ]
-,
+        ,
         "synonyms": ["for-what-reason", "the-cause", "rationale"]
     },
     {
@@ -22670,7 +22679,7 @@ const INKLING_WORDS = [
             "She opened her eyes wide.",
             "There was a wide path through the park."
         ]
-,
+        ,
         "synonyms": ["broad", "extensive", "expansive"]
     },
     {
@@ -22683,7 +22692,7 @@ const INKLING_WORDS = [
             "His wife is very kind.",
             "She became his wife last summer."
         ]
-,
+        ,
         "synonyms": ["spouse", "partner", "mate"]
     },
     {
@@ -22696,7 +22705,7 @@ const INKLING_WORDS = [
             "She has a wild imagination.",
             "Don't pick wild mushrooms randomly."
         ]
-,
+        ,
         "synonyms": ["untamed", "natural", "extreme"]
     },
     {
@@ -22709,7 +22718,7 @@ const INKLING_WORDS = [
             "I will call you later.",
             "We will win the game."
         ]
-,
+        ,
         "synonyms": ["determination", "future-tense", "testament"]
     },
     {
@@ -22722,7 +22731,7 @@ const INKLING_WORDS = [
             "He always plays to win.",
             "It was a great win for the team."
         ]
-,
+        ,
         "synonyms": ["triumph", "gain", "succeed"]
     },
     {
@@ -22735,7 +22744,7 @@ const INKLING_WORDS = [
             "Wind the string around the post.",
             "The wind was very strong today."
         ]
-,
+        ,
         "synonyms": ["breeze", "gust", "air-current"]
     },
     {
@@ -22748,7 +22757,7 @@ const INKLING_WORDS = [
             "Open the window please.",
             "The window was covered in frost."
         ]
-,
+        ,
         "synonyms": ["opening", "pane", "view"]
     },
     {
@@ -22761,7 +22770,7 @@ const INKLING_WORDS = [
             "She loved the wings on the costume.",
             "He checked the plane's wings."
         ]
-,
+        ,
         "synonyms": ["limbs", "flanks", "extensions"]
     },
     {
@@ -22774,7 +22783,7 @@ const INKLING_WORDS = [
             "The winter was very long.",
             "They stayed inside all winter."
         ]
-,
+        ,
         "synonyms": ["cold-season", "frosty-months", "Dec-Feb"]
     },
     {
@@ -22787,7 +22796,7 @@ const INKLING_WORDS = [
             "He wired the plug himself.",
             "The fence is made of wire."
         ]
-,
+        ,
         "synonyms": ["cable", "conductor", "metal-thread"]
     },
     {
@@ -22800,7 +22809,7 @@ const INKLING_WORDS = [
             "Make a wish!",
             "He got his wish."
         ]
-,
+        ,
         "synonyms": ["hope", "desire", "want"]
     },
     {
@@ -22813,7 +22822,7 @@ const INKLING_WORDS = [
             "He cut it with a knife.",
             "I like tea with milk."
         ]
-,
+        ,
         "synonyms": ["alongside", "using", "together"]
     },
     {
@@ -22826,7 +22835,7 @@ const INKLING_WORDS = [
             "She finished within an hour.",
             "He stayed within the rules."
         ]
-,
+        ,
         "synonyms": ["inside", "in", "interior"]
     },
     {
@@ -22839,7 +22848,7 @@ const INKLING_WORDS = [
             "He can't see without his glasses.",
             "Don't go out without a coat."
         ]
-,
+        ,
         "synonyms": ["lacking", "absent-of", "outside"]
     },
     {
@@ -22852,7 +22861,7 @@ const INKLING_WORDS = [
             "She is a strong woman.",
             "The woman smiled kindly."
         ]
-,
+        ,
         "synonyms": ["female", "lady", "adult-woman"]
     },
     {
@@ -22865,7 +22874,7 @@ const INKLING_WORDS = [
             "She admires strong women.",
             "Women and men are equal."
         ]
-,
+        ,
         "synonyms": ["females", "ladies", "adult-women"]
     },
     {
@@ -22878,7 +22887,7 @@ const INKLING_WORDS = [
             "She won't eat broccoli.",
             "He won't give up."
         ]
-,
+        ,
         "synonyms": ["will-not", "refuse", "shall-not"]
     },
     {
@@ -22891,7 +22900,7 @@ const INKLING_WORDS = [
             "The waterfall filled her with wonder.",
             "I wonder if it will rain."
         ]
-,
+        ,
         "synonyms": ["marvel", "awe", "curiosity"]
     },
     {
@@ -22904,7 +22913,7 @@ const INKLING_WORDS = [
             "She gathered wood for the fire.",
             "The floor is solid wood."
         ]
-,
+        ,
         "synonyms": ["timber", "forest", "lumber"]
     },
     {
@@ -22917,7 +22926,7 @@ const INKLING_WORDS = [
             "The words on the page were small.",
             "He could not find the right words."
         ]
-,
+        ,
         "synonyms": ["terms", "vocabulary", "expressions"]
     },
     {
@@ -22930,7 +22939,7 @@ const INKLING_WORDS = [
             "I need to work harder.",
             "Does this machine still work?"
         ]
-,
+        ,
         "synonyms": ["labor", "function", "effort"]
     },
     {
@@ -22943,7 +22952,7 @@ const INKLING_WORDS = [
             "She thanked all the workers.",
             "They are hard workers."
         ]
-,
+        ,
         "synonyms": ["employees", "laborers", "staff"]
     },
     {
@@ -22956,7 +22965,7 @@ const INKLING_WORDS = [
             "It is the biggest city in the world.",
             "The world is full of surprises."
         ]
-,
+        ,
         "synonyms": ["Earth", "globe", "universe"]
     },
     {
@@ -22969,7 +22978,7 @@ const INKLING_WORDS = [
             "I would love some tea.",
             "Would you help me?"
         ]
-,
+        ,
         "synonyms": ["conditional", "was-willing", "might"]
     },
     {
@@ -22982,7 +22991,7 @@ const INKLING_WORDS = [
             "He wouldn't eat the vegetables.",
             "I wouldn't do that if I were you."
         ]
-,
+        ,
         "synonyms": ["would-not", "refused-to", "was-unwilling"]
     },
     {
@@ -22995,7 +23004,7 @@ const INKLING_WORDS = [
             "The rules are written down.",
             "He had written her a letter."
         ]
-,
+        ,
         "synonyms": ["composed", "inscribed", "documented"]
     },
     {
@@ -23008,7 +23017,7 @@ const INKLING_WORDS = [
             "He knew right from wrong.",
             "She took the wrong turn."
         ]
-,
+        ,
         "synonyms": ["incorrect", "immoral", "mistaken"]
     },
     {
@@ -23021,7 +23030,7 @@ const INKLING_WORDS = [
             "He wrote home every week.",
             "They wrote their names on the paper."
         ]
-,
+        ,
         "synonyms": ["composed", "authored", "penned"]
     },
     {
@@ -23034,7 +23043,7 @@ const INKLING_WORDS = [
             "The children played in the yard.",
             "A yard is three feet long."
         ]
-,
+        ,
         "synonyms": ["enclosure", "garden", "measure"]
     },
     {
@@ -23047,7 +23056,7 @@ const INKLING_WORDS = [
             "The tree is one hundred years old.",
             "We have been friends for years."
         ]
-,
+        ,
         "synonyms": ["periods", "durations", "annums"]
     },
     {
@@ -23060,7 +23069,7 @@ const INKLING_WORDS = [
             "The daffodils are bright yellow.",
             "He painted the walls yellow."
         ]
-,
+        ,
         "synonyms": ["gold", "amber", "canary"]
     },
     {
@@ -23073,7 +23082,7 @@ const INKLING_WORDS = [
             "She nodded and said yes.",
             "Yes! We won!"
         ]
-,
+        ,
         "synonyms": ["affirmative", "certainly", "agreed"]
     },
     {
@@ -23086,7 +23095,7 @@ const INKLING_WORDS = [
             "She is tired, yet still smiling.",
             "I haven't eaten yet."
         ]
-,
+        ,
         "synonyms": ["still", "however", "but"]
     },
     {
@@ -23099,7 +23108,7 @@ const INKLING_WORDS = [
             "Can you help me?",
             "I saw you at the store."
         ]
-,
+        ,
         "synonyms": ["yourself", "thee", "the-person"]
     },
     {
@@ -23112,7 +23121,7 @@ const INKLING_WORDS = [
             "You're going to love it.",
             "You're almost there!"
         ]
-,
+        ,
         "synonyms": ["you-are", "y'all", "yourself"]
     },
     {
@@ -23125,7 +23134,7 @@ const INKLING_WORDS = [
             "Young animals need care.",
             "He was still young when he moved."
         ]
-,
+        ,
         "synonyms": ["youthful", "immature", "juvenile"]
     },
     {
@@ -23138,7 +23147,7 @@ const INKLING_WORDS = [
             "Your dog is so cute!",
             "Please wash your hands."
         ]
-,
+        ,
         "synonyms": ["belonging-to-you", "your-own", "possessive-you"]
     },
     {
@@ -23151,7 +23160,7 @@ const INKLING_WORDS = [
             "Be yourself.",
             "You should be proud of yourself."
         ]
-,
+        ,
         "synonyms": ["you-personally", "oneself", "your-own-self"]
     },
     {
@@ -23160,7 +23169,7 @@ const INKLING_WORDS = [
         "definition": "(adj.) Showing great energy or enthusiasm.",
         "sentence": "A zealous supporter.",
         "hint": "Enthusiastic."
-,
+        ,
         "synonyms": ["fervent", "passionate", "enthusiastic"]
     }
 ];

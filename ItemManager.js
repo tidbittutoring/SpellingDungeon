@@ -1,4 +1,13 @@
 /**
+ * Spelling Dungeon
+ * 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+ * 
+ * Copyright (c) 2026 The Spelling Dungeon Authors
+ */
+
+/**
  * Item types and slots inspired by Diablo 2
  */
 const ItemType = {

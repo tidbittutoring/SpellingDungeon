@@ -1,4 +1,13 @@
 /**
+ * Spelling Dungeon
+ * 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+ * 
+ * Copyright (c) 2026 The Spelling Dungeon Authors
+ */
+
+/**
  * Base data for procedural item generation.
  * Organizes items into categories and provides lists of names/types.
  */

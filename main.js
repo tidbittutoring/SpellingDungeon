@@ -1,3 +1,13 @@
+/**
+ * Spelling Dungeon
+ * 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
+ * 
+ * Copyright (c) 2026 The Spelling Dungeon Authors
+ */
+
+// Spelling Dungeon v5 - Main Game Logic
 // ── Game States ────────────────────────────────────────────────────────────
 const GameState = {
     MENU: 'menu',
@@ -1496,14 +1506,16 @@ function updateAbilityBar() {
 
             let cost = 5;
             if (item.ability.name === "Reveal Random") cost = 6;
-            else if (item.ability.name === "Heal") cost = 10;
+            else if (item.ability.name === "Heal" || item.ability.name === "Healing Magic") cost = 10;
             else if (item.ability.name === "Chisel") cost = 8;
             else if (item.ability.name === "Scrape") cost = 7;
             else if (item.ability.name === "Telepathy") cost = 5;
 
             const isReady = ink >= cost;
             const badge = hotkeyIndex <= 9 ? `<span class="hotkey-badge">${hotkeyIndex}</span>` : '';
-            btn.innerHTML = `${badge}${item.ability.name.toUpperCase()} (${cost})`;
+            let displayName = item.ability.name.toUpperCase();
+            if (displayName === "HEALING MAGIC") displayName = "HEAL";
+            btn.innerHTML = `${badge}${displayName} (${cost})`;
             btn.disabled = !isReady;
             btn.onclick = () => {
                 if (castAbility(item)) {
@@ -1540,7 +1552,7 @@ function castAbility(item) {
         WORD_INPUT.focus();
         return true;
 
-    } else if (item.ability.name === "Heal") {
+    } else if (item.ability.name === "Heal" || item.ability.name === "Healing Magic") {
         if (ink < 10) return false;
 
         const stats = items.getTotalStats();
