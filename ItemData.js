@@ -36,11 +36,11 @@ const ItemData = {
     },
 
     SlotStats: {
-        HEAD: ["hp", "ink", "hp_regen", "ink_regen", "armor", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find"],
+        HEAD: ["hp", "ink", "hp_regen", "ink_regen", "armor", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find", "glow"],
         TORSO: ["hp", "ink", "hp_regen", "ink_regen", "armor", "item_find"],
-        MAIN_HAND: ["ink", "ink_regen", "lockpick", "item_find"],
-        OFF_HAND: ["armor", "ink", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find"],
-        ACCESSORY: ["hp_regen", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find"]
+        MAIN_HAND: ["ink", "ink_regen", "lockpick", "item_find", "glow"],
+        OFF_HAND: ["hp", "hp_regen", "armor", "ink", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find", "glow"],
+        ACCESSORY: ["hp_regen", "ink_regen", "first_letter_chance", "last_letter_chance", "double_letter_chance", "random_letter_chance", "time_warp", "item_find", "glow"]
     },
 
     Styles: {
