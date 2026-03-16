@@ -79,6 +79,7 @@
     gap: 1.5rem !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    border: 1px solid rgba(130, 100, 70, 0.3) !important;
 }
 
 .score-rank {
@@ -123,7 +124,84 @@
     letter-spacing: 0.05rem;
 }
 
-.score-words {
-    font-size: 0.85rem;
-    color: #888;
+/* ── Ko-fi Widget Behavior ─────────────────────────────────────────────── */
+/* BROAD SELECTORS to catch the widget even if internal classes change */
+[class*="floatingchat-container"],
+[id*="kofi-widget"],
+.floatingchat-container-wrap,
+iframe[id^="kofi-widget"],
+.floating-chat-kofi-popup-wrapper,
+[class*="kofi-widget"],
+[id*="kofi-widget"],
+[class*="floating-chat"],
+[class*="floating-chat-kofi"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Show widget in ALL MENUS, but hide during active gameplay */
+body:not(.state-playing):not(.state-mcq) [class*="floatingchat-container"],
+body:not(.state-playing):not(.state-mcq) [id*="kofi-widget"],
+body:not(.state-playing):not(.state-mcq) .floatingchat-container-wrap,
+body:not(.state-playing):not(.state-mcq) iframe[id^="kofi-widget"],
+body:not(.state-playing):not(.state-mcq) .floating-chat-kofi-popup-wrapper,
+body:not(.state-playing):not(.state-mcq) [class*="kofi-widget"],
+body:not(.state-playing):not(.state-mcq) [class*="floating-chat"],
+body:not(.state-playing):not(.state-mcq) [class*="floating-chat-kofi"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Surgical hiding of independent artifacts injected by Ko-fi */
+/* These specific classes often appear outside the main iframe as relics */
+[class*="floatingchat"]>[class*="close"],
+[class*="kofi"]>[class*="close"],
+[class*="kofi"]>[class*="button-close"],
+.floatingchat-container-wrap>[class*="close"],
+.kofi-img-link,
+[class*="kofi-link"],
+/* Suppress any standalone a-tags that aren't inside the main chat content */
+body>a[href*="ko-fi.com"],
+body>a[href*="tidbittutoring"],
+a[href*="ko-fi.com/tidbittutoring"],
+#game-ui+a[href*="ko-fi.com"],
+#game-ui+a[href*="tidbittutoring"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+/* Ensure the ACTUAL popup and button remain visible */
+.floatingchat-container,
+.floating-chat-kofi-popup-wrapper,
+[id^="kofi-widget"] {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure container-level wraps use flex if needed (button/popup) */
+body:not(.state-playing):not(.state-mcq) .floatingchat-container-wrap,
+body:not(.state-playing):not(.state-mcq) [class*="floatingchat-container"] {
+    display: flex !important;
+}
+
+/* Bottom-right positioning for both button and expanded panel */
+body .floatingchat-container-wrap,
+body [class*="floatingchat-container"],
+body iframe[id^="kofi-widget"],
+body .floating-chat-kofi-popup-wrapper,
+body [class*="kofi-widget"],
+body [class*="floating-chat"] {
+    left: auto !important;
+    right: 20px !important;
+    bottom: 20px !important;
 }

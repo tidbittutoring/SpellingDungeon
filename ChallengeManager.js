@@ -37,6 +37,13 @@ class ChallengeManager {
         if (!this.speechEnabled) return;
 
         const setVoice = () => {
+            // 0. Automatic priority for Google Online if no preference set
+            if (!preferredVoiceName && navigator.onLine) {
+                this.voice = { name: 'GOOGLE_ONLINE', isVirtual: true };
+                console.log("Defaulting to Google Online (Premium) TTS");
+                return;
+            }
+
             const voices = window.speechSynthesis.getVoices();
             if (voices.length === 0) return;
 
@@ -50,8 +57,8 @@ class ChallengeManager {
                 }
             }
 
-            // Updated high-quality keywords for modern OSes
-            const highQualityKeywords = ["Neural", "Natural", "Google", "Online", "Premium", "Premium", "Enhanced", "Vocalizer"];
+            // Updated high-quality keywords for modern OSes: Prioritize Google and Online Neural voices
+            const highQualityKeywords = ["Google", "Neural", "Natural", "Online", "Premium", "Enhanced", "Vocalizer"];
             const specificPriorities = ["Google US English", "Microsoft Zira", "Microsoft David", "Microsoft Mark", "Google UK English Female", "Alex"];
 
             // 2. Prioritize Neural/Natural English voices first
@@ -86,6 +93,12 @@ class ChallengeManager {
     }
 
     setVoiceByName(name) {
+        if (name === 'GOOGLE_ONLINE') {
+            this.voice = { name: 'GOOGLE_ONLINE', isVirtual: true };
+            console.log("Virtual TTS Voice selection: Google Online (Streaming)");
+            return true;
+        }
+
         const voices = window.speechSynthesis.getVoices();
         const found = voices.find(v => v.name === name);
         if (found) {
@@ -122,8 +135,8 @@ class ChallengeManager {
 
     generateNewChallenge(currentLevel = 1, excludeList = []) {
         if (this.currentMode === ChallengeMode.ADVENTURE) {
-            // Map 10 dungeon levels to 5 word difficulty levels (1-2 = 1, 3-4 = 2, ...)
-            const targetDiff = Math.max(1, Math.min(5, Math.ceil(currentLevel / 2)));
+            // Word difficulty ramps up every level (1:1), maxing at 5.
+            const targetDiff = Math.min(5, currentLevel);
             // Let the WordLibrary handle difficulty filtering and history fallback
             this.currentWordData = this.library.getRandomWord(null, targetDiff, excludeList);
 
@@ -166,11 +179,44 @@ class ChallengeManager {
     speakWord() {
         if (!this.speechEnabled) return;
 
-        window.speechSynthesis.cancel();
         const textToSpeak = (this.currentWordData.speakAs || this.currentWordData.word).toLowerCase();
-        const utterance = new SpeechSynthesisUtterance(textToSpeak);
-        if (this.voice) utterance.voice = this.voice;
-        utterance.rate = 1.0; // Increased to 1.0 for more natural pacing
+
+        // Handle Virtual 'Google Online' Voice (Streaming)
+        if (this.voice && this.voice.name === 'GOOGLE_ONLINE') {
+            const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(textToSpeak)}&tl=en&client=tw-ob`;
+            const audio = new Audio(url);
+            audio.volume = this.volume;
+            audio.play().catch(e => {
+                console.warn("Google Online TTS failed (likely offline). Falling back to system voice.", e);
+                this.speakOffline(textToSpeak);
+            });
+
+            // Handle sentences for Inklings via streaming
+            if (this.library.currentSetKey === 'inkling' &&
+                this.currentWordData.sentences &&
+                this.currentWordData.sentences.length > 0) {
+                audio.onended = () => {
+                    setTimeout(() => {
+                        const sentences = this.currentWordData.sentences;
+                        const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+                        const sentenceUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(randomSentence)}&tl=en&client=tw-ob`;
+                        const sentenceAudio = new Audio(sentenceUrl);
+                        sentenceAudio.volume = this.volume;
+                        sentenceAudio.play();
+                    }, 600);
+                };
+            }
+            return;
+        }
+
+        this.speakOffline(textToSpeak);
+    }
+
+    speakOffline(text) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        if (this.voice && !this.voice.isVirtual) utterance.voice = this.voice;
+        utterance.rate = 1.0;
         utterance.volume = this.volume;
         window.speechSynthesis.speak(utterance);
 
@@ -185,8 +231,8 @@ class ChallengeManager {
                     const sentences = this.currentWordData.sentences;
                     const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
                     const sentenceUtterance = new SpeechSynthesisUtterance(randomSentence);
-                    if (this.voice) sentenceUtterance.voice = this.voice;
-                    sentenceUtterance.rate = 1.0; // Consistent rate for sentences
+                    if (this.voice && !this.voice.isVirtual) sentenceUtterance.voice = this.voice;
+                    sentenceUtterance.rate = 1.0;
                     sentenceUtterance.volume = this.volume;
                     window.speechSynthesis.speak(sentenceUtterance);
                 }, 600);

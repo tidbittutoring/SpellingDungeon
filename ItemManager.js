@@ -81,9 +81,8 @@ class ItemManager {
         let suffix = "";
         let remainingRolls = tier;
 
-        // Determine Spell Chance: 10% for Main Hand and Shield, 5% for others
-        const isShield = (type === ItemType.OFF_HAND && baseName.toLowerCase() === "shield");
-        const spellChance = (type === ItemType.MAIN_HAND || isShield) ? 0.10 : 0.05;
+        // Determine Spell Chance: 15% for Main Hand and Off-Hand, 10% for others (Bumped +5%)
+        const spellChance = (type === ItemType.MAIN_HAND || type === ItemType.OFF_HAND) ? 0.15 : 0.10;
 
         // Single Spell Roll
         if (Math.random() < spellChance) {
@@ -136,6 +135,12 @@ class ItemManager {
                     random_letter_chance: "Chaos"
                 };
                 if (!suffix) suffix = ` of ${spellNames[chosenStat] || "Magic"}`;
+            } else if (chosenStat === "glow") {
+                stats[chosenStat] += Math.floor(Math.random() * 11) + 5; // 5 to 15%
+                if (!suffix) suffix = " of Illumination";
+            } else if (chosenStat === "cascade") {
+                stats[chosenStat] += Math.floor(Math.random() * 5) + 1; // 1 to 5%
+                if (!suffix) suffix = " of Cascades";
             }
         }
 
@@ -154,6 +159,63 @@ class ItemManager {
         if (emptyIndex !== -1) {
             this.inventory[emptyIndex] = item;
             return true;
+        }
+        return false;
+    }
+
+    /**
+     * Attempts to automatically upgrade equipped equipment with a new item.
+     * If the new item is higher tier than the currently equipped item in the same slot,
+     * it swaps them. If the backpack is full, the lower tier item is lost.
+     * @param {Item} newItem - The new item to check for upgrade
+     * @returns {boolean} True if an upgrade occurred
+     */
+    autoUpgrade(newItem) {
+        if (!newItem || newItem.type === ItemType.CONSUMABLE) return false;
+
+        let slot = newItem.type;
+        if (newItem.type === ItemType.ACCESSORY) {
+            // Logic for accessories: Check if either slot has a lower tier item
+            // Prefer the lowest tier slot, or an empty slot
+            if (!this.equipped.accessory1) {
+                this.equipped.accessory1 = newItem;
+                return true;
+            }
+            if (!this.equipped.accessory2) {
+                this.equipped.accessory2 = newItem;
+                return true;
+            }
+
+            const t1 = this.equipped.accessory1.tier;
+            const t2 = this.equipped.accessory2.tier;
+
+            if (newItem.tier > t1 || newItem.tier > t2) {
+                const targetSlot = (t1 <= t2) ? 'accessory1' : 'accessory2';
+                const oldItem = this.equipped[targetSlot];
+                this.equipped[targetSlot] = newItem;
+                // Move old item to backpack if space exists
+                if (!this.addItem(oldItem)) {
+                    console.log(`[UPGRADE] Backpack full, discarded ${oldItem.name}`);
+                }
+                return true;
+            }
+            return false;
+        } else {
+            const current = this.equipped[slot];
+            if (!current) {
+                this.equipped[slot] = newItem;
+                return true;
+            }
+
+            if (newItem.tier > current.tier) {
+                const oldItem = current;
+                this.equipped[slot] = newItem;
+                // Move old item to backpack if space exists
+                if (!this.addItem(oldItem)) {
+                    console.log(`[UPGRADE] Backpack full, discarded ${oldItem.name}`);
+                }
+                return true;
+            }
         }
         return false;
     }
@@ -213,7 +275,7 @@ class ItemManager {
     }
 
     getTotalStats() {
-        const total = { hp: 0, ink: 0, hp_regen: 0, ink_regen: 0, armor: 0, lockpick: 0, item_find: 0, first_letter_chance: 0, last_letter_chance: 0, double_letter_chance: 0, random_letter_chance: 0, time_warp: 0 };
+        const total = { hp: 0, ink: 0, hp_regen: 0, ink_regen: 0, armor: 0, lockpick: 0, item_find: 0, first_letter_chance: 0, last_letter_chance: 0, double_letter_chance: 0, random_letter_chance: 0, time_warp: 0, glow: 0, cascade: 0 };
         Object.values(this.equipped).forEach(item => {
             if (item && item.stats) {
                 if (item.stats.hp) total.hp += item.stats.hp;
@@ -228,9 +290,10 @@ class ItemManager {
                 if (item.stats.double_letter_chance) total.double_letter_chance += item.stats.double_letter_chance;
                 if (item.stats.random_letter_chance) total.random_letter_chance += item.stats.random_letter_chance;
                 if (item.stats.time_warp) total.time_warp += item.stats.time_warp;
+                if (item.stats.glow) total.glow += item.stats.glow;
+                if (item.stats.cascade) total.cascade += item.stats.cascade;
             }
         });
-        console.log("Total Item Stats Summed:", total);
         return total;
     }
 
@@ -241,7 +304,6 @@ class ItemManager {
         if (Math.random() * 100 < stats.last_letter_chance) triggered.push('last');
         if (Math.random() * 100 < stats.double_letter_chance) triggered.push('double');
         if (Math.random() * 100 < stats.random_letter_chance) triggered.push('random');
-        console.log("Spells Triggered in ItemManager:", triggered);
         return triggered;
     }
 

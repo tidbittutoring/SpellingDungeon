@@ -7,8 +7,7 @@
  * Copyright (c) 2026 The Spelling Dungeon Authors
  */
 
-// Spelling Dungeon v5 - Fix for hotkeys and Heal spell
-const CACHE_NAME = 'spelling-dungeon-v5';
+const CACHE_NAME = 'spelling-dungeon-v5.1.0-cascade';
 const ASSETS = [
     './',
     './index.html',
@@ -56,6 +55,7 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
         fetch(event.request)
             .then((response) => {
+                // If network is successful, update the cache and return response
                 if (response && response.status === 200 && response.type === 'basic') {
                     const responseToCache = response.clone();
                     caches.open(CACHE_NAME).then((cache) => {
@@ -65,6 +65,7 @@ self.addEventListener('fetch', (event) => {
                 return response;
             })
             .catch(() => {
+                // If network fails, fallback to cache
                 return caches.match(event.request);
             })
     );

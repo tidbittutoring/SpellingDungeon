@@ -11,6 +11,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spelling Dungeon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu_refactor.css">
     <link rel="stylesheet" href="inventory.css">
@@ -94,6 +98,10 @@
                         <div id="inventory-grid">
                             <!-- Populated by JS -->
                         </div>
+                        <button id="autoupgrade-toggle-btn" class="menu-btn secondary-btn"
+                            style="margin-top: 10px; font-size: 0.8rem; width: 100%;"
+                            data-tooltip="Automatically swap equipped gear if a higher tier item is found.">AUTO-UPGRADE:
+                            OFF</button>
                     </div>
                     <div class="forge-container">
                         <h3 data-tooltip="Combine items to create powerful artifacts.">FORGE</h3>
@@ -103,6 +111,10 @@
                         <button id="forge-btn" class="menu-btn" disabled>FORGE</button>
                         <button id="autofill-forge-btn" class="menu-btn secondary-btn"
                             style="margin-top: 10px; font-size: 0.8rem;">AUTOFILL</button>
+                        <button id="autoforge-toggle-btn" class="menu-btn secondary-btn"
+                            style="margin-top: 10px; font-size: 0.8rem; width: 100%;"
+                            data-tooltip="Automatically combine 9 items of the same tier into a superior artifact.">AUTO-FORGE:
+                            ON</button>
                         <div id="forge-result"></div>
                     </div>
                 </div>
@@ -139,7 +151,7 @@
             <button class="mode-btn active" data-mode="random"
                 data-tooltip="Endless play! Randomly selected words from your chosen list.">Random</button>
             <button class="mode-btn" data-mode="adventure"
-                data-tooltip="Progressive difficulty across 10 levels with boss encounters.">Adventure</button>
+                data-tooltip="Progressive difficulty across 5 levels with boss encounters.">Adventure</button>
         </div>
 
         <div
@@ -165,7 +177,10 @@
             <button id="customize-btn" class="menu-btn">CUSTOMIZE MAGE</button>
             <button id="scores-btn" class="menu-btn">HIGH SCORES</button>
         </div>
+
+        <div id="version-tag">ALPHA v5.1.0 (Cascade)</div>
     </div>
+    <div id="version-indicator">v5.1.0</div>
 
     <!-- Profiles Menu -->
     <div id="profiles-menu" class="menu-screen" style="display: none;">
@@ -257,6 +272,14 @@
             <label>Performance Mode</label>
             <input type="checkbox" id="performance-toggle">
         </div>
+        <div class="settings-group">
+            <label>Show Tutorial Chalkboards</label>
+            <input type="checkbox" id="tutorial-toggle" checked>
+        </div>
+        <div class="settings-group">
+            <label>Show Skeletons/Bones</label>
+            <input type="checkbox" id="skeletons-toggle" checked>
+        </div>
         <div class="menu-options" style="margin-top: 1.5rem;">
             <button class="menu-btn back-btn" data-target="settings">BACK</button>
         </div>
@@ -310,12 +333,15 @@
 
     <canvas id="game-canvas"></canvas>
     <script>
-        if ('serviceWorker' in navigator) {
+        // Only register service worker if running on a server (https or localhost)
+        if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
                     .then(reg => console.log('Service Worker registered', reg))
                     .catch(err => console.error('Service Worker registration failed', err));
             });
+        } else {
+            console.log('Service Worker skipped: Running on local file system or insecure protocol.');
         }
     </script>
     <script src="WordLibrary.js"></script>
@@ -323,6 +349,17 @@
     <script src="ItemData.js"></script>
     <script src="ItemManager.js"></script>
     <script src="main.js"></script>
+
+    <!-- Ko-fi Floating Widget -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('tidbittutoring', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support Me',
+            'floating-chat.donateButton.background-color': '#ff5f5f',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
 </body>
 
 </html>
