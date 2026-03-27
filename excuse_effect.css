@@ -1,0 +1,81 @@
+/* 
+ * Doctor's Note "EXCUSE ACCEPTED" Effect 
+ */
+
+#excuse-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 10000;
+    /* Above everything */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    backdrop-filter: blur(10px);
+}
+
+#excuse-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.excuse-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    transform: scale(0.5);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#excuse-overlay.active .excuse-content {
+    transform: scale(1);
+}
+
+#excuse-note-icon {
+    font-size: 8rem;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+    animation: note-float 3s ease-in-out infinite;
+}
+
+.excuse-text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    letter-spacing: 0.5rem;
+    margin: 0;
+    animation: text-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes note-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes text-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}

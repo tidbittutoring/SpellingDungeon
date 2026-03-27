@@ -1,0 +1,68 @@
+/* 
+ * Gold Tracking UI - Spelling Dungeon
+ */
+
+#gold-ui {
+    position: fixed;
+    right: 14rem;
+    /* Offset from ink-ampule which is at right: 3rem */
+    bottom: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), inset 0 0 12px rgba(255, 215, 0, 0.05);
+    z-index: 100;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    transform: scale(var(--ui-scale));
+    transform-origin: bottom right;
+}
+
+#gold-purse {
+    width: 42px;
+    height: 42px;
+    background: url('gold_purse.png') no-repeat center;
+    background-size: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+    animation: purse-idle 3s ease-in-out infinite;
+}
+
+#gold-val {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.6rem;
+    color: #ffd700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 215, 0, 0.2);
+    min-width: 1.5ch;
+    text-align: left;
+}
+
+@keyframes purse-idle {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-3px) rotate(2deg);
+    }
+}
+
+/* Tooltip style for gold */
+#gold-ui::before {
+    content: 'GOLD';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    color: rgba(255, 215, 0, 0.4);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+}

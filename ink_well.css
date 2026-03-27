@@ -1,0 +1,286 @@
+/* 
+ * Ink Well HUD Display - Spelling Dungeon (REBUILT)
+ * 
+ * A premium glass inkwell with volumetric ink effects and a sophisticated 
+ * "ghost-free" reflection system.
+ */
+
+:root {
+    --ink-color-primary: #4361ee;
+    --ink-color-secondary: #3a0ca3;
+    --ink-color-deep: #1a052e;
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shine: rgba(255, 255, 255, 0.15);
+}
+
+#ink-ampule {
+    position: absolute !important;
+    right: 3.5rem !important;
+    /* Raised by another 40px for clarity and to prevent clipping */
+    bottom: calc(4rem + 40px) !important;
+    /* Raised slightly for better visual balance */
+    width: 140px !important;
+    height: 180px !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    pointer-events: none !important;
+    z-index: 10;
+    transform: scale(var(--ui-scale));
+    transform-origin: bottom right;
+}
+
+/* ━━ CAP (Scholastic Bakelite Design) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ink-well-cap {
+    position: absolute;
+    top: -5px;
+    width: 65px;
+    height: 28px;
+    background: linear-gradient(135deg, #111 0%, #222 50%, #050505 100%);
+    border: 1px solid #000;
+    border-radius: 6px 6px 3px 3px;
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.8),
+        inset 0 1px 3px rgba(255, 255, 255, 0.1);
+    z-index: 6;
+}
+
+/* Cap top highlight */
+.ink-well-cap::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+/* ━━ NECK (The Glass Mouth) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ink-well-neck {
+    position: relative;
+    width: 44px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 1px solid var(--glass-border);
+    border-right: 1px solid var(--glass-border);
+    margin-bottom: -12px;
+    z-index: 4;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+    backdrop-filter: blur(3px);
+}
+
+/* ━━ BODY (Dynamic Glass Flask) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ink-well-body {
+    position: relative;
+    width: 100px;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1.5px solid var(--glass-border);
+    border-radius: 40px 40px 20px 20px;
+    overflow: hidden;
+    /* Contain the ink fill */
+    box-shadow:
+        inset 0 0 25px rgba(255, 255, 255, 0.02),
+        0 8px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 5;
+}
+
+/* Internal glass depth/shading */
+.ink-well-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.2) 100%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* ━━ INK FILL (Volumetric Fluid) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ink-fill-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height controlled by main.js updateUI */
+    background: linear-gradient(180deg,
+            var(--ink-color-primary) 0%,
+            var(--ink-color-secondary) 50%,
+            var(--ink-color-deep) 100%);
+    box-shadow: inset 0 10px 15px rgba(255, 255, 255, 0.05);
+    transition: height 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* The fluid surface (Meniscus/Glow) */
+.ink-surface {
+    position: absolute;
+    top: -4px;
+    /* Thicker meniscus */
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(138, 102, 187, 0.6);
+    box-shadow:
+        0 0 15px rgba(138, 102, 187, 0.5),
+        0 0 30px rgba(67, 97, 238, 0.2);
+    border-radius: 50%;
+    /* Curved fluid look */
+    filter: blur(1px);
+    z-index: 2;
+    transform: scaleX(1.1);
+    /* Overlap edges slightly */
+}
+
+/* Subtle swirl animation for the ink */
+.ink-fill-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 30%, transparent 40%, rgba(0, 0, 0, 0.4) 100%);
+    opacity: 0.4;
+    animation: ink-swirl 8s infinite linear;
+}
+
+@keyframes ink-swirl {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+/* ━━ GLASS REFLECTIONS (Ghost-Free System) ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.glass-reflection-new {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 12%;
+    height: 55%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 50% 20% 40% 60%;
+    /* Organic glass shine */
+    filter: blur(2px);
+    pointer-events: none;
+    z-index: 12;
+    /* Always on top of ink */
+}
+
+/* Secondary side shine */
+.glass-reflection-new::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -600%;
+    /* Flip to right side */
+    width: 40%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+/* ━━ MAGIC EFFICIENCY BUBBLES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ink-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.ink-bubbles::before,
+.ink-bubbles::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(138, 102, 187, 0.8);
+    animation: bubble-ascension 5s infinite ease-in;
+}
+
+.ink-bubbles::before {
+    left: 30%;
+    bottom: -10px;
+    animation-delay: -1s;
+}
+
+.ink-bubbles::after {
+    left: 65%;
+    bottom: -15px;
+    animation-delay: -3.5s;
+    width: 3px;
+    height: 3px;
+}
+
+@keyframes bubble-ascension {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(-140px) scale(2);
+        opacity: 0;
+    }
+}
+
+/* ━━ HUD TEXT/LABEL ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#ink-ampule .ampule-text {
+    position: absolute !important;
+    bottom: -65px !important;
+    width: 180px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center !important;
+    color: #b399ff !important;
+    text-shadow:
+        0 0 8px rgba(0, 0, 0, 0.8),
+        0 2px 0px #1a052e !important;
+    font-family: 'Permanent Marker', cursive !important;
+    font-size: 1.6rem !important;
+    padding: 0.5rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    /* Better contrast against 3D world */
+    border-radius: 8px;
+    line-height: 1 !important;
+    z-index: 15;
+    letter-spacing: 2px;
+}
+
+#ink-ampule #ink-val {
+    font-family: 'Special Elite', monospace !important;
+    font-size: 1.8rem !important;
+    color: #e6e0ff !important;
+    display: block;
+    margin-top: 4px;
+    text-shadow: 0 0 10px rgba(179, 153, 255, 0.3);
+}

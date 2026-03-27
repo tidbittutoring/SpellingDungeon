@@ -1,0 +1,220 @@
+/* 
+ * HP Bar as Pencil Eraser - Spelling Dungeon
+ * 
+ * Fix: Resolved visibility issues by ensuring the smudge layer scales correctly
+ * with the eraser and simplified layering.
+ */
+
+#hp-ampule {
+    position: absolute !important;
+    left: 2.5rem !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    width: 140px !important;
+    /* Doubled from 70px */
+    /* TOTAL HEIGHT: 190px (base + ferrule overlap) + (140px * hp-scale) */
+    height: calc(190px + (140px * var(--hp-scale, 1))) !important;
+    /* Moved up by 15px as requested */
+    bottom: 15px !important;
+    filter: grayscale(0.25) brightness(0.8) contrast(1.1);
+    /* Brightened slightly back to -20% brightness */
+    /* Aggressive blackwash: -30% brightness, -25% saturation */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    pointer-events: none !important;
+    transform: scale(var(--ui-scale));
+    transform-origin: bottom left;
+}
+
+/* ━━ PENCIL BODY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#hp-ampule::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100% !important;
+    height: 120px;
+    background: #cc9900;
+    /* Darker mustard yellow */
+    background: linear-gradient(90deg, #996600 0%, #cc9900 40%, #ddaa44 60%, #996600 100%);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), inset 4px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* ━━ FERRULE (The Metal Band) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ferrule-back,
+.ferrule-front {
+    position: absolute;
+    bottom: 86px;
+    /* Lowered from 110px to cover more pencil body */
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 116px;
+    /* Lengthened by ~20% from 96px */
+    background: #888;
+    background: linear-gradient(90deg, #444 0%, #aaa 20%, #ccc 40%, #888 60%, #444 100%);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    /* Reduced spread per request */
+}
+
+.ferrule-back {
+    z-index: 4;
+    /* Behind eraser */
+    background: linear-gradient(to bottom, #555 0%, #aaa 100%);
+    /* Slightly darker for depth */
+}
+
+/* Back Rim only for depth */
+.ferrule-back::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: #666;
+    /* Much darker to hide highlights */
+    border: none;
+    /* No border to avoid sharp aliasing issues */
+    border-radius: 50% / 50%;
+    z-index: -1;
+    opacity: 0.3;
+    /* Very subtle now */
+}
+
+.ferrule-front {
+    z-index: 10;
+    /* In front of eraser */
+    background-image:
+        linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.15) 21%, rgba(0, 0, 0, 0.15) 25%, transparent 26%,
+            transparent 50%, rgba(0, 0, 0, 0.15) 51%, rgba(0, 0, 0, 0.15) 55%, transparent 56%,
+            transparent 80%, rgba(0, 0, 0, 0.15) 81%, rgba(0, 0, 0, 0.15) 85%, transparent 86%),
+        linear-gradient(90deg, #777 0%, #eee 20%, #fff 40%, #bbb 60%, #777 100%);
+}
+
+/* Front Rim for the 'lip' effect */
+.ferrule-front::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: none;
+    background: radial-gradient(ellipse at bottom, transparent 65%, rgba(0, 0, 0, 0.2) 100%);
+    border-radius: 50% / 50%;
+    z-index: 11;
+    pointer-events: none;
+    display: none;
+    /* Temporarily hide to ensure we aren't seeing a ghost rim */
+}
+
+/* ━━ ERASER SHAFT (Movement Boundary) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#eraser-shaft {
+    position: absolute;
+    bottom: 190px;
+    /* Adjusted to fit new ferrule scale */
+    width: 100% !important;
+    height: calc(140px * var(--hp-scale, 1));
+    /* BASE HEIGHT matching width (140px) */
+    z-index: 5;
+    pointer-events: none;
+    overflow: visible !important;
+}
+
+/* ━━ ERASER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#hp-fill.hp-color {
+    background: #cc7a8a !important;
+    /* Desaturated pink */
+    background: linear-gradient(90deg, #a12448 0%, #cc7a8a 40%, #e6a5b2 60%, #a12448 100%) !important;
+    background-size: 100% 100% !important;
+
+    border-radius: 8px 8px 1px 1px !important;
+    box-shadow: 0 -4px 10px rgba(200, 100, 120, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    /* Remove border which might cause aliasing lines */
+
+    clip-path: polygon(0% 12%, 12% 5%, 32% 1%, 68% 0%, 88% 3%, 100% 12%, 100% 100%, 0% 100%) !important;
+    transition: height 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    width: 100% !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    position: absolute !important;
+}
+
+/* ━━ GRAPHITE SMUDGE LAYER (Internal Layer) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* Using a pseudo-element that is the SAME size as the parent */
+#hp-fill.hp-color::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Match parent exactly */
+
+    /* We use background-size to 'stretch' the gradient vertically beyond the parent
+       to maintain the shaft-relative perspective. */
+    background: linear-gradient(to bottom,
+            rgba(15, 5, 5, 0.6) 0%,
+            rgba(30, 20, 20, 0.45) 20%,
+            rgba(50, 40, 40, 0.25) 50%,
+            transparent 85%) no-repeat;
+    /* Lock height to full shaft height */
+    background-size: 100% calc(140px * var(--hp-scale, 1));
+
+    /* Dynamic opacity based on health: 1 = 100% HP (0% dirty), 0 = 0% HP (100% dirty) */
+    /* --hp-percent is provided by main.js. Increased rate of darkening. */
+    opacity: clamp(0, calc((1 - var(--hp-percent, 1)) * 2.2), 1);
+
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+    z-index: 2;
+}
+
+/* ━━ UI TEXT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#hp-ampule .ampule-text {
+    position: absolute !important;
+    bottom: 86px !important;
+    /* Matches new ferrule base */
+    width: 140px !important;
+    height: 116px !important;
+    /* Matches new ferrule height */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* Perfect vertical & horizontal centering */
+    color: #222 !important;
+    /* Dark graphite/ink color */
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2) !important;
+    font-family: 'Special Elite', cursive !important;
+    font-size: 1.5rem !important;
+    /* Bumped label size by ~25% from 1.2rem */
+    /* Typewriter style */
+    line-height: 1 !important;
+    z-index: 20 !important;
+    letter-spacing: -2px;
+    /* Tighter for the larger font */
+    pointer-events: none;
+}
+
+#hp-ampule #hp-val {
+    font-family: 'Special Elite', cursive !important;
+    font-size: 1.9rem !important;
+    /* Bumped value size by ~25% from 1.5rem */
+    margin-top: -2px;
+    background: none;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    opacity: 0.9;
+}

@@ -13,8 +13,10 @@
     gap: 1.5rem;
     /* Increased gap for badges */
     pointer-events: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 3.5rem;
     margin-top: 1rem;
+    transform: scale(var(--ui-scale));
+    transform-origin: bottom center;
 }
 
 .tool-btn {
@@ -69,4 +71,40 @@
     border-color: #fff;
     text-shadow: none;
     box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+/* Roulette Styles */
+#roulette-wheel-container {
+    padding: 30px;
+}
+
+#roulette-wheel {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #ff00ff;
+    background: conic-gradient(#ff3333 0% 12.5%,
+            #33ff33 12.5% 25%,
+            #3333ff 25% 37.5%,
+            #ffff33 37.5% 50%,
+            #ff33ff 50% 62.5%,
+            #33ffff 62.5% 75%,
+            #ffffff 75% 87.5%,
+            #ffaa00 87.5% 100%);
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
+    margin: 0 auto;
+}
+
+@keyframes spinWheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.wheel-spinning {
+    animation: spinWheel 1.2s cubic-bezier(0.15, 0, 0.15, 1) forwards;
 }

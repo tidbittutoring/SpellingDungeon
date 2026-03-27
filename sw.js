@@ -7,7 +7,7 @@
  * Copyright (c) 2026 The Spelling Dungeon Authors
  */
 
-const CACHE_NAME = 'spelling-dungeon-v5.1.0-cascade';
+const CACHE_NAME = 'spelling-dungeon-v6.2-alpha-cascade';
 const ASSETS = [
     './',
     './index.html',

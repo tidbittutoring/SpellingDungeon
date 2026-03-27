@@ -13,23 +13,48 @@
     <title>Spelling Dungeon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Permanent+Marker&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Permanent+Marker&family=Special+Elite&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu_refactor.css">
     <link rel="stylesheet" href="inventory.css">
     <link rel="stylesheet" href="spells_ui.css">
+    <link rel="stylesheet" href="hp_eraser.css">
+    <link rel="stylesheet" href="gold_ui.css">
+    <link rel="stylesheet" href="ink_well.css">
+    <link rel="stylesheet" href="transitions.css">
+    <link rel="stylesheet" href="fixes.css">
+    <link rel="stylesheet" href="excuse_effect.css">
     <link rel="manifest" href="manifest.json">
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
 </head>
 
-<body>
+<body class="state-menu">
     <div id="toast-container"></div>
+    <div id="transition-overlay"></div>
+    <div id="look-reticle"
+        style="display: none; position: fixed; top: 50%; left: 50%; width: 6px; height: 6px; background: rgba(255,255,255,0.4); border: 1px solid rgba(0,0,0,0.5); border-radius: 50%; transform: translate(-50%, -50%); z-index: 9000; pointer-events: none;">
+    </div>
+    <div id="roulette-wheel-container"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 3000; pointer-events: none; text-align: center;">
+        <div id="roulette-wheel"></div>
+        <div id="roulette-text"
+            style="color: #fff; font-family: 'Permanent Marker', cursive; font-size: 2rem; margin-top: 20px; text-shadow: 0 0 15px #ff00ff;">
+            SPINNING...</div>
+    </div>
+
+
     <!-- Game Viewport UI -->
     <div id="game-ui" style="display: none;">
-        <div id="dungeon-metrics">
-            <span id="level-metric" style="display:none;">Dungeon Level 1</span>
-            <span id="room-metric">Room 1</span>
+        <div id="hud-top-left">
+            <div id="dungeon-metrics">
+                <span id="level-metric" style="display:none;">Dungeon Level 1</span>
+                <span id="room-metric">Room 1</span>
+                <span id="damage-metric">Missed Letter: 1 DMG</span>
+            </div>
+            <button id="hud-leave-shop-btn" class="menu-btn hud-btn">🚪 LEAVE SHOP</button>
+            <button id="skip-chest-btn" class="menu-btn hud-btn">SKIP CHEST &rarr;</button>
         </div>
         <div id="action-area">
             <div id="boss-timer-container">
@@ -43,13 +68,30 @@
         </div>
 
         <div class="ampule" id="hp-ampule">
-            <div id="hp-fill" class="ampule-fill hp-color"></div>
+            <div class="ferrule-back"></div>
+            <div id="eraser-shaft">
+                <div id="hp-fill" class="ampule-fill hp-color"></div>
+            </div>
+            <div class="ferrule-front"></div>
             <div class="ampule-text">HP<br><span id="hp-val">100/100</span></div>
         </div>
 
         <div class="ampule" id="ink-ampule">
-            <div id="ink-fill" class="ampule-fill ink-color"></div>
+            <div class="ink-well-cap"></div>
+            <div class="ink-well-neck"></div>
+            <div class="ink-well-body">
+                <div id="ink-fill" class="ink-fill-container">
+                    <div class="ink-surface"></div>
+                    <div class="ink-bubbles"></div>
+                </div>
+                <div class="glass-reflection-new"></div>
+            </div>
             <div class="ampule-text">INK<br><span id="ink-val">50/50</span></div>
+        </div>
+
+        <div id="gold-ui">
+            <div id="gold-purse"></div>
+            <span id="gold-val">0</span>
         </div>
         <button id="hear-btn" style="display:none;">🔊 Hear Word</button>
 
@@ -59,6 +101,24 @@
             <div id="ability-bar"></div>
             <button id="inv-toggle-btn" title="Inventory (ESC)">🎒 Inventory</button>
             <button id="look-btn" class="tool-btn">👁️ Look Around</button>
+            <button id="leave-shop-btn" class="tool-btn" style="display:none;">🚪 Leave Shop</button>
+        </div>
+
+        <!-- Branch Room Choice Overlay -->
+        <div id="branch-choice-overlay"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1500; pointer-events: none;">
+            <div
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; gap: 30px; pointer-events: auto;">
+                <button class="branch-btn" data-dir="left"
+                    style="padding: 20px 35px; font-family: 'Permanent Marker', cursive; font-size: 1.4rem; color: #ffcc66; background: rgba(0,0,0,0.85); border: 2px solid #ffaa00; border-radius: 8px; cursor: pointer; text-shadow: 0 0 8px rgba(255,170,0,0.6); box-shadow: 0 0 20px rgba(255,170,0,0.2), inset 0 0 15px rgba(255,170,0,0.05); transition: all 0.2s;">⬅
+                    LEFT</button>
+                <button class="branch-btn" data-dir="forward"
+                    style="padding: 20px 35px; font-family: 'Permanent Marker', cursive; font-size: 1.4rem; color: #66ffcc; background: rgba(0,0,0,0.85); border: 2px solid #44ddaa; border-radius: 8px; cursor: pointer; text-shadow: 0 0 8px rgba(68,221,170,0.6); box-shadow: 0 0 20px rgba(68,221,170,0.2), inset 0 0 15px rgba(68,221,170,0.05); transition: all 0.2s;">⬆
+                    FORWARD</button>
+                <button class="branch-btn" data-dir="right"
+                    style="padding: 20px 35px; font-family: 'Permanent Marker', cursive; font-size: 1.4rem; color: #ffcc66; background: rgba(0,0,0,0.85); border: 2px solid #ffaa00; border-radius: 8px; cursor: pointer; text-shadow: 0 0 8px rgba(255,170,0,0.6); box-shadow: 0 0 20px rgba(255,170,0,0.2), inset 0 0 15px rgba(255,170,0,0.05); transition: all 0.2s;">RIGHT
+                    ➡</button>
+            </div>
         </div>
 
         <!-- New Item Drop Overlay -->
@@ -73,49 +133,39 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- Pause Menu (Consolidated with Inventory) -->
     <div id="pause-menu" class="menu-screen" style="display: none;">
         <div class="pause-content">
             <div class="inv-container">
                 <div class="inv-main-content">
-                    <div class="equipment-view">
-                        <h3 data-tooltip="Currently equipped gear. Drag items here to equip them.">EQUIPMENT</h3>
-                        <div class="equip-slot" data-slot="head"><span>Head</span></div>
-                        <div class="equip-mid">
-                            <div class="equip-slot" data-slot="main_hand"><span>Main Hand</span></div>
-                            <div class="equip-slot" data-slot="torso"><span>Torso</span></div>
-                            <div class="equip-slot" data-slot="off_hand"><span>Off Hand</span></div>
-                        </div>
-                        <div class="equip-bot">
-                            <div class="equip-slot" data-slot="accessory1"><span>Accessory 1</span></div>
-                            <div class="equip-slot" data-slot="accessory2"><span>Accessory 2</span></div>
-                        </div>
-                    </div>
                     <div class="inventory-view">
-                        <h3 data-tooltip="Click to equip. Shift+click to add to forge.">BACKPACK</h3>
-                        <div id="inventory-grid">
+                        <h3 data-tooltip="Item storage. Expanding this allows carrying more.">STORAGE</h3>
+                        <div id="storage-grid" class="storage-grid">
                             <!-- Populated by JS -->
                         </div>
-                        <button id="autoupgrade-toggle-btn" class="menu-btn secondary-btn"
-                            style="margin-top: 10px; font-size: 0.8rem; width: 100%;"
-                            data-tooltip="Automatically swap equipped gear if a higher tier item is found.">AUTO-UPGRADE:
-                            OFF</button>
-                    </div>
-                    <div class="forge-container">
-                        <h3 data-tooltip="Combine items to create powerful artifacts.">FORGE</h3>
-                        <div id="forge-grid">
-                            <!-- 9 cells built by JS -->
+                        <div id="sell-zone-container"
+                            style="display:none; border: 2px dashed #aa4444; border-radius: 8px; padding: 1rem; text-align: center; background: rgba(80, 20, 20, 0.15); transition: all 0.2s;">
+                            <div id="sell-zone"
+                                style="color: #ffaaaa; font-family: 'Permanent Marker', cursive; padding: 1.5rem; text-transform: uppercase; letter-spacing: 0.1rem; opacity: 0.7;">
+                                Right-Click Item to Sell
+                            </div>
                         </div>
-                        <button id="forge-btn" class="menu-btn" disabled>FORGE</button>
-                        <button id="autofill-forge-btn" class="menu-btn secondary-btn"
-                            style="margin-top: 10px; font-size: 0.8rem;">AUTOFILL</button>
-                        <button id="autoforge-toggle-btn" class="menu-btn secondary-btn"
-                            style="margin-top: 10px; font-size: 0.8rem; width: 100%;"
-                            data-tooltip="Automatically combine 9 items of the same tier into a superior artifact.">AUTO-FORGE:
-                            ON</button>
-                        <div id="forge-result"></div>
+                    </div>
+                    <div class="equipment-view">
+                        <h3 data-tooltip="Your equipped gear.">GEAR</h3>
+                        <div class="gear-slots">
+                            <div class="gear-group">
+                                <label>HAT</label>
+                                <div class="equip-slot" data-slot="hat" id="hat-slot"><span>None</span></div>
+                            </div>
+                            <div class="gear-group">
+                                <label>UTENSILS</label>
+                                <div id="utensil-slots" class="utensil-grid">
+                                    <!-- Dynamic utensil slots -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -142,212 +192,279 @@
 
     <!-- Main Menu -->
     <div id="main-menu" class="menu-screen">
-        <h1 class="menu-title">SPELLING<br>DUNGEON</h1>
+        <div class="menu-content-wrapper">
+            <h1 class="menu-title">SPELLING<br>DUNGEON</h1>
 
-        <div
-            style="text-align: center; color: #a0927e; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.15rem; margin-bottom: 0.2rem; margin-top: 0.2rem;">
-            Game Mode</div>
-        <div id="mode-selector" class="menu-modes">
-            <button class="mode-btn active" data-mode="random"
-                data-tooltip="Endless play! Randomly selected words from your chosen list.">Random</button>
-            <button class="mode-btn" data-mode="adventure"
-                data-tooltip="Progressive difficulty across 5 levels with boss encounters.">Adventure</button>
-        </div>
-
-        <div
-            style="text-align: center; color: #a0927e; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.15rem; margin-bottom: 0.2rem; margin-top: 0.4rem;">
-            Word List</div>
-        <div id="list-selector" class="menu-modes list-modes">
-            <button class="list-btn" data-list="inkling"
-                data-tooltip="A good place to start. General vocabulary progression.">Inkling</button>
-            <button class="list-btn active" data-list="sat"
-                data-tooltip="For special test preparation. College-level vocabulary.">SAT Words</button>
-            <button class="list-btn" data-list="doozies"
-                data-tooltip="Challenging words, even for adults. Spelling bee words, commonly misspelled words, and archaic words.">Doozies</button>
-        </div>
-
-        <div class="menu-options">
-            <button id="start-btn" class="menu-btn primary">NEW RUN</button>
-            <div id="continue-row" class="menu-row" style="display: none;">
-                <button id="continue-run-btn" class="menu-btn primary">CONTINUE</button>
-                <button id="abandon-run-btn" class="menu-btn danger">ABANDON</button>
+            <div
+                style="text-align: center; color: #a0927e; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.15rem; margin-bottom: 0.2rem; margin-top: 0.2rem;">
+                Game Mode</div>
+            <div id="mode-selector" class="menu-modes">
+                <button class="mode-btn" data-mode="random"
+                    data-tooltip="Endless play! Randomly selected words from your chosen list.">Random</button>
+                <button class="mode-btn" data-mode="adventure"
+                    data-tooltip="Progressive difficulty across 5 levels with boss encounters.">Adventure</button>
+                <button class="mode-btn" data-mode="puzzle" id="puzzle-mode-btn"
+                    data-tooltip="EVERY ROOM IS A PUZZLE CHEST! Incorrect guesses consume lockpicks, then take health.">Puzzle</button>
+                <button class="mode-btn" data-mode="bossrush" id="bossrush-mode-btn"
+                    data-tooltip="90% Boss fights. 10% MCQ. Pure adrenaline.">Boss Rush</button>
             </div>
-            <button id="profiles-btn" class="menu-btn">PROFILES</button>
-            <button id="settings-btn" class="menu-btn">SETTINGS</button>
-            <button id="customize-btn" class="menu-btn">CUSTOMIZE MAGE</button>
-            <button id="scores-btn" class="menu-btn">HIGH SCORES</button>
+
+            <div
+                style="text-align: center; color: #a0927e; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.15rem; margin-bottom: 0.2rem; margin-top: 0.4rem;">
+                Word List</div>
+            <div id="list-selector" class="menu-modes list-modes">
+                <button class="list-btn" data-list="inkling"
+                    data-tooltip="A good place to start. General vocabulary progression.">Inkling</button>
+                <button class="list-btn active" data-list="sat"
+                    data-tooltip="For special test preparation. College-level vocabulary.">SAT Words</button>
+                <button class="list-btn" data-list="doozies"
+                    data-tooltip="Challenging words, even for adults. Spelling bee words, commonly misspelled words, and archaic words.">Doozies</button>
+            </div>
+
+            <div class="menu-options">
+                <button id="start-btn" class="menu-btn primary">NEW RUN</button>
+                <div id="continue-row" class="menu-row" style="display: none;">
+                    <button id="continue-run-btn" class="menu-btn primary">CONTINUE</button>
+                    <button id="abandon-run-btn" class="menu-btn danger">ABANDON</button>
+                </div>
+                <button id="profiles-btn" class="menu-btn">PROFILES</button>
+                <button id="settings-btn" class="menu-btn">SETTINGS</button>
+                <button id="customize-btn" class="menu-btn">CUSTOMIZE MAGE</button>
+                <button id="scores-btn" class="menu-btn">HIGH SCORES</button>
+            </div>
         </div>
 
-        <div id="version-tag">ALPHA v5.1.0 (Cascade)</div>
+        <div id="version-tag">Alpha Release v6.2</div>
     </div>
-    <div id="version-indicator">v5.1.0</div>
+    <div id="version-indicator">v6.2-Alpha</div>
 
     <!-- Profiles Menu -->
     <div id="profiles-menu" class="menu-screen" style="display: none;">
-        <h2 class="sub-title">SELECT CHARACTER</h2>
-        <div id="profiles-list" class="profiles-container">
-            <!-- Populated by JS -->
+        <div class="menu-content-wrapper">
+            <h2 class="sub-title">SELECT CHARACTER</h2>
+            <div id="profiles-list" class="profiles-container">
+                <!-- Populated by JS -->
+            </div>
+            <button id="new-char-btn" class="menu-btn primary" style="margin-top: 20px;">CREATE NEW CHARACTER</button>
+            <button class="menu-btn back-btn" style="margin-top: 10px;">BACK TO MENU</button>
         </div>
-        <button id="new-char-btn" class="menu-btn primary" style="margin-top: 20px;">CREATE NEW CHARACTER</button>
-        <button class="menu-btn back-btn" style="margin-top: 10px;">BACK TO MENU</button>
     </div>
 
     <!-- Character Creation Menu -->
     <div id="create-char-menu" class="menu-screen" style="display: none;">
-        <h2 id="create-char-title" class="sub-title">NEW MAGE</h2>
-        <div class="input-group">
-            <label>Mage Name</label>
-            <input type="text" id="player-name-input" placeholder="Enter name...">
-        </div>
-        <div class="color-picker">
-            <label>Spell Color</label>
-            <div class="color-options">
-                <div class="color-swatch active" data-color="#00d4ff" style="background: #00d4ff;"></div>
-                <div class="color-swatch" data-color="#ff4444" style="background: #ff4444;"></div>
-                <div class="color-swatch" data-color="#44ff44" style="background: #44ff44;"></div>
-                <div class="color-swatch" data-color="#a044ff" style="background: #a044ff;"></div>
-                <div class="color-swatch" data-color="#ffaa00" style="background: #ffaa00;"></div>
-                <div class="color-swatch" data-color="#ff66cc" style="background: #ff66cc;"></div> <!-- Pink -->
-                <div class="color-swatch" data-color="#00ffff" style="background: #00ffff;"></div> <!-- Cyan -->
-                <div class="color-swatch" data-color="#ccff00" style="background: #ccff00;"></div> <!-- Lime -->
-                <div class="color-swatch" data-color="#ffd700" style="background: #ffd700;"></div> <!-- Gold -->
-                <div class="color-swatch" data-color="#ffffff" style="background: #ffffff;"></div>
-                <div class="color-swatch swatch-rainbow" data-color="effect-rainbow" title="Rainbow"></div>
-                <div class="color-swatch swatch-sparkle" data-color="effect-sparkle" title="Sparkle"></div>
+        <div class="menu-content-wrapper">
+            <h2 id="create-char-title" class="sub-title">NEW MAGE</h2>
+            <div class="input-group">
+                <label>Mage Name</label>
+                <input type="text" id="player-name-input" placeholder="Enter name...">
             </div>
+            <div class="color-picker">
+                <label>Spell Color</label>
+                <div class="color-options">
+                    <!-- Vibrant Classics -->
+                    <div class="color-swatch active" data-color="#00d4ff" style="background: #00d4ff;" title="Azure">
+                    </div>
+                    <div class="color-swatch" data-color="#ff4444" style="background: #ff4444;" title="Crimson"></div>
+                    <div class="color-swatch" data-color="#44ff44" style="background: #44ff44;" title="Emerald"></div>
+                    <div class="color-swatch" data-color="#a044ff" style="background: #a044ff;" title="Amethyst"></div>
+                    <div class="color-swatch" data-color="#ffaa00" style="background: #ffaa00;" title="Amber"></div>
+                    <!-- Soft Pastels -->
+                    <div class="color-swatch" data-color="#FFB7B2" style="background: #FFB7B2;" title="Rose"></div>
+                    <div class="color-swatch" data-color="#FFDAC1" style="background: #FFDAC1;" title="Peach"></div>
+                    <div class="color-swatch" data-color="#B5EAD7" style="background: #B5EAD7;" title="Mint"></div>
+                    <div class="color-swatch" data-color="#C7CEEA" style="background: #C7CEEA;" title="Periwinkle">
+                    </div>
+                    <div class="color-swatch" data-color="#E0BBE4" style="background: #E0BBE4;" title="Lavender"></div>
+                    <!-- Darks & Neutrals -->
+                    <div class="color-swatch" data-color="#8D6E63" style="background: #8D6E63;" title="Earth"></div>
+                    <div class="color-swatch" data-color="#ffffff" style="background: #ffffff;" title="Purity"></div>
+                    <!-- Effects -->
+                    <div class="color-swatch swatch-rainbow" data-color="effect-rainbow" title="Rainbow"></div>
+                    <div class="color-swatch swatch-sparkle" data-color="effect-sparkle" title="Sparkle"></div>
+                </div>
+            </div>
+            <button id="confirm-create-btn" class="menu-btn primary">CREATE</button>
+            <button class="menu-btn back-btn" data-target="profiles">CANCEL</button>
         </div>
-        <button id="confirm-create-btn" class="menu-btn primary">CREATE</button>
-        <button class="menu-btn back-btn" data-target="profiles">CANCEL</button>
     </div>
 
     <!-- High Scores Menu -->
     <div id="scores-menu" class="menu-screen" style="display: none;">
-        <h2 class="sub-title">HALL OF HEROES</h2>
-        <div id="scores-list">
-            <!-- Populated by JS -->
+        <div class="menu-content-wrapper">
+            <h2 class="sub-title">HALL OF HEROES</h2>
+            <div id="scores-list">
+                <!-- Populated by JS -->
+            </div>
+            <button class="menu-btn back-btn">BACK</button>
         </div>
-        <button class="menu-btn back-btn">BACK</button>
     </div>
 
     <!-- Settings Menu -->
     <div id="settings-menu" class="menu-screen" style="display: none;">
-        <h2 class="sub-title">SETTINGS</h2>
-        <div class="settings-group">
-            <label>Master Volume</label>
-            <input type="range" min="0" max="100" value="80" id="volume-slider">
-        </div>
-        <div class="settings-group voice-settings">
-            <label>TTS Voice</label>
-            <div class="voice-controls">
-                <select id="voice-selector">
-                    <option value="">Loading voices...</option>
-                </select>
-                <button id="test-voice-btn" class="small-btn">TEST</button>
+        <div class="menu-content-wrapper">
+            <h2 class="sub-title">SETTINGS</h2>
+            <div class="settings-group">
+                <label>Master Volume</label>
+                <input type="range" min="0" max="100" value="80" id="volume-slider">
             </div>
-        </div>
-        <div class="menu-options" style="margin-top: 1.5rem;">
-            <button id="graphics-btn" class="menu-btn">GRAPHICS</button>
-            <button id="report-bug-settings-btn" class="menu-btn">REPORT BUG</button>
-            <button id="drastic-measures-btn" class="menu-btn danger">DRASTIC MEASURES</button>
-            <button class="menu-btn back-btn">BACK</button>
+            <div class="settings-group voice-settings">
+                <label>TTS Voice</label>
+                <div class="voice-controls">
+                    <select id="voice-selector">
+                        <option value="">Loading voices...</option>
+                    </select>
+                    <button id="test-voice-btn" class="small-btn">TEST</button>
+                </div>
+            </div>
+            <div class="menu-options" style="margin-top: 1.5rem;">
+                <button id="graphics-btn" class="menu-btn">GRAPHICS</button>
+                <button id="report-bug-settings-btn" class="menu-btn">REPORT BUG</button>
+                <button id="drastic-measures-btn" class="menu-btn danger">DRASTIC MEASURES</button>
+                <button class="menu-btn back-btn">BACK</button>
+            </div>
         </div>
     </div>
 
     <!-- Graphics Menu -->
     <div id="graphics-menu" class="menu-screen" style="display: none;">
-        <h2 class="sub-title">GRAPHICS</h2>
-        <div class="settings-group">
-            <label>Show Candles/Torches</label>
-            <input type="checkbox" id="candles-toggle" checked>
-        </div>
-        <div class="settings-group">
-            <label>Head Bobbing</label>
-            <input type="checkbox" id="headbob-toggle" checked>
-        </div>
-        <div class="settings-group">
-            <label>Show Error Display</label>
-            <input type="checkbox" id="errors-toggle" checked>
-        </div>
-        <div class="settings-group">
-            <label>Performance Mode</label>
-            <input type="checkbox" id="performance-toggle">
-        </div>
-        <div class="settings-group">
-            <label>Show Tutorial Chalkboards</label>
-            <input type="checkbox" id="tutorial-toggle" checked>
-        </div>
-        <div class="settings-group">
-            <label>Show Skeletons/Bones</label>
-            <input type="checkbox" id="skeletons-toggle" checked>
-        </div>
-        <div class="menu-options" style="margin-top: 1.5rem;">
-            <button class="menu-btn back-btn" data-target="settings">BACK</button>
+        <div class="menu-content-wrapper">
+            <h2 class="sub-title">GRAPHICS</h2>
+            <div class="settings-group">
+                <label>Show Candles/Torches</label>
+                <input type="checkbox" id="candles-toggle" checked>
+            </div>
+            <div class="settings-group">
+                <label>Head Bobbing</label>
+                <input type="checkbox" id="headbob-toggle" checked>
+            </div>
+            <div class="settings-group">
+                <label>Show Error Display</label>
+                <input type="checkbox" id="errors-toggle" checked>
+            </div>
+            <div class="settings-group">
+                <label>Performance Mode</label>
+                <input type="checkbox" id="performance-toggle">
+            </div>
+            <div class="settings-group">
+                <label>Show Tutorial Chalkboards</label>
+                <input type="checkbox" id="tutorial-toggle" checked>
+            </div>
+            <div class="settings-group">
+                <label>Show Skeletons/Bones</label>
+                <input type="checkbox" id="skeletons-toggle" checked>
+            </div>
+            <div class="menu-options" style="margin-top: 1.5rem;">
+                <button class="menu-btn back-btn" data-target="settings">BACK</button>
+            </div>
         </div>
     </div>
 
     <!-- Drastic Measures Menu -->
     <div id="drastic-measures-menu" class="menu-screen" style="display: none;">
-        <h2 class="sub-title danger-text">DRASTIC MEASURES</h2>
-        <p style="color: #a0927e; margin-bottom: 2rem; max-width: 400px; text-align: center;">
-            This will permanently erase all characters, high scores, and persistent settings. There is no undo.
-        </p>
-        <div class="menu-options" style="margin-top: 1.5rem;">
-            <button id="clear-data-btn" class="menu-btn danger">RESET ALL DATA</button>
-            <button class="menu-btn back-btn" data-target="settings">CANCEL</button>
+        <div class="menu-content-wrapper">
+            <h2 class="sub-title danger-text">DRASTIC MEASURES</h2>
+            <p style="color: #a0927e; margin-bottom: 2rem; max-width: 400px; text-align: center;">
+                This will permanently erase all characters, high scores, and persistent settings. There is no undo.
+            </p>
+            <div class="menu-options" style="margin-top: 1.5rem;">
+                <button id="clear-data-btn" class="menu-btn danger">RESET ALL DATA</button>
+                <button class="menu-btn back-btn" data-target="settings">CANCEL</button>
+            </div>
         </div>
     </div>
 
     <!-- Game Over Screen -->
     <div id="game-over-screen" class="menu-screen" style="display: none;">
-        <h2 class="danger-text">MAGE DEFEATED</h2>
-        <div class="run-stats">
-            <p>Rooms Cleared: <span id="final-rooms">0</span></p>
-            <p>Words Spelled: <span id="final-words">0</span></p>
+        <div class="menu-content-wrapper">
+            <h2 class="danger-text">MAGE DEFEATED</h2>
+            <div class="run-stats">
+                <p>Rooms Cleared: <span id="final-rooms">0</span></p>
+                <p>Words Spelled: <span id="final-words">0</span></p>
+                <p style="color: #ffaa00; margin-top: 10px; font-weight: bold; font-family: 'Courier New', monospace;">
+                    The
+                    word was: <span id="missed-word-val" style="color: #fff;"></span></p>
+            </div>
+            <button id="restart-btn" class="menu-btn primary">TRY AGAIN</button>
+            <button class="menu-btn back-btn">MAIN MENU</button>
         </div>
-        <button id="restart-btn" class="menu-btn primary">TRY AGAIN</button>
-        <button class="menu-btn back-btn">MAIN MENU</button>
     </div>
+
+
+    <!-- Puzzle Chest Keyboard -->
+    <div id="puzzle-keyboard" style="display: none;"></div>
+
 
     <!-- Bug Report Modal -->
     <div id="bug-report-modal" class="menu-screen" style="display: none;">
-        <div class="bug-content">
-            <h2 class="sub-title">REPORT A PROBLEM</h2>
-            <p style="color: #a0927e; margin-bottom: 20px;">Your technical game data will be attached automatically.</p>
+        <div class="menu-content-wrapper">
+            <div class="bug-content">
+                <h2 class="sub-title">REPORT A PROBLEM</h2>
+                <p style="color: #a0927e; margin-bottom: 20px;">Your technical game data will be attached automatically.
+                </p>
 
-            <div class="input-group">
-                <label>What happened?</label>
-                <textarea id="bug-description" placeholder="Describe the bug or problem..." rows="5"></textarea>
-            </div>
+                <div class="input-group">
+                    <label>What happened?</label>
+                    <textarea id="bug-description" placeholder="Describe the bug or problem..." rows="5"></textarea>
+                </div>
 
-            <div id="debug-data-preview"
-                style="display:none; font-family: monospace; font-size: 0.7rem; background: rgba(0,0,0,0.4); padding: 10px; margin-bottom: 20px; color: #888; border: 1px solid #333; max-height: 100px; overflow-y: auto;">
-                <!-- Debug data preview populated by JS -->
-            </div>
+                <div id="debug-data-preview"
+                    style="display:none; font-family: monospace; font-size: 0.7rem; background: rgba(0,0,0,0.4); padding: 10px; margin-bottom: 20px; color: #888; border: 1px solid #333; max-height: 100px; overflow-y: auto;">
+                    <!-- Debug data preview populated by JS -->
+                </div>
 
-            <div class="menu-options">
-                <button id="submit-bug-btn" class="menu-btn primary">SEND REPORT</button>
-                <button id="close-bug-btn" class="menu-btn">CANCEL</button>
+                <div class="menu-options">
+                    <button id="submit-bug-btn" class="menu-btn primary">SEND REPORT</button>
+                    <button id="close-bug-btn" class="menu-btn">CANCEL</button>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Item Evolution Overlay -->
+    <div id="evolution-overlay" style="display: none;">
+        <div class="evolution-content">
+            <div id="evo-message-top">ITEM EVOLUTION</div>
+            <div class="evo-display-container">
+                <div class="evo-item-block">
+                    <div id="evo-from-icon" class="evo-icon"></div>
+                    <span id="evo-from" class="evo-item-name">DIARY</span>
+                </div>
+                <span class="evo-arrow">→</span>
+                <div class="evo-item-block">
+                    <div id="evo-to-icon" class="evo-icon"></div>
+                    <span id="evo-to" class="evo-item-name">MANUSCRIPT</span>
+                </div>
+            </div>
+            <div id="evo-subtext">5 Words Spelled • Puzzle Mode Unlocked!</div>
+            <button id="evo-continue-btn" class="menu-btn primary">CONTINUE</button>
+        </div>
+    </div>
+
+    <!-- Doctor's Note Revive Overlay -->
+    <div id="excuse-overlay">
+        <div class="excuse-content">
+            <div id="excuse-note-icon"></div>
+            <h1 class="excuse-text">EXCUSE ACCEPTED</h1>
         </div>
     </div>
 
     <canvas id="game-canvas"></canvas>
+    <!-- Service Worker disabled for development
     <script>
-        // Only register service worker if running on a server (https or localhost)
         if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
                     .then(reg => console.log('Service Worker registered', reg))
                     .catch(err => console.error('Service Worker registration failed', err));
             });
-        } else {
-            console.log('Service Worker skipped: Running on local file system or insecure protocol.');
         }
     </script>
+    -->
     <script src="WordLibrary.js"></script>
     <script src="ChallengeManager.js"></script>
     <script src="ItemData.js"></script>
     <script src="ItemManager.js"></script>
+    <script src="ItemModels.js"></script>
     <script src="main.js"></script>
 
     <!-- Ko-fi Floating Widget -->

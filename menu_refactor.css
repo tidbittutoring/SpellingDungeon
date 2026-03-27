@@ -13,6 +13,22 @@
     width: 100%;
 }
 
+.menu-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(var(--ui-scale));
+    transform-origin: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.menu-content-wrapper>* {
+    pointer-events: auto;
+}
+
 .menu-row .menu-btn {
     flex: 1;
     padding: 1rem 0.5rem;
@@ -124,6 +140,204 @@
     letter-spacing: 0.05rem;
 }
 
+/* ── Character Profile Cards ─────────────────────────────────────────── */
+#profiles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+    perspective: 1000px;
+}
+
+.profile-card {
+    position: relative;
+    width: 280px;
+    background: rgba(20, 15, 10, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    color: #e0d0b0;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(30, 25, 20, 0.85);
+    border-color: var(--profile-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px var(--profile-color);
+}
+
+.profile-card.active-profile {
+    border-color: var(--profile-color);
+    background: linear-gradient(135deg, rgba(30, 25, 20, 0.9) 0%, rgba(10, 10, 20, 0.95) 100%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), inset 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.profile-card-inner {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.8rem;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #ffe4c4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.05rem;
+}
+
+.profile-meta {
+    font-size: 0.75rem;
+    color: #a0927e;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-top: 0.2rem;
+}
+
+.profile-room-badge {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 170, 0, 0.4);
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50px;
+}
+
+.badge-label {
+    font-size: 0.55rem;
+    font-weight: bold;
+    color: #ffaa00;
+}
+
+.badge-value {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.profile-stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+}
+
+.p-stat-box {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.p-stat-icon {
+    font-size: 0.9rem;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.p-stat-val {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.profile-progress-section {
+    margin-top: 0.5rem;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #a0927e;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+.progress-bar-bg {
+    height: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.8s ease-out;
+    box-shadow: 0 0 8px var(--profile-color);
+}
+
+.progress-subtext {
+    font-size: 0.65rem;
+    color: #887a68;
+    margin-top: 0.3rem;
+    text-align: right;
+    font-style: italic;
+}
+
+.profile-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.delete-profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #662222;
+    padding: 5px;
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+
+.delete-profile-btn:hover {
+    color: #ff4444;
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px rgba(255, 68, 68, 0.5));
+}
+
+.active-ribbon {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    background: var(--profile-color);
+    color: #000;
+    font-weight: 900;
+    font-size: 0.65rem;
+    padding: 4px 30px;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.active-profile .profile-name {
+    color: #fff;
+    text-shadow: 0 0 10px var(--profile-color);
+}
+
 /* ── Ko-fi Widget Behavior ─────────────────────────────────────────────── */
 /* BROAD SELECTORS to catch the widget even if internal classes change */
 [class*="floatingchat-container"],
@@ -157,14 +371,12 @@ body:not(.state-playing):not(.state-mcq) [class*="floating-chat-kofi"] {
 }
 
 /* Surgical hiding of independent artifacts injected by Ko-fi */
-/* These specific classes often appear outside the main iframe as relics */
 [class*="floatingchat"]>[class*="close"],
 [class*="kofi"]>[class*="close"],
 [class*="kofi"]>[class*="button-close"],
 .floatingchat-container-wrap>[class*="close"],
 .kofi-img-link,
 [class*="kofi-link"],
-/* Suppress any standalone a-tags that aren't inside the main chat content */
 body>a[href*="ko-fi.com"],
 body>a[href*="tidbittutoring"],
 a[href*="ko-fi.com/tidbittutoring"],
@@ -180,7 +392,6 @@ a[href*="ko-fi.com/tidbittutoring"],
     left: -9999px !important;
 }
 
-/* Ensure the ACTUAL popup and button remain visible */
 .floatingchat-container,
 .floating-chat-kofi-popup-wrapper,
 [id^="kofi-widget"] {
@@ -188,13 +399,11 @@ a[href*="ko-fi.com/tidbittutoring"],
     opacity: 1 !important;
 }
 
-/* Ensure container-level wraps use flex if needed (button/popup) */
 body:not(.state-playing):not(.state-mcq) .floatingchat-container-wrap,
 body:not(.state-playing):not(.state-mcq) [class*="floatingchat-container"] {
     display: flex !important;
 }
 
-/* Bottom-right positioning for both button and expanded panel */
 body .floatingchat-container-wrap,
 body [class*="floatingchat-container"],
 body iframe[id^="kofi-widget"],
@@ -204,4 +413,50 @@ body [class*="floating-chat"] {
     left: auto !important;
     right: 20px !important;
     bottom: 20px !important;
+}
+
+/* ── Secondary Overlay Scaling ────────────────────────────────────────── */
+
+#toast-container {
+    transform: translateX(-50%) scale(var(--ui-scale)) !important;
+    transform-origin: top center !important;
+}
+
+#roulette-wheel-container {
+    transform: translate(-50%, -50%) scale(var(--ui-scale)) !important;
+    transform-origin: center !important;
+}
+
+#branch-choice-overlay {
+    /* The one inside #game-ui at line 100 */
+    transform: scale(var(--ui-scale)) !important;
+    transform-origin: center !important;
+}
+
+#branch-choice-overlay>div {
+    /* Inner centering div should also respect scale if needed, 
+       but parent scaling is usually enough. Adding here for safety. */
+    transform: translate(-50%, -50%) scale(var(--ui-scale)) !important;
+    transform-origin: center !important;
+}
+
+#item-drop-display {
+    transform: scale(var(--ui-scale)) !important;
+    transform-origin: center !important;
+    /* If it uses fixed positioning with translate, we need to combine them */
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(var(--ui-scale)) !important;
+}
+
+#skip-chest-btn {
+    transform: scale(var(--ui-scale)) !important;
+    transform-origin: top right !important;
+}
+
+#puzzle-keyboard {
+    /* Ensure puzzle keyboard is centered properly with scale */
+    transform: translateX(-50%) scale(var(--ui-scale)) !important;
+    transform-origin: bottom center !important;
 }

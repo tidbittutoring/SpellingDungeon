@@ -9,7 +9,9 @@
 
 const ChallengeMode = {
     RANDOM: 'random',
-    ADVENTURE: 'adventure'
+    ADVENTURE: 'adventure',
+    PUZZLE: 'puzzle',
+    BOSSRUSH: 'bossrush'
 };
 
 class ChallengeManager {
@@ -118,8 +120,8 @@ class ChallengeManager {
         this.currentMode = mode;
         console.log("Challenge Mode set to:", mode);
 
-        // Initialize adventure state when entering adventure mode
-        if (mode === ChallengeMode.ADVENTURE) {
+        // Initialize adventure state when entering adventure or bossrush mode
+        if (mode === ChallengeMode.ADVENTURE || mode === ChallengeMode.BOSSRUSH) {
             this.initAdventure();
         }
     }
@@ -134,7 +136,9 @@ class ChallengeManager {
     }
 
     generateNewChallenge(currentLevel = 1, excludeList = []) {
-        if (this.currentMode === ChallengeMode.ADVENTURE) {
+        if (this.currentMode === ChallengeMode.ADVENTURE ||
+            this.currentMode === ChallengeMode.PUZZLE ||
+            this.currentMode === ChallengeMode.BOSSRUSH) {
             // Word difficulty ramps up every level (1:1), maxing at 5.
             const targetDiff = Math.min(5, currentLevel);
             // Let the WordLibrary handle difficulty filtering and history fallback
@@ -145,8 +149,12 @@ class ChallengeManager {
                 this.currentWordData = this.library.getRandomWord(null, null, excludeList);
             }
 
-            this.adventureWordsCompleted++;
-            console.log(`Adventure: word ${this.adventureWordsCompleted} | level ${targetDiff} selected.`);
+            if (this.currentMode === ChallengeMode.ADVENTURE || this.currentMode === ChallengeMode.BOSSRUSH) {
+                this.adventureWordsCompleted++;
+                console.log(`${this.currentMode}: word ${this.adventureWordsCompleted} | level ${targetDiff} selected.`);
+            } else {
+                console.log(`Puzzle Mode: word selected at difficulty ${targetDiff}.`);
+            }
         } else {
             // Random: pull from FULL pool (null tier = no filtering)
             this.currentWordData = this.library.getRandomWord(null, null, excludeList);

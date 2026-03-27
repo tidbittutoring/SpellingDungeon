@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Spelling Dungeon
  * 
  * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
@@ -9,20 +9,19 @@
 
 /* ── Pause & Inventory Layout ─────────────────────────────────────────────── */
 #pause-menu {
-    justify-content: flex-end !important;
-    /* Align to bottom for maximum headroom */
+    justify-content: center !important;
 }
 
 .pause-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding: 2rem 2rem 2vh 2rem;
-    /* Minimize bottom gap for maximum overhead space */
-    max-width: 90vw;
-    transform: scale(0.9);
-    transform-origin: bottom center;
+    gap: 2vw;
+    padding: 2rem;
+    width: 98vw;
+    max-width: 98vw;
+    transform: scale(var(--ui-scale));
+    transform-origin: center;
 }
 
 .pause-options {
@@ -30,7 +29,7 @@
     flex-direction: column;
     align-items: center;
     border-left: 2px solid #333;
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 
 #pause-menu .sub-title {
@@ -44,7 +43,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 2.2rem;
+    flex: 1;
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid #444;
     border-radius: 8px;
@@ -53,96 +53,119 @@
 
 .inv-main-content {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     align-items: flex-start;
 }
 
+.inventory-view {
+    flex-grow: 1;
+}
+
 .equipment-view {
+    flex-shrink: 0;
+}
+
+.gear-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    max-height: 450px;
+    /* Matching the approximate height cap of the storage grid */
+    overflow-y: auto;
+}
+
+.gear-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
-.equip-mid {
-    display: flex;
-    gap: 1rem;
+.gear-group label {
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
-.equip-bot {
-    display: flex;
-    gap: 1rem;
+.utensil-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 10px;
 }
 
 .equip-slot {
-    width: 80px;
-    height: 80px;
-    background: #000;
-    border: 2px solid #333;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #444;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.7rem;
     color: #555;
-    text-transform: uppercase;
     position: relative;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .equip-slot:hover {
     border-color: #ff8800;
     background: rgba(40, 40, 40, 0.8);
+    box-shadow: 0 0 15px rgba(255, 136, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 .equip-slot.filled {
     border-color: #666;
-    background: #1a1a1a;
+    background: rgba(255, 255, 255, 0.2);
     color: #eee;
-    font-size: 0.8rem;
-    font-weight: bold;
 }
 
-.inventory-view {
-    width: 440px;
-}
-
-.inventory-view h3,
-.equipment-view h3,
-.forge-container h3 {
-    margin-top: 0;
-    font-size: 1rem;
-    color: #ff8800;
-    letter-spacing: 0.2rem;
-    border-bottom: 1px solid #444;
-    padding-bottom: 0.5rem;
-    width: 100%;
-    text-align: center;
-}
-
-#inventory-grid {
+.storage-grid {
     display: grid;
-    grid-template-columns: repeat(10, 40px);
-    grid-template-rows: repeat(4, 40px);
-    gap: 4px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    /* Fill all available horizontal space dynamically */
+    width: 100%;
+    gap: 12px;
     margin-top: 1rem;
+    max-height: 408px;
+    /* Clamp to approx 4.5 rows: (80 * 4.5) + (12 * 4) = 408px */
+    overflow-y: auto;
+    padding: 2px 10px 10px 2px;
 }
 
 .inv-cell {
-    width: 40px;
-    height: 40px;
-    background: #000;
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
     border: 1px solid #333;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    position: relative;
+    transition: all 0.2s;
+    border-radius: 6px;
+}
+
+.inv-cell.filled {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #666;
 }
 
 .inv-cell:hover {
-    border-color: #666;
-    background: rgba(30, 30, 30, 0.8);
+    border-color: #ffaa00;
+    background: rgba(40, 40, 30, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .item-icon {
@@ -161,7 +184,9 @@
     padding: 1rem;
     color: #fff;
     z-index: 1000;
-    pointer-events: none;
+    pointer-events: auto;
+    /* Allow clicking buttons inside! */
+    user-select: none;
     max-width: 250px;
     font-family: 'Courier New', monospace;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
@@ -169,11 +194,11 @@
 
 #item-tooltip h4 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 #item-tooltip .rarity {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
@@ -186,7 +211,7 @@
 #item-tooltip .desc {
     font-style: italic;
     color: #bbb;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
 }
 
 /* ── Character Stats View ────────────────────────────────────────────────── */
@@ -196,10 +221,10 @@
     border: 1px solid #333;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.5rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.6rem 0.8rem;
     font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     box-sizing: border-box;
     border-radius: 4px;
 }
@@ -213,8 +238,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 0.2rem;
-    padding: 0.5rem 0.8rem;
+    gap: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    overflow: hidden;
+    white-space: nowrap;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: help;
@@ -222,29 +249,33 @@
     border-radius: 4px;
 }
 
-.stat-row:hover {
-    background: rgba(255, 136, 0, 0.1);
-    border-color: rgba(255, 136, 0, 0.3);
-    transform: translateY(-1px);
-}
-
 .stat-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #eee;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 0.75rem;
     letter-spacing: 0.05rem;
+    flex-grow: 1;
 }
 
 .stat-value {
-    color: #00ff00;
+    flex-shrink: 0;
+    color: #77dd77;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 0.95rem;
     background: rgba(0, 0, 0, 0.6);
-    padding: 0.2rem 0.5rem;
+    padding: 0.1rem 0.4rem;
     border-radius: 4px;
     border: 1px solid rgba(0, 255, 0, 0.4);
     text-align: center;
-    min-width: 2.2rem;
+    min-width: 1.8rem;
+}
+
+.stat-row:hover {
+    background: rgba(255, 136, 0, 0.15);
+    border-color: rgba(255, 136, 0, 0.4);
+    transform: translateY(-1px);
 }
 
 /* ── Inventory Utility Buttons ─────────────────────────────────────────── */
@@ -286,4 +317,193 @@
 
 #autoupgrade-toggle-btn:hover::after {
     opacity: 1;
+}
+
+/* ── Item Set Bonuses ────────────────────────────────────────────────────── */
+#set-bonuses-view {
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.set-bonuses-header {
+    background: rgba(0, 255, 0, 0.05);
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.7rem;
+    color: #77dd77;
+    letter-spacing: 0.1rem;
+    transition: background 0.2s;
+    user-select: none;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.set-bonuses-header:hover {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.toggle-icon {
+    font-size: 0.6rem;
+    opacity: 0.7;
+    transition: transform 0.2s;
+}
+
+.set-bonuses-list {
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.set-bonus-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.set-bonus-count {
+    color: #77dd77;
+    font-weight: bold;
+    min-width: 1.5rem;
+}
+
+.set-bonus-label {
+    color: #888;
+    flex-grow: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.set-bonus-value {
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* ── Puzzle Chest Keyboard ────────────────────────────────────────────────── */
+#puzzle-keyboard {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%) scale(var(--ui-scale));
+    transform-origin: bottom center;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 6px;
+    background: rgba(68, 68, 68, 0.8);
+    padding: 12px;
+    border: 2px solid #666;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+.puzzle-key {
+    background: black;
+    border: 1px solid #444;
+    color: #eee;
+    padding: 4px 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.puzzle-key:hover {
+    background: #222;
+    border-color: #ffcc00;
+    color: #ffcc00;
+}
+
+.puzzle-key.used {
+    background: #111;
+    border-color: #222;
+    color: #333;
+    opacity: 0.15;
+    cursor: default;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+.shake {
+    animation: shake 0.4s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, -50%, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, -50%, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, -50%, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, -50%, 0);
+    }
+}
+
+/* ── Responsive Queries ──────────────────────────────────────────────────── */
+
+@media (max-width: 1200px) {
+    .pause-content {
+        width: 95vw;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .inv-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .inv-main-content {
+        flex-direction: column-reverse;
+        /* Gear on top or bottom if squeezed */
+        align-items: center;
+    }
+
+    .equipment-view {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-height: 800px) {
+    .storage-grid {
+        max-height: 300px;
+    }
+
+    #char-stats-view {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
 }
