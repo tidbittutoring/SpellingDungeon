@@ -9760,20 +9760,20 @@ function buildProfileUI() {
         // Calculate summary stats for the card
         let hpBonus = 0;
         let inkBonus = 0;
-        let armorBonus = 0;
-        let rummageBonus = 0;
+        let goldBonus = 0;
+        let storageSlots = p.itemData ? p.itemData.maxStorageSize : 9;
 
         if (p.itemData) {
             const equipped = [];
             if (p.itemData.hat) equipped.push(p.itemData.hat);
             if (p.itemData.utensils) equipped.push(...p.itemData.utensils);
+            if (p.itemData.storage) equipped.push(...p.itemData.storage);
 
             equipped.forEach(item => {
                 if (item && item.stats) {
                     hpBonus += (item.stats.hp || 0);
                     inkBonus += (item.stats.ink || 0);
-                    armorBonus += (item.stats.armor || 0);
-                    rummageBonus += (item.stats.rummage || 0);
+                    goldBonus += (item.stats.gold_bonus || 0);
                 }
             });
         }
@@ -9783,42 +9783,50 @@ function buildProfileUI() {
         const spelledCount = p.spelledWords ? p.spelledWords.length : 0;
         const progressPercent = Math.round((spelledCount / totalWords) * 100);
 
+        // Rank titles based on max room
+        const room = p.maxRoom || 1;
+        let rank = "Novice Scholar";
+        if (room >= 100) rank = "Master Lexicographer";
+        else if (room >= 50) rank = "Senior Academic";
+        else if (room >= 30) rank = "Dungeon Researcher";
+        else if (room >= 15) rank = "Apprentice Scribe";
+
         return `
             <div class="profile-card ${isActive ? 'active-profile' : ''}" data-id="${p.id}" style="--profile-color: ${p.spellColor};">
                 <div class="profile-card-inner">
                     <div class="profile-header">
                         <div class="profile-name-group">
                             <h3 class="profile-name">${escapeHtml(p.name)}</h3>
-                            <div class="profile-meta">Character Level ${Math.ceil((p.maxRoom || 1) / 5) + 1}</div>
+                            <div class="profile-meta">${rank} (Floor ${Math.ceil(room / 10)})</div>
                         </div>
                         <div class="profile-room-badge">
                             <span class="badge-label">ROOM</span>
-                            <span class="badge-value">${p.maxRoom || 1}</span>
+                            <span class="badge-value">${room}</span>
                         </div>
                     </div>
                     
                     <div class="profile-stats-container">
-                        <div class="p-stat-box" title="Max Health Bonus">
+                        <div class="p-stat-box" title="Vitality (Max HP Bonus)">
                             <span class="p-stat-icon">❤️</span>
-                            <span class="p-stat-val">+${hpBonus}</span>
+                            <span class="p-stat-val">+${hpBonus} HP</span>
                         </div>
-                        <div class="p-stat-box" title="Max Ink Bonus">
+                        <div class="p-stat-box" title="Focus (Max Ink Bonus)">
                             <span class="p-stat-icon">💧</span>
-                            <span class="p-stat-val">+${inkBonus}</span>
+                            <span class="p-stat-val">+${inkBonus} INK</span>
                         </div>
-                        <div class="p-stat-box" title="Armor">
-                            <span class="p-stat-icon">🛡️</span>
-                            <span class="p-stat-val">+${armorBonus}</span>
+                        <div class="p-stat-box" title="Prosperity (Gold Multiplier)">
+                            <span class="p-stat-icon">💰</span>
+                            <span class="p-stat-val">+${goldBonus}% GOLD</span>
                         </div>
-                        <div class="p-stat-box" title="Item Find Luck">
-                            <span class="p-stat-icon">🍀</span>
-                            <span class="p-stat-val">+${rummageBonus}%</span>
+                        <div class="p-stat-box" title="Storage Capacity">
+                            <span class="p-stat-icon">👜</span>
+                            <span class="p-stat-val">${storageSlots} SLOTS</span>
                         </div>
                     </div>
 
                     <div class="profile-progress-section">
                         <div class="progress-info">
-                            <span>Vocabulary Mastery</span>
+                            <span>Lexicon Mastery</span>
                             <span>${progressPercent}%</span>
                         </div>
                         <div class="progress-bar-bg">
